@@ -6291,6 +6291,7 @@ text-align: center;
   width: 220px;
 }
 
+#contest-banner .contest-state-wrapper .generic-button,
 #block-views-contests-block_2 .contest-state,
 .contest-state-wrapper .contest-state {
   background-color: #FF3F3F;
@@ -6528,6 +6529,12 @@ body.node-type-contest h1 {
 
 .view-contest-blocks.view-display-id-block_6 {
   text-align: center;
+}
+
+#contest-banner .contest-state-wrapper .generic-button,
+.view-contest-blocks.view-display-id-block_6 .generic-button {
+  float: none;
+  background-color: #36C9D3;
 }
 
 /* Projects Styles */
