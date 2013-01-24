@@ -6430,6 +6430,53 @@ body.node-type-contest .node-content-main {
   font-weight: normal;
 }
 
+.node-type-contest .contest-winners {
+  border: 1px solid #000;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+body.node-type-contest .contest-winners:hover {
+  background: transparent;
+}
+
+body.node-type-contest h1 {
+  background: transparent url(../images/triple-border.png) repeat-x bottom;
+  font-size: 26px;
+  font-weight: normal;
+  margin-bottom: 25px;
+  padding-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contest-winners .views-field-title {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.contest-winners .views-field-teaser {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.contest-winners .views-field-view-node {
+  text-align: center;
+}
+
+.contest-winners .views-field-field-inscription-members-imname-vname {
+  border-top: 1px solid #000;
+  margin-top: 30px;
+  padding-top: 30px;
+  font-size: 12px;
+}
+
+.contest-winners .views-field-field-inscription-members-imname-vname .views-field-picture {
+  width: auto;
+  height: auto;
+}
+
 #main #block-views-sponsors-block_1,
 #main #block-views-sponsors-block_3 {
   margin-bottom: 10px;
@@ -7401,7 +7448,7 @@ text-decoration: none;
 
 /**--------------------------
 Santirisco @ Deletec
-Modificaciones para el 
+Modificaciones para el
 área de usuario
 ---------------------------**/
 .area-social #primary-menu{
@@ -7458,7 +7505,7 @@ table tr td.active{
 	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
 	margin-bottom: 20px;
-	
+
 }
 .name-holder .follow-box{
 	margin: -10px 0 -10px 462px;
@@ -7515,7 +7562,7 @@ table tr td.active{
 	margin-left: 20px;
 	display: inline-block;
 	font-family: SoinSans-Bold;
-	line-height: 29px;	
+	line-height: 29px;
 }
 header .addthis_toolbox{
 	float: right;
@@ -7605,7 +7652,7 @@ header .addthis_toolbox{
 .account-edit .views-field-field-twitter-acp-url
 {display: none}
 ul.primary.ui-tabs-nav{
-	border: none; 
+	border: none;
 	padding: 0;
 	margin: 0 0 30px 0;
 }
@@ -7648,7 +7695,7 @@ ul.primary.ui-tabs-nav{
 .area-social #content-content, .area-comunidad #content-content{padding: 0 20px 20px 20px}
 .account-edit #content-content{padding: 45px 20px 20px 20px;}
 #main-group .node-form .standard{
-	
+
 }
 .grid16-12.force_width{
 	width: 720px!important;
@@ -7731,7 +7778,7 @@ a.add-content-link{
 	width: 90%!important;
 }
 #edit-field-image-acp-0-filefield-upload, #edit-field-image-acp-0-filefield-remove{
-	background: #000; 
+	background: #000;
 	padding: 6px 20px 4px 20px;
 	height: 30px;
 	border: none;
@@ -7827,10 +7874,10 @@ a.add-content-link{
 }*/
 
 
-.view-arqnetwork-user-profile .views-field-field-address-acp-value, 
-.view-arqnetwork-user-profile .views-field-field-company-acp-value, 
-.view-arqnetwork-user-profile .views-field-phpcode-1, 
-.view-arqnetwork-user-profile .views-field-field-small-description-acp-value, 
+.view-arqnetwork-user-profile .views-field-field-address-acp-value,
+.view-arqnetwork-user-profile .views-field-field-company-acp-value,
+.view-arqnetwork-user-profile .views-field-phpcode-1,
+.view-arqnetwork-user-profile .views-field-field-small-description-acp-value,
 .view-arqnetwork-user-profile .views-field-phpcode
 {
 	padding: 5px 20px; color: #666;
@@ -7838,10 +7885,10 @@ a.add-content-link{
 	margin-right: -1px;
 }
 /*
-	border-left: 1px solid #ccc;.view-arqnetwork-user-profile .views-field-field-facebook-acp-url, 
-.view-arqnetwork-user-profile .views-field-field-google-acp-url, 
-.view-arqnetwork-user-profile .views-field-field-linkedin-acp-url, 
-.view-arqnetwork-user-profile .views-field-field-pinterest-acp-url, 
+	border-left: 1px solid #ccc;.view-arqnetwork-user-profile .views-field-field-facebook-acp-url,
+.view-arqnetwork-user-profile .views-field-field-google-acp-url,
+.view-arqnetwork-user-profile .views-field-field-linkedin-acp-url,
+.view-arqnetwork-user-profile .views-field-field-pinterest-acp-url,
 .view-arqnetwork-user-profile .views-field-field-twitter-acp-url*/
 .views-field-field-facebook-acp-url label,
 .views-field-field-google-acp-url label,
@@ -7884,7 +7931,7 @@ a.add-content-link{
 	background-image: url(../images/icos_redes.png);
 	background-repeat: no-repeat;
 	text-indent: -999px;
-	
+
 }
 .views-field-field-facebook-acp-url .field-content a, #mybook #social-networks .facebook a{
 	background-position: -31px 0;
@@ -7908,8 +7955,8 @@ a.add-content-link{
 .sidebar-first .view-arqnetwork-user-profile .views-field-picture .field-content{
 	max-width: 240px;
 }
-.view-arqnetwork-user-profile .view-arqnetwork-user-profile.view-id-arqnetwork_user_profile, 
-.view-arqnetwork-user-profile .views-field-phpcode-1, 
+.view-arqnetwork-user-profile .view-arqnetwork-user-profile.view-id-arqnetwork_user_profile,
+.view-arqnetwork-user-profile .views-field-phpcode-1,
 .view-arqnetwork-user-profile .views-field-field-small-description-acp-value,
 .entrada-ficha .view-arqnetwork-user-profile {
 	border-bottom: 1px solid #CCCCCC;
@@ -7929,8 +7976,8 @@ a.add-content-link{
 	border-left: 1px solid #ccc;
 }
 /*.views-field-field-twitter-acp-url*/
-.view-arqnetwork-user-profile .views-field-field-address-acp-value, 
-.view-arqnetwork-user-profile .views-field-field-small-description-acp-value, 
+.view-arqnetwork-user-profile .views-field-field-address-acp-value,
+.view-arqnetwork-user-profile .views-field-field-small-description-acp-value,
 .view-arqnetwork-user-profile .views-field-phpcode{
 	padding-top: 20px;
 }
@@ -8003,7 +8050,7 @@ body.area-social #sidebar-last.nested #block-commons_core-group_create_content{
 	text-align: left;
 }
 body.area-social #sidebar-last.nested #block-commons_core-group_create_content .inner{
-	max-width: 230px; 
+	max-width: 230px;
 	width: 220px
 }
 body.area-social #sidebar-last.nested #block-commons_core-group_create_content .inner .content {
@@ -8113,7 +8160,7 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 	border: 1px solid black;
 	padding: 20px;
 	-webkit-box-shadow: 3px 3px 0px 0px #000;
-	box-shadow: 3px 3px 0px 0px #000; 
+	box-shadow: 3px 3px 0px 0px #000;
 }
 #content-front #content-front-right #block-arquideas_generic-4 .inner .users-total{
 	text-align: center;
@@ -8138,7 +8185,7 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 	height: 14px;
 	border: 1px solid #000;
 	-webkit-box-shadow: 2px 2px 0px 0px #000;
-	box-shadow: 2px 2px 0px 0px #000; 
+	box-shadow: 2px 2px 0px 0px #000;
 	margin: 0 0 20px 0;
 }
 .area-comunidad #main{
@@ -8156,12 +8203,12 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 	width: 240px;
 }
 
-.area-comunidad #sidebar-first .block.block-views .inner, 
+.area-comunidad #sidebar-first .block.block-views .inner,
 .area-comunidad #sidebar-last .block.block-views .inner,
 .area-comunidad #sidebar-last .block.block-tagadelic .inner,
 .area-comunidad #sidebar-last .block.block-commons_core .inner{
 	border: 1px solid #ccc;
-	
+
 }
 .area-comunidad #sidebar-first .block.block-views .title,
 .area-comunidad #sidebar-last .block.block-views .title,
@@ -8320,7 +8367,7 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 #sidebar-last .block-views .view-newest-users thead{
 	display: none;
 }
-#sidebar-last .block-views .view-newest-users tr, 
+#sidebar-last .block-views .view-newest-users tr,
 #sidebar-last .block-views .view-most-active-users tr{
 	border-bottom: 2px solid #fff;
 	background: #f3f3f3;
@@ -8334,7 +8381,7 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 #sidebar-last .block-views .view-most-active-users tr.views-row-first{
 	margin-top: 5px;
 }
-#sidebar-last .block-views .view-newest-users td, 
+#sidebar-last .block-views .view-newest-users td,
 #sidebar-last .block-views .view-most-active-users td{
 	padding: 0;
 	margin: 3px 0 0 0;
@@ -8361,7 +8408,7 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 }
 #sidebar-last .block-views .view-most-active-users td.views-field-name a{
 	text-indent: 0;
-	display: block;	
+	display: block;
 	font-weight: bold;
 }
 #sidebar-last .block-views .view-most-active-users td.views-field-points{
@@ -8528,7 +8575,7 @@ body.blog-type #content-group  h1.title{
 	padding: 0 12px!important;
 	font-weight: bold!important;
 	font-size: 1.5em!important;
-} 
+}
 .comments.block #comment-form{
  text-align: center;
 }
@@ -8670,10 +8717,10 @@ body.book #content-content{
 .booklet .b-wrap-left, .booklet .b-wrap-right{
 	background-color: #fff;
 }
-.booklet .b-wrap-right > div, 
+.booklet .b-wrap-right > div,
 .booklet .b-wrap-left > div{
-	
-	
+
+
 }
 #mybook .description{
 	color: #000;
@@ -8685,7 +8732,7 @@ body.book #content-content{
 	color: #999;
 	font-size: 13px;
 }
-#mybook #social-networks h3, 
+#mybook #social-networks h3,
 #mybook #share-in h3{
 	margin: 10px 0;
 	font-weight: normal;
@@ -8742,7 +8789,7 @@ body.book #content-content{
 	float: right;
 	background: #FF3F3F;
     border-radius: 3px 3px 3px 3px;
-    color: #FFFFFF;	
+    color: #FFFFFF;
     font-family: SoinSans-Oblique !important;
     padding: 2px 12px 0px;
    text-transform: uppercase;
@@ -8876,7 +8923,7 @@ body.book #content-content{
 	padding-bottom: 20px;
 }
 .view-arqnetwork-account-inscriptions .views-field-title-1{
-	margin: 15px 0;	
+	margin: 15px 0;
 }
 .view-arqnetwork-account-inscriptions .views-field-title-1 a{
 	color: #000;
@@ -8889,7 +8936,7 @@ body.book #content-content{
 	margin-top: 20px;
 	overflow: hidden;
 }
-.view-arqnetwork-account-inscriptions .views-field-phpcode-3, 
+.view-arqnetwork-account-inscriptions .views-field-phpcode-3,
 .view-arqnetwork-account-inscriptions .views-field-field-inscription-members-imname-vname{
 	margin-left: 350px;
 }
@@ -8903,7 +8950,7 @@ body.book #content-content{
 .view-arqnetwork-account-inscriptions .views-field-field-inscription-members-imname-vname .views-field-picture{
 	width: auto!important;
 	height: auto!important;
-	margin: 0 auto!important; 
+	margin: 0 auto!important;
 }
 .view-arqnetwork-account-inscriptions .views-field-field-inscription-members-imname-vname .views-field-name{
 	display: block;
