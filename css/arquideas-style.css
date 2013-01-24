@@ -5117,15 +5117,15 @@ body.page-news .subtitle,
   margin-top: 40px;
 }
 
-.sidebar-last .single-border-block > .inner,
-.sidebar-first .single-border-block > .inner,
+#sidebar-last .single-border-block > .inner,
+#sidebar-first .single-border-block > .inner,
 .single-border-block > .inner {
   border: 1px solid #000;
   padding: 15px 10px 10px;
 }
 
-.sidebar-last .single-border-shadow-block > .inner,
-.sidebar-first .single-border-shadow-block > .inner,
+#sidebar-last .single-border-shadow-block > .inner,
+#sidebar-first .single-border-shadow-block > .inner,
 .single-border-shadow-block > .inner,
 .single-border-shadow-block > .content-inner {
   border: 1px solid #000;
@@ -5135,8 +5135,8 @@ body.page-news .subtitle,
   margin-bottom: 24px;
 }
 
-.sidebar-last .double-border-shadow-block,
-.sidebar-first .double-border-shadow-block,
+#sidebar-last .double-border-shadow-block,
+#sidebar-first .double-border-shadow-block,
 .double-border-shadow-block {
   border: 1px solid #000;
   background-color: #fff;
@@ -5150,8 +5150,8 @@ body.page-news .subtitle,
 box-sizing: border-box;
 }
 
-.sidebar-last .double-border-shadow-block > .inner,
-.sidebar-first .double-border-shadow-block > .inner,
+#sidebar-last .double-border-shadow-block > .inner,
+#sidebar-first .double-border-shadow-block > .inner,
 .double-border-shadow-block > .inner,
 .double-border-shadow-block > .content-inner {
   background-color: #fff;
@@ -5159,97 +5159,101 @@ box-sizing: border-box;
   padding: 15px 10px 10px;
 }
 
-.sidebar-last .single-line h2.block-title,
-.sidebar-first .single-line h2.block-title,
+#sidebar-last .single-line h2.block-title,
+#sidebar-first .single-line h2.block-title,
 .single-line h2.block-title {
   padding-bottom: 15px;
   margin-bottom: 20px;
   background: transparent url(../images/single-border.png) repeat-x bottom;
+  border-bottom: 0 none;
 }
 
-.sidebar-last .double-line h2.block-title,
-.sidebar-first .double-line h2.block-title,
+#sidebar-last .double-line h2.block-title,
+#sidebar-first .double-line h2.block-title,
 .double-line h2.block-title {
   padding-bottom: 18px;
   margin-bottom: 22px;
   background: transparent url(../images/double-border.png) repeat-x bottom;
+  border-bottom: 0 none;
 }
 
-.sidebar-last .triple-line h2.block-title,
-.sidebar-first .triple-line h2.block-title,
+#sidebar-last .triple-line h2.block-title,
+#sidebar-first .triple-line h2.block-title,
 .triple-line h2.block-title {
   padding-bottom: 20px;
   margin-bottom: 25px;
   background: transparent url(../images/triple-border.png) repeat-x bottom;
+  border-bottom: 0 none;
 }
 
-.sidebar-last .triple-fat-middle-line h2.block-title,
-.sidebar-first .triple-fat-middle-line h2.block-title,
+#sidebar-last .triple-fat-middle-line h2.block-title,
+#sidebar-first .triple-fat-middle-line h2.block-title,
 .triple-fat-middle-line h2.block-title {
   padding-bottom: 20px;
   margin-bottom: 25px;
   background: transparent url(../images/triple-fat-border.png) repeat-x bottom;
+  border-bottom: 0 none;
 }
 
-.sidebar-last .small-block-title h2.block-title,
-.sidebar-first .small-block-title h2.block-title,
+#sidebar-last .small-block-title h2.block-title,
+#sidebar-first .small-block-title h2.block-title,
 .small-block-title h2.block-title {
   font-size: 15px;
   line-height: 15px;
   margin-top: 4px;
 }
 
-.sidebar-last .medium-block-title h2.block-title,
-.sidebar-first .medium-block-title h2.block-title,
+#sidebar-last .medium-block-title h2.block-title,
+#sidebar-first .medium-block-title h2.block-title,
 .medium-block-title h2.block-title {
   line-height: 1.1em;
   margin-top: 7px;
 }
 
-.sidebar-last .large-block-title h2.block-title,
-.sidebar-first .large-block-title h2.block-title,
+#sidebar-last .large-block-title h2.block-title,
+#sidebar-first .large-block-title h2.block-title,
 .large-block-title h2.block-title {
   font-size: 26px;
   line-height: 26px;
   margin-top: 10px;
 }
 
-.sidebar-last .extra-large-block-title h2.block-title,
-.sidebar-first .extra-large-block-title h2.block-title,
+#sidebar-last .extra-large-block-title h2.block-title,
+#sidebar-first .extra-large-block-title h2.block-title,
 .extra-large-block-title h2.block-title {
   font-size: 40px;
   line-height: 40px;
   margin-top: 14px;
 }
 
-.sidebar-last .centered-block,
-.sidebar-first .centered-block,
+#sidebar-last .centered-block,
+#sidebar-first .centered-block,
 .centered-block,
 .centered-block h2.block-title {
   text-align: center;
 }
 
-.sidebar-last .small-block-contents,
-.sidebar-first .small-block-contents,
+#sidebar-last .small-block-contents,
+#sidebar-first .small-block-contents,
 .small-block-contents {
   font-size: 10px;
   line-height: 1.4em;
 }
 
-.sidebar-last .medium-block-contents,
-.sidebar-first .medium-block-contents,
+#sidebar-last .medium-block-contents,
+#sidebar-first .medium-block-contents,
 .medium-block-contents {
 }
 
-.sidebar-last .large-block-contents,
-.sidebar-first .large-block-contents,
+#sidebar-last .large-block-contents,
+#sidebar-first .large-block-contents,
 .large-block-contents {
   font-size: 15px;
   line-height: 1.4em;
 }
 
-.sidebar-last .extra-large-block-contents,
-.sidebar-first .extra-large-block-contents,
+#sidebar-last .extra-large-block-contents,
+#sidebar-first .extra-large-block-contents,
 .extra-large-block-contents {
   font-size: 18px;
   line-height: 1.4em;
@@ -6115,7 +6119,7 @@ body.page-finished-contests #content-region h2.block-title {
   width: 220px;
   text-align: right;
   margin-left: 25px;
-  margin-right: 15px;
+  margin-right: 10px;
 }
 
 #block-views-contests-block_3 .views-field-phpcode,
@@ -6156,7 +6160,7 @@ body.page-finished-contests #content-region h2.block-title {
 .contests-view .public-vote-link,
 .contests-view .views-field-view-node,
 .contests-view .views-field-view-node-1 {
-  margin-bottom: 18px;
+  margin: 0 0 18px 18px;
 }
 
 .finished-contest-view .views-field-nothing,
@@ -6214,11 +6218,12 @@ body.page-finished-contests #content-region h2.block-title {
   border-right: 1px solid #333333;
 }
 
-#contest-banner .contest-titles h1.title {
+#content-group #contest-banner .contest-titles h1.title {
   color: #fff;
   font-size: 24px;
   line-height: 28px;
   padding: 0;
+  margin: 0;
   text-align: left;
 }
 
@@ -7346,6 +7351,7 @@ background-image: url(../images/social/icon-pinterest.png);
 /* Red Buttons */
 a.participate-link,
 .view-contest-blocks.view-display-id-block_6 .info,
+.contest-winners .views-field-view-node a,
 a.contest-winners,
 a.public-vote-link,
 #view-id-contests-page_2 .register-link-div a,
@@ -7415,11 +7421,12 @@ white-space: nowrap;
 }
 
 /* Grey Buttons */
-a.contest-follow-link {
+a.contest-follow-link,
+a.contest-unfollow-link {
   font-family: "SoinSans-BoldOblique",Helvetica,Arial,sans-serif;
   padding: 5px 12px;
-background-color: #999999;
-color: #fff;
+  background-color: #999999;
+  color: #fff;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
@@ -7431,6 +7438,7 @@ color: #fff;
 /* Hover state of buttons */
 a.participate-link:hover,
 #view-id-contests-page_2 .register-link-div a:hover,
+.contest-winners .views-field-view-node a:hover,
 .join-us-link-div a:hover,
 a.public-vote-link:hover,
 .contest-winners:hover,
