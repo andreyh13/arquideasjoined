@@ -6500,6 +6500,12 @@ body.node-type-contest h1 {
   margin-right: 10px
 }
 
+#block-views-sponsors-block_2 .view-content .item-list,
+#block-views-sponsors-block_4 .view-content .item-list {
+	border: 0 none;
+	padding: 0;
+}
+
 #block-arquideas_generic-6 li,
 #block-arquideas_generic-7 li {
   margin: 0;
