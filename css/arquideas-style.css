@@ -8042,7 +8042,7 @@ a.add-content-link{
 	width: 238px;
 	overflow: hidden;
 	border-left: none;
-	height: 199px;
+	height: 197px;
 }
 .view-arqnetwork-user-profile{
 	border-left: 1px solid #ccc;
@@ -8073,7 +8073,7 @@ body.page-user #main-inner #sidebar-first #sidebar-first-inner, body.page-user-1
 	width: 100%;
 }
 .sidebar-first .view-arqnetwork-user-profile .views-field-picture{
-	max-height:199px;
+	max-height:197px;
 }
 .sidebar-first .view-arqnetwork-user-profile .views-field-picture .imagecache-image_220_220{
 	width: 238px;
