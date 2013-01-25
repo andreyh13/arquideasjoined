@@ -334,9 +334,9 @@ function arquideasjoined_preprocess_page(&$vars)
   }
   if(preg_match('/^user\/\d+\/content$/', $_GET['q'])==1 ||
      preg_match('/^user\/\d+\/projects$/', $_GET['q'])==1 ||
-     preg_match('/^user\/\d+\/account/projects$/', $_GET['q'])==1 ||
-     preg_match('/^user\/\d+\/account/inscriptions$/', $_GET['q'])==1 ||
-     preg_match('/^user\/\d+\/account/arquideasbook$/', $_GET['q'])==1){
+     preg_match('/^user\/\d+\/account\/projects$/', $_GET['q'])==1 ||
+     preg_match('/^user\/\d+\/account\/inscriptions$/', $_GET['q'])==1 ||
+     preg_match('/^user\/\d+\/account\/arquideasbook$/', $_GET['q'])==1){
       $vars['main_group_width'] = $grid_name . $grid_width.' force_width border';
       $vars['content_group_width'] = $grid_name .'12 force_width';
   }
