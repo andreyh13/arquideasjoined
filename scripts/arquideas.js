@@ -106,10 +106,10 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
     });
 	
 	/*-------------------------------------------------------
-	Adaptación para el área de usuario en edicion de cuentas.
+	AdaptaciÃ³n para el Ã¡rea de usuario en edicion de cuentas.
 	DLTC 1-1-12
 	--------------------------------------------------------*/
-	/*El enlace a "mi cuenta" en el área de ficha de usuario ha de tener la clase account*/
+	/*El enlace a "mi cuenta" en el Ã¡rea de ficha de usuario ha de tener la clase account*/
 	if(
 		$('.header .tabs.primary').find('li:last').children('a').text()=="My account"||
 		$('.header .tabs.primary').find('li:last').children('a').text()=="Mi cuenta"
@@ -118,9 +118,11 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
 	}
 	
 	if($('.entrada-ficha').length){
-		$('#sidebar-last').remove();
+            $('#sidebar-last').remove();
 	}else{
-	$('.views-field-field-address-acp-value,.views-field-field-company-acp-value,.views-field-phpcode-1,.views-field-field-small-description-acp-value,.views-field-phpcode,.views-field-field-facebook-acp-url,.views-field-field-google-acp-url,.views-field-field-linkedin-acp-url,.views-field-field-pinterest-acp-url,.views-field-field-twitter-acp-url').remove()
+            //Andriy: this is completely wrong. It destroys the views of project. I change the code.
+            //$('.views-field-field-address-acp-value,.views-field-field-company-acp-value,.views-field-phpcode-1,.views-field-field-small-description-acp-value,.views-field-phpcode,.views-field-field-facebook-acp-url,.views-field-field-google-acp-url,.views-field-field-linkedin-acp-url,.views-field-field-pinterest-acp-url,.views-field-field-twitter-acp-url').remove()
+            $('.view-arqnetwork-user-profile .views-field-field-address-acp-value, .view-arqnetwork-user-profile .views-field-field-company-acp-value, .view-arqnetwork-user-profile .views-field-phpcode-1, .view-arqnetwork-user-profile .views-field-field-small-description-acp-value, .view-arqnetwork-user-profile .views-field-phpcode, .view-arqnetwork-user-profile .views-field-field-facebook-acp-url, .view-arqnetwork-user-profile .views-field-field-google-acp-url, .view-arqnetwork-user-profile .views-field-field-linkedin-acp-url, .view-arqnetwork-user-profile .views-field-field-pinterest-acp-url, .view-arqnetwork-user-profile .views-field-field-twitter-acp-url').remove();
 	}
 	//$('#content-content .view-arqnetwork-projects .view-content .item-list ul li.views-row').find('img').attr('height','95')
 	$('#main-content .view-user-directory .views-exposed-wrapper').find('.views-exposed-submit').appendTo('.views-exposed-widgets')
