@@ -3980,7 +3980,7 @@ color: #333333;
 }
 
 body.page-node #content-tabs {
-display: none;
+ /*display: none;*/
 }
 
 body.node-type-simplenews #content-tabs {
@@ -7524,7 +7524,7 @@ text-decoration: none;
 /**--------------------------
 Santirisco @ Deletec
 Modificaciones para el
-área de usuario
+ï¿½rea de usuario
 ---------------------------**/
 .area-social #primary-menu{
 	/*-webkit-box-shadow:  0px 6px 4px 0px rgba(200, 200, 200, .75);
@@ -8192,7 +8192,7 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 	font-size: 1.1em;
 	display: block;
 }
-/*Hay que quitar del la css de jqueryUi las definiciones de fuentes, como no tengo acceso a esa css la sobreescribo aquí*/
+/*Hay que quitar del la css de jqueryUi las definiciones de fuentes, como no tengo acceso a esa css la sobreescribo aquï¿½*/
 .ui-tabs-panel{
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif!important;
 	margin-bottom: 20px;
@@ -8983,7 +8983,7 @@ body.book #content-content{
 }
 #user-menu .open-toggle {
 }
-/*Edición datos concurso*/
+/*Edicion datos concurso*/
 .view-arqnetwork-account-inscriptions .views-row{
 	border-bottom: 1px solid #ccc;
 	padding-bottom: 20px;
