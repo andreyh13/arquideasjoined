@@ -8,6 +8,7 @@
   <?php print $head; ?>
   
   <link href="/sites/all/libraries/booklet/jquery.booklet.1.4.0.css" type="text/css" rel="stylesheet" media="screen, projection, tv" />
+  <link href="/sites/all/libraries/lightbox/css/lightbox.css" rel="stylesheet" />
   <?php print $styles; ?>
   <?php print $setting_styles; ?>
   <!--[if IE 8]>
@@ -26,6 +27,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.21/jquery-ui.min.js" type="text/javascript"></script>
   <script src="/sites/all/libraries/booklet/jquery.easing.1.3.js" type="text/javascript"></script>
   <script src="/sites/all/libraries/booklet/jquery.booklet.1.4.0.min.js" type="text/javascript"></script>
+  <script src="/sites/all/libraries/lightbox/js/lightbox.js" type="text/javascript"></script>
   <script type="text/javascript">var switchTo5x=true;</script>
   <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
   <script type="text/javascript">stLight.options({publisher: "229e3f66-d682-4563-a7b5-18c5e67a7e77"});</script>
@@ -94,36 +96,35 @@
                                                     <?php print $arqbook_image; ?>
                                                 <?php endif; ?>
                                                 <h1 class="title"><?php print $arqbook_realname; ?></h1>
-												<div class="about-me"><?php print $arqbook_i_am; ?></div>
-												 <div class="country"><?php print $arqbook_address.' '.$arqbook_country; ?></div>
+						<div class="about-me"><?php print $arqbook_i_am; ?></div>
+						<div class="country"><?php print $arqbook_address.' '.$arqbook_country; ?></div>
                                             </div>
-											<div class="buttons">
-												<ul>
-													<!-- <li><a href="">Recomendar CV</a></li> -->
-													<li><?php print l(t('Ver perfil en Arquideas'),'user/'.$arqbook_uid,array(
+                                            <div class="buttons">
+						<ul>
+						<!-- <li><a href="">Recomendar CV</a></li> -->
+						<li><?php print l(t('Ver perfil en Arquideas'),'user/'.$arqbook_uid,array(
                                                             'attributes' => array(
                                                                 'title' => t('Ver perfil en Arquideas'),
                                                                 'class' => 'view-profile',
                                                             ),
-                                                        )); ?></li>
-												</ul>
-												
-											</div>
+                                                    )); ?></li>
+						</ul>
+                                            </div>
                                             <div id="personal-info" class="clearfix">
                                                 <div class="company">
-                                                    <label>Trabaja en: </label><?php print $arqbook_company; ?>
+                                                    <label><?php print t('Works for'); ?>: </label><?php print $arqbook_company; ?>
                                                 </div>
                                                 <div class="university last">
-                                                   	<label>Universidad:</label> <?php print $arqbook_university; ?> (<?php print $arqbook_finished_year; ?>)
+                                                    <label><?php print t('University'); ?>:</label> <?php print $arqbook_university; ?> (<?php print $arqbook_finished_year; ?>)
                                                 </div>
                                                 <div class="birthdate">
-                                                    <label>Fecha de nacimiento: </label><?php print $arqbook_birthdate; ?>
+                                                    <label><?php print t('Birthday'); ?>: </label><?php print $arqbook_birthdate; ?>
                                                 </div>
                                                 <div class="phone last">
-                                                     <label>Tel&eacute;fono: </label> <?php print $arqbook_phone; ?>
+                                                     <label><?php print t('Phone'); ?>: </label> <?php print $arqbook_phone; ?>
                                                 </div>  
                                                 <div class="mail">
-                                                     <label>Email: </label> <a href="mailto:<?php print $arqbook_email; ?>"><?php print $arqbook_email; ?></a>
+                                                     <label><?php print t('Email'); ?>: </label> <a href="mailto:<?php print $arqbook_email; ?>"><?php print $arqbook_email; ?></a>
                                                 </div>    
                                                <!--  <div class="links">
                                                     <div class="link-profile">
@@ -136,26 +137,26 @@
                                                     </div>
                                                 </div> -->
                                             </div>
-											<div class="clear"></div>
+					    <div class="clear"></div>
                                             <div id="social-networks" class="clearfix">
                                                 <?php if(count($arqbook_social_networks)>0): ?>
-												<h3>S&iacute;guelo en:</h3>
-                                                <ul class="clearfix">
+                                                    <h3><?php print t('Follow in'); ?>:</h3>
+                                                    <ul class="clearfix">
                                                     <?php 
-													$i=0;
-													foreach($arqbook_social_networks as $key => $link){ 
-													$i++;
-													$frst=($i==1)?'first':'';
-													?>
-                                                    <li class="<?php print $key." ".$frst; ?>">
-                                                        <?php print $link; ?>
-                                                    </li>    
+                                                        $i=0;
+                                                        foreach($arqbook_social_networks as $key => $link){ 
+                                                            $i++;
+                                                            $frst=($i==1)?'first':'';
+                                                    ?>
+                                                        <li class="<?php print $key." ".$frst; ?>">
+                                                            <?php print $link; ?>
+                                                        </li>    
                                                     <?php } ?>
-                                                </ul>
+                                                    </ul>
                                                 <?php endif; ?>
                                                 <div class="clear"></div>
                                                 <div class="share-in clearfix">
-													<h3>Compartir</h3>
+                                                    <h3><?php print t('Share'); ?></h3>
                                                     <span class='st_email_large' displayText='Email'></span>
                                                     <span class='st_facebook_large' displayText='Facebook'></span>
                                                     <span class='st_pinterest_large' displayText='Pinterest'></span>
@@ -164,13 +165,13 @@
                                                     <span class='st_linkedin_large' displayText='LinkedIn'></span>
                                                     <span class='st_stumbleupon_large' displayText='StumbleUpon'></span>
                                                 </div>
-												<div class="clear"></div>
+						<div class="clear"></div>
                                                 <div class="url">
                                                     <strong>url:</strong> <?php print $arqbook_page_url; ?>
                                                 </div>
-                                                <?php //if(isset($arqbook_qrcode)): ?>
-                                                    <?php //print $arqbook_qrcode; ?>
-                                                <?php //endif; ?>
+                                                <?php if(isset($arqbook_qrcode)): ?>
+                                                    <?php print $arqbook_qrcode; ?>
+                                                <?php endif; ?>
                                             </div>
                                         </div>
                                         <div>
@@ -186,7 +187,9 @@
                                            <!--  <div class="logo">
                                                 <a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
                                             </div> -->
-                                            <?php print $imageobj['image']; ?>
+                                            <a href="<?php print $imageobj['fullimage_path']; ?>" rel="lightbox[arqbook]" title="<?php print $imageobj['title']; ?>">
+                                                <?php print $imageobj['image']; ?>
+                                            </a>
                                             <div class="image-title">
                                                 <?php print $imageobj['title']; ?> 
                                             </div>
