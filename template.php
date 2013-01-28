@@ -358,6 +358,8 @@ function arquideasjoined_preprocess_page(&$vars)
  * Node preprocessing
  */
 function arquideasjoined_preprocess_node(&$vars) {
+  global $user;  
+    
   // Add node_right region content
   $vars['node_right'] = theme('blocks', 'node_right');
 
