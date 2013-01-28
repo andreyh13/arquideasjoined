@@ -240,7 +240,7 @@
             height:630,
             pageNumbers: true,
             keyboard: true,
-			pagePadding: 40
+	    pagePadding: 40
         });
     });
 </script>    
