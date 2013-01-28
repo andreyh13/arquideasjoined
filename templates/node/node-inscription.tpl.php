@@ -26,6 +26,16 @@
     <?php endif; ?>
     <!-- Identifier Code -->
 
+    <!-- INSCRIPTION, PAYMENT OR PRESENTATION LINK -->
+    <?php
+        if(!$is_edit && isset($contest) && $contest->field_contest_state[0]['value']==ContestState::OPEN && $node->field_inscription_state[0]['value']!=InscriptionState::PREINSCRIPTED){
+            print '<div class="open-contest-button">'.openContestButton($contest).'</div>';
+        }
+    ?>
+    <!-- END INSCRIPTION, PAYMENT OR PRESENTATION LINK -->
+
+    <div class="clearfix">&nbsp;</div>
+    
     <!-- IMAGE -->
     <?php
         if(isset($field_contest_image[0]['filepath']) && !$is_edit){
@@ -42,16 +52,6 @@
         }
     ?>
     <!-- END INSCRIPTION LIMIT DATE -->
-
-    <!-- INSCRIPTION, PAYMENT OR PRESENTATION LINK -->
-    <?php
-        if(!$is_edit && isset($contest) && $contest->field_contest_state[0]['value']==ContestState::OPEN && $node->field_inscription_state[0]['value']!=InscriptionState::PREINSCRIPTED){
-            print '<div class="open-contest-button">'.openContestButton($contest).'</div>';
-        }
-    ?>
-    <!-- END INSCRIPTION, PAYMENT OR PRESENTATION LINK -->
-
-    <div class="clearfix">&nbsp;</div>
 
     <!-- Introduction text -->
     <?php if(($node->field_inscription_state[0]['value']==InscriptionState::PREINSCRIPTED && $num_members>1)
