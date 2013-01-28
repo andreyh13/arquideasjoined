@@ -7782,7 +7782,8 @@ ul.primary.ui-tabs-nav{
 	width: 720px!important;
 }
 .node-form .ui-tabs-nav li a,
-#quicktabs-quicktabs_my_content .quicktabs_tabs li a{
+#quicktabs-quicktabs_my_content .quicktabs_tabs li a, 
+#quicktabs-arqnetwork_group_quicktabs .quicktabs_tabs li a{
 	border: none!Important;
 	background: none!important;
 	padding: 0!important;
@@ -7799,23 +7800,30 @@ ul.primary.ui-tabs-nav{
 	padding-bottom: 8px!Important;
 	margin-bottom: -8px!Important;
 }
-#quicktabs-quicktabs_my_content{
+#quicktabs-quicktabs_my_content,
+#quicktabs-arqnetwork_group_quicktabs
+{
 	margin-top: 20px;
+}
+#quicktabs-arqnetwork_group_quicktabs{
+	margin-bottom: 20px;
 }
 .node-form .ui-tabs-nav li a span,
 a.add-content-link,
-#quicktabs-quicktabs_my_content .quicktabs_tabs li a{
+#quicktabs-quicktabs_my_content .quicktabs_tabs li a,
+#quicktabs-arqnetwork_group_quicktabs .quicktabs_tabs li a{
 	border-radius: 5px 5px 5px 5px;
 	-webkit-border-radius: 5px 5px 5px 5px;
 	-moz-border-radius: 5px 5px 5px 5px;
-	background: #999999;
+	background: #999999!important;
 	display: inline-block;
 	padding: 7px 9px!important;
 	color: #fff;
 	font-size: 13px;
 	line-height: 1.1;
 }
-#quicktabs-quicktabs_my_content .quicktabs_tabs li.first{
+#quicktabs-quicktabs_my_content .quicktabs_tabs li.first
+#quicktabs-arqnetwork_group_quicktabs .quicktabs_tabs li.first{
 	padding-left: 0;
 }
 a.add-content-link{
@@ -7824,7 +7832,8 @@ a.add-content-link{
 .node-form .ui-tabs-nav li a:hover span, 
 .node-form .ui-tabs-nav li.ui-tabs-selected a span,
 a.add-content-link:hover,
-#quicktabs-quicktabs_my_content .quicktabs_tabs li.active a{
+#quicktabs-quicktabs_my_content .quicktabs_tabs li.active a,
+#quicktabs-arqnetwork_group_quicktabs .quicktabs_tabs li.active a{
 	background-color: #FF3F3F!Important;
 }
 .node-form .ui-tabs-nav li {
@@ -9126,4 +9135,36 @@ padding: 5px; color: #fff;
 } 
 .view-arqnetwork-user-projects ul{
 	border-bottom: none!important;
+}
+
+.contest-info .two-columns{
+	padding: 15px 0;
+	margin: 20px 0;
+	border-top: 1p solid #ccc;
+	border-bottom: 1p solid #ccc;
+	overflow: hidden; 
+}
+.contest-info .two-columns .column-01, .contest-info .two-columns .column-02{
+	float: right;
+}
+
+.contest-info .two-columns .column-01{
+	margin-left: 20px;
+	width: 300px;
+}
+.contest-info .two-columns .column-02{
+	width: 380px;
+}
+.contest-info .two-columns h3{
+	  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	  font-weight: bold;
+	  margin-bottom: 15px;
+}
+.contest-info .two-columns .view-og-members-faces table td{
+	text-align: left;
+}
+.contest-info .two-columns .view-og-members-faces .views-field-picture{
+	float: left; 
+	display: inline-block;
+	margin-right: 10px;
 }
