@@ -7781,7 +7781,8 @@ ul.primary.ui-tabs-nav{
 .grid16-12.force_width{
 	width: 720px!important;
 }
-.node-form .ui-tabs-nav li a{
+.node-form .ui-tabs-nav li a,
+#quicktabs-quicktabs_my_content .quicktabs_tabs li a{
 	border: none!Important;
 	background: none!important;
 	padding: 0!important;
@@ -7790,13 +7791,17 @@ ul.primary.ui-tabs-nav{
 .node-form .ui-tabs-nav li.last a{
 	margin-right: 0;
 }
-.node-form .ui-tabs-nav li a:hover, .node-form .ui-tabs-nav li.ui-tabs-selected a{
+.node-form .ui-tabs-nav li a:hover, 
+.node-form .ui-tabs-nav li.ui-tabs-selected a
+{
 	background: url("../images/sumbenu_user_form.png") no-repeat!Important;
 	background-position: center bottom!Important;
 	padding-bottom: 8px!Important;
 	margin-bottom: -8px!Important;
 }
-.node-form .ui-tabs-nav li a span, a.add-content-link{
+.node-form .ui-tabs-nav li a span,
+a.add-content-link,
+#quicktabs-quicktabs_my_content .quicktabs_tabs li a{
 	border-radius: 5px 5px 5px 5px;
 	-webkit-border-radius: 5px 5px 5px 5px;
 	-moz-border-radius: 5px 5px 5px 5px;
@@ -7810,7 +7815,10 @@ ul.primary.ui-tabs-nav{
 a.add-content-link{
 	display: inline-block;
 }
-.node-form .ui-tabs-nav li a:hover span, .node-form .ui-tabs-nav li.ui-tabs-selected a span, a.add-content-link:hover{
+.node-form .ui-tabs-nav li a:hover span, 
+.node-form .ui-tabs-nav li.ui-tabs-selected a span,
+a.add-content-link:hover,
+#quicktabs-quicktabs_my_content .quicktabs_tabs li.active a{
 	background-color: #FF3F3F!Important;
 }
 .node-form .ui-tabs-nav li {
