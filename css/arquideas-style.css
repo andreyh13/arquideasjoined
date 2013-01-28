@@ -9077,15 +9077,22 @@ padding: 5px; color: #fff;
 }
 .viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li{
 	border: none;
+	margin: 0;
+	padding: 0;
+	display: inline-block;
 }
 .viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li a{
 	background-image: url(../images/icos_listado_proyectos.png);
 	background-repeat: no-repeat;
 	display: block;
 	height: 19px;
-	tet-indent: -999;
+	text-indent: -999px;
+	border: none!important;
+	padding: 0!important;
 }
-
+.viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li.first{
+	margin-right: 5px!important;
+}
 .viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li.first a{
 	background-position: 0 0;
 	width: 26px;
