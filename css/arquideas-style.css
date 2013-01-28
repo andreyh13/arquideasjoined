@@ -3428,7 +3428,7 @@ background-image: none!important;
 }
 .calendar-calendar td.empty, .calendar-calendar table.mini td.empty, .calendar-calendar td {
 border: 1px solid #EBEBEB !important;
-color: #999999;
+color: #000;
 margin: 0;
 padding: 5px 8px !important;
 text-align: center;
@@ -3656,7 +3656,7 @@ background-color: #000;
 background-color: transparent;
 }
 .block-views .calendar-calendar tr td.has-events a, .block-views .calendar-calendar tr.odd td.has-events a, .block-views .calendar-calendar tr.even td.has-events a {
-color: #FFFFFF;
+color: #c00;
 }
 #block-views-228f369cb15ea72f0c4ceed52aaf99c7 .content {
 background-color: transparent;
@@ -4171,6 +4171,7 @@ padding: 0;
 .block .field-terms {
 overflow: hidden;
 padding: 0 0 0.8em;
+margin-bottom: .8em;
 }
 .buildmode-full .node .field-terms {
 border-bottom: 1px solid #000;
@@ -9054,6 +9055,16 @@ body.book #content-content{
 	margin-right: 5px;
 	width: 32%;
 	margin-right: 2%;
+	position: relative;
+}
+.view-arqnetwork-user-projects .view-content .item-list li.views-row .views-field-title{
+	position: absolute; top: 118px; height: 40px; background-color: #000; width: 100%
+}
+.view-arqnetwork-user-projects .view-content .item-list li.views-row .views-field-title .field-content{
+padding: 5px; color: #fff;
+}
+.view-arqnetwork-user-projects .view-content .item-list li.views-row .views-field-title .field-content a{
+	color: #fff;
 }
 .view-arqnetwork-user-projects .view-content .item-list li.views-row-last{
 	margin-right: 0;
@@ -9064,6 +9075,33 @@ body.book #content-content{
 .view-arqnetwork-user-projects .viewsdisplaytabs-group-wrapper .item-list{
 	background: none;
 }
+.viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li{
+	border: none;
+}
+.viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li a{
+	background-image: url(../images/icos_listado_proyectos.png);
+	background-repeat: no-repeat;
+	display: block;
+	height: 19px;
+	tet-indent: -999;
+}
+
+.viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li.first a{
+	background-position: 0 0;
+	width: 26px;
+} 
+.viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li.last a{
+	background-position: -30px 0;
+	width: 13px;
+} 
+.viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li.first a:hover,
+.viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li.first a.active{
+	background-position: 0 -30px;
+} 
+.viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li.last a:hover,
+.viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li.last a.active{
+	background-position: -30px -30px;
+} 
 .view-arqnetwork-user-projects ul{
 	border-bottom: none!important;
 }
