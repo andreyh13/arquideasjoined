@@ -16,6 +16,14 @@
     <h1 class="title"><?php print $contest_title ?></h1>
     <?php endif; ?>
 
+    <!-- INSCRIPTION, PAYMENT OR PRESENTATION LINK -->
+    <?php
+        if(!$is_edit && isset($contest) && $contest->field_contest_state[0]['value']==ContestState::OPEN && $node->field_inscription_state[0]['value']!=InscriptionState::PREINSCRIPTED){
+            print '<div class="open-contest-button">'.openContestButton($contest).'</div>';
+        }
+    ?>
+    <!-- END INSCRIPTION, PAYMENT OR PRESENTATION LINK -->
+    
     <?php if(!$is_edit && $page == 1): ?>
     <div class="contest-info">
     <!-- Identifier Code -->
@@ -25,14 +33,6 @@
     </div>
     <?php endif; ?>
     <!-- Identifier Code -->
-
-    <!-- INSCRIPTION, PAYMENT OR PRESENTATION LINK -->
-    <?php
-        if(!$is_edit && isset($contest) && $contest->field_contest_state[0]['value']==ContestState::OPEN && $node->field_inscription_state[0]['value']!=InscriptionState::PREINSCRIPTED){
-            print '<div class="open-contest-button">'.openContestButton($contest).'</div>';
-        }
-    ?>
-    <!-- END INSCRIPTION, PAYMENT OR PRESENTATION LINK -->
 
     <div class="clearfix">&nbsp;</div>
     
