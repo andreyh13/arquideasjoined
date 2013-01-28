@@ -3,13 +3,12 @@
 * and open the template in the editor.
 */
 /*Agregar la clase last a determinados elementos de las listas*/
-var addLast = function(parent, children, numcols){
-	var e;
-	parent.find(children).each(function(e){
-		 if(($(this).index()+1)%numcols==0){
+var addLast = function(element, numcols){
+	$(element).each(function(){
+		if(($(element).index($(this))+1)%numcols==0&& $(this).index()!=0){
              $(this).addClass('last');
          }
-	})
+	});
 }
 $(function(){
     //Node form position
@@ -119,7 +118,7 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
 	DLTC 1-1-12
 	--------------------------------------------------------*/
 	/*Clase last en el tercer elemento de cada fila de la lista de proyectos en la ficha de usuario*/
-	addLast($('.view-arqnetwork-user-projects .item-list ul'), 'li', 3);
+	addLast('.item-list ul li.views-row', 3);
 	/*SANTI: This was temporary, all this changes should be done in the CMS-PHP and not in JS, i did this only to go ahead with the layout not to keep them in the production version, the explanations are now before each script */
 	
 	/*El enlace a "mi cuenta" en el área de ficha de usuario ha de tener la clase account*/
