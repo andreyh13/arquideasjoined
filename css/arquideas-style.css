@@ -9089,6 +9089,7 @@ padding: 5px; color: #fff;
 	text-indent: -999px;
 	border: none!important;
 	padding: 0!important;
+	border-radius: 0 0 0 0;
 }
 .viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li.first{
 	margin-right: 5px!important;
@@ -9102,11 +9103,11 @@ padding: 5px; color: #fff;
 	width: 13px;
 } 
 .viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li.first a:hover,
-.viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li.first a.active{
+.viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li.first a.viewsdisplaytabs-active{
 	background-position: 0 -30px;
 } 
 .viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li.last a:hover,
-.viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li.last a.active{
+.viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li.last a.viewsdisplaytabs-active{
 	background-position: -30px -30px;
 } 
 .view-arqnetwork-user-projects ul{
