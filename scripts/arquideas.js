@@ -154,4 +154,15 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
         Drupal.behaviors.arquideasTheme = function(context) {
             addLast('#view-id-arqnetwork_user_projects-page_1 .item-list ul li.views-row', 3);
         }
+        
+        //Join group for anonymous should open login form
+        $("body.not-logged-in .view .views-field-leave-group .join a").addClass("thickbox").each(function(){
+            var arr = $(this).attr("href").split("?");
+            var url = "ajax_register/login";
+            if(arr.length>1){
+                url = url + "?" +arr[1];
+            }
+            $(this).attr("href",url);
+        });
+        tb_init("body.not-logged-in .view .views-field-leave-group .join a.thickbox");
 });
