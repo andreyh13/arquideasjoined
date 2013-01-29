@@ -9196,6 +9196,11 @@ float: left;
 	font-size: 22px;
 	font-family: "SoinSans-BoldOblique", Helvetica, Arial, sans-serif;
 }
+.node-type-inscription .contest-info .remember-dates{
+	font-weight: bold;
+	padding: 10px 0;
+	font-size: 15px;
+}
 .node-type-inscription .contest-info .deadline-date, 
 .node-type-inscription .contest-info .payment-end-date, 
 .node-type-inscription .contest-info .payment-early{
