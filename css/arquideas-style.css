@@ -9206,12 +9206,12 @@ float: left;
 .node-type-inscription .contest-info .payment-early{
 	background-image: url(../images/bullet-check.png);
 	background-repeat: no-repeat;
-	background-position: 0 0;
+	background-position: 0 1px;
 	line-height: 16px;
 	padding-left: 20px;
 	color: #333;
 	font-size: 15px;
-	padding-bottom: 5px;
+	padding-bottom: 8px;
 }
 .node-type-inscription .contest-info .payment-early div{
 	display: inline;
