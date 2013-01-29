@@ -7944,20 +7944,20 @@ a.add-content-link:hover,
 	-moz-box-shadow:2px 2px 0px #FFFFFF, 3px 3px 0px #000000;
 	-webkit-box-shadow:2px 2px 0px #FFFFFF, 3px 3px 0px #000000;
 }
-#sidebar-last .block-nodeblock .block-title,  #sidebar-last .block-views .block-title{
+.area-social #sidebar-last .block-nodeblock .block-title, .area-social #sidebar-last .block-views .block-title{
 	padding-bottom: 10px;
 	margin-bottom: 10px;
 	border-bottom: 1px solid #000;
 }
-#sidebar-last .block-nodeblock a, #sidebar-last .block-views a{
+.area-social #sidebar-last .block-nodeblock a, . area-social #sidebar-last .block-views a{
 	font-family: SoinSans-BoldOblique;
 	margin: 5px 5px;
 	/*font-size: 1.2em;*/
 }
-#sidebar-last .block-nodeblock a{
+.area-social #sidebar-last .block-nodeblock a{
 	display: block;
 }
-#sidebar-last .block-nodeblock img,  #sidebar-last .block-views img{
+.area-social #sidebar-last .block-nodeblock img,  #sidebar-last .block-views img{
 	max-width: 194px;
 	margin-top: 5px!important;
 }
@@ -7965,7 +7965,7 @@ a.add-content-link:hover,
 	width: 330px;
 	margin-bottom: 20px;
 }
-.view-content .item-list{
+.area-social .view-content .item-list{
 	border: 1px solid #ccc;
 	padding: 20px;
 }
@@ -8716,6 +8716,7 @@ div.comment h3.title a{
 }
 div.comment {
 	border-top: 1px solid #ccc;
+	padding-top: 20px;
 }
 div.comment a{
 	color: #000;
@@ -9158,10 +9159,13 @@ padding: 5px; color: #fff;
 
 .contest-info .two-columns .column-01{
 	margin-left: 20px;
-	width: 285px;
+	width: 284px;
+}
+.column-02 .block, .column-02 .node{
+	margin-bottom: 0px!important;
 }
 .contest-info .two-columns .column-02{
-	width: 345px;
+	width: 344px;
 }
 .contest-info .two-columns h3{
 	  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -9175,4 +9179,42 @@ padding: 5px; color: #fff;
 	float: left; 
 	display: inline-block;
 	margin-right: 10px;
+}
+.node-type-inscription .contest-info .imagecache-inscriptions_336_162{
+float: left;
+}
+.node-type-inscription .contest-info .inscription-state, 
+.node-type-inscription .contest-info .remember-dates, 
+.node-type-inscription .contest-info .deadline-date, 
+.node-type-inscription .contest-info .payment-end-date, 
+.node-type-inscription .contest-info .payment-early, 
+.node-type-inscription .contest-info .introduction{
+	margin-left: 355px;
+}
+.node-type-inscription .contest-info .inscription-state{
+	color: #99CC00;
+	font-size: 22px;
+	font-family: "SoinSans-BoldOblique", Helvetica, Arial, sans-serif;
+}
+.node-type-inscription .contest-info .deadline-date, 
+.node-type-inscription .contest-info .payment-end-date, 
+.node-type-inscription .contest-info .payment-early{
+	background-image: url(../images/bullet-check.png);
+	background-repeat: no-repeat;
+	background-position: 0 0;
+	line-height: 16px;
+	padding-left: 20px;
+	color: #333;
+	font-size: 15px;
+	padding-bottom: 5px;
+}
+.node-type-inscription .contest-info .payment-early div{
+	display: inline;
+	font-size: .87em;
+}
+.node-type-inscription .contest-info .payment-early div.hasCountdown{
+	background: none;
+	background-color: transparent;
+	color: #000;
+	font-family: "SoinSans-BoldOblique", Helvetica, Arial, sans-serif;
 }
