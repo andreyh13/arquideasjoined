@@ -8355,7 +8355,7 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 	padding: 20px;
 }
 .area-comunidad #sidebar-last .block.block-views .view-newest-users .view-content, .area-comunidad #sidebar-last .block.block-views .view-most-active-users .view-content{
-	padding: 0;
+	padding: 5px;
 }
 .area-comunidad #sidebar-last .block.block-commons_core li{
 	font-weight: bold;
@@ -8479,14 +8479,22 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 #content-content .view-arqnetwork-projects .view-content .item-list ul li.views-row-even{
 	margin-right: 0;
 }
+.area-comunidad.usuarios .grid16-11.force-width{
+	 width: 660px!important;
+}
 .area-comunidad.usuarios #content-content{
-	padding: 0 20px 0 0;
+	padding: 0 40px 0 0;
+}
+.area-comunidad.usuarios .view-user-directory td{
+	border: none;
+	text-align: center;
+	padding: 10px;
 }
 .area-comunidad.usuarios #content-content .view-user-directory{
-	border: 1px solid #ccc;
+	/*border: 1px solid #ccc;*/
 }
 .area-comunidad.usuarios #content-content .view-user-directory .view-content{
-	border-top: 1px solid #ccc;
+	border-top: none;
 }
 .area-comunidad.usuarios #content-content .view-user-directory .view-filters{
 	padding: 20px;
@@ -8564,6 +8572,7 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 	max-width: auto;
 	height: 32px;
 }
+
 /*Nodos*/
 /*
 .blog-type #main{
@@ -9193,6 +9202,7 @@ overflow: hidden;
 	font-size: 30px;
 	display: block;
 	margin-bottom: 10px;
+	line-height: 30px;
 }
 .view-arqnetwork-user-projects .view-content div.views-row .views-field-field-inscription-members-imname-vname .caption .data .views-field-field-subtitle-project-value {
 	color: #fff;
@@ -9214,6 +9224,9 @@ overflow: hidden;
 .view-arqnetwork-user-projects .view-content div.views-row .views-field-field-inscription-members-imname-vname .caption .view-og-members-faces .views-field-name{
 	text-align: left;
 	display: inline-block;
+}
+.view-arqnetwork-user-projects .view-content div.views-row .views-field-field-inscription-members-imname-vname .caption .view-og-members-faces td{
+	text-align: left;
 }
 /*Menu intercambiador Rows/mosaico*/
 .view-arqnetwork-user-projects .viewsdisplaytabs-group-wrapper{

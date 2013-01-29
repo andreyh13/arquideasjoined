@@ -39,11 +39,11 @@ css de presentación
 		'grid16-4 force-width'
 	),
 	'usuarios'=>array(
-		'grid16-10 force-width',
+		'grid16-11 force-width',
 		'grid16-5 force-width'
 	),
  );
- $area=($body_id=='pid-comunidad-arquideas'||$body_id=='pid-arquideas-network')?'comunidad':'usuarios';
+$area=(($body_id=='pid-comunidad-arquideas'||$body_id=='pid-arquideas-network')?'comunidad':(($body_id=='pid-users'||$body_id=='pid-usuarios')?'usuarios':''));
  $body_classes.=(" ".$area." ")
 /*-------------------------
 ||$body_id=='pid-usuarios'
