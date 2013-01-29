@@ -9091,7 +9091,25 @@ body.book #content-content{
 	position: relative;
 }
 .view-arqnetwork-user-projects .view-content .item-list li.views-row .views-field-title{
-	position: absolute; top: 118px; height: 40px; background-color: #000; width: 100%
+	position: absolute; top: 138px; height: 40px; background-color: #000; width: 100%
+}
+.view-arqnetwork-user-projects .view-content .item-list li.views-row .points{
+	background-color: #000;
+	position: absolute;
+	top: 10px;
+height: 25px;
+	overflow: hidden;
+	width: 80px;
+
+}
+.view-arqnetwork-user-projects .view-content .item-list li.views-row .points .views-field-value .field-content{
+	background-position: 2px 1px;color: #fff;padding-left: 25px;
+}
+.view-arqnetwork-user-projects .view-content .item-list li.views-row .points .views-field-comment-count .field-content{
+	background-position: 0 -30px;color: #fff;padding-left: 25px;
+}
+.view-arqnetwork-user-projects .view-content .item-list li.views-row .views-field-field-subtitle-project-value{
+	margin-top: 25px;
 }
 .view-arqnetwork-user-projects .view-content .item-list li.views-row .views-field-title .field-content{
 padding: 5px; color: #fff;
@@ -9102,6 +9120,32 @@ padding: 5px; color: #fff;
 .view-arqnetwork-user-projects .view-content .item-list li.last{
 	margin-right: 0;
 }
+/*Proyectos en row*/
+.view-arqnetwork-user-projects .view-content div.views-row{
+	position: relative;
+}
+.view-arqnetwork-user-projects .view-content div.views-row .points{
+	width:  78px;
+	height: 83px;
+	position: absolute;
+	top: 0px;
+background: #000;
+color: #fff;
+}
+.view-arqnetwork-user-projects .view-content div.views-row .points .views-field-value .field-content, .view-arqnetwork-user-projects .view-content div.views-row .points .views-field-comment-count .field-content{
+    background-image: url("../images/social.png");
+	background-repeat: no-repeat;
+	background-position:  2px -54px ;
+    color: #FFFFFF;
+    display: block;
+    font-size: 14px;
+    line-height: 25px;
+    padding-left: 28px;
+}
+.view-arqnetwork-user-projects .view-content div.views-row .points .views-field-comment-count .field-content{
+	background-position: 2px -27px;
+}
+/*Menu intercambiador Rows/mosaico*/
 .view-arqnetwork-user-projects .viewsdisplaytabs-group-wrapper{
 	float: right;
 }
