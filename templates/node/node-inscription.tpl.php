@@ -13,7 +13,7 @@
     <?php endif; ?>
 
     <?php if ($page == 1 && isset($contest_title)): ?>
-    <h1 class="title"><?php print $contest_title ?></h1>
+    <h2 class="title"><?php print $contest_title ?></h2>
     <?php endif; ?>
 
     <!-- INSCRIPTION, PAYMENT OR PRESENTATION LINK -->
@@ -46,11 +46,13 @@
     <!-- END IMAGE -->
 
     <!-- INSCRIPTION LIMIT DATE -->
+    <div class="inscription-dates clearfix">
     <?php
         if(!$is_edit && isset($contest) && $contest->field_contest_state[0]['value']==ContestState::OPEN){
             print show_contest_dates_in_inscription_detail($contest);
         }
     ?>
+    </div>    
     <!-- END INSCRIPTION LIMIT DATE -->
 
     <!-- Introduction text -->
@@ -62,6 +64,34 @@
             <!-- Team members -->
             <?php print views_embed_view('og_members_faces', 'default', $node->nid); ?>
             <!-- END Team members -->
+            
+            <!-- Manage members link -->
+            <?php if(node_access('update', $node) && og_is_group_admin($node) && module_exists('og_manage_link') && $node->field_inscription_state[0]['value']!=InscriptionState::SUBMITTED){
+                $cnid = $node->field_contest[0]['nid'];
+                $cnode = node_load($cnid);
+                if(!empty($cnode) && $cnode->field_contest_state[0]['value']==ContestState::OPEN){
+                    if($node->field_inscription_state[0]['value']==InscriptionState::INSCRIPTED || $node->field_inscription_state[0]['value']==InscriptionState::SUBMITTED){
+                        //Gets order to see if it is individual
+                        $order_id = $node->field_inscription_order[0]['value'];
+                        if(!empty($order_id)){
+                            $order = uc_order_load($order_id);
+                            $product_attr = $order->products[0]->data['attributes'];
+                            if(empty($product_attr)){
+                                print '<div class="info">'.t('You have made individual payment and can\'t invite other members.').'</div>';
+                            } else {
+                                print theme_og_manage_link_default($node);
+                            }
+                        } else {
+                            print theme_og_manage_link_default($node);
+                        }
+                    } else {
+                        print theme_og_manage_link_default($node);
+                    }
+                } else {
+                    print '<div class="info">'.t('You can not invite members at this stage of the competition').'</div>';
+                }
+            } ?>
+            <!-- END Manage members link -->
         </div>
         <div class="column-02">
             <?php
@@ -71,33 +101,7 @@
         </div>
     </div>
 
-    <!-- Manage members link -->
-    <?php if(node_access('update', $node) && og_is_group_admin($node) && module_exists('og_manage_link') && $node->field_inscription_state[0]['value']!=InscriptionState::SUBMITTED){
-        $cnid = $node->field_contest[0]['nid'];
-        $cnode = node_load($cnid);
-        if(!empty($cnode) && $cnode->field_contest_state[0]['value']==ContestState::OPEN){
-            if($node->field_inscription_state[0]['value']==InscriptionState::INSCRIPTED || $node->field_inscription_state[0]['value']==InscriptionState::SUBMITTED){
-                //Gets order to see if it is individual
-                $order_id = $node->field_inscription_order[0]['value'];
-                if(!empty($order_id)){
-                    $order = uc_order_load($order_id);
-                    $product_attr = $order->products[0]->data['attributes'];
-                    if(empty($product_attr)){
-                        print '<div class="info">'.t('You have made individual payment and can\'t invite other members.').'</div>';
-                    } else {
-                        print theme_og_manage_link_default($node);
-                    }
-                } else {
-                    print theme_og_manage_link_default($node);
-                }
-            } else {
-                print theme_og_manage_link_default($node);
-            }
-        } else {
-            print '<div class="info">'.t('You can not invite members at this stage of the competition').'</div>';
-        }
-    } ?>
-    <!-- END Manage members link -->
+    
     <?php endif; ?>
 
     <?php if($node->field_inscription_state[0]['value']==InscriptionState::PREINSCRIPTED && $num_members==1): ?>
