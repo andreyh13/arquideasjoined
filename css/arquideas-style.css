@@ -7972,7 +7972,7 @@ a.add-content-link:hover,
 	margin-bottom: 10px;
 	border-bottom: 1px solid #000;
 }
-.area-social #sidebar-last .block-nodeblock a, . area-social #sidebar-last .block-views a{
+.area-social #sidebar-last .block-nodeblock a, .area-social #sidebar-last .block-views a{
 	font-family: SoinSans-BoldOblique;
 	margin: 5px 5px;
 	/*font-size: 1.2em;*/
@@ -7980,7 +7980,7 @@ a.add-content-link:hover,
 .area-social #sidebar-last .block-nodeblock a{
 	display: block;
 }
-.area-social #sidebar-last .block-nodeblock img,  #sidebar-last .block-views img{
+.area-social #sidebar-last .block-nodeblock img,  .area-social #sidebar-last .block-views img{
 	max-width: 194px;
 	margin-top: 5px!important;
 }
