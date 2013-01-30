@@ -47,7 +47,9 @@
 ?>
 <li>
   <?php if(isset($result['node']->nid)): ?>
-     <?php print nodetype_apachesolr_get_node_image($result['node']->nid,'user_picture_meta'); ?> 
+    <div class="user-image">
+         <?php print nodetype_apachesolr_get_node_image($result['node']->nid,'member_list_image'); ?> 
+    </div>    
      <h2 class="title">
      <?php
         $username = $result['node']->name;

@@ -6637,6 +6637,20 @@ body.page-solr-nodetype-multi .box > h2.title {
   display: none;
 }
 
+body.page-solr-nodetype #content-front-inner h1.title {
+    display:none;
+}
+
+body.page-solr-nodetype #content-front-inner .block-nodeblock h1.title {
+    display:block;
+}
+
+.nodetype_apachesolr_search-results div.user-image{
+    width: 90px;
+    height: 90px;
+    background-image: url('/system/files/imagecache/member_list_image/default-user.png');
+}
+
 .box ul.nodetype_apachesolr_search-results {
   margin: 40px 0;
 }
