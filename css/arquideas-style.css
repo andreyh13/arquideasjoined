@@ -7176,7 +7176,13 @@ body.page-node .colaborator-top h1.title {
 }
 
 #block-views-news-block_4 .views-field-title {
-  font-size: 13px;
+  font-size: 16px;
+  line-height: 120%;
+  margin-bottom: 15px;
+}
+
+#block-views-news-block_4 .views-field-body {
+  color: #666;
 }
 
 /* Block News in Sidebar */
