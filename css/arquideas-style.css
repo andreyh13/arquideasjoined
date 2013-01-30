@@ -2448,8 +2448,6 @@ border-top: 1px solid #CCCCCC;
 margin: 0;
 }
 .view .item-list {
-background-color: #CFCFCF;
-background-image: -moz-linear-gradient(center bottom, #CFCFCF 20%, #EFEFEF 93%);
 height: 34px;
 }
 .view .item-list ul.pager {
@@ -6993,7 +6991,7 @@ body.node-type-inscription-1 #breadcrumbs {
   color: #999;
 }
 
-.view-jury-members .views-field-field-rectangular-image-col-fid {
+.view-jury-members .views-field-field-square-image-col-fid {
   float: left;
   margin-right: 20px;
 }
@@ -7138,8 +7136,14 @@ body.page-node .colaborator-top h1.title {
 
 .view-news .views-field-title {
   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 16px;
   font-weight: normal;
   margin-top: 6px;
+}
+
+.view-news .views-field-teaser {
+  color: #666;
+  margin-bottom: 14px;
 }
 
 .view-news .views-field-field-date-news-value {
@@ -7799,7 +7803,7 @@ ul.primary.ui-tabs-nav{
 	height: 60px;
 }
 .node-form .ui-tabs-nav li a,
-#quicktabs-quicktabs_my_content .quicktabs_tabs li a, 
+#quicktabs-quicktabs_my_content .quicktabs_tabs li a,
 #quicktabs-arqnetwork_group_quicktabs .quicktabs_tabs li a{
 	border: none!Important;
 	background: none!important;
@@ -7809,7 +7813,7 @@ ul.primary.ui-tabs-nav{
 .node-form .ui-tabs-nav li.last a{
 	margin-right: 0;
 }
-.node-form .ui-tabs-nav li a:hover, 
+.node-form .ui-tabs-nav li a:hover,
 .node-form .ui-tabs-nav li.ui-tabs-selected a
 {
 	background: url("../images/sumbenu_user_form.png") no-repeat!Important;
@@ -7852,7 +7856,7 @@ a.add-content-link,
 a.add-content-link{
 	display: inline-block;
 }
-.node-form .ui-tabs-nav li a:hover span, 
+.node-form .ui-tabs-nav li a:hover span,
 .node-form .ui-tabs-nav li.ui-tabs-selected a span,
 a.add-content-link:hover,
 #quicktabs-quicktabs_my_content .quicktabs_tabs li.active a,
@@ -9206,11 +9210,11 @@ overflow: hidden;
 }
 .view-arqnetwork-user-projects .view-content div.views-row .views-field-field-inscription-members-imname-vname .caption .data .views-field-field-subtitle-project-value {
 	color: #fff;
-	font-size: 16px;	
+	font-size: 16px;
 }
 .view-arqnetwork-user-projects .view-content div.views-row .views-field-field-inscription-members-imname-vname .caption .data .views-field-field-subtitle-project-value, .view-arqnetwork-user-projects .view-content div.views-row .views-field-field-inscription-members-imname-vname .caption .data  .views-field-field-project-type-project-value {
 	color: #fff;
-	font-size: 16px;	
+	font-size: 16px;
 }
 .view-arqnetwork-user-projects .view-content div.views-row .views-field-field-inscription-members-imname-vname .caption .view-og-members-faces{
 	width: 250px;
@@ -9257,19 +9261,19 @@ overflow: hidden;
 .viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li.first a{
 	background-position: 0 0;
 	width: 26px;
-} 
+}
 .viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li.last a{
 	background-position: -30px 0;
 	width: 13px;
-} 
+}
 .viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li.first a:hover,
 .viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li.first a.viewsdisplaytabs-active{
 	background-position: 0 -30px;
-} 
+}
 .viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li.last a:hover,
 .viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li.last a.viewsdisplaytabs-active{
 	background-position: -30px -30px;
-} 
+}
 .view-arqnetwork-user-projects ul{
 	border-bottom: none!important;
 }
@@ -9278,7 +9282,7 @@ overflow: hidden;
 	padding: 15px;
 	margin: 20px 0;
 	border: 1px solid #ccc;
-	overflow: hidden; 
+	overflow: hidden;
 }
 .contest-info .two-columns .column-01, .contest-info .two-columns .column-02{
 	float: right;
@@ -9303,18 +9307,18 @@ overflow: hidden;
 	text-align: left;
 }
 .contest-info .two-columns .view-og-members-faces .views-field-picture{
-	float: left; 
+	float: left;
 	display: inline-block;
 	margin-right: 10px;
 }
 .node-type-inscription .contest-info .imagecache-inscriptions_336_162{
 float: left;
 }
-.node-type-inscription .contest-info .inscription-state, 
-.node-type-inscription .contest-info .remember-dates, 
-.node-type-inscription .contest-info .deadline-date, 
-.node-type-inscription .contest-info .payment-end-date, 
-.node-type-inscription .contest-info .payment-early, 
+.node-type-inscription .contest-info .inscription-state,
+.node-type-inscription .contest-info .remember-dates,
+.node-type-inscription .contest-info .deadline-date,
+.node-type-inscription .contest-info .payment-end-date,
+.node-type-inscription .contest-info .payment-early,
 .node-type-inscription .contest-info .introduction{
 	margin-left: 355px;
 }
@@ -9328,8 +9332,8 @@ float: left;
 	padding: 10px 0;
 	font-size: 15px;
 }
-.node-type-inscription .contest-info .deadline-date, 
-.node-type-inscription .contest-info .payment-end-date, 
+.node-type-inscription .contest-info .deadline-date,
+.node-type-inscription .contest-info .payment-end-date,
 .node-type-inscription .contest-info .payment-early{
 	background-image: url(../images/bullet-check.png);
 	background-repeat: no-repeat;
