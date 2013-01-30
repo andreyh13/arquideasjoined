@@ -9350,3 +9350,8 @@ float: left;
 	color: #000;
 	font-family: "SoinSans-BoldOblique", Helvetica, Arial, sans-serif;
 }
+
+.page-home #block-views-slideshow_content-block_1 .views_slideshow_singleframe_teaser_section,
+.page-home #block-views-slideshow_content-block_1 .views_slideshow_singleframe_slide{
+	height: 556px!important;
+}
