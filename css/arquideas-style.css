@@ -9455,9 +9455,9 @@ float: left;
 	height: 556px!important;
 }
 
-.views_slideshow_singleframe_teaser_section,
-.views_slideshow_singleframe_slide{
-	/*height: 574px!important;*/
+.node-type-news .view-arquideas-news-slideshow  .views_slideshow_singleframe_teaser_section,
+.node-type-news .view-arquideas-news-slideshow  .views_slideshow_singleframe_slide{
+	height: 341px!important;
 }
 
 
