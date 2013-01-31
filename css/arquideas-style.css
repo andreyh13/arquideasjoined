@@ -4447,6 +4447,7 @@ float: right;
 width: 49%;
 }
 #edit-comment-wrapper label {
+    display: none;
 }
 .views-field-leave-group a {
 background-color: #F4F4F4;
@@ -8756,6 +8757,10 @@ div.comment a{
 div.comment .comment-info{
 	height: auto;
 	fonty-size: .9em;
+}
+
+div.comment .comment-name{
+    display: block;
 }
 
 div.comment .comment-name a{

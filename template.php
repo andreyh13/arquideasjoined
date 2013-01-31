@@ -1264,9 +1264,35 @@ function arquideasjoined_date_combo($element) {
   return theme('fieldset', $fieldset);
 }
 
+/**
+ * Comment preprocessing
+ */
+function arquideasjoined_preprocess_comment(&$vars) {
+  // Picture
+  if (theme_get_setting('toggle_comment_user_picture')) {
+    $account = user_load(array('uid' => $vars['comment']->uid));
+    $m_picture = isset($account->picture)?$account->picture:NULL;
+    if (!$m_picture && (variable_get('user_picture_default', '') != '')) {
+      $m_picture = variable_get('user_picture_default', '');
+    }
+    
+    if ($m_picture) { 
+      $picture = theme_imagecache('image_50_50', $m_picture, $vars['comment']->name, $vars['comment']->name);
+      if (user_access('access user profiles')) {
+        $vars['comment']->picture = l($picture, "user/{$vars['comment']->uid}", array('html' => TRUE));
+      }
+      else {
+        $vars['comment']->picture = $picture; 
+      }
+    }
+  }
+}
+
 //Register some texts
 t('Press enter or click !plus between tags.', array('!plus' => '\'+\''));
 t('What\'s on your mind?');
 t('Write something...');
 t('Group inscription');
+
+
 
