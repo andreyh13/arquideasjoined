@@ -6029,6 +6029,10 @@ text-transform: uppercase;
   background-position: -55px center;
 }
 
+.block-arquideas_partners_home .join-us-link-div {
+  text-align: center;
+}
+
 /* Social Sharing Widget */
 .social-sharing-widget {
   margin-bottom: 20px;
@@ -7172,9 +7176,14 @@ body.page-node .colaborator-top h1.title {
 }
 
 /* Block News on Front page */
+#block-views-news-block_4 table.views-view-grid {
+  width: 875px;
+  margin: 0 auto;
+}
+
 #block-views-news-block_4 td {
-  padding: 0 20px 40px 0;
-  min-width: 168px;
+  padding: 0 25px 40px 0;
+  min-width: 150px;
 }
 
 #block-views-news-block_4 td.col-last {
