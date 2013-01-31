@@ -5519,7 +5519,9 @@ body.page-home #content-front-right .block {
 
 
 /* News Pages Image slider */
-
+.view-arquideas-news-slideshow {
+  margin-bottom: 20px;
+}
 .view-arquideas-news-slideshow .views-field-field-image-data {
   text-align: center;
   margin: 0 100px;
