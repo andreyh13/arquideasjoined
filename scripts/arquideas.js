@@ -165,4 +165,7 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
             $(this).attr("href",url);
         });
         tb_init("body.not-logged-in .view .views-field-leave-group .join a.thickbox");
+        
+        //One trick for News page
+        $("body.page-news .view-news .view-header h3.subtitle").insertBefore("#content-group");
 });
