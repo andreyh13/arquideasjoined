@@ -7035,25 +7035,29 @@ body.node-type-inscription-1 #breadcrumbs {
   font-family: "SoinSans-Bold",Helvetica,Arial,sans-serif;
   font-size: 15px;
   height: 220px;
+  padding: 7px;
 }
 
 .colaborator-top img {
   padding: 0 !important;
+  margin-bottom: 20px;
   margin-right: 40px;
   float: left;
 }
 
-body.page-node .colaborator-top h1.title {
+body.page-node #content-group .colaborator-top h1.title {
   font-family: "SoinSans-Roman",Helvetica,Arial,sans-serif;
   color: #fff;
   text-transform: none;
   font-size: 30px;
   text-align: left;
-  padding: 25px 0 0;
+  padding: 20px 0 0;
+  margin-bottom: 6px;
 }
 
 .colaborator-top .short-description {
-  margin: 10px 0;
+  line-height: 100%;
+  margin-bottom: 5px;
 }
 
 .colaborator-top .field-link-col {
@@ -7408,6 +7412,10 @@ width: 44%;
 width: 36%;
 }
 
+#TB_ajaxContent #edit-submit {
+  margin: 0;
+  float:right;
+}
 
 /* Content Types */
 
@@ -9439,9 +9447,9 @@ float: left;
 	padding-left: 0;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-#sidebar-last .view-event-past-events li a, 
+#sidebar-last .view-event-past-events li a,
 #sidebar-last .view-event-latest li .views-field-title,
-#sidebar-last .view-event-latest-events li a, 
+#sidebar-last .view-event-latest-events li a,
 #sidebar-last .view-event-past-events li .views-field-title{
 	margin: 8px 0;
 }
