@@ -77,6 +77,22 @@
     <a href="#" title=""><?php print $title; ?></a>
     </h2>
   <?php endif; ?>
+  <?php if(isset($result['node']->uid)): ?>    
+      <div class="userpoints">
+          <?php
+            $account = user_load(array('uid' => $result['node']->uid));
+            $user_badges = user_badges_get_badges($result['node']->uid);
+            if(count($user_badges)>0){
+               foreach($user_badges as $key => $badge){
+                  print theme('user_badge', $badge, $account);
+                  break;
+               }
+            }
+          ?>
+          <br/>
+          <?php print t('!points points', array('!points' => userpoints_get_current_points($result['node']->uid))); ?>
+      </div> 
+  <?php endif; ?>  
   <?php if(isset($result['node']->nid)): ?>
     <div class="profile-job">
         <?php
