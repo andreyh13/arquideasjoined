@@ -3927,7 +3927,8 @@ margin: 0;
 padding: 1em 0;
 }
 .filefield-element .widget-edit .form-item label {
-display: none;
+/*Andriy: I don´t see the reason to have these labels hidden */    
+/*display: none;*/
 }
 .filefield-file-info .filename, .filefield-file-info .filename .filefield-title {
 display: inline;
