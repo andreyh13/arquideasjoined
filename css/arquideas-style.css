@@ -9423,3 +9423,30 @@ float: left;
 .page-home #block-views-slideshow_content-block_1 .views_slideshow_singleframe_slide{
 	height: 556px!important;
 }
+
+.views_slideshow_singleframe_teaser_section,
+.views_slideshow_singleframe_slide{
+	height: 574px!important;
+}
+
+
+#sidebar-last .view-event-past-events li, #sidebar-last .view-event-latest li{
+	padding: 5px 0;
+}
+#sidebar-last .view-event-past-events li a, #sidebar-last .view-event-latest li a{
+	color: #000;
+	background-image: none;
+	padding-left: 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#sidebar-last .view-event-past-events li a, 
+#sidebar-last .view-event-latest li .views-field-title,
+#sidebar-last .view-event-latest-events li a, 
+#sidebar-last .view-event-past-events li .views-field-title{
+	margin: 8px 0;
+}
+.page-node #sidebar-last .title.block-title{
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #000;
+}
