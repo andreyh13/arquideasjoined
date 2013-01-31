@@ -6113,9 +6113,8 @@ body.page-finished-contests #content-region h2.block-title {
   position: absolute;
   top: 0;
   left: 0;
-  width: 50px;
+  width: 55px;
   padding: 0 15px;
-  height: 25px;
   background: transparent url(../images/transparent-spacer.png) repeat;
 }
 
@@ -6135,7 +6134,7 @@ body.page-finished-contests #content-region h2.block-title {
   text-transform: uppercase;
   font-size: 22px;
   line-height: 26px;
-  margin-top: 25px;
+  margin-top: 20px;
   padding: 0 25px;
 }
 
@@ -7534,8 +7533,10 @@ white-space: nowrap;
 /* Grey Buttons */
 a.contest-follow-link,
 a.contest-unfollow-link {
+  display: block;
+  text-align: center;
   font-family: "SoinSans-BoldOblique",Helvetica,Arial,sans-serif;
-  padding: 5px 12px;
+  padding: 5px 8px;
   background-color: #999999;
   color: #fff;
   -webkit-border-radius: 5px;
@@ -7543,6 +7544,8 @@ a.contest-unfollow-link {
   border-radius: 5px;
   text-shadow: 1px 1px 2px #000000;
   text-decoration: none;
+  font-size: 13px;
+  font-weight: normal;
 }
 
 
