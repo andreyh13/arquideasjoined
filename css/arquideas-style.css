@@ -6904,23 +6904,38 @@ body.node-type-inscription-1 #breadcrumbs {
   margin-bottom: 40px;
 }
 
+.featured-colaborators .views-field-field-rectangular-image-col-fid,
 .featured-colaborators .views-field-field-square-image-col-fid {
   float: left;
 }
 
 .featured-colaborators .views-field-field-comment-title-col-value,
 .featured-colaborators .views-field-phpcode,
+.featured-colaborators .views-field-phpcode .field-content,
 .featured-colaborators .views-field-view-node {
   padding-left: 315px;
   font-family: "SoinSans-Oblique",Helvetica,Arial,sans-serif;
-  text-align: center;
+  text-align: left;
+  font-size: 16px;
+  font-weight: normal;
+  color: #999999;
+}
+
+.featured-colaborators .views-field-phpcode .field-content {
+  padding: 0;
+}
+
+.featured-colaborators.view-display-id-page_2 .views-field-phpcode {
+  text-align: left;
+  padding-top: 2px;
 }
 
 
 .featured-colaborators .views-field-field-comment-title-col-value {
+  font-family: "SoinSans-Bold",Helvetica,Arial,sans-serif;
   color: #000;
   font-size: 17px;
-  font-family: "SoinSans-Roman",Helvetica,Arial,sans-serif;
+  margin-bottom: 10px;
 }
 
 .featured-colaborators .views-field-phpcode {
@@ -6958,15 +6973,19 @@ body.node-type-inscription-1 #breadcrumbs {
 
 .two-columns-colaborators .views-field-field-comment-title-col-value,
 .two-columns-colaborators .views-field-phpcode,
+.two-columns-colaborators .views-field-phpcode .field-content,
 .two-columns-colaborators .views-field-view-node {
   font-family: "SoinSans-Oblique",Helvetica,Arial,sans-serif;
+  font-weight: normal;
+  font-size: 14px;
   text-align: center;
+  color: #999999;
 }
 
 .two-columns-colaborators .views-field-field-comment-title-col-value {
   color: #000;
   font-family: "SoinSans-Roman",Helvetica,Arial,sans-serif;
-  padding: 15px 3px 0 12px;
+  padding: 15px 3px 15px 12px;
 }
 
 .two-columns-colaborators .views-field-phpcode {
@@ -6990,9 +7009,9 @@ body.node-type-inscription-1 #breadcrumbs {
 .view-jury-members .views-field-title,
 .view-jury-partners-co .views-field-title {
   font-size: 14px;
-  line-height: 25px;
   font-family: "SoinSans-Bold",Helvetica,Arial,sans-serif;
   color: #000;
+  margin: 0 0 5px 0 !important;
 }
 
 .view-jury-members .views-field-field-short-description-value,
