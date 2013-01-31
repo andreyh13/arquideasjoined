@@ -7431,7 +7431,21 @@ body.node-type-news h1.title {
   color: #B2B2B2;
   margin-bottom: 25px;
 }
+.node-type-news .social-widgets {
+  height: 60px;
+}
+.node-type-news .social-widgets .fivestar-widget {
+  float: left;
+  max-width: 230px;
+}
 
+.node-type-news .social-widgets .fivestar-widget #edit-vote-wrapper label {
+  display: none;
+}
+.node-type-news .social-widgets .social-sharing-widget .widget-header,
+.node-type-news .social-widgets .social-sharing-widget .widget-body {
+  float: right;
+}
 .field-inscription-files-by-category select {
     display: none;
 }
