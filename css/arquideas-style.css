@@ -6515,6 +6515,26 @@ body.node-type-contest h1 {
   text-align: center;
 }
 
+.contest-winners .view-arquideas-contest-prizes.view-id-arquideas_contest_prizes .views-row-inner div.views-field-phpcode {
+  float: left;
+  width: auto;
+  margin-right: 20px;
+}
+
+.contest-winners .view-arquideas-contest-prizes.view-id-arquideas_contest_prizes .views-row-inner > div {
+  width: 245px;
+  float: right;
+}
+
+.contest-winners .view-arquideas-contest-prizes.view-id-arquideas_contest_prizes .views-field-picture {
+  width: auto;
+  height: auto;
+}
+
+.contest-winners .view-arquideas-contest-prizes.view-id-arquideas_contest_prizes .view-id-og_members_faces table td {
+  text-align: left
+}
+
 .contest-winners .views-field-field-inscription-members-imname-vname {
   border-top: 1px solid #000;
   margin-top: 30px;
