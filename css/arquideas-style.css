@@ -7454,6 +7454,10 @@ body.node-type-news h1.title {
     display: none;
 }
 
+.node-edit-link {
+  clear: both;
+}
+
 /* Checkout Styles */
 
 .order-review-table {
