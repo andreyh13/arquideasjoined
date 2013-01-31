@@ -7177,13 +7177,13 @@ body.page-node .colaborator-top h1.title {
 
 /* Block News on Front page */
 #block-views-news-block_4 table.views-view-grid {
-  width: 875px;
+  width: 845px;
   margin: 0 auto;
 }
 
 #block-views-news-block_4 td {
-  padding: 0 25px 40px 0;
-  min-width: 150px;
+  padding: 0 35px 40px 0;
+  min-width: 140px;
 }
 
 #block-views-news-block_4 td.col-last {
