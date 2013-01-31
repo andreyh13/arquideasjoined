@@ -3927,7 +3927,7 @@ margin: 0;
 padding: 1em 0;
 }
 .filefield-element .widget-edit .form-item label {
-/*Andriy: I don´t see the reason to have these labels hidden */    
+/*Andriy: I don´t see the reason to have these labels hidden */
 /*display: none;*/
 }
 .filefield-file-info .filename, .filefield-file-info .filename .filefield-title {
@@ -5807,6 +5807,10 @@ text-transform: uppercase;
   font-family: "SoinSans-BoldOblique", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
+}
+
+#block-nodeblock-293 .inner > .content > .node {
+  margin: 0;
 }
 
 .block p {
