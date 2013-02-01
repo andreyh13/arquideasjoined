@@ -3981,11 +3981,12 @@ font-size: 38px;
 line-height: 110%;
 font-weight: bold;
 }
-body.page-node h1.title{
+body.page-node #content-group  h1.title{
 	background-image: none;
 	padding: 20px 0 10px 0;
 	border-bottom: none;
 	text-align: left;
+	margon-bottom: 0;
 }
 body.page-node h1 a {
 color: #333333;
@@ -4031,13 +4032,15 @@ background-color: transparent;
 padding-left: 0;
 padding-right: 0;
 }
-body.not-front .sidebar-last .block .view-content .item-list ul li .views-field-title a, body.page-node .sidebar-last .block .view-content .item-list ul li .views-field-title a {
+body.not-front .sidebar-last .block .view-content .item-list ul li .views-field-title a, body.page-node .sidebar-last .block .view-content .item-list ul li .views-field-title a, 
+.sidebar-last .block .view-group-block-wiki-latest-comments .item-list ul li .views-field-subject a {
 /*background-image: url("../images/bullet-blue.png");
 background-position: left center;
 background-repeat: no-repeat;
 color: #0099FF;*/
 font-size: 1.4em;
 /*padding-left: 10px;*/
+font-family: "SoinSans-Bold",Helvetica,Arial,sans-serif;
 }
 body.page-node .sidebar-last .block.block-views {
 	border-bottom: 1px solid #000;
@@ -4047,12 +4050,17 @@ body.page-node .sidebar-last .block.block-views {
 	width: auto;
 	height: auto;
 }
+.sidebar-last .block .view-group-block-wiki-latest .item-list ul li .views-field-title{
+	margin-top: 0;
+	margin-bottom: 0;
+}
 .sidebar-last .block .view-group-block-wiki-latest .item-list ul li .views-field-title,
 .sidebar-last .block .view-group-block-wiki-latest .item-list ul li .views-field-timestamp,
 .sidebar-last .block .view-group-block-wiki-latest .item-list ul li .views-field-created,
 .sidebar-last .block .view-group-block-wiki-latest .item-list ul li .views-field-name,
 .sidebar-last .block .view-group-block-wiki-latest .item-list ul li .views-field-comment-count,
 .sidebar-last .block .view-group-block-wiki-latest-comments .item-list ul li .views-field-title,
+.sidebar-last .block .view-group-block-wiki-latest-comments .item-list ul li .views-field-subject,
 .sidebar-last .block .view-group-block-wiki-latest-comments .item-list ul li .views-field-timestamp,
 .sidebar-last .block .view-group-block-wiki-latest-comments .item-list ul li .views-field-created,
 .sidebar-last .block .view-group-block-wiki-latest-comments .item-list ul li .views-field-name,
