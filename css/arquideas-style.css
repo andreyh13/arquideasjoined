@@ -7993,7 +7993,8 @@ a.add-content-link:hover,
 .node-form .standard #edit-field-name-acp-0-value-wrapper, .node-form .standard #edit-field-surname-acp-0-value-wrapper,.node-form .standard #edit-field-address-acp-0-value-wrapper, .node-form .standard  #edit-field-country-acp-0-value-wrapper, .node-form .standard #edit-field-mobile-phone-acp-0-value-wrapper, .node-form .standard #edit-field-phone-acp-0-value-wrapper, .node-form .standard #edit-field-phone-acp-0-value-wrapper, .node-form .standard #edit-field-phone-acp-0-value-wrapper, .node-form .standard #edit-field-phone-acp-0-value-wrapper, .node-form .standard  #edit-field-office-phone-acp-0-value-wrapper, .node-form .standard #edit-field-skype-acp-0-value-wrapper, .node-form .standard .advanced_link-field-subrow, .node-form .standard   #edit-field-company-acp-0-value-wrapper, .node-form .standard .link-field-subrow {
 	width: 49.5%;
 	margin-right: 0;
-	display: inline-block;
+	display: block;
+	float: left;
 }
 .node-form .standard .link-field-subrow {
 		display: inline-block!important;
@@ -8077,6 +8078,10 @@ a.add-content-link:hover,
 .area-social #sidebar-last .block-nodeblock img,  .area-social #sidebar-last .block-views img{
 	max-width: 194px;
 	margin-top: 5px!important;
+	height: auto!important;
+}
+.area-social #sidebar-last .block-views h3{
+	
 }
 .view-filters .views-exposed-widgets{
 	width: 330px;
@@ -8259,6 +8264,17 @@ body.area-social #sidebar-last.nested .block{
 	margin-bottom: 20px;
 }
 
+body.area-social #sidebar-last.nested .views-row{
+	text-align: left;
+}
+body.area-social #sidebar-last .view-arqnetwork-block-inscriptions a{
+	color: #000;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0;
+}
+body.area-social #sidebar-last .view-arqnetwork-block-inscriptions .views-row{
+	margin-bottom: 5px;
+}
 body.area-social #sidebar-last.nested #block-views-contests-block_2{
 	padding: 0!important;
 }
@@ -9414,6 +9430,10 @@ overflow: hidden;
 	display: inline-block;
 	margin-right: 10px;
 }
+.node-type-inscription .contest-info .inscription-code{
+	font-weight: bold;
+	margin: 10px 0 0 0;
+}
 .node-type-inscription .contest-info .imagecache-inscriptions_336_162{
 float: left;
 }
@@ -9523,12 +9543,11 @@ body.page-groups #content-group{
 	width: 600px;
 }
 
-body.page-groups .views-field-subscribe a, body.page-groups .views-field-leave-group a {
+body.page-groups .views-field-subscribe a, body.page-groups .views-field-leave-group a, .og-buttons a {
 	background-color: #000000 !important;
     border-radius: 5px 5px 5px 5px;
     color: #FFFFFF;
     display: inline-block;
-    float: none;
     font-family: SoinSans-BoldOblique !important;
     font-size: 1.1em;
     font-weight: normal !important;
@@ -9549,4 +9568,8 @@ line-height: 20px;
 }
 body.page-groups .sidebar-last .block-views .view-content .item-list ul li .views-field-title{
  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.og-buttons{
+	overflow: hidden;
 }
