@@ -3981,6 +3981,12 @@ font-size: 38px;
 line-height: 110%;
 font-weight: bold;
 }
+body.page-node h1.title{
+	background-image: none;
+	padding: 20px 0 10px 0;
+	border-bottom: none;
+	text-align: left;
+}
 body.page-node h1 a {
 color: #333333;
 }
@@ -4033,6 +4039,28 @@ color: #0099FF;*/
 font-size: 1.4em;
 /*padding-left: 10px;*/
 }
+body.page-node .sidebar-last .block.block-views {
+	border-bottom: 1px solid #000;
+	padding-bottom:10px;
+}
+.sidebar-last .block .item-list ul li .views-field-picture{
+	width: auto;
+	height: auto;
+}
+.sidebar-last .block .view-group-block-wiki-latest .item-list ul li .views-field-title,
+.sidebar-last .block .view-group-block-wiki-latest .item-list ul li .views-field-timestamp,
+.sidebar-last .block .view-group-block-wiki-latest .item-list ul li .views-field-created,
+.sidebar-last .block .view-group-block-wiki-latest .item-list ul li .views-field-name,
+.sidebar-last .block .view-group-block-wiki-latest .item-list ul li .views-field-comment-count,
+.sidebar-last .block .view-group-block-wiki-latest-comments .item-list ul li .views-field-title,
+.sidebar-last .block .view-group-block-wiki-latest-comments .item-list ul li .views-field-timestamp,
+.sidebar-last .block .view-group-block-wiki-latest-comments .item-list ul li .views-field-created,
+.sidebar-last .block .view-group-block-wiki-latest-comments .item-list ul li .views-field-name,
+.sidebar-last .block .view-group-block-wiki-latest-comments .item-list ul li .views-field-comment-count
+{
+	margin-left: 40px;
+}
+
 .field-file {
 border-bottom: 1px solid #000;
 margin-bottom: 30px;
@@ -9560,7 +9588,7 @@ body.page-groups #content-group{
 	width: 600px;
 }
 
-body.page-groups .views-field-subscribe a, body.page-groups .views-field-leave-group a, .og-buttons a {
+body.page-groups .views-field-subscribe a, body.page-groups .views-field-leave-group a, .og-buttons a, .view-arqnetwork-user-account-projects .item-list .views-field-edit-node a {
 	background-color: #000000 !important;
     border-radius: 5px 5px 5px 5px;
     color: #FFFFFF;
@@ -9594,4 +9622,15 @@ body.page-groups .sidebar-last .block-views .view-content .item-list ul li .view
 
 .og-buttons{
 	overflow: hidden;
+}
+.view-arqnetwork-user-account-projects .item-list .views-field-edit-node a{
+	margin-top: 15px;
+}
+.view-arqnetwork-user-account-projects .item-list img.imagecache{
+	float: left;
+	margin-right: 10px;
+}
+.view-arqnetwork-user-account-projects .item-list .views-field-title{
+	font-size: 18px; 
+	margin-bottom: 10px;
 }
