@@ -8432,6 +8432,16 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 	color: #000;
 	text-transform: uppercase;
 }
+.arquideas-network #content-front-inner > .title.block-title,
+.page-solr-nodetype-multi #content-front-inner > .title.block-title{
+	margin-bottom: 0;
+	border-bottom: none;
+}
+.arquideas-network #content-front-inner > .subtitle,
+.page-solr-nodetype-multi #content-front-inner > .subtitle{
+	margin-bottom: 30px;
+	border-bottom: 1px solid #000;
+}
 #content-front #content-front-left{
 	margin-left: 20px;
 	width: 440px;
@@ -9545,7 +9555,7 @@ float: left;
 	color: #000;
 	background-image: none;
 	padding-left: 0;
-	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	/*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 }
 #sidebar-last .view-event-past-events li a,
 #sidebar-last .view-event-latest li .views-field-title,
@@ -9563,7 +9573,9 @@ float: left;
 	margin-bottom: 10px;
 	border-bottom: 1px solid #000;
 }
-
+.page-node #sidebar-last .block-commons_core{
+	border: 1px solid #000;
+}
 .view-arqnetwork-recent-featured .view .view-content .views-row{
 	margin-bottom: 10px;
 }

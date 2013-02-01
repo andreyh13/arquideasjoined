@@ -144,7 +144,7 @@ Más cambios en la fila 200,
 			  	<h1 class="title block-title"><?php print $title; ?></h1>
                 <?php if ($content_front_left): ?>
 
-                <div id="content-front-left" class="content-front-left">
+                <div id="content-front-left" class="content-front-left  single-border-shadow-block clearfix">
                   <div class="content-inner">
                     <?php print $content_front_left; ?>
                   </div>

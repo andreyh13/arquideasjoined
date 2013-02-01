@@ -112,8 +112,8 @@
               <div id="content-front-inner" class="content-front-inner inner">
                 <?php if ($content_front_left): ?>
 
-                <div id="content-front-left" class="content-front-left">
-                  <div class="content-inner">
+                <div id="content-front-left" class="content-front-left single-border-shadow-block">
+                  <div class="content-inner clearfix">
                     <?php print $content_front_left; ?>
                   </div>
                 </div><?php endif; ?><?php if ($content_front_right): ?>
