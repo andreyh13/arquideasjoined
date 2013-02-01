@@ -6702,11 +6702,13 @@ body.page-solr-nodetype #content-front-inner .block-nodeblock h1.title {
     display:block;
 }
 
+/*
 .nodetype_apachesolr_search-results div.user-image{
     width: 90px;
     height: 90px;
     background-image: url('/system/files/imagecache/member_list_image/default-user.png');
 }
+*/
 
 .box ul.nodetype_apachesolr_search-results {
   margin: 40px 0;
@@ -6714,16 +6716,20 @@ body.page-solr-nodetype #content-front-inner .block-nodeblock h1.title {
 
 .box ul.nodetype_apachesolr_search-results li {
   float: left;
-  margin: 0 20px 20px 0;
-  width: 210px;
-  height: 280px;
+  margin: 0 10px 20px 0;
+  width: 220px;
+  min-height: 290px;
   padding: 0;
   position: relative;
 }
 
+.box ul.nodetype_apachesolr_search-results li:nth-child(3n+1) {
+  clear: left;
+}
+
 .nodetype_apachesolr_search-results li .user-image {
   float: left;
-  margin: 0 5px 10px 0;
+  margin: 0 5px 20px 0;
 }
 
 .nodetype_apachesolr_search-results li .job {
@@ -6741,7 +6747,7 @@ body.page-solr-nodetype #content-front-inner .block-nodeblock h1.title {
 
 .nodetype_apachesolr_search-results li .image-and-social {
   position: relative;
-  height: 140px;
+  height: 170px;
   clear: both;
 }
 
