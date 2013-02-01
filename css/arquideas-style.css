@@ -16,6 +16,7 @@ color: #FF3F3F;
 img {
   max-width: 100%;
   vertical-align: middle;
+  height: auto;
 }
 h1 {
 font-family: "SoinSans-Bold", Helvetica, Arial, sans-serif;
@@ -3333,7 +3334,7 @@ margin-left: 25px;
 }
 .page-solr-nodetype #content-front #content-front-left,
 .page-solr-nodetype-multi #content-front #content-front-left {
-width: 610px;
+/*width: 610px;*/
 }
 #content-front #content-front-left .content-inner {
 margin: 0;
@@ -8453,7 +8454,7 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 #block-addthis-0 .title.block-title{
 	display: none;
 }
-#block-nodeblock-246{
+#block-nodeblock-246, #node-231, #node-232{
 	font-family: SoinSans-Bold;
 	font-size: 1.6em;
 	margin-bottom: 0;
@@ -9649,16 +9650,24 @@ body.page-groups .sidebar-last .block-views .view-content .item-list ul li .view
 	font-size: 18px;
 	margin-bottom: 10px;
 }
+.arquideas-network #content-front-inner,
+.page-solr-nodetype-multi #content-front-inner,
+.page-solr-nodetype #content-front-inner{
+	margin-bottom: 40px;
+}
 .arquideas-network #content-front-inner .content-front-left .content-inner,
-.page-solr-nodetype-multi #content-front-inner .content-front-left .content-inner{
+.page-solr-nodetype-multi #content-front-inner .content-front-left .content-inner,
+.page-solr-nodetype #content-front-inner .content-front-left .content-inner{
 	padding-top: 15px;
 }
 .arquideas-network #content-front-inner .content-front-left .block,
-.page-solr-nodetype-multi #content-front-inner .content-front-left .block{
+.page-solr-nodetype-multi #content-front-inner .content-front-left .block,
+.page-solr-nodetype #content-front-inner .content-front-left .block{
 	margin-bottom: 0px;
 }
 .arquideas-network #content-front-inner .content-front-left div.node,
-.page-solr-nodetype-multi #content-front-inner .content-front-left div.node{
+.page-solr-nodetype-multi #content-front-inner .content-front-left div.node,
+.page-solr-nodetype #content-front-inner .content-front-left div.node{
 	margin-bottom: 10px;
 	font-size: .85em;
 }
