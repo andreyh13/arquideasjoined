@@ -4030,9 +4030,7 @@ body.not-front .sidebar-last .block .view-content .item-list ul li .views-field-
 background-position: left center;
 background-repeat: no-repeat;
 color: #0099FF;*/
-font-size: 1.2em;
-font-weight: bold;
-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-size: 1.4em;
 /*padding-left: 10px;*/
 }
 .field-file {
@@ -7157,22 +7155,24 @@ body.page-node #content-group .colaborator-top h1.title {
   padding: 15px;
 }
 .area-social #sidebar-last .mini-slider-controls img.imagecache{
-	max-width: 166px!imporant;
+	max-width: 168px!imporant;
 	margin-top: 0px!important;
 	height: auto!important;
 }
-.area-social #sidebar-last .mini-slider-controls a{
+.area-social #sidebar-last .mini-slider-controls .views_slideshow_main a{
 	margin: 0;
 	left: 10px;
-	right: 20px;
-	padding-top: 15px;
-	max-width: 154px;
-	font-size: 20px;
-	bottom: 30px;
+	right: 10px;
+	top: 10px;
+	padding-top: 10px;
+	max-width: 148px;
+	font-size: 17px;
+	bottom: 25px;
+	height: auto;
 }
 .area-social #sidebar-last .mini-slider-controls .views_slideshow_singleframe_slide{
 	max-height:140px!important;
-
+	max-width: 198px!important;
 }
 .contests-list-blocks .view-content .views-field-title a {
   background: url(../images/transparent-spacer.png) repeat scroll 0 0 transparent;
@@ -9551,7 +9551,6 @@ float: left;
 /*Grupos*/
 
 body.page-groups #content-group h1.title{
-	background-image: none;
 	padding: 0 0 20px 0;
 }
 body.page-groups #content-group{
