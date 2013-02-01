@@ -977,6 +977,9 @@ padding-right: 30px;
 text-align: right;
 width: auto;*/
 }
+body.page-groups .item-list ul.pager{
+	width: 100%!important;
+}
 .item-list ul.pager li {
 background: none repeat scroll 0 0 transparent;
 border: medium none;
@@ -9532,10 +9535,18 @@ body.page-groups .views-field-subscribe a, body.page-groups .views-field-leave-g
     height: auto;
     line-height: 1;
     padding: 8px 15px;
+	border: none;
 }
 body.page-groups .views-field-subscribe a:hover{
 	text-decoration: underline;
 }
 body.page-groups .view-groups-main-listing .views-field-title a{
 	font-size: 1.4em;
+}
+body.page-groups .sidebar-last .block-views .view-content .item-list ul li .views-field-title{
+ margin: 0 0 0 40px;
+line-height: 20px;
+}
+body.page-groups .sidebar-last .block-views .view-content .item-list ul li .views-field-title{
+ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
