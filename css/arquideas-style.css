@@ -9688,3 +9688,13 @@ body.page-groups .sidebar-last .block-views .view-content .item-list ul li .view
 	display: block;
 	margin-top: 5px;
 }
+
+.page-solr-nodetype-multi .search-form #edit-keys-wrapper,
+.page-solr-nodetype .search-form #edit-keys-wrapper{ 
+	display: inline-block;
+    margin-right: 15px;
+}
+.page-solr-nodetype-multi .search-form .edit-submit,
+.page-solr-nodetype .search-form  .edit-submit{ 
+    margin-top: 5px;
+}
