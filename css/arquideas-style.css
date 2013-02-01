@@ -6668,7 +6668,7 @@ body.page-solr-nodetype-multi .box > h2.title {
   display: none;
 }
 
-body.page-solr-nodetype #content-front-inner h1.title {
+body.page-solr-nodetype #content-front-inner h1.title.block-title {
     display:none;
 }
 
