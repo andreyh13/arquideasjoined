@@ -4730,36 +4730,24 @@ cursor: pointer;
 display: block;
 float: left;
 font-size: 1px;
-height: 30px;
+height: 60px;
 margin: 40px 10px;
 position: absolute;
-width: 30px;
+width: 60px;
 }
 a.right {
-background-position: 0 -30px;
+background-position: -60px 0;
 clear: right;
 margin-right: 0;
 right: 12px;
 top: 150px;
 z-index: 100;
 }
-a.right:hover {
-background-position: -30px -30px;
-}
-a.right:active {
-background-position: -60px -30px;
-}
 a.left {
 left: 12px;
 margin-left: 0;
 top: 150px;
 z-index: 100;
-}
-a.left:hover {
-background-position: -30px 0;
-}
-a.left:active {
-background-position: -60px 0;
 }
 a.disabled {
 visibility: hidden !important;
