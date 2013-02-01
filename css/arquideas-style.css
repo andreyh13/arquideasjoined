@@ -9649,3 +9649,16 @@ body.page-groups .sidebar-last .block-views .view-content .item-list ul li .view
 	font-size: 18px;
 	margin-bottom: 10px;
 }
+.arquideas-network #content-front-inner .content-front-left .content-inner,
+.page-solr-nodetype-multi #content-front-inner .content-front-left .content-inner{
+	padding-top: 15px;
+}
+.arquideas-network #content-front-inner .content-front-left .block,
+.page-solr-nodetype-multi #content-front-inner .content-front-left .block{
+	margin-bottom: 0px;
+}
+.arquideas-network #content-front-inner .content-front-left div.node,
+.page-solr-nodetype-multi #content-front-inner .content-front-left div.node{
+	margin-bottom: 10px;
+	font-size: .85em;
+}

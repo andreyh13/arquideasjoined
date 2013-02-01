@@ -109,7 +109,7 @@
             <?php endif; ?><?php if ($content_front_left || $content_front_right): ?>
 
             <div id="content-front" class="content-front">
-              <div id="content-front-inner" class="content-front-inner inner">
+              <div id="content-front-inner" class="content-front-inner inner  clearfix">
                 <?php if ($content_front_left): ?>
 
                 <div id="content-front-left" class="content-front-left single-border-shadow-block">

@@ -140,7 +140,7 @@ Más cambios en la fila 200,
             <?php endif; ?><?php if ($content_front_left || $content_front_right): ?>
 
             <div id="content-front" class="content-front">
-              <div id="content-front-inner" class="content-front-inner inner">
+              <div id="content-front-inner" class="content-front-inner inner clearfix">
 			  	<h1 class="title block-title"><?php print $title; ?></h1>
                 <?php if ($content_front_left): ?>
 
