@@ -145,7 +145,7 @@ Más cambios en la fila 200,
                 <?php if ($content_front_left): ?>
 
                 <div id="content-front-left" class="content-front-left  single-border-shadow-block clearfix">
-                  <div class="content-inner">
+                  <div class="content-inner clearfix">
                     <?php print $content_front_left; ?>
                   </div>
                 </div><?php endif; ?><?php if ($content_front_right): ?>
