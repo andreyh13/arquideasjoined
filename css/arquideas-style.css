@@ -8439,8 +8439,9 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 	border-bottom: none;
 }
 .arquideas-network #content-front-inner > .subtitle,
-.page-solr-nodetype-multi #content-front-inner > .subtitle{
-	margin-bottom: 30px;
+.page-solr-nodetype-multi #content-front-inner > .subtitle,
+.page-solr-nodetype #content-front-inner > .subtitle{
+	margin-bottom: 40px;
 	border-bottom: 1px solid #000;
 }
 #content-front #content-front-left{
@@ -8454,7 +8455,7 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 #block-addthis-0 .title.block-title{
 	display: none;
 }
-#block-nodeblock-246, #node-231, #node-232{
+#block-nodeblock-246, #block-nodeblock-232, #block-nodeblock-231{
 	font-family: SoinSans-Bold;
 	font-size: 1.6em;
 	margin-bottom: 0;
@@ -9670,4 +9671,20 @@ body.page-groups .sidebar-last .block-views .view-content .item-list ul li .view
 .page-solr-nodetype #content-front-inner .content-front-left div.node{
 	margin-bottom: 10px;
 	font-size: .85em;
+}
+.page-solr-nodetype-multi #main-content-inner #content-group > h1.title, .page-solr-nodetype  #main-content-inner #content-group > h1.title{
+	display: none
+}
+.arquideas-network .search-form,
+.page-solr-nodetype-multi .search-form,
+.page-solr-nodetype .search-form{
+	border: 1px solid #ccc;
+	padding: 20px;
+}
+
+.arquideas-network .search-form .description,
+.page-solr-nodetype-multi .search-form .description,
+.page-solr-nodetype .search-form .description{
+	display: block;
+	margin-top: 5px;
 }
