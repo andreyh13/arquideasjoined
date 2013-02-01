@@ -967,7 +967,7 @@ float: none;
 }
 body.page-groups .item-list ul.pager, body.page-search .item-list ul.pager {
 background-color: #F7F7F7;
-background-image: none;
+/*background-image: none;
 display: block;
 float: none;
 height: 46px;
@@ -975,7 +975,7 @@ line-height: 46px;
 margin: 14px 0 0;
 padding-right: 30px;
 text-align: right;
-width: auto;
+width: auto;*/
 }
 .item-list ul.pager li {
 background: none repeat scroll 0 0 transparent;
@@ -992,8 +992,8 @@ margin: 0 0 0 6px !important;
 padding: 0 0 0 7px !important;
 }
 body.page-groups .item-list ul.pager li, body.page-search .item-list ul.pager li {
-margin: 0 0 0 9px !important;
-padding: 0 0 0 9px !important;
+/*margin: 0 0 0 9px !important;
+padding: 0 0 0 9px !important;*/
 }
 .item-list ul.pager li a {
 border: 0 none;
@@ -1006,7 +1006,7 @@ padding: 0;
 text-decoration: none;
 }
 body.page-groups .item-list ul.pager li a, body.page-groups .item-list ul.pager li a:link, body.page-groups .item-list ul.pager li a:visited, body.page-groups .item-list ul.pager li.pager-current, body.page-search .item-list ul.pager li a, body.page-search .item-list ul.pager li a:link, body.page-search .item-list ul.pager li a:visited, body.page-search .item-list ul.pager li.pager-current {
-font-size: 14px;
+/*font-size: 14px;*/
 }
 .item-list ul.pager li a, .item-list ul.pager li a:link, .item-list ul.pager li a:visited {
 color: #000;
@@ -1026,7 +1026,7 @@ font-weight: bold;
 }
 .item-list ul.pager li {
 float: none;
-height: 10px;
+/*height: 10px;*/
 padding: 9px 6px;
 }
 .item-list ul.pager li.pager-current, .item-list ul.pager li.pager-item, .item-list ul.pager li.pager-next, .item-list ul.pager li.pager-last, .item-list ul.pager li.pager-first, .item-list ul.pager li.pager-previous {
@@ -2453,8 +2453,8 @@ height: 34px;
 .view .item-list ul.pager {
 clear: none;
 display: block;
-/*float: right;*/
-height: 26px;
+/*float: right;
+height: 26px;*/
 margin-bottom: 0;
 margin-top: 0;
 padding-top: 8px;
@@ -4023,13 +4023,14 @@ padding-left: 0;
 padding-right: 0;
 }
 body.not-front .sidebar-last .block .view-content .item-list ul li .views-field-title a, body.page-node .sidebar-last .block .view-content .item-list ul li .views-field-title a {
-background-image: url("../images/bullet-blue.png");
+/*background-image: url("../images/bullet-blue.png");
 background-position: left center;
 background-repeat: no-repeat;
-color: #0099FF;
+color: #0099FF;*/
 font-size: 1.2em;
 font-weight: bold;
-padding-left: 10px;
++font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+/*padding-left: 10px;*/
 }
 .field-file {
 border-bottom: 1px solid #000;
@@ -5119,7 +5120,7 @@ padding: 3px;
 
 body.page-news .subtitle {
   border-bottom: 1px solid #000;
-  margin-bottom: 40px;
+ /* margin-bottom: 40px;*/
 }
 
 .front-page-block .content {
@@ -9484,4 +9485,57 @@ float: left;
 	padding-bottom: 10px;
 	margin-bottom: 10px;
 	border-bottom: 1px solid #000;
+}
+.page-node #sidebar-last .title.block-title, .page-groups #sidebar-last .title.block-title{
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #000;
+}
+
+.view-arqnetwork-recent-featured .view .view-content .views-row{
+	margin-bottom: 10px;
+}
+.view-arqnetwork-recent-featured .view .view-content .views-field-title a{
+	    display: block;
+    font-size: 1.3em;
+    margin-bottom: 5px;
+}
+
+.body.no-sidebars.node-type #content-group h1.title {
+    background-image: none;
+}
+.view-arqnetwork-recent-featured .view .view-content .views-field-value{
+	margin: 10px 0;
+}
+/*Grupos*/
+
+body.page-groups #content-group h1.title{
+	background-image: none;
+	padding: 0 0 20px 0;
+}
+body.page-groups #content-group{
+	border-radius: 0;
+	padding-left: 0;
+	padding-right: 0;
+	width: 600px;
+}
+
+body.page-groups .views-field-subscribe a, body.page-groups .views-field-leave-group a {
+	background-color: #000000 !important;
+    border-radius: 5px 5px 5px 5px;
+    color: #FFFFFF;
+    display: inline-block;
+    float: none;
+    font-family: SoinSans-BoldOblique !important;
+    font-size: 1.1em;
+    font-weight: normal !important;
+    height: auto;
+    line-height: 1;
+    padding: 8px 15px;
+}
+body.page-groups .views-field-subscribe a:hover{
+	text-decoration: underline;
+}
+body.page-groups .view-groups-main-listing .views-field-title a{
+	font-size: 1.4em;
 }
