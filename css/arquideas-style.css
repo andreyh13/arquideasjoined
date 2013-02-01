@@ -7191,19 +7191,20 @@ body.page-node #content-group .colaborator-top h1.title {
   padding: 15px;
 }
 .area-social #sidebar-last .mini-slider-controls img.imagecache{
-	max-width: 168px!imporant;
+	max-width: 168px!important;
 	margin-top: 0px!important;
 	height: auto!important;
+	width: 168px!important;
 }
 .area-social #sidebar-last .mini-slider-controls .views_slideshow_main a{
 	margin: 0;
-	left: 10px;
-	right: 10px;
-	top: 10px;
+	left: 13px;
+	right: 13px;
+	top: 13px;
 	padding-top: 10px;
 	max-width: 148px;
 	font-size: 17px;
-	bottom: 25px;
+	bottom: 27px;
 	height: auto;
 }
 .area-social #sidebar-last .mini-slider-controls .views_slideshow_singleframe_slide{
