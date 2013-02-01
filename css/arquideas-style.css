@@ -4032,7 +4032,7 @@ background-color: transparent;
 padding-left: 0;
 padding-right: 0;
 }
-body.not-front .sidebar-last .block .view-content .item-list ul li .views-field-title a, body.page-node .sidebar-last .block .view-content .item-list ul li .views-field-title a, 
+body.not-front .sidebar-last .block .view-content .item-list ul li .views-field-title a, body.page-node .sidebar-last .block .view-content .item-list ul li .views-field-title a,
 .sidebar-last .block .view-group-block-wiki-latest-comments .item-list ul li .views-field-subject a {
 /*background-image: url("../images/bullet-blue.png");
 background-position: left center;
@@ -5155,9 +5155,9 @@ padding: 3px;
   border-bottom: 1px solid #000;
 }
 
-body.page-news .subtitle {
+body.page-news #main-content-inner > h3.subtitle {
   border-bottom: 1px solid #000;
- /* margin-bottom: 40px;*/
+  margin-bottom: 40px;
 }
 
 .front-page-block .content {
@@ -8135,7 +8135,7 @@ a.add-content-link:hover,
 	height: auto!important;
 }
 .area-social #sidebar-last .block-views h3{
-	
+
 }
 .view-filters .views-exposed-widgets{
 	width: 330px;
@@ -9640,6 +9640,6 @@ body.page-groups .sidebar-last .block-views .view-content .item-list ul li .view
 	margin-right: 10px;
 }
 .view-arqnetwork-user-account-projects .item-list .views-field-title{
-	font-size: 18px; 
+	font-size: 18px;
 	margin-bottom: 10px;
 }
