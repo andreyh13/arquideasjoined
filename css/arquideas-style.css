@@ -4032,7 +4032,7 @@ background-repeat: no-repeat;
 color: #0099FF;*/
 font-size: 1.2em;
 font-weight: bold;
-+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 /*padding-left: 10px;*/
 }
 .field-file {
@@ -7156,7 +7156,24 @@ body.page-node #content-group .colaborator-top h1.title {
   background-color: #000;
   padding: 15px;
 }
+.area-social #sidebar-last .mini-slider-controls img.imagecache{
+	max-width: 166px!imporant;
+	margin-top: 0px!important;
+	height: auto!important;
+}
+.area-social #sidebar-last .mini-slider-controls a{
+	margin: 0;
+	left: 10px;
+	right: 20px;
+	padding-top: 15px;
+	max-width: 154px;
+	font-size: 20px;
+	bottom: 30px;
+}
+.area-social #sidebar-last .mini-slider-controls .views_slideshow_singleframe_slide{
+	max-height:140px!important;
 
+}
 .contests-list-blocks .view-content .views-field-title a {
   background: url(../images/transparent-spacer.png) repeat scroll 0 0 transparent;
   border: 1px solid #FFFFFF;
@@ -8002,7 +8019,7 @@ a.add-content-link:hover,
 		position: relative;
 }
 .node-form .standard .advanced_link-field-subrow{
-	top: 13px;
+	/*top: 13px;*/
 	position: relative;
 }
 .node-form .standard .advanced_link-field-url input{
@@ -8367,6 +8384,7 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 .ui-tabs-panel{
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif!important;
 	margin-bottom: 20px;
+	overflow: hidden;
 }
 /*Muro*/
 #block-facebook_status-facebook_status .facebook-status-sender{
@@ -9562,12 +9580,17 @@ body.page-groups .views-field-subscribe a:hover{
 body.page-groups .view-groups-main-listing .views-field-title a{
 	font-size: 1.4em;
 }
-body.page-groups .sidebar-last .block-views .view-content .item-list ul li .views-field-title{
+body.page-groups .sidebar-last .block-views .view-content .item-list ul li .views-field-title,
+body.page-groups .sidebar-last .block-views .view-content .item-list ul li .views-field-members-count,
+body.page-groups .sidebar-last .block-views .view-content .item-list ul li .views-field-posts-count{
  margin: 0 0 0 40px;
 line-height: 20px;
 }
+body.page-groups .sidebar-last .pager{
+	margin-top: 10px;
+}
 body.page-groups .sidebar-last .block-views .view-content .item-list ul li .views-field-title{
- font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 }
 
 .og-buttons{
