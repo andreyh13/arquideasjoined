@@ -8513,28 +8513,38 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 .area-comunidad #sidebar-first .block.block-views .inner,
 .area-comunidad #sidebar-last .block.block-views .inner,
 .area-comunidad #sidebar-last .block.block-tagadelic .inner,
-.area-comunidad #sidebar-last .block.block-commons_core .inner{
+.area-comunidad #sidebar-last .block.block-commons_core .inner,
+.page-solr-nodetype-multi #sidebar-first .block .inner,
+.page-solr-nodetype #sidebar-first .block .inner
+{
 	border: 1px solid #ccc;
 
 }
 .area-comunidad #sidebar-first .block.block-views .title,
 .area-comunidad #sidebar-last .block.block-views .title,
 .area-comunidad #sidebar-last .block.block-tagadelic .title,
-.area-comunidad #sidebar-last .block.block-commons_core .title{
+.area-comunidad #sidebar-last .block.block-commons_core .title,
+.page-solr-nodetype-multi #sidebar-first .block .title.block-title,
+.page-solr-nodetype #sidebar-first .block .title.block-title{
 	text-align: center;
 	font-size: 1.3em;
 	padding: 10px 20px;
 	margin-bottom: 0px;
 	border-bottom: 1px solid #ccc;
 	color: #000;
+	background-image: none;
 }
 .area-comunidad #sidebar-first .block.block-views .view-content,
 .area-comunidad #sidebar-last .block.block-views .view-content,
 .area-comunidad #sidebar-last .block.block-tagadelic .content,
-.area-comunidad #sidebar-last .block.block-commons_core .content{
+.area-comunidad #sidebar-last .block.block-commons_core .content,
+.page-solr-nodetype-multi #sidebar-first .block .content,
+.page-solr-nodetype #sidebar-first .block .content{
 	padding: 20px;
 }
-.area-comunidad #sidebar-last .block.block-views .view-newest-users .view-content, .area-comunidad #sidebar-last .block.block-views .view-most-active-users .view-content{
+.area-comunidad #sidebar-last .block.block-views .view-newest-users .view-content, 
+.area-comunidad #sidebar-last .block.block-views .view-most-active-users .view-content
+{
 	padding: 5px;
 }
 .area-comunidad #sidebar-last .block.block-commons_core li{
@@ -9697,4 +9707,11 @@ body.page-groups .sidebar-last .block-views .view-content .item-list ul li .view
 .page-solr-nodetype-multi .search-form .edit-submit,
 .page-solr-nodetype .search-form  .edit-submit{ 
     margin-top: 5px;
+}
+.page-solr-nodetype-multi .search-form .form-text,
+.page-solr-nodetype .search-form  .edit-submit{
+	background: none repeat scroll 0 0 #F7F7F7;
+    border: 1px solid #E6E6E6;
+    border-radius: 5px 5px 5px 5px;
+    padding: 8px 5px;
 }
