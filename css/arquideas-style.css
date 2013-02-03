@@ -3332,10 +3332,7 @@ height: 211px;
 position: relative;
 margin-left: 25px;
 }
-.page-solr-nodetype #content-front #content-front-left,
-.page-solr-nodetype-multi #content-front #content-front-left {
-/*width: 610px;*/
-}
+
 #content-front #content-front-left .content-inner {
 margin: 0;
 }
@@ -3343,9 +3340,14 @@ body.page-home #content-front #content-front-right {
 width: 455px;
 height: 190px;
 }
+.page-solr-nodetype #content-front #content-front-left,
+.page-solr-nodetype-multi #content-front #content-front-left {
+	width: 610px;
+	margin-left: 0px;
+}
 .page-solr-nodetype #content-front #content-front-right,
 .page-solr-nodetype-multi #content-front #content-front-right {
-/*width: 300px;*/
+	width: 300px;
 }
 #content-front #content-front-right .content-inner {
 margin-left: 0;
