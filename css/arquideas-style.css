@@ -8101,7 +8101,7 @@ a.add-content-link:hover,
 	font-family: SoinSans-BoldOblique!important;
 }
  .open-contest-button .form-submit{
-	background: #3cc;
+	background: #3cc!important;
  }
 .form-submit,.views-field-phpcode-1 .popups-form-noupdate {
 	padding: 4px 11px 4px 11px;
@@ -9556,12 +9556,14 @@ overflow: hidden;
 }
 .contest-info .two-columns.no-border{
 	border: none;
+	padding: 0px;
 }
 .contest-info .two-columns.no-border .column-01,
 .contest-info .two-columns.no-border .column-02{
 	border: 1px solid #ccc;
 	padding: 15px;
 	float: left;
+	width: 299px;
 }
 .contest-info .two-columns.no-border .column-01{
 	margin-left: 0px;
@@ -9573,7 +9575,7 @@ overflow: hidden;
 	text-align: center;
 	margin-bottom: 10px;
 	padding-bottom: 10px;
-	border-bottom: 10px solid #000;
+	border-bottom: 1px solid #000;
 }
 .node-type-inscription .contest-info .inscription-code{
 	font-weight: bold;
