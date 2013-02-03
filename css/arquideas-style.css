@@ -9725,3 +9725,9 @@ body.page-groups .sidebar-last .block-views .view-content .item-list ul li .view
 { font-family:"Soin Sans Roman"; font-size:17px; line-height:130%; color:rgb(44,44,44); }
 /*END Styles for hightlights*/
 
+/*Hiding long descriptions in register form*/
+#user-register #edit-mail-wrapper .description,
+#user-register #edit-pass-wrapper .description {
+    display: none;
+}
+/*END Hiding long descriptions in register form*/
