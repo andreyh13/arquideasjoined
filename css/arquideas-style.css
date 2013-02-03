@@ -8542,6 +8542,24 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 .page-solr-nodetype #sidebar-first .block .content{
 	padding: 20px;
 }
+.page-solr-nodetype-multi #sidebar-first #block-views-newest_users-block_1.block .content,
+.page-solr-nodetype #sidebar-first #block-views-newest_users-block_1.block .content,
+.page-solr-nodetype-multi #sidebar-first #block-views-d08d7cbb9d90f0fb0401f208b93138fe.block .content,
+.page-solr-nodetype #sidebar-first #block-views-d08d7cbb9d90f0fb0401f208b93138fe.block .content
+{
+	padding: 5px;
+}
+.page-solr-nodetype-multi #sidebar-first #block-views-newest_users-block_1.block thead,
+.page-solr-nodetype #sidebar-first #block-views-newest_users-block_1.block thead,
+.page-solr-nodetype-multi #sidebar-first #block-views-d08d7cbb9d90f0fb0401f208b93138fe.block thead,
+.page-solr-nodetype #sidebar-first #block-views-d08d7cbb9d90f0fb0401f208b93138fe.block thead{
+	display: none;
+}
+/*.page-solr-nodetype-multi #sidebar-first .block .view-most-active-users-gerencia .view-content,
+.page-solr-nodetype #sidebar-first .block .view-most-active-users-gerencia .view-content,
+.page-solr-nodetype-multi #sidebar-first #block-views-d08d7cbb9d90f0fb0401f208b93138fe.block .content,
+.page-solr-nodetype #sidebar-first #block-views-d08d7cbb9d90f0fb0401f208b93138fe.block .content*/
+
 .area-comunidad #sidebar-last .block.block-views .view-newest-users .view-content, 
 .area-comunidad #sidebar-last .block.block-views .view-most-active-users .view-content
 {
@@ -8693,50 +8711,77 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 	display: none;
 }
 #sidebar-last .block-views .view-newest-users tr,
-#sidebar-last .block-views .view-most-active-users tr{
+#sidebar-last .block-views .view-most-active-users tr,
+.page-solr-nodetype-multi #sidebar-first #block-views-newest_users-block_1.block tr,
+.page-solr-nodetype #sidebar-first #block-views-newest_users-block_1.block tr,
+.page-solr-nodetype-multi #sidebar-first #block-views-d08d7cbb9d90f0fb0401f208b93138fe.block tr,
+.page-solr-nodetype #sidebar-first #block-views-d08d7cbb9d90f0fb0401f208b93138fe.block tr{
 	border-bottom: 2px solid #fff;
 	background: #f3f3f3;
 }
 #sidebar-last .block-views .view-most-active-users .view-content{
 	padding: 0 5px;
 }
-#sidebar-last .block-views .view-most-active-users tr{
+#sidebar-last .block-views .view-most-active-users tr,
+.page-solr-nodetype-multi #sidebar-first #block-views-d08d7cbb9d90f0fb0401f208b93138fe.block tr,
+.page-solr-nodetype #sidebar-first #block-views-d08d7cbb9d90f0fb0401f208b93138fe.block tr{
 	background: #fff;
 }
-#sidebar-last .block-views .view-most-active-users tr.views-row-first{
+#sidebar-last .block-views .view-most-active-users tr.views-row-first,
+.page-solr-nodetype-multi #sidebar-first #block-views-d08d7cbb9d90f0fb0401f208b93138fe.block tr.views-row-first,
+.page-solr-nodetype #sidebar-first #block-views-d08d7cbb9d90f0fb0401f208b93138fe.block tr.views-row-first{
 	margin-top: 5px;
 }
 #sidebar-last .block-views .view-newest-users td,
-#sidebar-last .block-views .view-most-active-users td{
+#sidebar-last .block-views .view-most-active-users td,
+.page-solr-nodetype-multi #sidebar-first #block-views-newest_users-block_1.block td,
+.page-solr-nodetype #sidebar-first #block-views-newest_users-block_1.block td{
 	padding: 0;
 	margin: 3px 0 0 0;
 	background: #f3f3f3;
 }
-#sidebar-last .block-views .view-most-active-users td{
+#sidebar-last .block-views .view-most-active-users td,
+.page-solr-nodetype-multi #sidebar-first #block-views-d08d7cbb9d90f0fb0401f208b93138fe.block td,
+.page-solr-nodetype #sidebar-first #block-views-d08d7cbb9d90f0fb0401f208b93138fe.block td{
 	background: #fff;
 }
 #sidebar-last .block-views .view-newest-users td a,
-#sidebar-last .block-views .view-most-active-users td a{
+#sidebar-last .block-views .view-most-active-users td a,
+.page-solr-nodetype-multi #sidebar-first #block-views-newest_users-block_1.block td a,
+.page-solr-nodetype #sidebar-first #block-views-newest_users-block_1.block td a,
+.page-solr-nodetype-multi #sidebar-first #block-views-d08d7cbb9d90f0fb0401f208b93138fe.block td a,
+.page-solr-nodetype #sidebar-first #block-views-d08d7cbb9d90f0fb0401f208b93138fe.block td a{
 	color: #000;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 #sidebar-last .block-views .view-newest-users td img,
-#sidebar-last .block-views .view-most-active-users td img{
+#sidebar-last .block-views .view-most-active-users td img,
+.page-solr-nodetype-multi #sidebar-first #block-views-newest_users-block_1.block td img,
+.page-solr-nodetype #sidebar-first #block-views-newest_users-block_1.block td img,
+.page-solr-nodetype-multi #sidebar-first #block-views-d08d7cbb9d90f0fb0401f208b93138fe.block td img,
+.page-solr-nodetype #sidebar-first #block-views-d08d7cbb9d90f0fb0401f208b93138fe.block td img{
 	max-width: 100%;
 	margin: 0!important;
 }
 #sidebar-last .block-views .view-most-active-users thead{
 	display: none;
 }
-#sidebar-last .block-views .view-most-active-users td.views-field-picture{
+#sidebar-last .block-views .view-most-active-users td.views-field-picture,
+.page-solr-nodetype-multi #sidebar-first #block-views-d08d7cbb9d90f0fb0401f208b93138fe.block td.views-field-picture,
+.page-solr-nodetype #sidebar-first #block-views-d08d7cbb9d90f0fb0401f208b93138fe.block td.views-field-picture{
 	max-width: 30px;
 }
-#sidebar-last .block-views .view-most-active-users td.views-field-name a{
+#sidebar-last .block-views .view-most-active-users td.views-field-name a,
+.page-solr-nodetype-multi #sidebar-first #block-views-d08d7cbb9d90f0fb0401f208b93138fe.block td.views-field-name a,
+.page-solr-nodetype #sidebar-first #block-views-d08d7cbb9d90f0fb0401f208b93138fe.block td.views-field-name a
+{
 	text-indent: 0;
 	display: block;
 	font-weight: bold;
 }
-#sidebar-last .block-views .view-most-active-users td.views-field-points{
+#sidebar-last .block-views .view-most-active-users td.views-field-points,
+.page-solr-nodetype-multi #sidebar-first #block-views-d08d7cbb9d90f0fb0401f208b93138fe.block td.views-field-points,
+.page-solr-nodetype #sidebar-first #block-views-d08d7cbb9d90f0fb0401f208b93138fe.block td.views-field-points{
 	text-align:center;
 	font-weight: bold;
 }
