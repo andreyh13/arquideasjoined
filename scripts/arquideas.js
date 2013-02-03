@@ -198,4 +198,7 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
            } 
         });
         
+        //DOM manipulation for project details
+        $("body.page-node.node-type-project #comment .box").appendTo(".full-node.node-type-project .project-info-public .col01");
+        
 });
