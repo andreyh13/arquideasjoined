@@ -82,5 +82,29 @@ CKEDITOR.addStylesSet( 'default',
 		{
 			'class' : 'img-right'
 		}
-	}
+	},
+        
+        {
+            name: 'Highlights-date',
+            element: 'span',
+            attributes: {
+                'class' : 'highlights-date'
+            }
+        },
+        
+        {
+            name: 'Highlights-title',
+            element: 'span',
+            attributes: {
+                'class' : 'highlights-title'
+            }
+        },
+        
+        {
+            name: 'Highlights-text',
+            element: 'span',
+            attributes: {
+                'class' : 'highlights-text'
+            }
+        },
 ]);

@@ -9715,3 +9715,13 @@ body.page-groups .sidebar-last .block-views .view-content .item-list ul li .view
     border-radius: 5px 5px 5px 5px;
     padding: 8px 5px;
 }
+
+/*Styles for hightlights*/
+.highlights-date
+{ font-family:"Soin Sans Bold"; font-size:16px; font-weight:bold; line-height:120%; color:rgb(45,45,45); }
+.highlights-title
+{ font-family:"Soin Sans Bold"; font-size:20px; font-weight:bold; line-height:140%; text-align:left; }
+.highlights-text
+{ font-family:"Soin Sans Roman"; font-size:17px; line-height:130%; color:rgb(44,44,44); }
+/*END Styles for hightlights*/
+
