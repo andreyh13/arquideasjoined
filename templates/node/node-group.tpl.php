@@ -64,7 +64,7 @@
   
 
     <div class="content clearfix">
-      <?php if($page && !$is_edit){print $content;} ?>
+      <?php /*if($page && !$is_edit){print $content;}*/ ?>
         
       <?php 
         $subgroups = og_subgroups_get_group_children($node,FALSE);
