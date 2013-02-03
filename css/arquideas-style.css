@@ -3965,10 +3965,7 @@ overflow: hidden;
 display: inline-block;
 padding: 0 0 1em;
 }
-.grouping-button {
-height: 16px;
-width: 16px;
-}
+
 body.page-node .relations legend {
 display: none;
 }
@@ -9792,3 +9789,11 @@ body.page-groups .sidebar-last .block-views .view-content .item-list ul li .view
     display: none;
 }
 /*END Hiding long descriptions in register form*/
+
+.tagging-button, .grouping-button {
+    display: inline-block;
+    width: 92px;
+    height: 19px;
+    background: url('../images/add.png') transparent no-repeat left center;
+    padding-left: 18px;
+}
