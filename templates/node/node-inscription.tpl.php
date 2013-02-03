@@ -111,7 +111,7 @@
 
     <div class="clearfix">&nbsp;</div>
 
-    <div class="two-columns">
+    <div class="two-columns no-border">
         <div class="column-01">
             <?php
                 $block = module_invoke('nodeblock', 'block', 'view', 863);
@@ -176,7 +176,7 @@
     <!-- End Mark Special Arquideas Prize -->
     </div>
     <?php endif; ?>
-
+	<div class="edit-delete">
     <?php if(!$is_edit && $page == 1): ?>
         <!-- Edit link -->
         <?php if(node_access('update', $node) && $node->field_inscription_state[0]['value']!=InscriptionState::SUBMITTED
@@ -209,7 +209,7 @@
             ));
         } ?>
         <!-- End Delete link -->
-
+		</div>
         <!-- DOWNLOAD files -->
         <?php print show_inscription_downloads($node, $contest); ?>
         <!-- End DOWNLOAD files -->

@@ -3340,11 +3340,13 @@ body.page-home #content-front #content-front-right {
 width: 455px;
 height: 190px;
 }
+.page-arquideas-network #content-front #content-front-left,
 .page-solr-nodetype #content-front #content-front-left,
 .page-solr-nodetype-multi #content-front #content-front-left {
 	width: 610px;
 	margin-left: 0px;
 }
+.page-arquideas-network #content-front #content-front #content-front-right,
 .page-solr-nodetype #content-front #content-front-right,
 .page-solr-nodetype-multi #content-front #content-front-right {
 	width: 300px;
@@ -8083,7 +8085,7 @@ a.add-content-link:hover,
 	margin-left: 90px;
 	margin-top: 30px;
 }
-#edit-submit, #edit-preview-changes, #edit-submit-1, .views-exposed-form .form-submit, #arquideas-book-user-settings .form-submit,.views-field-phpcode-1 .popups-form-noupdate{
+#edit-submit, #edit-preview-changes, #edit-submit-1, .views-exposed-form .form-submit, #arquideas-book-user-settings .form-submit,.views-field-phpcode-1 .popups-form-noupdate, .open-contest-button .form-submit{
 	display: inline-block;
 	float: none;
 	border-radius: 5px 5px 5px 5px;
@@ -8098,6 +8100,9 @@ a.add-content-link:hover,
 	line-height: 1;
 	font-family: SoinSans-BoldOblique!important;
 }
+ .open-contest-button .form-submit{
+	background: #3cc;
+ }
 .form-submit,.views-field-phpcode-1 .popups-form-noupdate {
 	padding: 4px 11px 4px 11px;
 	font-size: 1em;
@@ -9548,6 +9553,27 @@ overflow: hidden;
 	float: left;
 	display: inline-block;
 	margin-right: 10px;
+}
+.contest-info .two-columns.no-border{
+	border: none;
+}
+.contest-info .two-columns.no-border .column-01,
+.contest-info .two-columns.no-border .column-02{
+	border: 1px solid #ccc;
+	padding: 15px;
+	float: left;
+}
+.contest-info .two-columns.no-border .column-01{
+	margin-left: 0px;
+	margin-right: 20px;
+}
+.contest-info .two-columns.no-border .column-01 h2.title,
+.contest-info .two-columns.no-border .column-02 h2.title{
+	font-size: 1.1em;
+	text-align: center;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 10px solid #000;
 }
 .node-type-inscription .contest-info .inscription-code{
 	font-weight: bold;

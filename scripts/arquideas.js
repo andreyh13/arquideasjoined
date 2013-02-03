@@ -144,10 +144,11 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
 	Explanation #3:
 	If we are'nt in the main page of the user profile the sidebar-first ONLY contains the image, but not the rest of the fields, as theres's a #sidebar-last in this areas
 	*/
-            //Andriy: this is completely wrong. It destroys the views of project. I change the code.
- //$('.views-field-field-address-acp-value,.views-field-field-company-acp-value,.views-field-phpcode-1,.views-field-field-small-description-acp-value,.views-field-phpcode,.views-field-field-facebook-acp-url,.views-field-field-google-acp-url,.views-field-field-linkedin-acp-url,.views-field-field-pinterest-acp-url,.views-field-field-twitter-acp-url').remove()
-            $('.view-arqnetwork-user-profile .views-field-field-address-acp-value, .view-arqnetwork-user-profile .views-field-field-company-acp-value, .view-arqnetwork-user-profile .views-field-phpcode-1, .view-arqnetwork-user-profile .views-field-field-small-description-acp-value, .view-arqnetwork-user-profile .views-field-phpcode, .view-arqnetwork-user-profile .views-field-field-facebook-acp-url, .view-arqnetwork-user-profile .views-field-field-google-acp-url, .view-arqnetwork-user-profile .views-field-field-linkedin-acp-url, .view-arqnetwork-user-profile .views-field-field-pinterest-acp-url, .view-arqnetwork-user-profile .views-field-field-twitter-acp-url').remove();
+     $('.view-arqnetwork-user-profile .views-field-field-address-acp-value, .view-arqnetwork-user-profile .views-field-field-company-acp-value, .view-arqnetwork-user-profile .views-field-phpcode-1, .view-arqnetwork-user-profile .views-field-field-small-description-acp-value, .view-arqnetwork-user-profile .views-field-phpcode, .view-arqnetwork-user-profile .views-field-field-facebook-acp-url, .view-arqnetwork-user-profile .views-field-field-google-acp-url, .view-arqnetwork-user-profile .views-field-field-linkedin-acp-url, .view-arqnetwork-user-profile .views-field-field-pinterest-acp-url, .view-arqnetwork-user-profile .views-field-field-twitter-acp-url').remove();
 	}
+	$('.inscription-dates').find('div').each(function(){
+		if($(this).text()==""){$(this).hide()}
+	})
 	$('#main-content .view-user-directory .views-exposed-wrapper').find('.views-exposed-submit').appendTo('.views-exposed-widgets');
         
         //Scripts to apply after AJAX reloads in pages
