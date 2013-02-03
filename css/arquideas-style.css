@@ -3345,7 +3345,7 @@ height: 190px;
 }
 .page-solr-nodetype #content-front #content-front-right,
 .page-solr-nodetype-multi #content-front #content-front-right {
-width: 300px;
+/*width: 300px;*/
 }
 #content-front #content-front-right .content-inner {
 margin-left: 0;
@@ -6666,11 +6666,15 @@ body.node-type-contest h1 {
 }
 
 .page-solr-nodetype-multi #content-front #content-front-left .users-total {
-  padding-bottom: 15px;
+  /*padding-bottom: 15px;
   margin: 0;
-  background: transparent url(../images/single-border.png) repeat-x bottom;
+  background: transparent url(../images/single-border.png) repeat-x bottom;*/
 }
-
+body.page-solr-nodetype #content-front-right .block .inner,
+body.page-solr-nodetype-multi #content-front-right .block .inner {
+    margin-left: 0px;
+    margin-right: 0px;
+}
 body.page-solr-nodetype #main-group,
 body.page-solr-nodetype-multi #main-group {
 padding-left: 30px;
@@ -9709,7 +9713,7 @@ body.page-groups .sidebar-last .block-views .view-content .item-list ul li .view
 .arquideas-network #content-front-inner,
 .page-solr-nodetype-multi #content-front-inner,
 .page-solr-nodetype #content-front-inner{
-	margin-bottom: 40px;
+	/*margin-bottom: 40px;*/
 }
 .arquideas-network #content-front-inner .content-front-left .content-inner,
 .page-solr-nodetype-multi #content-front-inner .content-front-left .content-inner,
