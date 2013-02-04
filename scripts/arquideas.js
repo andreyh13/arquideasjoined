@@ -171,24 +171,24 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
         $("body.page-news .view-news .view-header h3.subtitle").insertBefore("#content-group");
         
         //DOM manipulations for solr users page, projects page, network page
-        $("#pid-solr-nodetype-arquideas-content-profile #content-front-left .block-nodeblock h2.title").each(function(index){
+        $("body[id^='pid-solr-nodetype-arquideas-content-profile'] #content-front-left .block-nodeblock h2.title").each(function(index){
            if(index==0){
                var m_html = $(this).html();
                $(this).insertBefore("#content-front-left").replaceWith("<h1 class='title'>"+m_html+"</h1>");
            } 
         });
-        $("#pid-solr-nodetype-arquideas-content-profile #content-front-left .block-nodeblock .content h2").each(function(index){
+        $("body[id^='pid-solr-nodetype-arquideas-content-profile'] #content-front-left .block-nodeblock .content h2").each(function(index){
            if(index==0){
                $(this).addClass("subtitle").insertBefore("#content-front-left");
            } 
         });
-        $("#pid-solr-nodetype-multi-project-inscription #content-front-left .block-nodeblock h2.title").each(function(index){
+        $("body[id^='pid-solr-nodetype-multi-project-inscription'] #content-front-left .block-nodeblock h2.title").each(function(index){
            if(index==0){
                var m_html = $(this).html();
                $(this).insertBefore("#content-front-left").replaceWith("<h1 class='title'>"+m_html+"</h1>");
            } 
         });
-        $("#pid-solr-nodetype-multi-project-inscription #content-front-left .block-nodeblock .content h2").each(function(index){
+        $("body[id^='pid-solr-nodetype-multi-project-inscription'] #content-front-left .block-nodeblock .content h2").each(function(index){
            if(index==0){
                $(this).addClass("subtitle").insertBefore("#content-front-left");
            } 
