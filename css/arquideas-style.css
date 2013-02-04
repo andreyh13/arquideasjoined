@@ -9176,6 +9176,8 @@ div.comment {
 }
 div.comment a{
 	color: #000;
+	border-top: none;
+	padding-top: 0;
 }
 div.comment .comment-info{
 	height: auto;
@@ -9187,7 +9189,18 @@ div.comment .comment-name{
 }
 
 div.comment .comment-name a{
-	font-size: 10px;
+	font-size: 12px;
+}
+div.comment .comment-date{
+	font-size: 11px;
+	color: #ccc;
+}
+div.comment .content{
+	color: #666;
+}
+.comment .comment-info span.new{
+	text-align: center;
+	max-width: 50px;
 }
 .comment .comment-content .links ul.links{
 	padding-left: 0;
