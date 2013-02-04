@@ -9847,3 +9847,7 @@ body.page-groups .sidebar-last .block-views .view-content .item-list ul li .view
     background: url('../images/add.png') transparent no-repeat left center;
     padding-left: 18px;
 }
+
+.language-link.active {
+    display: none;
+}
