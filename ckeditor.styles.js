@@ -107,4 +107,12 @@ CKEDITOR.addStylesSet( 'default',
                 'class' : 'highlights-text'
             }
         },
+        
+        {
+            name: 'Highlights-info',
+            element: 'span',
+            attributes: {
+                'class' : 'highlights-info'
+            }
+        },
 ]);
