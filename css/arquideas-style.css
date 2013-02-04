@@ -8130,8 +8130,9 @@ a.add-content-link,
 #block-quicktabs-arqnetwork_group_quicktabs h2.title{
 	text-align: center;
 	border-bottom: 1px solid #000;
-	padding: 0 0 15px 0;
-	margin: 0 0 15px 0;
+	border-top: 1px solid #000;
+	padding: 15px 0 15px 0;
+	margin: 15px 0 15px 0;
 }
 a.add-content-link{
 	display: inline-block;
@@ -8457,7 +8458,9 @@ body.area-social #sidebar-last .view-arqnetwork-block-inscriptions a{
 	margin: 0;
 }
 body.area-social #sidebar-last .view-arqnetwork-block-inscriptions .views-row{
-	margin-bottom: 5px;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #000;
 }
 body.area-social #sidebar-last.nested #block-views-contests-block_2{
 	padding: 0!important;
@@ -9859,7 +9862,8 @@ body.page-groups #content-group{
 	width: 600px;
 }
 
-body.page-groups .views-field-subscribe a, body.page-groups .views-field-leave-group a, .og-buttons a, .view-arqnetwork-user-account-projects .item-list .views-field-edit-node a {
+body.page-groups .views-field-subscribe a, body.page-groups .views-field-leave-group a, .og-buttons a, .view-arqnetwork-user-account-projects .item-list .views-field-edit-node a,
+.node-type-inscription.only-groups .edit-delete a{
 	background-color: #000000 !important;
     border-radius: 5px 5px 5px 5px;
     color: #FFFFFF;
@@ -9871,6 +9875,10 @@ body.page-groups .views-field-subscribe a, body.page-groups .views-field-leave-g
     line-height: 1;
     padding: 8px 15px;
 	border: none;
+}
+
+.node-type-inscription.only-groups .edit-delete a{
+	margin-right: 10px;
 }
 body.page-groups .views-field-subscribe a:hover{
 	text-decoration: underline;
