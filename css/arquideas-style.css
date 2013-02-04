@@ -9849,5 +9849,5 @@ body.page-groups .sidebar-last .block-views .view-content .item-list ul li .view
 }
 
 .language-link.active {
-    display: none;
+    display: none !important;
 }
