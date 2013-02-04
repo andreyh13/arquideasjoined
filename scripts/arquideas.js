@@ -207,5 +207,8 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
 	$('#content-front-left').find('.login-and-register-link-div').css('display','inline-block').clone().removeClass('login-and-register-link-div').addClass('login-and-register-link-div-2').remove().appendTo('.users-total')
 			$('.login-and-register-link-div').remove();
 			//$('.register-link-div').css('display','inline-block')
-		}
+	}
+        
+        //One more fix for calendar
+        $("#pid-content-events-calendar #content-group").addClass("grid16-16").addClass("force-width").css("width","960px");
 });
