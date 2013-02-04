@@ -6296,9 +6296,14 @@ body.page-finished-contests #content-region h2.block-title {
   margin: 0 0 18px 18px;
 }
 
+.finished-contest-view .views-row-inner {
+  padding-bottom: 18px;
+}
+
 .finished-contest-view .views-field-nothing,
 .finished-contest-view .views-field-field-jury-decision-value,
-.finished-contest-view .views-field-phpcode-3 {
+.finished-contest-view .views-field-phpcode-3,
+.finished-contest-view .views-field-phpcode-4 {
   text-transform: uppercase;
   color: #fff;
   display: block;
@@ -8467,7 +8472,7 @@ body.area-social .sidebar-last #block-views-profile_follower-block_1 .inner{
 	margin: 10px;
 	float: left;
 }
-#sidebar-last .block .views-field-comment-count{
+body.area-social #sidebar-last .block .views-field-comment-count{
 	margin-top: 5px;
 }
 .sidebar-last .block-views .views-field-title{
