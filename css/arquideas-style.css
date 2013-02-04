@@ -5859,7 +5859,9 @@ text-transform: uppercase;
   padding: 0;
 }
 
-#block-views-arqnetwork_projects-block_1 .project-wrapper {
+#block-views-arqnetwork_projects-block_1 .project-wrapper,
+.view-arquideas-contest-prizes.view-display-id-block_7 .project-wrapper,
+.view-arquideas-contest-prizes.view-display-id-block_9 .project-wrapper {
   position: relative;
 }
 
@@ -5869,9 +5871,20 @@ text-transform: uppercase;
   margin-bottom: 5px;
 }
 
-#block-views-arqnetwork_projects-block_1 .views-field-field-images-project-fid img {
-  vertical-align: middle;
+.view-arquideas-contest-prizes.view-display-id-block_7 .views-field-field-images-project-fid,
+.view-arquideas-contest-prizes.view-display-id-block_9 .views-field-field-images-project-fid {
+  width: 236px;
+  height: 172px;
 }
+
+#block-views-arqnetwork_projects-block_1 .views-field-field-images-project-fid img,
+.view-arquideas-contest-prizes.view-display-id-block_7 .views-field-field-images-project-fid img,
+.view-arquideas-contest-prizes.view-display-id-block_9 .views-field-field-images-project-fid img {
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
+
 #block-views-arqnetwork_projects-block_1 .project-info {
   width: 229px;
   height: 172px;
@@ -5881,7 +5894,19 @@ text-transform: uppercase;
   opacity: 0;
 }
 
-#block-views-arqnetwork_projects-block_1 .project-info:hover {
+.view-arquideas-contest-prizes.view-display-id-block_7 .project-info,
+.view-arquideas-contest-prizes.view-display-id-block_9 .project-info {
+  width: 236px;
+  height: 172px;
+  position: absolute;
+  top: 0;
+  color: #fff;
+  opacity: 0;
+}
+
+#block-views-arqnetwork_projects-block_1 .project-info:hover,
+.view-arquideas-contest-prizes.view-display-id-block_7 .project-info:hover,
+.view-arquideas-contest-prizes.view-display-id-block_9 .project-info:hover {
   background: transparent url(../images/transparent-spacer.png) repeat;
   opacity: 1;
 }
@@ -5895,7 +5920,19 @@ text-transform: uppercase;
   width: 229px;
 }
 
-#block-views-arqnetwork_projects-block_1 .views-field-title a {
+.view-arquideas-contest-prizes.view-display-id-block_7 .views-field-title,
+.view-arquideas-contest-prizes.view-display-id-block_9 .views-field-title {
+  font-size: 20px;
+  line-height: 100%;
+  position: absolute;
+  bottom: 45%;
+  text-align: center;
+  width: 236px;
+}
+
+#block-views-arqnetwork_projects-block_1 .views-field-title a,
+.view-arquideas-contest-prizes.view-display-id-block_7 .views-field-title a,
+.view-arquideas-contest-prizes.view-display-id-block_9 .views-field-title a {
   color: #fff;
 }
 
@@ -5908,7 +5945,9 @@ text-transform: uppercase;
   font-size: 13px;
 }
 
-#block-views-arqnetwork_projects-block_1 .project-social {
+#block-views-arqnetwork_projects-block_1 .project-social,
+.view-arquideas-contest-prizes.view-display-id-block_7 .project-social,
+.view-arquideas-contest-prizes.view-display-id-block_9 .project-social {
   background-color: #000000;
   color: #FFFFFF;
   height: 28px;
@@ -5923,7 +5962,11 @@ text-transform: uppercase;
 }
 
 #block-views-arqnetwork_projects-block_1 .views-field-rating-value,
-#block-views-arqnetwork_projects-block_1 .views-field-comment-count {
+#block-views-arqnetwork_projects-block_1 .views-field-comment-count,
+.view-arquideas-contest-prizes.view-display-id-block_7 .views-field-rating-value,
+.view-arquideas-contest-prizes.view-display-id-block_9 .views-field-rating-value,
+.view-arquideas-contest-prizes.view-display-id-block_7 .views-field-comment-count,
+.view-arquideas-contest-prizes.view-display-id-block_9 .views-field-comment-count {
   background: url("../images/social.png") no-repeat scroll 0 4px transparent;
   display: inline-block;
   float: none;
@@ -5932,7 +5975,9 @@ text-transform: uppercase;
   width: auto;
 }
 
-#block-views-arqnetwork_projects-block_1 .views-field-comment-count {
+#block-views-arqnetwork_projects-block_1 .views-field-comment-count,
+.view-arquideas-contest-prizes.view-display-id-block_7 .views-field-comment-count,
+.view-arquideas-contest-prizes.view-display-id-block_9 .views-field-comment-count {
   background-position: 0 -27px;
   margin-left: 8px;
 }
@@ -6524,7 +6569,8 @@ body.node-type-contest .node-content-main {
   font-weight: normal;
 }
 
-.node-type-contest .contest-winners {
+.node-type-contest .contest-winners,
+.view-arquideas-contest-prizes.view-display-id-block_9 {
   border: 1px solid #000;
   padding: 20px;
   margin-bottom: 30px;
@@ -6546,6 +6592,12 @@ body.node-type-contest h1 {
   padding-bottom: 20px;
   text-align: center;
   text-transform: uppercase;
+}
+
+body.node-type-contest .special-mentions h1 {
+  background-image: none;
+  padding-bottom: 0;
+  margin-bottom: 15px;
 }
 
 .contest-winners .views-field-title {
@@ -6653,6 +6705,31 @@ body.node-type-contest h1 {
 .view-contest-blocks.view-display-id-block_6 .generic-button {
   float: none;
   background-color: #36C9D3;
+}
+
+.contest-winners .view-arquideas-contest-prizes.view-display-id-block_7 .views-row-inner > div,
+.view-arquideas-contest-prizes.view-display-id-block_9 .views-row-inner > div {
+  float: none;
+  width: auto;
+}
+
+.view-arquideas-contest-prizes.view-display-id-block_7 .project-wrapper {
+  margin: 0 16px;
+}
+
+.view-arquideas-contest-prizes.view-display-id-block_9 .project-wrapper {
+  margin: 16px;
+}
+
+.view-arquideas-contest-prizes.view-display-id-block_7 .views-row,
+.view-arquideas-contest-prizes.view-display-id-block_9 .views-row {
+  width: 50%;
+  display: inline-block;
+}
+
+.view-arquideas-contest-prizes.view-display-id-block_7 .views-row-even,
+.view-arquideas-contest-prizes.view-display-id-block_9 .views-row-even {
+  float: right;
 }
 
 /* Projects Styles */
