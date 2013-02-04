@@ -8815,7 +8815,8 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 	border-bottom: none;
 	text-align: center;
 }
-.area-comunidad #content-content .block-facebook_status .title.block-title{
+.area-comunidad #content-content .block-facebook_status .title.block-title,
+.area-comunidad #content-content #block-views-activity_log_stream-block_3 .title.block-title{
 	border: none;
 	border-bottom: 1px solid #000;
 	margin-bottom: 20px;
