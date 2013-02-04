@@ -4066,9 +4066,20 @@ body.page-node .sidebar-last .block.block-views {
 .sidebar-last .block .view-group-block-wiki-latest-comments .item-list ul li .views-field-timestamp,
 .sidebar-last .block .view-group-block-wiki-latest-comments .item-list ul li .views-field-created,
 .sidebar-last .block .view-group-block-wiki-latest-comments .item-list ul li .views-field-name,
-.sidebar-last .block .view-group-block-wiki-latest-comments .item-list ul li .views-field-comment-count
+.sidebar-last .block .view-group-block-wiki-latest-comments .item-list ul li .views-field-comment-count,
+.sidebar-last .block .view-event-latest-comments .item-list ul li .views-field-subject,
+.sidebar-last .block .view-event-latest-comments .item-list ul li .views-field-timestamp,
+.sidebar-last .block .view-event-latest-comments .item-list ul li .views-field-name,
+.sidebar-last .block .view-event-latest-comments .item-list ul li .views-field-group-nid
 {
 	margin-left: 40px;
+}
+.sidebar-last .block .view-event-latest-comments .item-list ul li .views-field-subject{
+	font-weight: bold;
+	font-size: 1.1em;
+}
+.sidebar-last .block .view-event-latest-comments .item-list ul li .views-field-timestamp{
+	padding-bottom: 0;
 }
 
 .field-file {
