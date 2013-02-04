@@ -6119,6 +6119,13 @@ body.page-finished-contests #content-region h2.block-title {
 .contests-view .views-field-view-node-1 {
   display: inline-block;
 }
+
+#view-id-contests-page_3 .views-field-phpcode-2,
+#view-id-contests-page_3 .views-field-comments-count,
+#view-id-contests-page_3 .views-field-phpcode {
+  float: left;
+}
+
 .contests-view .views-row {
   font-family: "SoinSans-Roman", Helvetica, Arial, sans-serif;
   font-size: 14px;
@@ -8568,7 +8575,7 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 .page-solr-nodetype-multi #sidebar-first #block-views-d08d7cbb9d90f0fb0401f208b93138fe.block .content,
 .page-solr-nodetype #sidebar-first #block-views-d08d7cbb9d90f0fb0401f208b93138fe.block .content*/
 
-.area-comunidad #sidebar-last .block.block-views .view-newest-users .view-content, 
+.area-comunidad #sidebar-last .block.block-views .view-newest-users .view-content,
 .area-comunidad #sidebar-last .block.block-views .view-most-active-users .view-content
 {
 	padding: 5px;
@@ -9776,12 +9783,12 @@ body.page-groups .sidebar-last .block-views .view-content .item-list ul li .view
 }
 
 .page-solr-nodetype-multi .search-form #edit-keys-wrapper,
-.page-solr-nodetype .search-form #edit-keys-wrapper{ 
+.page-solr-nodetype .search-form #edit-keys-wrapper{
 	display: inline-block;
     margin-right: 15px;
 }
 .page-solr-nodetype-multi .search-form .edit-submit,
-.page-solr-nodetype .search-form  .edit-submit{ 
+.page-solr-nodetype .search-form  .edit-submit{
     margin-top: 5px;
 }
 .page-solr-nodetype-multi .search-form .form-text,
