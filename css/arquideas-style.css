@@ -9847,6 +9847,7 @@ float: left;
 	background-image: url("../images/bullet-sidebar.png") ;
 	background-repeat: no-repeat;
 	padding-left: 20px;
+	background-position: 0 5px;
 }
 .page-node #sidebar-last .title.block-title{
 	padding-bottom: 10px;
@@ -9892,7 +9893,7 @@ body.page-groups .views-field-subscribe a, body.page-groups .views-field-leave-g
 .node-type-inscription.only-groups .edit-delete a, .node-type-inscription .subscribe-og a, .two-columns .og-manage-link, #sidebar-last .more-link{
 	background-color: #000000 !important;
     border-radius: 5px 5px 5px 5px;
-    color: #FFFFFF;
+    color: #FFFFFF1important;
     display: inline-block;
     font-family: SoinSans-BoldOblique !important;
     font-size: 1.1em;
@@ -9902,7 +9903,7 @@ body.page-groups .views-field-subscribe a, body.page-groups .views-field-leave-g
     padding: 8px 15px;
 	border: none;
 }
-.node-type-inscription.only-groups .edit-delete a:hover, .node-type-inscription .subscribe-og a,  .two-columns .og-manage-link,, #sidebar-last .more-link{
+.node-type-inscription.only-groups .edit-delete a:hover, .node-type-inscription .subscribe-og a,  .two-columns .og-manage-link, #sidebar-last .more-link{
 	text-decoration: underline;
 }
 .node-type-inscription.only-groups .edit-delete a{
