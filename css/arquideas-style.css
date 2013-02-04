@@ -9921,6 +9921,8 @@ body.page-groups .sidebar-last .block-views .view-content .item-list ul li .view
   font-weight:normal;
   line-height:120%;
   color: #333;
+  display: block;
+  margin: 5px 0 7px 0;
 }
 .highlights-title {
   font-family: "SoinSans-Bold", Helvetica, Arial, sans-serif;
@@ -9928,12 +9930,16 @@ body.page-groups .sidebar-last .block-views .view-content .item-list ul li .view
   font-weight:normal;
   line-height:140%;
   text-align:left;
+  display: block;
+  margin-bottom: 7px;
 }
 .highlights-text {
   font-family: "SoinSans-Roman", Helvetica, Arial, sans-serif;
   font-size:17px;
   line-height:130%;
   color: #333;
+  display: block;
+  margin-bottom: 7px;
 }
 .highlights-info {
   font-family: "SoinSans-BoldOblique", Helvetica, Arial, sans-serif;
