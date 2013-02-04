@@ -9915,12 +9915,31 @@ body.page-groups .sidebar-last .block-views .view-content .item-list ul li .view
 }
 
 /*Styles for hightlights*/
-.highlights-date
-{ font-family:"Soin Sans Bold"; font-size:16px; font-weight:bold; line-height:120%; color:rgb(45,45,45); }
-.highlights-title
-{ font-family:"Soin Sans Bold"; font-size:20px; font-weight:bold; line-height:140%; text-align:left; }
-.highlights-text
-{ font-family:"Soin Sans Roman"; font-size:17px; line-height:130%; color:rgb(44,44,44); }
+.highlights-date {
+  font-family: "SoinSans-Bold", Helvetica, Arial, sans-serif;
+  font-size:16px;
+  font-weight:normal;
+  line-height:120%;
+  color: #333;
+}
+.highlights-title {
+  font-family: "SoinSans-Bold", Helvetica, Arial, sans-serif;
+  font-size:20px;
+  font-weight:normal;
+  line-height:140%;
+  text-align:left;
+}
+.highlights-text {
+  font-family: "SoinSans-Roman", Helvetica, Arial, sans-serif;
+  font-size:17px;
+  line-height:130%;
+  color: #333;
+}
+.highlights-info {
+  font-family: "SoinSans-BoldOblique", Helvetica, Arial, sans-serif;
+  font-size:16px;
+  line-height:130%;
+}
 /*END Styles for hightlights*/
 
 /*Hiding long descriptions in register form*/
