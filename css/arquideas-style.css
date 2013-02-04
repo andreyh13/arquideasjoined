@@ -8749,11 +8749,10 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 	line-height: 1.1;
 	font-size: .8em;
 }
-.area-comunidad #sidebar-last .view-arqnetwork-groups-most-active .view-content .views-field-subscribe a{
+.area-comunidad #sidebar-last .view-arqnetwork-groups-most-active .view-content .views-field-leave-group .join a{
 	background: #9c0;
 }
-.area-comunidad #sidebar-last .view-arqnetwork-groups-most-active .view-content .views-field-leave-group a:hover,
-.area-comunidad #sidebar-last .view-arqnetwork-groups-most-active .view-content .views-field-subscribe a:hover{
+.area-comunidad #sidebar-last .view-arqnetwork-groups-most-active .view-content .views-field-title a:hover{
 	background: #FF3F3F;
 }
 .area-comunidad #sidebar-last .block.block-tagadelic .content{
