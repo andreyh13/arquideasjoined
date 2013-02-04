@@ -8544,7 +8544,7 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 	/*margin: 0 -1px;*/
 }
 #sidebar-last .block-nodeblock .view-footer a, #sidebar-last .block-views .view-footer a {
-	font-size: 1.1em;
+	/*font-size: 1.1em;*/
 	display: block;
 }
 /*Hay que quitar del la css de jqueryUi las definiciones de fuentes, como no tengo acceso a esa css la sobreescribo aqu�*/
@@ -8662,12 +8662,13 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 .page-solr-nodetype-multi #sidebar-first .block .title.block-title,
 .page-solr-nodetype #sidebar-first .block .title.block-title{
 	text-align: center;
-	font-size: 1.3em;
+	font-size: 1.2em;
 	padding: 10px 20px;
 	margin-bottom: 0px;
 	border-bottom: 1px solid #ccc;
 	color: #000;
 	background-image: none;
+	line-height: 1;
 }
 .area-comunidad #sidebar-first .block.block-views .view-content,
 .area-comunidad #sidebar-last .block.block-views .view-content,
@@ -8710,8 +8711,8 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 	padding: 0;
 }
 .area-comunidad #sidebar-last .block.block-views .view-arqnetwork-groups-most-active .view-content table{
-	margin: 0 8px 8px 8px;
-	width: 223px;
+	margin: 0;
+	width: 239px;
 	display: block;
 	overflow: hidden;
 	font-size: 1em;
@@ -8736,6 +8737,9 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 	background: #f3f3f3;
 	border-bottom: 2px solid #fff;
 }
+.area-comunidad #sidebar-last .view-arqnetwork-groups-most-active .view-content table tr.views-row-last{
+	border-bottom: none;
+}
 .area-comunidad #sidebar-last .view-arqnetwork-groups-most-active .view-content table thead tr{
 	background: #fff;
 }
@@ -8745,9 +8749,10 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 }
 .area-comunidad #sidebar-last .view-arqnetwork-groups-most-active .view-content .views-field-leave-group a,
 .area-comunidad #sidebar-last .view-arqnetwork-groups-most-active .view-content .views-field-subscribe a{
-	padding: 5px 10px 3px 10px;
+	padding: 5px 5px 3px 5px;
 	line-height: 1.1;
 	font-size: .8em;
+	width: 45px;
 }
 .area-comunidad #sidebar-last .view-arqnetwork-groups-most-active .view-content .views-field-leave-group .join a{
 	background: #9c0;
@@ -8818,6 +8823,10 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 	border-bottom: none;
 	padding-bottom: 0;
 	margin-bottom: 0;
+}
+.area-comunidad #sidebar-first .block.block-views .view-arqnetwork-recent-featured .views-field-value,
+.area-comunidad #sidebar-first .block.block-views .view-arqnetwork-my-upcoming-events .views-field-value{
+	margin: 5px 0;
 }
 .area-comunidad #content-content .view-arqnetwork-projects .view-content .item-list {
     border: 1px solid #CCCCCC;
