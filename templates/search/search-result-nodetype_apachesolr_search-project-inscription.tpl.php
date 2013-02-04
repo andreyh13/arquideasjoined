@@ -48,43 +48,56 @@
 <li>
   <!-- Project Inscription custom result template -->
   <?php if(isset($result['node']->nid)): ?>
-    <?php $account = user_load($result['node']->uid); ?>
-    <?php  if($account && !empty($account->picture)): ?>
-    <div class="user-image">
-      <?php print theme_imagecache('user_picture_meta', $account->picture, $account->name); ?>
+    <div class="project-wrapper">
+        <div class="views-field-field-images-project-fid">
+            <div class="field-content">
+               <?php print nodetype_apachesolr_get_node_image($result['node']->nid); ?> 
+            </div>
+        </div>
+        <div class="project-info">
+            <div class="views-field-title">
+                <?php print l($title,'node/'.$result['node']->nid,array(
+                'attributes' => array(
+                   'title' => '',
+                   'class' => 'node-'.$result['node']->nid,
+                 ),
+                )); ?>
+            </div>
+            <div class="views-field-field-project-type-project-value">
+            </div>
+        </div>
+        <div class="project-social">
+            <span class="views-field-rating-value">
+                <?php print nodetype_apachesolr_get_votes_count($result['node']->nid); ?>
+            </span>
+            <span class="views-field-comment-count">
+                <?php print comment_num_all($result['node']->nid); ?>
+            </span>
+        </div>
+        <?php $account = user_load($result['node']->uid); ?>
+        <div class="project-owner">
+            <span class="views-field-field-image-acp-fid">
+                <?php if($account): ?>
+                      <?php $picture = $account->picture;
+                            if(empty($picture)){
+                                $picture = variable_get('user_picture_default', '');
+                            }
+                      ?>
+                      <?php print theme_imagecache('user_picture_meta', $picture, $account->name); ?>
+                <?php endif; ?>
+            </span>
+            <span class="views-field-name">
+                <label class="views-label-name"><?php print t('by'); ?></label>
+                <?php
+                    print l($account->realname,'user/'.$result['node']->uid,array(
+                     'attributes' => array(
+                        'title' => $account->realname,
+                        'class' => 'user-'.$result['node']->uid,
+                      ),
+                    )); ?>    
+            </span>
+        </div>
     </div>
-    <?php endif; ?>
-    <?php
-      print l($account->realname,'user/'.$result['node']->uid,array(
-       'attributes' => array(
-          'title' => $account->realname,
-          'class' => 'user-'.$result['node']->uid,
-        ),
-      )); ?>
-     <div class="job">
-        <?php
-            $jobname = '';
-            if(!empty($account->profile_job)){
-                $jobname = $account->profile_job;
-            }
-            print $jobname;
-        ?>
-    </div>
-    <div class="image-and-social">
-      <?php print nodetype_apachesolr_get_node_image($result['node']->nid); ?>
-      <div class="project-social">
-        <span class="voting-count"><?php print nodetype_apachesolr_get_votes_count($result['node']->nid); ?></span>
-        <span class="comments-count"><?php print comment_num_all($result['node']->nid); ?></span>
-      </div>
-    </div>
-    <h2 class="title">
-       <?php print l($title,'node/'.$result['node']->nid,array(
-       'attributes' => array(
-          'title' => '',
-          'class' => 'node-'.$result['node']->nid,
-        ),
-      )); ?>
-    </h2>
   <?php else: ?>
     <h2 class="title">
     <a href="#" title=""><?php print $title; ?></a>

@@ -23,9 +23,11 @@
 
 <!-- Project Inscription custom results template -->
 <?php if($search_results): ?>
+<div id="block-views-arqnetwork_projects-block_1">
 <ul class="search-results <?php print $type; ?>-results">
   <?php print $search_results; ?>
 </ul>
+</div>    
 <?php endif; ?>
 <?php print $pager; ?>
 
