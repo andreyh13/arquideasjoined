@@ -5941,7 +5941,8 @@ text-transform: uppercase;
 .view .views-field-rating-value span,
 .view .views-field-comment-count span,
 .view .views-field-comments-count span,
-.view .votes-count span {
+.view .votes-count span,
+.contest-winners .view-arquideas-contest-prizes.view-id-arquideas_contest_prizes .views-row-inner > div.views-field-value span {
   display: block;
   color: #fff;
   padding-left: 25px;
@@ -5969,7 +5970,8 @@ text-transform: uppercase;
 }
 
 .view .contest-followers span,
-.view .votes-count {
+.view .votes-count,
+.contest-winners .view-arquideas-contest-prizes.view-id-arquideas_contest_prizes .views-row-inner > div.views-field-value span {
   background-position: 0 -54px;
 }
 
@@ -6148,7 +6150,9 @@ body.page-finished-contests #content-region h2.block-title {
 .contests-view .contest-followers,
 .contests-view .views-field-comments-count,
 #block-views-contests-block_5 .views-field-comments-count,
-.contests-view .follow-link {
+.contests-view .follow-link,
+.contest-winners .view-arquideas-contest-prizes.view-id-arquideas_contest_prizes .views-row-inner > div.views-field-value,
+.contest-winners .view-arquideas-contest-prizes.view-id-arquideas_contest_prizes .views-row-inner > div.views-field-comment-count {
   position: absolute;
   top: 0;
   left: 0;
@@ -6158,7 +6162,8 @@ body.page-finished-contests #content-region h2.block-title {
 }
 
 .contests-view .views-field-comments-count,
-#block-views-contests-block_5 .views-field-comments-count {
+#block-views-contests-block_5 .views-field-comments-count,
+.contest-winners .view-arquideas-contest-prizes.view-id-arquideas_contest_prizes .views-row-inner > div.views-field-comment-count {
   top: 25px;
   padding-bottom: 5px;
 }
@@ -6525,6 +6530,10 @@ body.node-type-contest .node-content-main {
   margin-bottom: 30px;
 }
 
+.node-type-contest .contest-winners .views-row {
+  position: relative;
+}
+
 body.node-type-contest .contest-winners:hover {
   background: transparent;
 }
@@ -6572,6 +6581,12 @@ body.node-type-contest h1 {
 
 .contest-winners .view-arquideas-contest-prizes.view-id-arquideas_contest_prizes .view-id-og_members_faces table td {
   text-align: left
+}
+
+.contest-winners .view-arquideas-contest-prizes.view-id-arquideas_contest_prizes .views-field-picture {
+  max-width: 32px;
+  height: auto;
+  margin-right: 5px;
 }
 
 .contest-winners .views-field-field-inscription-members-imname-vname {
