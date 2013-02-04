@@ -1919,8 +1919,9 @@ border-bottom: 1px solid #DBDBDB!important;
 margin: 0;
 padding: 10px 0;
 }
-.view .view-content .item-list li.views-row:last-child {
-border: 0 none;
+.view .view-content .item-list li.views-row:last-child,
+.view .view-content .item-list li.views-row.views-row-last {
+border-bottom: none!important;
 }
 .view .view-content .item-list li.views-row:after {
 clear: both;
@@ -3666,7 +3667,7 @@ background-color: #000;
 background-color: transparent;
 }
 .block-views .calendar-calendar tr td.has-events a, .block-views .calendar-calendar tr.odd td.has-events a, .block-views .calendar-calendar tr.even td.has-events a {
-color: #c00;
+color: #FF3F3F;
 }
 #block-views-228f369cb15ea72f0c4ceed52aaf99c7 .content {
 background-color: transparent;
@@ -4076,7 +4077,17 @@ body.page-node .sidebar-last .block.block-views {
 .sidebar-last .block .view-event-latest-comments .item-list ul li .views-field-name,
 .sidebar-last .block .view-event-latest-comments .item-list ul li .views-field-group-nid
 {
-	margin-left: 40px;
+	margin-left: 48px!important;
+	display: block;
+}
+
+
+.sidebar-last .block .view-event-latest-comments .item-list ul li .views-field-subject,
+.sidebar-last .block .view-event-latest-comments .item-list ul li .views-field-timestamp,
+.sidebar-last .block .view-event-latest-comments .item-list ul li .views-field-name,
+.sidebar-last .block .view-event-latest-comments .item-list ul li .views-field-group-nid,
+.sidebar-last .block .view-group-block-wiki-latest-comments .item-list ul li .views-field-subject{
+	margin-bottom: 3px;
 }
 .sidebar-last .block .view-event-latest-comments .item-list ul li .views-field-subject{
 	font-weight: bold;
@@ -8467,6 +8478,9 @@ body.area-social #sidebar-last .view-arqnetwork-block-inscriptions .views-row.vi
 	padding-bottom: 0px;
 	border-bottom: none;
 }
+body.area-social #sidebar-last .view-arqnetwork-block-inscriptions .views-row .my-team{
+	font-weight: bold;
+}
 body.area-social #sidebar-last.nested #block-views-contests-block_2{
 	padding: 0!important;
 }
@@ -8475,7 +8489,7 @@ body.area-social #sidebar-last.nested .block .inner{
 	   max-width: 198px;
 }
 body.area-social #sidebar-last.nested #block-views-advertisements-block_6{
-	  border: 2px solid #000000;
+	  border: 1px solid #000000;
 	 box-shadow: 2px 2px 0 #FFFFFF, 3px 3px 0 #000000;
 }
 
@@ -9813,7 +9827,7 @@ float: left;
 
 
 #sidebar-last .view-event-past-events li, #sidebar-last .view-event-latest li{
-	padding: 5px 0;
+	padding: 5px 0 10px 0;
 }
 #sidebar-last .view-event-past-events li a, #sidebar-last .view-event-latest li a{
 	color: #000;
@@ -9826,6 +9840,13 @@ float: left;
 #sidebar-last .view-event-latest-events li a,
 #sidebar-last .view-event-past-events li .views-field-title{
 	margin: 8px 0;
+}
+.page-node #sidebar-last #block-apachesolr-mlt-001 .item-list li, 
+.page-node #sidebar-last #block-blog-0 .item-list li,
+.page-node #sidebar-last #block-apachesolr-mlt-001 .item-list li{
+	background-image: url("../images/bullet-sidebar.png") ;
+	background-repeat: no-repeat;
+	padding-left: 20px;
 }
 .page-node #sidebar-last .title.block-title{
 	padding-bottom: 10px;
@@ -9868,7 +9889,7 @@ body.page-groups #content-group{
 }
 
 body.page-groups .views-field-subscribe a, body.page-groups .views-field-leave-group a, .og-buttons a, .view-arqnetwork-user-account-projects .item-list .views-field-edit-node a,
-.node-type-inscription.only-groups .edit-delete a, .node-type-inscription .subscribe-og a{
+.node-type-inscription.only-groups .edit-delete a, .node-type-inscription .subscribe-og a, .two-columns .og-manage-link, #sidebar-last .more-link{
 	background-color: #000000 !important;
     border-radius: 5px 5px 5px 5px;
     color: #FFFFFF;
@@ -9881,12 +9902,16 @@ body.page-groups .views-field-subscribe a, body.page-groups .views-field-leave-g
     padding: 8px 15px;
 	border: none;
 }
-.node-type-inscription.only-groups .edit-delete a:hover, .node-type-inscription .subscribe-og a{
+.node-type-inscription.only-groups .edit-delete a:hover, .node-type-inscription .subscribe-og a,  .two-columns .og-manage-link,, #sidebar-last .more-link{
 	text-decoration: underline;
 }
 .node-type-inscription.only-groups .edit-delete a{
 	margin-right: 10px;
 }
+ .two-columns .og-manage-link , #sidebar-last .more-link{
+ 	float: right;
+	margin-top: 10px;
+ }
 .inscription-wall-overlay{
 	margin: 10px 0;
 	font-weight: bold;
