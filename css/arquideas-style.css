@@ -8462,6 +8462,11 @@ body.area-social #sidebar-last .view-arqnetwork-block-inscriptions .views-row{
 	padding-bottom: 10px;
 	border-bottom: 1px solid #000;
 }
+body.area-social #sidebar-last .view-arqnetwork-block-inscriptions .views-row.views-row-last{
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	border-bottom: none;
+}
 body.area-social #sidebar-last.nested #block-views-contests-block_2{
 	padding: 0!important;
 }
@@ -9863,7 +9868,7 @@ body.page-groups #content-group{
 }
 
 body.page-groups .views-field-subscribe a, body.page-groups .views-field-leave-group a, .og-buttons a, .view-arqnetwork-user-account-projects .item-list .views-field-edit-node a,
-.node-type-inscription.only-groups .edit-delete a{
+.node-type-inscription.only-groups .edit-delete a, .node-type-inscription .suscribe-og a{
 	background-color: #000000 !important;
     border-radius: 5px 5px 5px 5px;
     color: #FFFFFF;
@@ -9876,9 +9881,15 @@ body.page-groups .views-field-subscribe a, body.page-groups .views-field-leave-g
     padding: 8px 15px;
 	border: none;
 }
-
+.node-type-inscription.only-groups .edit-delete a:hover, .node-type-inscription .suscribe-og a{
+	text-decoration: underline;
+}
 .node-type-inscription.only-groups .edit-delete a{
 	margin-right: 10px;
+}
+.inscription-wall-overlay{
+	margin: 10px 0;
+	font-weight: bold;
 }
 body.page-groups .views-field-subscribe a:hover{
 	text-decoration: underline;
