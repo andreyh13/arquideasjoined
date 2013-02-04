@@ -3346,7 +3346,7 @@ height: 190px;
 	width: 610px;
 	margin-left: 0px;
 }
-.page-arquideas-network #content-front #content-front #content-front-right,
+.page-arquideas-network #content-front #content-front-right,
 .page-solr-nodetype #content-front #content-front-right,
 .page-solr-nodetype-multi #content-front #content-front-right {
 	width: 300px;
@@ -8513,8 +8513,12 @@ body.area-social #sidebar-last .block .views-field-comment-count{
 	font-family: SoinSans-Oblique!important;
 	text-transform: uppercase;
 	padding: 6px 12px 4px 12px;
+	text-align: center;
+    width: 38px;
 }
-
+.sidebar-last .block-views .views-field-subscribe a{
+	background: #9c0;
+}
 
 body.page-user #sidebar-last.nested .block .block-title, body.profile-me #sidebar-last.nested .block .block-title {
     border-bottom: 1px solid #000000;
@@ -8715,10 +8719,14 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 
 .area-comunidad #sidebar-last .view-arqnetwork-groups-most-active .view-content table a{
 	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-size: 0.85em;
+	font-size: 0.9em;
 	text-indent: 0px;
 	display: block;
 	margin: 0;
+}
+.area-comunidad #sidebar-last .view-arqnetwork-groups-most-active .view-content table a:hover{
+	text-decoration: none;
+	color: #FF3F3F;
 }
 .area-comunidad #sidebar-last .view-arqnetwork-groups-most-active .view-content table th{
 	display: none;
@@ -8795,6 +8803,22 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 	border: 1px solid #ccc;
 	border-bottom: none;
 	text-align: center;
+}
+.area-comunidad #sidebar-first .block.block-views .view-arqnetwork-recent-featured a,
+.area-comunidad #sidebar-first .block.block-views .view-arqnetwork-my-upcoming-events a{
+	font-size: 16px;
+}
+.area-comunidad #sidebar-first .block.block-views .view-arqnetwork-recent-featured .views-row,
+.area-comunidad #sidebar-first .block.block-views .view-arqnetwork-my-upcoming-events .views-row{
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+}
+.area-comunidad #sidebar-first .block.block-views .view-arqnetwork-recent-featured .views-row.views-row-last,
+.area-comunidad #sidebar-first .block.block-views .view-arqnetwork-my-upcoming-events .views-row.views-row-last{
+	border-bottom: none;
+	padding-bottom: 0;
+	margin-bottom: 0;
 }
 .area-comunidad #content-content .view-arqnetwork-projects .view-content .item-list {
     border: 1px solid #CCCCCC;
