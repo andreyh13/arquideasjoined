@@ -1040,6 +1040,7 @@ padding: 9px 6px;
 border: 0 none;
 margin: 0;
 padding: 0;
+font-size: 1.1em
 }
 .item-list ul.pager li.pager-item {
 border: 0 none;
@@ -7744,12 +7745,12 @@ background: #FF3F3F;
   float: none;
 }
 
-.login-and-register-link-div .register-link-div {
+.login-and-register-link-div .register-link-div, .login-and-register-link-div-2 .register-link-div {
   float: left;
   margin-left: 10px;
   padding: 0;
 }
-.login-and-register-link-div .register-link-div a {
+.login-and-register-link-div .register-link-div a,.login-and-register-link-div-2 .register-link-div a {
     vertical-align: baseline;
     padding: 2px 20px 0 20px;
     line-height: 24px;
@@ -8814,7 +8815,7 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 	border-bottom: none;
 	text-align: center;
 }
-.area-comunidad #content-content .block-facebook_status-facebook_status .title.block-title{
+.area-comunidad #content-content .block-facebook_status .title.block-title{
 	border: none;
 	border-bottom: 1px solid #000;
 	margin-bottom: 20px;
@@ -9919,7 +9920,11 @@ body.page-groups .sidebar-last .block-views .view-content .item-list ul li .view
 	margin-bottom: 0px;
 	text-align: center;
 }
-
+.arquideas-network #content-front-inner .content-front-left .block .addthis_default_style,
+.page-solr-nodetype-multi #content-front-inner .content-front-left .block .addthis_default_style,
+.page-solr-nodetype #content-front-inner .content-front-left .block .addthis_default_style{
+	margin-bottom: 15px;
+}
 .arquideas-network #content-front-inner .content-front-left .block .addthis_default_style a,
 .page-solr-nodetype-multi #content-front-inner .content-front-left .block .addthis_default_style a,
 .page-solr-nodetype #content-front-inner .content-front-left .block .addthis_default_style a
@@ -9928,7 +9933,7 @@ body.page-groups .sidebar-last .block-views .view-content .item-list ul li .view
 }
 .arquideas-network #content-front-inner .content-front-left .block .addthis_default_style .addthis_button_facebook_like{
 	position: relative;
-	top: -5px;
+	top: 5px;
 }
 .arquideas-network #content-front-inner .content-front-left div.node,
 .page-solr-nodetype-multi #content-front-inner .content-front-left div.node,
