@@ -5570,6 +5570,14 @@ body.page-home #content-front-right .block {
 
 /* Mini sliders */
 
+.mini-slider-controls .views_slideshow_singleframe_teaser_section {
+  min-height: 205px !important;
+}
+
+.view-arquideas-contest-winners.view-display-id-block_1.mini-slider-controls .views_slideshow_singleframe_teaser_section {
+  min-height: 257px !important;
+}
+
 .mini-slider-controls.contests-list-blocks .views-row,
 .mini-slider-controls .views-row {
   margin-bottom: 15px;
