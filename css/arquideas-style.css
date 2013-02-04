@@ -544,6 +544,9 @@ text-decoration: none;
 position: relative;
 z-index: 10;
 }
+.preface-top-wrapper{
+	margin-top:-20px;
+}
 .preface-top {
 background: none repeat scroll 0 0 transparent;
 overflow: visible;
@@ -1911,7 +1914,7 @@ margin-bottom: 10px;
 }
 .view .view-content .item-list li.views-row {
 background: none repeat scroll 0 0 transparent;
-border-bottom: 1px solid #DBDBDB;
+border-bottom: 1px solid #DBDBDB!important;
 margin: 0;
 padding: 10px 0;
 }
@@ -8562,7 +8565,7 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 #content-front-inner > .title.block-title{
 	text-align: center;
 	margin: 30px 0 40px 0;
-	padding: 0 0 20px;
+	padding: 0 0 10px;
 	border-bottom: 1px solid #000;
 	font-size: 3em;
 	color: #000;
@@ -8577,6 +8580,7 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 .page-solr-nodetype-multi #content-front-inner > .subtitle,
 .page-solr-nodetype #content-front-inner > .subtitle{
 	margin-bottom: 40px;
+	padding-bottom: 20px;
 	border-bottom: 1px solid #000;
 }
 #content-front #content-front-left{
@@ -8725,10 +8729,7 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 	display: block;
 	margin: 0;
 }
-.area-comunidad #sidebar-last .view-arqnetwork-groups-most-active .view-content table a:hover{
-	text-decoration: none;
-	color: #FF3F3F;
-}
+
 .area-comunidad #sidebar-last .view-arqnetwork-groups-most-active .view-content table th{
 	display: none;
 }
@@ -8758,6 +8759,10 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 	background: #9c0;
 }
 .area-comunidad #sidebar-last .view-arqnetwork-groups-most-active .view-content .views-field-title a:hover{
+	color: #FF3F3F;
+	text-decoration: none;
+}
+.area-comunidad #sidebar-last .view-arqnetwork-groups-most-active .view-content .views-field-leave-group a:hover{
 	background: #FF3F3F;
 }
 .area-comunidad #sidebar-last .block.block-tagadelic .content{
@@ -8775,6 +8780,7 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 	min-height: 20px;
 	border: 1px solid #ccc;
 	border-top: 0;
+	line-height: 150%;
 }
 .area-comunidad #sidebar-first .block.block-views .view-footer a,
 .area-comunidad #sidebar-last .block.block-views .view-footer a,
@@ -8808,6 +8814,11 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 	border-bottom: none;
 	text-align: center;
 }
+.area-comunidad #content-content .block-facebook_status-facebook_status .title.block-title{
+	border: none;
+	border-bottom: 1px solid #000;
+	margin-bottom: 20px;
+}
 .area-comunidad #sidebar-first .block.block-views .view-arqnetwork-recent-featured a,
 .area-comunidad #sidebar-first .block.block-views .view-arqnetwork-my-upcoming-events a{
 	font-size: 16px;
@@ -8815,8 +8826,8 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 .area-comunidad #sidebar-first .block.block-views .view-arqnetwork-recent-featured .views-row,
 .area-comunidad #sidebar-first .block.block-views .view-arqnetwork-my-upcoming-events .views-row{
 	border-bottom: 1px solid #ccc;
-	padding-bottom: 10px;
-	margin-bottom: 10px;
+	padding-bottom: 15px;
+	margin-bottom: 15px;
 }
 .area-comunidad #sidebar-first .block.block-views .view-arqnetwork-recent-featured .views-row.views-row-last,
 .area-comunidad #sidebar-first .block.block-views .view-arqnetwork-my-upcoming-events .views-row.views-row-last{
@@ -9906,12 +9917,31 @@ body.page-groups .sidebar-last .block-views .view-content .item-list ul li .view
 .page-solr-nodetype-multi #content-front-inner .content-front-left .block,
 .page-solr-nodetype #content-front-inner .content-front-left .block{
 	margin-bottom: 0px;
+	text-align: center;
+}
+
+.arquideas-network #content-front-inner .content-front-left .block .addthis_default_style a,
+.page-solr-nodetype-multi #content-front-inner .content-front-left .block .addthis_default_style a,
+.page-solr-nodetype #content-front-inner .content-front-left .block .addthis_default_style a
+{
+	float: none;
+}
+.arquideas-network #content-front-inner .content-front-left .block .addthis_default_style .addthis_button_facebook_like{
+	position: relative;
+	top: -5px;
 }
 .arquideas-network #content-front-inner .content-front-left div.node,
 .page-solr-nodetype-multi #content-front-inner .content-front-left div.node,
 .page-solr-nodetype #content-front-inner .content-front-left div.node{
 	margin-bottom: 10px;
 	font-size: .85em;
+}
+.arquideas-network #content-front-inner .users-total,
+.page-solr-nodetype-multi #content-front-inner .users-total,
+.page-solr-nodetype #content-front-inner .users-total{
+ background-position: center top;
+ padding-bottom: 0;
+ padding-top: 20px;
 }
 .page-solr-nodetype-multi #main-content-inner #content-group > h1.title, .page-solr-nodetype  #main-content-inner #content-group > h1.title{
 	display: none
@@ -10008,4 +10038,12 @@ body.page-groups .sidebar-last .block-views .view-content .item-list ul li .view
 
 .language-link.active {
     display: none !important;
+}
+blockquote{
+
+font-family:"Soin Sans Oblique";
+font-size:18px;
+line-height:100%;
+color:#666666;
+
 }
