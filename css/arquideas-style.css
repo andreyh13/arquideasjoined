@@ -9859,12 +9859,17 @@ float: left;
 	margin: 8px 0;
 }
 .page-node #sidebar-last #block-apachesolr-mlt-001 .item-list li, 
-.page-node #sidebar-last #block-blog-0 .item-list li,
-.page-node #sidebar-last #block-apachesolr-mlt-001 .item-list li{
+.page-node #sidebar-last #block-blog-0 .item-list li{
 	background-image: url("../images/bullet-sidebar.png") ;
 	background-repeat: no-repeat;
 	padding-left: 20px;
 	background-position: 0 5px;
+	padding-bottom: 2px;
+}
+.page-node #sidebar-last #block-apachesolr-mlt-001, 
+.page-node #sidebar-last #block-blog-0{
+	margin-bottom: 30px;
+	padding-bottom: 10px;
 }
 .page-node #sidebar-last .title.block-title{
 	padding-bottom: 10px;
@@ -9929,6 +9934,7 @@ body.page-groups .views-field-subscribe a, body.page-groups .views-field-leave-g
  .two-columns .og-manage-link , #sidebar-last .more-link a{
  	float: right;
 	margin-top: 10px;
+	color: #fff;
  }
 .inscription-wall-overlay{
 	margin: 10px 0;
@@ -10153,6 +10159,9 @@ color:#666666;
 .blog-type #content-content .view-node-date-author .views-field-picture{
 	margin-bottom: 20px;
 }
+.blog-type #content-content .view-node-date-author .views-field-created{
+	padding-bottom: 0px;
+}
 .blog-type #content-content .field-ds-group-ds-node-date-type-vote{
 	position: relative;
 	overflow: hidden;
@@ -10166,16 +10175,21 @@ color:#666666;
 .blog-type #content-content .field-ds-group-ds-node-date-type-vote .field-fivestar-widget .fivestar-widget{
 	margin-right: 0px;
 }
-.blog-type #content-content .nd-region-header .field-label-inline-first{
-	color: #999;
-	font-weight: normal;
-}
+
 .blog-type #content-content .nd-region-header .field-ds-og-groups,
 .blog-type #content-content .nd-region-header .field-ds-category,
 .blog-type #content-content .nd-region-header .field-ds-category-events,
-.blog-type #content-content .nd-region-header .field-terms,
-{
+.blog-type #content-content .nd-region-header .field-terms{
 	padding-bottom: 5px!important;
+}
+.blog-type #content-content .nd-region-header .field-body{
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #000;
+}
+.blog-type #content-content .nd-region-header .field-label-inline-first{
+	color: #999;
+	font-weight: normal;
 }
 .blog-type #content-content .nd-region-header  .field-terms a{
 	font-size: 12px;
