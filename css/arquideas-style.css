@@ -7218,11 +7218,13 @@ body.node-type-inscription-1 #breadcrumbs {
 .view-jury-members .views-field-title,
 .view-jury-partners-co .views-field-title {
   font-size: 14px;
-  font-family: "SoinSans-Bold",Helvetica,Arial,sans-serif;
+  /*font-family: "SoinSans-Bold",Helvetica,Arial,sans-serif;*/
   color: #000;
   margin: 0 0 5px 0 !important;
 }
-
+.view-jury-partners-co .views-field-title .field-content a{
+	font-weight: bold;
+}
 .view-jury-members .views-field-field-short-description-value,
 .view-jury-partners-co .field-content {
   color: #999;
