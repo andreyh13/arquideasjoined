@@ -7224,7 +7224,7 @@ body.node-type-inscription-1 #breadcrumbs {
   margin: 0 0 5px 0 !important;
 }
 .view-jury-partners-co .views-field-title .field-content a{
-	font-weight: bold;
+	font-family: "Helvetica Neue";
 }
 .view-jury-members .views-field-field-short-description-value,
 .view-jury-partners-co .field-content {
