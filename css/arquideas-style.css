@@ -10125,8 +10125,8 @@ color:#666666;
 .grid16-16.force-width{
 	width: 960px!important;
 }
-.blog-type #content-group h1.title{
-	margin-bottom: 0;
+body.blog-type #content-group h1.title{
+	margin-bottom: 0!important;
 }
 .blog-type #content-content .field-links{
 	margin-bottom: 0px;
