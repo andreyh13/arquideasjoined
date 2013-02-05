@@ -8092,6 +8092,12 @@ ul.primary.ui-tabs-nav{
 #main-group .node-form .standard{
 
 }
+.area-social #content-content .block-facebook_status h2.title{
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #000;
+	text-align: center;
+}
 .grid16-12.force_width{
 	width: 720px!important;
 }
