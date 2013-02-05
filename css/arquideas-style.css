@@ -7351,6 +7351,7 @@ body.page-node #content-group .colaborator-top h1.title {
 .area-social #sidebar-last .mini-slider-controls .views_slideshow_singleframe_slide{
 	max-height:140px!important;
 	max-width: 198px!important;
+	min-height: 140px!important;
 }
 .contests-list-blocks .view-content .views-field-title a {
   background: url(../images/transparent-spacer.png) repeat scroll 0 0 transparent;
@@ -9562,7 +9563,7 @@ body.book #content-content{
 .view-arqnetwork-user-projects .view-content .item-list li.views-row {
 	float: left;
 	display: block;
-	border-bottom: none;
+	border-bottom: none!important;
 	margin-right: 5px;
 	width: 32%;
 	margin-right: 2%;
@@ -9627,7 +9628,7 @@ color: #fff;
 .view-arqnetwork-user-projects .view-content div.views-row .views-field-markup{
 	position: absolute;
 	top: 0;
-	right: 0;
+	right: 8px;
 	background-color: #000;
 	padding: 10px;
 	display: inline-block;
@@ -9916,7 +9917,7 @@ body.page-groups .views-field-subscribe a, body.page-groups .views-field-leave-g
 .node-type-inscription.only-groups .edit-delete a, .node-type-inscription .subscribe-og a, .two-columns .og-manage-link, #sidebar-last .more-link a{
 	background-color: #000000 !important;
     border-radius: 5px 5px 5px 5px;
-    color: #FFFFFF1important;
+    color: #FFFFFF!important;
     display: inline-block;
     font-family: SoinSans-BoldOblique !important;
     font-size: 1.1em;
@@ -10183,6 +10184,10 @@ body.blog-type #content-group h1.title{
 .blog-type #content-content .nd-region-header .field-terms{
 	padding-bottom: 5px!important;
 }
+/*.blog-type #content-content .nd-region-header .field-date{
+	font-weight: bold;
+	margin: 5px 0;
+}*/
 .blog-type #content-content .nd-region-header .field-body{
 	padding-bottom: 20px;
 	margin-bottom: 20px;
