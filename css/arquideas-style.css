@@ -4219,7 +4219,8 @@ margin: 0;
 .field-ds-og-groups {
 padding: 0.8em 0;
 }
-.buildmode-full .field-ds-og-groups {
+.buildmode-full .field-ds-og-groups,
+.buildmode-full .field-ds-category {
 padding: 0 0 0.4em;
 }
 .buildmode-teaser .field-ds-og-groups {
@@ -10169,13 +10170,12 @@ color:#666666;
 	color: #999;
 	font-weight: normal;
 }
-.blog-type .block #content-content .nd-region-header .field-ds-og-groups,
-.blog-type .block #content-content .nd-region-header .field-ds-category,
-.blog-type .block #content-content .nd-region-header .field-ds-category-events,
-.blog-type .block #content-content .nd-region-header .field-terms,
+.blog-type #content-content .nd-region-header .field-ds-og-groups,
+.blog-type #content-content .nd-region-header .field-ds-category,
+.blog-type #content-content .nd-region-header .field-ds-category-events,
+.blog-type #content-content .nd-region-header .field-terms,
 {
-	height: 20px;
-	line-height: 20px;
+	padding-bottom: 5px!important;
 }
 .blog-type #content-content .nd-region-header  .field-terms a{
 	font-size: 12px;
