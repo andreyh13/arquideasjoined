@@ -7183,6 +7183,7 @@ body.node-type-inscription-1 #breadcrumbs {
   font-size: 14px;
   text-align: center;
   color: #999999;
+  line-height: 1.2em;
 }
 
 .two-columns-colaborators .views-field-field-comment-title-col-value {
@@ -7193,8 +7194,8 @@ body.node-type-inscription-1 #breadcrumbs {
 
 .two-columns-colaborators .views-field-phpcode {
   color: #999;
-  padding: 3px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
+  padding: 2px 8px;
 }
 
 .two-columns-colaborators .views-row .inner-partner{
@@ -7218,7 +7219,7 @@ body.node-type-inscription-1 #breadcrumbs {
 .view-jury-members .views-field-title,
 .view-jury-partners-co .views-field-title {
   font-size: 14px;
-  /*font-family: "SoinSans-Bold",Helvetica,Arial,sans-serif;*/
+  font-family: Helvetica;
   color: #000;
   margin: 0 0 5px 0 !important;
 }
