@@ -6827,7 +6827,8 @@ body.page-solr-nodetype-multi #content-group {
   width: 690px;
 }
 
-body.page-solr-nodetype-multi #search-form #edit-submit {
+body.page-solr-nodetype-multi #search-form #edit-submit, 
+body.page-solr-nodetype #search-form #edit-submit {
   font-size: 14px;
   height: 31px;
   line-height: 31px;
@@ -6864,7 +6865,7 @@ body.page-solr-nodetype #content-front-inner .block-nodeblock h1.title {
   float: left;
   margin: 0 10px 20px 0;
   width: 220px;
-  min-height: 290px;
+  /*min-height: 290px;*/
   padding: 0;
   position: relative;
 }
@@ -10044,7 +10045,7 @@ body.page-groups .sidebar-last .block-views .view-content .item-list ul li .view
     margin-top: 5px;
 }
 .page-solr-nodetype-multi .search-form .form-text,
-.page-solr-nodetype .search-form  .edit-submit{
+.page-solr-nodetype .search-form  .form-text{
 	background: none repeat scroll 0 0 #F7F7F7;
     border: 1px solid #E6E6E6;
     border-radius: 5px 5px 5px 5px;
