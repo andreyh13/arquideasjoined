@@ -10154,23 +10154,28 @@ color:#666666;
 }
 .blog-type #content-content .field-ds-group-ds-node-date-type-vote{
 	position: relative;
+	overflow: hidden;
 }
 .blog-type #content-content .field-ds-group-ds-node-date-type-vote .field-fivestar-widget{
 	position: absolute;
 	position: absolute; 
-	 right: 0;
-	  margin-right:0
+	right: 0;
+	margin-right:0
 }
 .blog-type #content-content .field-ds-group-ds-node-date-type-vote .field-fivestar-widget .fivestar-widget{
 	margin-right: 0px;
 }
 .blog-type #content-content .nd-region-header .field-label-inline-first{
 	color: #999;
+	font-weight: normal;
 }
-.blog-type #content-content .nd-region-header .field-ds-og-groups,
-.blog-type #content-content .nd-region-header .field-ds-category,
+.blog-type .block #content-content .nd-region-header .field-ds-og-groups,
+.blog-type .block #content-content .nd-region-header .field-ds-category,
+.blog-type .block #content-content .nd-region-header .field-ds-category-events,
+.blog-type .block #content-content .nd-region-header .field-terms,
 {
-	padding-bottom: 5px;
+	height: 20px;
+	line-height: 20px;
 }
 .blog-type #content-content .nd-region-header  .field-terms a{
 	font-size: 12px;
