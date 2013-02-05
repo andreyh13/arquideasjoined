@@ -1354,7 +1354,7 @@ margin: 0 16px 0 0;
 padding: 0;
 position: relative;
 text-align: left;
-width: 64px;
+width: 50px;
 z-index: 10;
 }
 .comment-info ul.links li {
@@ -4244,6 +4244,7 @@ border-bottom: 1px solid #000;
 .buildmode-full .node-type-wiki.node .field-terms {
 border-bottom: 0 none;
 padding: 0 0 0.4em;
+margin-bottom: 0;
 }
 .buildmode-full .node-type-wiki.node .field-contributors-widget {
 border-bottom: 1px solid #000;
@@ -9173,6 +9174,8 @@ div.comment h3.title a{
 div.comment {
 	border-top: 1px solid #ccc;
 	padding-top: 20px;
+	border-bottom: none;
+	padding-bottom: 0px;
 }
 div.comment a{
 	color: #000;
@@ -9192,8 +9195,8 @@ div.comment .comment-name a{
 	font-size: 12px;
 }
 div.comment .comment-date{
-	font-size: 11px;
-	color: #ccc;
+	font-size: 12px;
+	color: #999;
 }
 div.comment .content{
 	color: #666;
@@ -9903,7 +9906,7 @@ body.page-groups #content-group{
 }
 
 body.page-groups .views-field-subscribe a, body.page-groups .views-field-leave-group a, .og-buttons a, .view-arqnetwork-user-account-projects .item-list .views-field-edit-node a,
-.node-type-inscription.only-groups .edit-delete a, .node-type-inscription .subscribe-og a, .two-columns .og-manage-link, #sidebar-last .more-link{
+.node-type-inscription.only-groups .edit-delete a, .node-type-inscription .subscribe-og a, .two-columns .og-manage-link, #sidebar-last .more-link a{
 	background-color: #000000 !important;
     border-radius: 5px 5px 5px 5px;
     color: #FFFFFF1important;
@@ -9916,13 +9919,13 @@ body.page-groups .views-field-subscribe a, body.page-groups .views-field-leave-g
     padding: 8px 15px;
 	border: none;
 }
-.node-type-inscription.only-groups .edit-delete a:hover, .node-type-inscription .subscribe-og a,  .two-columns .og-manage-link, #sidebar-last .more-link{
+.node-type-inscription.only-groups .edit-delete a:hover, .node-type-inscription .subscribe-og a,  .two-columns .og-manage-link, #sidebar-last .more-link a{
 	text-decoration: underline;
 }
 .node-type-inscription.only-groups .edit-delete a{
 	margin-right: 10px;
 }
- .two-columns .og-manage-link , #sidebar-last .more-link{
+ .two-columns .og-manage-link , #sidebar-last .more-link a{
  	float: right;
 	margin-top: 10px;
  }
@@ -10113,4 +10116,62 @@ color:#666666;
 }
 .grid16-16.force-width{
 	width: 960px!important;
+}
+.blog-type #content-group h1.title{
+	margin-bottom: 0;
+}
+.blog-type #content-content .field-links{
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+.blog-type #content-content .field-links . field-body{
+	border-bottom: 1px solid #000;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+}
+.blog-type #content-content .field-links .field-label{
+	font-family: SoinSans-Bold;
+	font-size: 1.6em;
+	text-transform: uppercase;
+}
+.blog-type #content-content .field-links ul.links li{
+	padding: 0;
+	overflow: hidden;
+}
+.blog-type #content-content .field-links ul.links li a{
+	border-radius: 0;
+	display: block;
+	height: auto;
+    line-height: auto;
+    padding: 5px 0 5px 10px;
+	background-color: transparent;
+    text-align: left;
+    text-transform: uppercase;
+	float: left!important;
+}
+.blog-type #content-content .view-node-date-author .views-field-picture{
+	margin-bottom: 20px;
+}
+.blog-type #content-content .field-ds-group-ds-node-date-type-vote{
+	position: relative;
+}
+.blog-type #content-content .field-ds-group-ds-node-date-type-vote .field-fivestar-widget{
+	position: absolute;
+	position: absolute; 
+	 right: 0;
+	  margin-right:0
+}
+.blog-type #content-content .field-ds-group-ds-node-date-type-vote .field-fivestar-widget .fivestar-widget{
+	margin-right: 0px;
+}
+.blog-type #content-content .nd-region-header .field-label-inline-first{
+	color: #999;
+}
+.blog-type #content-content .nd-region-header .field-ds-og-groups,
+.blog-type #content-content .nd-region-header .field-ds-category,
+{
+	padding-bottom: 5px;
+}
+.blog-type #content-content .nd-region-header  .field-terms a{
+	font-size: 12px;
 }
