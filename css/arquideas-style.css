@@ -7348,6 +7348,7 @@ body.page-node #content-group .colaborator-top h1.title {
 	bottom: 27px;
 	height: auto;
 }
+.area-social #sidebar-last .mini-slider-controls .views_slideshow_singleframe_teaser_section,
 .area-social #sidebar-last .mini-slider-controls .views_slideshow_singleframe_slide{
 	max-height:140px!important;
 	max-width: 198px!important;
@@ -8272,9 +8273,18 @@ a.add-content-link:hover,
 	margin: 5px 5px;
 	/*font-size: 1.2em;*/
 }
+
 .area-social #sidebar-last .block-nodeblock a{
 	display: block;
 }
+.area-social #sidebar-last .block-views .tagadelic_views{
+	font-size: .9em;
+	text-align: center;
+}
+.area-social #sidebar-last .block-views a.tagadelic{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0;
+} 
 .area-social #sidebar-last .block-nodeblock img,  .area-social #sidebar-last .block-views img{
 	max-width: 194px;
 	margin-top: 5px!important;
