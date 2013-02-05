@@ -7197,6 +7197,12 @@ body.node-type-inscription-1 #breadcrumbs {
   margin-bottom: 10px;
 }
 
+.two-columns-colaborators .views-row .inner-partner{
+	vertical-align: middle; 
+	height: 134px; 
+	display: table-cell;
+}
+
 #block-views-colaborators-block_3 {
   margin-top: 60px;
 }
@@ -7535,7 +7541,7 @@ body.page-node #content-group .colaborator-top h1.title {
 /* Activity Log */
 .activity-log-message {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 13px;
+  font-size: 12px;
   border: 0 none;
   padding: 15px 0;
   color: #262626;
@@ -8093,8 +8099,9 @@ ul.primary.ui-tabs-nav{
 
 }
 .area-social #content-content .block-facebook_status h2.title{
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 	padding-bottom: 20px;
+	margin-top: 20px;
 	border-bottom: 1px solid #000;
 	text-align: center;
 }
