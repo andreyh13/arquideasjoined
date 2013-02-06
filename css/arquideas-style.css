@@ -9293,12 +9293,14 @@ body.book #content-content{
 }
 #mybook .buttons ul{
 	list-style: none;
+	height: 26px;
 }
 
 #mybook .buttons ul li{
 	display: inline-block;
 	margin-right: 20px;
 	float: none;
+	position: relative;
 }
 #mybook .buttons ul li a{
  border-radius: 4px 4px 4px 4px;
@@ -9405,20 +9407,24 @@ body.book #content-content{
 #mybook .image-contest-prize{
 	height: 40px;
 	top: -40px;
+	position: relative;
+	overflow: hidden;
 }
-#mybook .image-contest-prize .inner{
+#mybook .image-contest-prize div.inner{
 	background-image: url(../images/logoarquideas_mini.png);
 	background-repeat: no-repeat;
 	background-position: 5px 5px;
-}
-#mybook .image-contest-prize div.inner{
 	z-index: 2;
 	position: relative;
-	margin-top: 20px;
+	padding-top: 20px;
+	overflow: hidden;
+	padding-left: 3px;
 }
-#mybook .image-contest-prize div.image-contest, #mybook .image-contest-prize div.image-price{
+#mybook .image-contest-prize div.image-contest, #mybook .image-contest-prize div.image-prize{
 	color: #fff;
 	display: inline;
+	position: relative;
+	z-index: 2;
 }
 #mybook .image-title{
 	color: #000;
@@ -10308,7 +10314,13 @@ body.blog-type #content-group h1.title{
 	background: #f3f3f3;
 }
 .booklet #likebox{
-	display: none;
+	background: #FFFFFF;
+    border: 1px solid #000000;
+    display: none;
+    padding: 10px;
+    position: absolute;
+    top: 31px;
+    z-index: 2;
 }
 .lbtrigger{
 	height: 26px;

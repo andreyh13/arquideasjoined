@@ -116,9 +116,9 @@
 						</li>
 						<script>
 							$(function(){
-								$('#likebox').width($('#likebox').parent().width()+'px');
+								$('#likebox').width(($('#likebox').parent().width()-20)+'px');
 								$('.likebox').click(function(e){
-									$('#likebox').slideToggle();
+									$('#likebox').slideDown();
 									e.preventDefault()
 								})
 							})
