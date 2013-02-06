@@ -6828,7 +6828,8 @@ body.node-type-contest .special-mentions h1 {
   background: transparent url(../images/single-border.png) repeat-x bottom;*/
 }
 body.page-solr-nodetype #content-front-right .block .inner,
-body.page-solr-nodetype-multi #content-front-right .block .inner {
+body.page-solr-nodetype-multi #content-front-right .block .inner,
+body.page-arquideas-network   #content-front-right .block .inner{
     margin-left: 0px;
     margin-right: 0px;
 }
@@ -7240,20 +7241,22 @@ body.node-type-inscription-1 #breadcrumbs {
   margin: 0 0 5px 0 !important;
 }
 .view-jury-partners-co .views-field-title .field-content a{
-	font-family: "Helvetica Neue";
+	  font-family: "SoinSans-Bold", Helvetica, Arial, sans-serif;
 }
 .view-jury-members .views-field-field-short-description-value,
 .view-jury-partners-co .field-content {
   color: #999;
 }
 
-.view-jury-members .views-field-field-square-image-col-fid {
+.view-jury-members .views-field-field-square-image-col-fid,
+.view-jury-partners-co .views-field-field-square-image-col-fid  {
   float: left;
   margin-right: 20px;
 }
-.view-jury-partners-co .views-field-field-square-image-col-fid {
-  float: right;
-  margin-left: 10px;
+.sidebar-last #block-views-jury_partners_co-block_3 h2.title{
+padding-bottom: 10px;
+margin-bottom: 10px;
+border-bottom: 1px solid #000;
 }
 .view-jury-partners-co.view-display-id-page_1 .views-field-field-square-image-col-fid {
   float: left;
@@ -7389,7 +7392,7 @@ body.page-node #content-group .colaborator-top h1.title {
   color: #FFFFFF;
   font-family: "SoinSans-BoldOblique",Helvetica,Arial,sans-serif;
   font-size: 22px;
-  height: 130px;
+  height: 117px;
   left: 15px;
   line-height: 25px;
   padding: 30px 10px 0 10px;
