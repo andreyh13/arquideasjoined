@@ -117,8 +117,9 @@
 						<script>
 							$(function(){
 								$('#likebox').hide().width($(this).parent().width()+'px');
-								$('.likebox').click(function(){
+								$('.likebox').click(function(e){
 									$('#likebox').slideToggle();
+									e.preventDefault()
 								})
 							})
 						</script>
