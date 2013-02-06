@@ -9,13 +9,29 @@
     <h2 class="title"><a href="<?php print $node_url ?>" title="<?php print $title ?>"><?php print $title ?></a></h2>
     <?php endif; ?>
     
-    <!-- Short Group Description -->
+    
     <?php if ($page == 1): ?>
+    
+    <!-- Group image -->
+    <div class="og-image">
+    <?php print views_embed_view('arqnetwork_group_image', 'block_1', $node->nid); ?>
+    </div>    
+    <!-- END Group Image -->
+    
+    <!-- Short Group Description -->
     <div class="og-description">
         <?php print $og_description; ?>
-    </div>    
-    <?php endif; ?>
+    </div>
     <!-- End Short Group Description -->
+    
+      <?php if ($terms): ?>
+        <div class="terms">
+    	  <h4>Tags:</h4>
+          <?php print $terms; ?>
+         </div>
+      <?php endif;?>
+    <?php endif; ?>
+    
 
     <?php if ($node_top && !$teaser): ?>
     <div id="node-top" class="node-top row nested">
@@ -34,16 +50,43 @@
   <!-- END BLOCK USERS TOTAL -->
   
   <!-- BLOCK JOIN NETWORK -->
-  <?php if($page && !$is_edit){
+  <?php /*if($page && !$is_edit){
     $block_join_network = module_invoke('arquideas_generic','block','view','2');
     print $block_join_network['content'];
-  }
+  }*/
   ?>
   <!-- END BLOCK JOIN NETWORK -->
   
+  <!-- JOIN GROUP OR LEAVE GROUP BUTTON -->
+    <?php if($page && !$is_edit): 
+        if(og_is_group_member($node,FALSE)): ?>
+                <div class="og-buttons">
+                <?php global $user;
+                    if(og_menu_access_unsubscribe($node)){
+                        print l('<span>'.t('Leave').'</span>','og/unsubscribe/'.$node->nid.'/'.$user->uid,array(
+                            'attributes' => array(
+                                'title' => t('Leave this group'),
+                                'class' => 'og-unsubscribe-button',
+                                'rel' => 'nofollow',
+                            ),
+                            'html' => TRUE,
+                            'query' => drupal_get_destination(),
+                        ));
+                    }?>
+                </div>    
+    <?php 
+        else: ?>    
+            <div class="og-buttons"> 
+            <?php print og_subscribe_link($node); ?>
+            </div>    
+    <?php 
+        endif;
+    endif; ?>
+    <!-- END JOIN GROUP OR LEAVE GROUP BUTTON -->
+  
   <!-- BLOCK ADDTHIS -->
   <?php if($page && !$is_edit){
-    $block_addthis = module_invoke('addthis','block','view','0');
+    $block_addthis = module_invoke('arquideas_generic','block','view','13');
     print $block_addthis['content'];
   }
   ?>
@@ -56,7 +99,7 @@
   <?php if($page && !$is_edit): ?>
   <div class="group-members-count">
       <span>
-          <?php print count($members).' '.t('in this group'); ?>
+          <?php /*print count($members).' '.t('in this group');*/ ?>
       </span>
   </div>
   <?php endif; ?>
@@ -84,12 +127,7 @@
       <?php
         }
       ?>  
-      <?php if ($terms): ?>
-        <div class="terms">
-    	  <h4>Tags:</h4>
-          <?php print $terms; ?>
-         </div>
-      <?php endif;?>
+      
     </div>
     
     <!-- Edit link -->
@@ -115,32 +153,7 @@
     <?php endif;?>
     </div>
     
-    <!-- JOIN GROUP OR LEAVE GROUP BUTTON -->
-    <?php if($page && !$is_edit): 
-        if(og_is_group_member($node,FALSE)): ?>
-                <div class="og-buttons">
-                <?php global $user;
-                    if(og_menu_access_unsubscribe($node)){
-                        print l('<span>'.t('Leave').'</span>','og/unsubscribe/'.$node->nid.'/'.$user->uid,array(
-                            'attributes' => array(
-                                'title' => t('Leave this group'),
-                                'class' => 'og-unsubscribe-button',
-                                'rel' => 'nofollow',
-                            ),
-                            'html' => TRUE,
-                            'query' => drupal_get_destination(),
-                        ));
-                    }?>
-                </div>    
-    <?php 
-        else: ?>    
-            <div class="og-buttons"> 
-            <?php print og_subscribe_link($node); ?>
-            </div>    
-    <?php 
-        endif;
-    endif; ?>
-    <!-- END JOIN GROUP OR LEAVE GROUP BUTTON -->
+    
     
     <!-- /inner -->
 
