@@ -10310,7 +10310,7 @@ body.blog-type #content-group h1.title{
 }
 .booklet .b-page-0 .b-wrap-left .b-counter{
 	background-image: none;
-	background-color: none;
+	background-color: transparent;
 }
 .booklet .b-page-1 .b-wrap-right .b-counter{
 	
