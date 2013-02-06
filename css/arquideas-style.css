@@ -7239,6 +7239,10 @@ body.node-type-inscription-1 #breadcrumbs {
   float: right;
   margin-left: 10px;
 }
+.view-jury-partners-co.view-display-id-page_1 .views-field-field-square-image-col-fid {
+  float: left;
+  margin-right: 10px;
+}
 
 /* Collaborators */
 .colaborator-top {

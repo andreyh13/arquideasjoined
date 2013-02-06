@@ -42,10 +42,10 @@
     <?php endif; ?>
     
     <!-- BLOCK USERS TOTAL -->
-  <?php if($page && !$is_edit){
+  <?php /*if($page && !$is_edit){
     $block_user_total = module_invoke('arquideas_generic','block','view','1');
     print $block_user_total['content'];
-  }
+  }*/
   ?>
   <!-- END BLOCK USERS TOTAL -->
   
@@ -64,7 +64,7 @@
   <?php if($page && !$is_edit): ?>
   <div class="group-members-count">
       <span>
-          <?php print count($members).' '.t('in this group'); ?>
+          <?php print t('In this group we are').' <span=class="count">'.count($members).'</span>'; ?>
       </span>
   </div>
   <?php endif; ?>
