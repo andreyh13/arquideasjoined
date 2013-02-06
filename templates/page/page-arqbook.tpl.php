@@ -201,7 +201,7 @@
                                             <a href="<?php print $imageobj['fullimage_path']; ?>" rel="lightbox[arqbook]" title="<?php print $imageobj['title']; ?>">
                                                 <?php print $imageobj['image']; ?>
                                             </a>
-											<?php if($imageobj['prize']=""){?>
+											<?php if($imageobj['prize']!=""){?>
 											<div class="image-contest-prize">
 												<div class="alpha"></div>
 											    <div class="image-contest">

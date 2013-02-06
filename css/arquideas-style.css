@@ -9424,8 +9424,8 @@ body.book #content-content{
 }
 #mybook #social-networks .imagecache-arquideas_book_qr{
 	position: absolute;
-	top: 0;
-	right: 0;
+	top: -15px;
+	right: -15px;
 }
 #mybook #social-networks .url{
 	margin-top: 10px;
