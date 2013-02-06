@@ -9277,17 +9277,17 @@ body.book #content-content{
 }
 #mybook #general-info{
 	text-align: center;
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
 #mybook #general-info .title{
 	color: #000;
-	margin-bottom: 15px;
+	margin-bottom: 25px;
 	padding: 18px 0;
 }
 #mybook .buttons{
 	border-bottom: 1px solid #000;
 	border-top: 1px solid #000;
-	padding: 8px 0;
+	padding: 10px 0;
 	margin: 20px 0;
 	text-align: center;
 }
@@ -9362,7 +9362,8 @@ body.book #content-content{
 	padding-bottom: 20px;
 	margin-bottom: 20px;
 	border-bottom: 1px solid #000;
-	font-size: .9em;
+	/*font-size: .9em;*/
+	line-height: 1.6em;
 }
 #mybook #personal-info label{font-weight: bold}
 #mybook #personal-info div{
@@ -9376,13 +9377,58 @@ body.book #content-content{
 }
 #mybook #social-networks ul{float: left;padding-left: 0;}
 #mybook #social-networks ul li.first{margin-left: 0!important;}
-#mybook .image-title{
-	font-weight: strong;
-	font-size: 1.2em;
+
+#mybook .image-title, #mybook .image-subtitle{
+	font-weight: bold;
+	font-size: 13px;
+	margin-top: 20px;
+}
+#mybook .imageholder{
+	position: relative;
+}
+#mybook .alpha{
+   bottom: 0!important;
+   left: 0!important;
+   top: 0!important;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"!important;
+	filter: alpha(opacity=60)!important;
+	-moz-opacity:0.60!important;
+	-khtml-opacity: 0.60!important;
+	opacity: 0.60!important; 
+    position: absolute!important;
+    width: 100%!important;
+	z-index: 1!important;
+	background-color: #000;
+}
+#mybook .image-contest-prize{
+	background-image: url(../images/logoarquideas_mini.png);
+	background-repeat: no-repeat;
+	background-position: 5px 5px;
+	height: 40px;
+	top: -40px;
+}
+#mybook .image-contest-prize div{
+	color: #fff;
+	display: inline;
+	margin-rop: 20px;
 }
 #mybook .image-title{
-	font-weight: strong;
-	font-size: 1.1em;
+	color: #000;
+}
+#mybook .image-subtitle{
+	color: #333;
+}
+#mybook #social-networks{
+	position: relative;
+	
+}
+#mybook #social-networks .imagecache-arquideas_book_qr{
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#mybook #social-networks .url{
+	margin-top: 10px;
 }
 .content .facebook-status-links ul.links.inline li {
 	padding: 0!important;
@@ -10252,4 +10298,7 @@ body.blog-type #content-group h1.title{
 }
 .booklet .b-page-1 .b-wrap-right .b-counter{
 	background: #f3f3f3;
+}
+.booklet #likebox{
+	display: none;
 }

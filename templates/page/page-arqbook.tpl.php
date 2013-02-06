@@ -116,9 +116,10 @@
 						</li>
 						<script>
 							$(function(){
-								$('#likebox').hide().width($(this).parent().width()+'px');
+								$('#likebox').show();
+								$('#likebox').width($('#likebox').parent().width()+'px').hide();
 								$('.likebox').click(function(e){
-									$('#likebox').slideToggle();
+									$('#likebox').slideDown();
 									e.preventDefault()
 								})
 							})
@@ -193,28 +194,31 @@
                                             </div>
                                         </div>
                                         <?php foreach($arqbook_images as $imageobj){ ?>
-                                        <div>
+                                        <div class="imageholder">
                                            <!--  <div class="logo">
                                                 <a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
                                             </div> -->
                                             <a href="<?php print $imageobj['fullimage_path']; ?>" rel="lightbox[arqbook]" title="<?php print $imageobj['title']; ?>">
                                                 <?php print $imageobj['image']; ?>
                                             </a>
+											<?php if($imageobj['prize']=""){?>
+											<div class="image-contest-prize">
+												<div class="alpha"></div>
+											    <div class="image-contest">
+	                                                <?php print $imageobj['contest']; ?> 
+	                                            </div>
+	                                            <div class="image-prize">
+	                                                <?php print $imageobj['prize']; ?> 
+	                                            </div>
+											</div>
+											<?php}?>
                                             <div class="image-title">
                                                 <?php print $imageobj['title']; ?> 
                                             </div>
                                             <div class="image-subtitle">
-                                                <?php print $imageobj['subtitle']; ?> 
+                                                <?php print $imageobj['subtitle']." ".$imageobj['type']; ?> 
                                             </div>
-                                            <div class="image-type">
-                                                <?php print $imageobj['type']; ?> 
-                                            </div>
-                                            <div class="image-contest">
-                                                <?php print $imageobj['contest']; ?> 
-                                            </div>
-                                            <div class="image-prize">
-                                                <?php print $imageobj['prize']; ?> 
-                                            </div>
+                                          	
                                         </div>
                                         <?php } ?>
                                     </div>    
