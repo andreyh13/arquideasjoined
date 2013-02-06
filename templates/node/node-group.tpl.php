@@ -57,6 +57,19 @@
   ?>
   <!-- END BLOCK JOIN NETWORK -->
   
+  <!-- COUNT GROUP MEMBERS -->
+  <?php
+    $members = contest_notifications_get_group_members($node);
+  ?>
+  <?php if($page && !$is_edit): ?>
+  <div class="group-members-count">
+      <span>
+          <?php print count($members).' '.t('in this group'); ?>
+      </span>
+  </div>
+  <?php endif; ?>
+  <!-- END COUNT GROUP MEMBERS -->
+  
   <!-- JOIN GROUP OR LEAVE GROUP BUTTON -->
     <?php if($page && !$is_edit): 
         if(og_is_group_member($node,FALSE)): ?>
@@ -92,20 +105,6 @@
   ?>
   <!-- END BLOCK ADDTHIS -->
   
-  <!-- COUNT GROUP MEMBERS -->
-  <?php
-    $members = contest_notifications_get_group_members($node);
-  ?>
-  <?php if($page && !$is_edit): ?>
-  <div class="group-members-count">
-      <span>
-          <?php /*print count($members).' '.t('in this group');*/ ?>
-      </span>
-  </div>
-  <?php endif; ?>
-  <!-- END COUNT GROUP MEMBERS -->
-  
-
     <div class="content clearfix">
       <?php /*if($page && !$is_edit){print $content;}*/ ?>
         
