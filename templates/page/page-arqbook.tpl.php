@@ -45,10 +45,13 @@
       <?php print theme('grid_row', $preface_top, 'preface-top', 'full-width', $grid_width); ?>
       <div id="preface-top-wrapper" class="preface-top-wrapper full-width">
       	<div id="preface-top" class="preface-top row <?php print $grid_width; ?> clearfix">
-  				<?php print theme('grid_block', $breadcrumb, 'breadcrumbs'); ?>
-				<div class="logo">
-		            <a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
+  			<?php print theme('grid_block', $breadcrumb, 'breadcrumbs'); ?>
+			<div class="logo">
+                                <a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
 		        </div>
+            <div class="profile-link">
+                <?php print l(t('View profile in arquideas'),'user/'.$arqbook_uid,array('attributes'=>array('title' => t('View profile in arquideas')))); ?>
+            </div>
         </div>
       </div>
 
