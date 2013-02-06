@@ -216,7 +216,7 @@
                                                 <?php print $imageobj['title']; ?> 
                                             </div>
                                             <div class="image-subtitle">
-                                                <?php print $imageobj['subtitle']." ".$imageobj['type']; ?> 
+                                                <?php print $imageobj['subtitle'].". ".$imageobj['type']; ?> 
                                             </div>
                                           	
                                         </div>
