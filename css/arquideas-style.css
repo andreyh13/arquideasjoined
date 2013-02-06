@@ -8268,6 +8268,9 @@ a.add-content-link:hover,
 	margin-left: 90px;
 	margin-top: 30px;
 }
+#arquideas-book-user-settings .edit-delete{
+width: auto; display: inline-block; float: right; display: none;
+}
 #edit-submit, #edit-preview-changes, #edit-submit-1, .views-exposed-form .form-submit, #arquideas-book-user-settings .form-submit,.views-field-phpcode-1 .popups-form-noupdate, .open-contest-button .form-submit{
 	display: inline-block;
 	float: none;
@@ -10051,15 +10054,15 @@ body.page-groups .views-field-subscribe a, body.page-groups .views-field-leave-g
     padding: 8px 15px;
 	border: none;
 }
-.view-arqnetwork-user-account-projects #main-content .views-exposed-widgets{
-	 width: 330px;
+.view-arqnetwork-user-account-projects .views-exposed-widgets{
+	 width: 330px!important;
 }
 
 body.page-groups .views-field-subscribe a, body.page-groups .views-field-leave-group a{
-	fnt-size: 1.2em;
+	font-size: 1.2em!important;
 }
 body.page-groups .views-field-subscribe a{
-	background: #9c0;;
+	background: #9c0!important;
 }
 .node-type-inscription.only-groups .edit-delete a:hover, .node-type-inscription .subscribe-og a,  .two-columns .og-manage-link, #sidebar-last .more-link a{
 	text-decoration: underline;
@@ -10382,4 +10385,7 @@ body.blog-type #content-group h1.title{
 }
 .page-arqbook .profile-link{
 float: right; margin-top:-25px; font-size: .9em; font-weight: bold
+}
+.page-inscription .comments.block #edit-comment-wrapper textarea{
+	width: 100%;
 }
