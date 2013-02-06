@@ -24,6 +24,7 @@
  */
 ?>
 
+<h1> <?php print t('Hi');?> [simplenews-receiver-realname]!!!</h1>
 <?php
 print theme('node', $node, FALSE, TRUE); 
 ?>
