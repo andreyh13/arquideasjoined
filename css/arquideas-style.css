@@ -10310,7 +10310,7 @@ body.blog-type #content-group h1.title{
   	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background-repeat: no-repeat;
 	background-position: center center;
-	background: #f3f3f3;
+	background-color: #f3f3f3;
 }
 .booklet .b-page-0 .b-wrap-left .b-counter{
 	background-image: none;
@@ -10335,4 +10335,7 @@ body.blog-type #content-group h1.title{
 }
 .lbtrigger{
 	height: 26px;
+}
+.page-arqbook .profile-link{
+float: right; margin-top:-25px; font-size: .9em; font-weight: bold
 }
