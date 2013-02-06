@@ -6008,7 +6008,7 @@ text-transform: uppercase;
   margin-left:auto;
   margin-right:auto;
   position: absolute;
-  top: 144px;
+  top: 142px;
   width: 110px;
   text-align: center;
 }
@@ -8573,6 +8573,9 @@ body.area-social .sidebar-last #block-views-profile_follower-block_1 .inner{
 body.area-social #sidebar-last .block .views-field-comment-count{
 	margin-top: 5px;
 }
+body.area-social .views-exposed-wrapper .views-exposed-widget.views-exposed-submit .form-submit{
+	width: auto;
+}
 .sidebar-last .block-views .views-field-title{
 	margin: 15px 0 15px 0;
 }
@@ -8618,6 +8621,15 @@ body.page-user #sidebar-last.nested .block .block-title, body.profile-me #sideba
 body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sidebar-last.nested .block .users-total {
 	font-size: 1.2em;
 	font-family: SoinSans-Bold
+}
+body.page-user #sidebar-last.nested .block .users-total .total, 
+body.profile-me #sidebar-last.nested .block .users-total .total{
+	font-size: 42px;
+}
+
+body.page-user #sidebar-last.nested .block .users-total .label, 
+body.profile-me #sidebar-last.nested .block .users-total .label{
+	font-size: 18px;
 }
 #content-group.grid16-12.force_width{
 	/*margin: 0 -1px;*/
@@ -8938,6 +8950,7 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 #content-content .view-arqnetwork-projects .view-content .item-list ul li.views-row-even{
 	margin-right: 0;
 }
+
 .area-comunidad.usuarios .grid16-11.force-width{
 	 width: 660px!important;
 }
@@ -9679,7 +9692,7 @@ body.book #content-content{
 	position: relative;
 }
 .view-arqnetwork-user-projects .view-content .item-list li.views-row .views-field-title{
-	position: absolute; top: 138px; height: 40px; background-color: #000; width: 100%
+	position: absolute; top: 136px; height: 40px; background-color: #000; width: 100%
 }
 .view-arqnetwork-user-projects .view-content .item-list li.views-row .points{
 	background-color: #000;
@@ -10037,6 +10050,16 @@ body.page-groups .views-field-subscribe a, body.page-groups .views-field-leave-g
     line-height: 1;
     padding: 8px 15px;
 	border: none;
+}
+.view-arqnetwork-user-account-projects #main-content .views-exposed-widgets{
+	 width: 330px;
+}
+
+body.page-groups .views-field-subscribe a, body.page-groups .views-field-leave-group a{
+	fnt-size: 1.2em;
+}
+body.page-groups .views-field-subscribe a{
+	background: #9c0;;
 }
 .node-type-inscription.only-groups .edit-delete a:hover, .node-type-inscription .subscribe-og a,  .two-columns .og-manage-link, #sidebar-last .more-link a{
 	text-decoration: underline;
