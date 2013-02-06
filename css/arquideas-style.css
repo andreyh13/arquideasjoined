@@ -9378,10 +9378,12 @@ body.book #content-content{
 #mybook #social-networks ul{float: left;padding-left: 0;}
 #mybook #social-networks ul li.first{margin-left: 0!important;}
 
+#mybook .image-title{
+	margin-top: 20px;
+}
 #mybook .image-title, #mybook .image-subtitle{
 	font-weight: bold;
 	font-size: 13px;
-	margin-top: 20px;
 }
 #mybook .imageholder{
 	position: relative;
@@ -9401,16 +9403,22 @@ body.book #content-content{
 	background-color: #000;
 }
 #mybook .image-contest-prize{
-	background-image: url(../images/logoarquideas_mini.png);
-	background-repeat: no-repeat;
-	background-position: 5px 5px;
 	height: 40px;
 	top: -40px;
 }
-#mybook .image-contest-prize div{
+#mybook .image-contest-prize .inner{
+	background-image: url(../images/logoarquideas_mini.png);
+	background-repeat: no-repeat;
+	background-position: 5px 5px;
+}
+#mybook .image-contest-prize div.inner{
+	z-index: 2;
+	position: relative;
+	margin-top: 20px;
+}
+#mybook .image-contest-prize div.image-contest, #mybook .image-contest-prize div.image-price{
 	color: #fff;
 	display: inline;
-	margin-rop: 20px;
 }
 #mybook .image-title{
 	color: #000;
@@ -10301,4 +10309,7 @@ body.blog-type #content-group h1.title{
 }
 .booklet #likebox{
 	display: none;
+}
+.lbtrigger{
+	height: 26px;
 }

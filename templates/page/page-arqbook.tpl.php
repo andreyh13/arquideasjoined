@@ -101,10 +101,10 @@
                                             </div>
                                             <div class="buttons">
 						<ul>
-						<li>
+						<li class="lbtrigger">
 							<a href="likebox" class="likebox">Recomendar CV</a>
-							<div id="likebox" class="share-in clearfix">
-                                <h3><?php print t('Share'); ?></h3>
+							<div id="likebox" class="share-in clearfix"><!-- 
+                                <h3><?php print t('Share'); ?></h3> -->
                                 <span class='st_email_large' displayText='Email'></span>
                                 <span class='st_facebook_large' displayText='Facebook'></span>
                                 <span class='st_pinterest_large' displayText='Pinterest'></span>
@@ -116,10 +116,9 @@
 						</li>
 						<script>
 							$(function(){
-								$('#likebox').show();
-								$('#likebox').width($('#likebox').parent().width()+'px').hide();
+								$('#likebox').width($('#likebox').parent().width()+'px');
 								$('.likebox').click(function(e){
-									$('#likebox').slideDown();
+									$('#likebox').slideToggle();
 									e.preventDefault()
 								})
 							})
@@ -204,12 +203,14 @@
 											<?//php if($imageobj['prize']!=""){?>
 											<div class="image-contest-prize">
 												<div class="alpha"></div>
-											    <div class="image-contest">
-	                                                <?php print $imageobj['contest']; ?> 
-	                                            </div>
-	                                            <div class="image-prize">
-	                                                <?php print $imageobj['prize']; ?> 
-	                                            </div>
+												<div class="inner">
+												    <div class="image-contest">
+		                                                <?php print $imageobj['contest']; ?> 
+		                                            </div>
+		                                            <div class="image-prize">
+		                                                <?php print $imageobj['prize']; ?> 
+		                                            </div>
+												</div>
 											</div>
 											<?//php}?>
                                             <div class="image-title">
