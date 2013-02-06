@@ -10414,16 +10414,78 @@ body.page-node.node-type-group #sidebar-last{
 .page-node.node-type-group #node-1107 .group-members-count{
     margin-left: 170px;
 }
-.page-node.node-type-group #node-1107 .og-buttons{
-	position: relative; top: -30px;
-}
 .page-node.node-type-group #node-1107 .social-sharing-widget{
 	position: relative;
-	top: 85px;
+	top: 115px;
 float: right;
 margin-bottom: 20px;
 display: inline-block;
 }
 .page-node.node-type-group .block-quicktabs{
     margin-top: 20px
+}
+.page-node.node-type-group #node-1107 .group-members-count{
+    height: 24px;
+}
+.page-node.node-type-group #node-1107 .group-members-count, .page-node.node-type-group #node-1107 .og-buttons{
+    position: absolute; bottom: 5px
+}
+ .page-node.node-type-group #node-1107 .og-buttons{
+    right: 0;
+}
+
+.page-node.node-type-group #node-1107 .group-members-count{
+    height: 24px;
+}
+.page-node.node-type-group #node-1107 .group-members-count, .page-node.node-type-group #node-1107 .og-buttons{
+    position: absolute; bottom: 5px
+}
+ .page-node.node-type-group #node-1107 .og-buttons{
+    right: 0;
+}
+ .page-node.node-type-group #node-1107 .og-buttons a{
+ 	border: none;
+ }
+.page-node.node-type-group #node-1107 .terms {
+    margin-top: 15px
+}
+.page-node.node-type-group #node-1107 .terms h4{
+    color: #666;
+font-size: 12px
+}
+.page-node.node-type-group #node-1107 .terms a{
+   font-size: 12px
+}
+.page-node.node-type-group #node-1107 .og-description{
+	color: #999;
+}
+.page-node.node-type-group #node-1107 .group-members-count{
+	font-family: "SoinSans-BoldOblique", Helvetica, Arial, sans-serif;
+	font-size: 1.3em;	
+}
+
+.page-node.node-type-group #node-1107 .group-members-count .count{
+	font-family: "SoinSans-Bold", Helvetica, Arial, sans-serif!important;
+	font-size: 1.7em;
+}
+
+.page-node.node-type-group #sidebar-last #block-commons_core-group_members{
+	border:none;
+}
+.page-node.node-type-group #sidebar-last #block-commons_core-group_members .group-managers-label,
+.page-node.node-type-group #sidebar-last #block-commons_core-group_members .group-members-label{
+	margin: 0 0 5px 0;
+}
+.page-node.node-type-group #sidebar-last #block-commons_core-group_members .group-members-label{
+    margin-top: 10px;
+}
+.page-node.node-type-group #sidebar-last #block-commons_core-group_members .group-members-link{
+	        border-top: 1px solid #000;
+padding-top: 10px;
+margin-top: 15px;
+	background-image: none;
+}
+.page-node.node-type-group #sidebar-last #block-commons_core-group_members .group-members-link a{
+	font-family: "SoinSans-BoldOblique", Helvetica, Arial, sans-serif;
+	font-size: 1.4em;	
 }
