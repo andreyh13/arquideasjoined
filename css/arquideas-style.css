@@ -545,7 +545,7 @@ position: relative;
 z-index: 10;
 }
 .preface-top-wrapper{
-	margin-top:-20px;
+	/*margin-top:-20px;*/
 }
 .preface-top {
 background: none repeat scroll 0 0 transparent;
