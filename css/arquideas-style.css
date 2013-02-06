@@ -5584,7 +5584,8 @@ body.page-home #content-front-right .block {
   margin-bottom: 20px;
 }
 .view-arquideas-news-slideshow .views-field-field-image-data, 
-.view-arquideas-km-slideshow .views-field-field-image-data {
+.view-arquideas-km-slideshow .views-field-field-image-data,
+.view-arquideas-km-slideshow .views-field-field-content-images-data {
   text-align: center;
   margin: 0 100px;
   padding: 20px 0;
