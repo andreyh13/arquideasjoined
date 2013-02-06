@@ -101,7 +101,27 @@
                                             </div>
                                             <div class="buttons">
 						<ul>
-						<!-- <li><a href="">Recomendar CV</a></li> -->
+						<li>
+							<a href="likebox" class="likebox">Recomendar CV</a>
+							<div id="likebox" class="share-in clearfix">
+                                <h3><?php print t('Share'); ?></h3>
+                                <span class='st_email_large' displayText='Email'></span>
+                                <span class='st_facebook_large' displayText='Facebook'></span>
+                                <span class='st_pinterest_large' displayText='Pinterest'></span>
+                                <span class='st_twitter_large' displayText='Tweet'></span>
+                                <span class='st_googleplus_large' displayText='Google +'></span>
+                                <span class='st_linkedin_large' displayText='LinkedIn'></span>
+                                <span class='st_stumbleupon_large' displayText='StumbleUpon'></span>
+                            </div>
+						</li>
+						<script>
+							$(function(){
+								$('#likebox').hide().width($(this).parent().width()+'px');
+								$('.likebox').click(function(){
+									$('#likebox').slideToggle();
+								})
+							})
+						</script>
 						<li><?php print l(t('Ver perfil en Arquideas'),'user/'.$arqbook_uid,array(
                                                             'attributes' => array(
                                                                 'title' => t('Ver perfil en Arquideas'),
@@ -155,18 +175,7 @@
                                                     </ul>
                                                 <?php endif; ?>
                                                 <div class="clear"></div>
-                                                <div class="share-in clearfix">
-                                                    <h3><?php print t('Share'); ?></h3>
-                                                    <span class='st_email_large' displayText='Email'></span>
-                                                    <span class='st_facebook_large' displayText='Facebook'></span>
-                                                    <span class='st_pinterest_large' displayText='Pinterest'></span>
-                                                    <span class='st_twitter_large' displayText='Tweet'></span>
-                                                    <span class='st_googleplus_large' displayText='Google +'></span>
-                                                    <span class='st_linkedin_large' displayText='LinkedIn'></span>
-                                                    <span class='st_stumbleupon_large' displayText='StumbleUpon'></span>
-                                                </div>
-						<div class="clear"></div>
-                                                <div class="url">
+                                                 <div class="url">
                                                     <strong>url:</strong> <?php print $arqbook_page_url; ?>
                                                 </div>
                                                 <?php if(isset($arqbook_qrcode)): ?>

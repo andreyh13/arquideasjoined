@@ -9353,7 +9353,7 @@ body.book #content-content{
 }
 #mybook #social-networks h3,
 #mybook #share-in h3{
-	margin: 10px 0;
+	margin: 3px 0 10px 0;
 	font-weight: normal;
 	float: left;
 	margin-right: 10px;
@@ -10225,4 +10225,29 @@ body.blog-type #content-group h1.title{
 }
 .blog-type #content-content .nd-region-header  .field-terms a{
 	font-size: 12px;
+}
+
+.booklet .b-wrap-left .b-counter{
+	left: 0;
+	background-image: url(../images/arrow_book_left.png);
+}
+.booklet .b-wrap-right .b-counter{
+	background-image: url(../images/arrow_book_right.png);
+}
+.booklet .b-wrap-left .b-counter, .booklet .b-wrap-right .b-counter{
+	bottom: 0;
+    height: 100%;
+    padding-top: 605px;
+    right: 0;
+    top: 0;
+	font-size: 16px;
+	width: 28px;
+	color: #333;
+	background-color: transparent;
+  	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.booklet .b-page-1 .b-wrap-right .b-counter{
+	background: #f3f3f3;
 }
