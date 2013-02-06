@@ -10306,21 +10306,28 @@ body.blog-type #content-group h1.title{
   	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	background-repeat: no-repeat;
 	background-position: center center;
+	background: #f3f3f3;
 }
 .booklet .b-page-0 .b-wrap-left .b-counter{
 	background-image: none;
+	background-color: transparent;
 }
 .booklet .b-page-1 .b-wrap-right .b-counter{
-	background: #f3f3f3;
+	
 }
 .booklet #likebox{
 	background: #FFFFFF;
     border: 1px solid #000000;
     display: none;
-    padding: 10px;
+    padding: 5px 5px 0 5px;
     position: absolute;
     top: 31px;
     z-index: 2;
+	width: 285px;
+    box-shadow: 2px 2px 0 #000000;
+    -moz-box-shadow: 2px 2px 0 #000000;
+    -webkit-box-shadow: 2px 2px 0 #000000;
+	
 }
 .lbtrigger{
 	height: 26px;

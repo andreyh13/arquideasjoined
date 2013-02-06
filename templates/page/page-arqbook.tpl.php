@@ -102,7 +102,7 @@
                                             <div class="buttons">
 						<ul>
 						<li class="lbtrigger">
-							<a href="likebox" class="likebox">Recomendar CV</a>
+							<a href="#" class="likeboxtg">Recomendar CV</a>
 							<div id="likebox" class="share-in clearfix"><!-- 
                                 <h3><?php print t('Share'); ?></h3> -->
                                 <span class='st_email_large' displayText='Email'></span>
@@ -116,9 +116,9 @@
 						</li>
 						<script>
 							$(function(){
-								$('#likebox').width(($('#likebox').parent().width()-20)+'px');
-								$('.likebox').click(function(e){
-									$('#likebox').slideDown();
+								$('.likeboxtg').unbind('click').click(function(e){
+									$('#likebox').slideToggle();
+									return false;
 									e.preventDefault()
 								})
 							})
