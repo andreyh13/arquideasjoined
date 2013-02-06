@@ -10389,3 +10389,41 @@ float: right; margin-top:-25px; font-size: .9em; font-weight: bold
 .page-inscription .comments.block #edit-comment-wrapper textarea{
 	width: 100%;
 }
+
+/*Grupo*/
+body.page-node.node-type-group #content-group h1.title {
+	margin-bottom: 0;
+}
+body.page-node.node-type-group #content-group{
+	width: 600px!important;
+}
+body.page-node.node-type-group #sidebar-last{
+	width: 300px!important;
+}
+.page-node.node-type-group #node-1107{
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+        padding: 20px 0 20px 0;
+}
+.page-node.node-type-group #node-1107 .og-image{
+	float: left;
+	display: inline-block;
+}
+.page-node.node-type-group #node-1107 .og-description,
+.page-node.node-type-group #node-1107 .terms,
+.page-node.node-type-group #node-1107 .group-members-count{
+    margin-left: 170px;
+}
+.page-node.node-type-group #node-1107 .og-buttons{
+	position: relative; top: -30px;
+}
+.page-node.node-type-group #node-1107 .social-sharing-widget{
+	position: relative;
+	top: 85px;
+float: right;
+margin-bottom: 20px;
+display: inline-block;
+}
+.page-node.node-type-group .block-quicktabs{
+    margin-top: 20px
+}
