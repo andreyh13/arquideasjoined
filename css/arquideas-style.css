@@ -5626,12 +5626,12 @@ body.page-home #content-front-right .block {
 
 
 /* News Pages Image slider */
-.view-arquideas-news-slideshow, 
+.view-arquideas-news-slideshow,
 .view-arquideas-km-slideshow {
   margin-bottom: 20px;
   margin-top: 20px;
 }
-.view-arquideas-news-slideshow .views-field-field-image-data, 
+.view-arquideas-news-slideshow .views-field-field-image-data,
 .view-arquideas-km-slideshow .views-field-field-image-data,
 .view-arquideas-km-slideshow .views-field-field-content-images-data {
   text-align: center;
@@ -5951,6 +5951,7 @@ text-transform: uppercase;
 
 #block-views-arqnetwork_projects-block_1 .project-wrapper,
 .view-arquideas-contest-prizes.view-display-id-block_7 .project-wrapper,
+.view-arquideas-contest-prizes.view-display-id-block_8 .project-wrapper,
 .view-arquideas-contest-prizes.view-display-id-block_9 .project-wrapper {
   position: relative;
 }
@@ -5962,6 +5963,7 @@ text-transform: uppercase;
 }
 
 .view-arquideas-contest-prizes.view-display-id-block_7 .views-field-field-images-project-fid,
+.view-arquideas-contest-prizes.view-display-id-block_8 .views-field-field-images-project-fid,
 .view-arquideas-contest-prizes.view-display-id-block_9 .views-field-field-images-project-fid {
   width: 236px;
   height: 172px;
@@ -5969,6 +5971,7 @@ text-transform: uppercase;
 
 #block-views-arqnetwork_projects-block_1 .views-field-field-images-project-fid img,
 .view-arquideas-contest-prizes.view-display-id-block_7 .views-field-field-images-project-fid img,
+.view-arquideas-contest-prizes.view-display-id-block_8 .views-field-field-images-project-fid img,
 .view-arquideas-contest-prizes.view-display-id-block_9 .views-field-field-images-project-fid img {
   vertical-align: middle;
   margin: 0;
@@ -5985,6 +5988,7 @@ text-transform: uppercase;
 }
 
 .view-arquideas-contest-prizes.view-display-id-block_7 .project-info,
+.view-arquideas-contest-prizes.view-display-id-block_8 .project-info,
 .view-arquideas-contest-prizes.view-display-id-block_9 .project-info {
   width: 236px;
   height: 172px;
@@ -5996,6 +6000,7 @@ text-transform: uppercase;
 
 #block-views-arqnetwork_projects-block_1 .project-info:hover,
 .view-arquideas-contest-prizes.view-display-id-block_7 .project-info:hover,
+.view-arquideas-contest-prizes.view-display-id-block_8 .project-info:hover,
 .view-arquideas-contest-prizes.view-display-id-block_9 .project-info:hover {
   background: transparent url(../images/transparent-spacer.png) repeat;
   opacity: 1;
@@ -6011,6 +6016,7 @@ text-transform: uppercase;
 }
 
 .view-arquideas-contest-prizes.view-display-id-block_7 .views-field-title,
+.view-arquideas-contest-prizes.view-display-id-block_8 .views-field-title,
 .view-arquideas-contest-prizes.view-display-id-block_9 .views-field-title {
   font-size: 20px;
   line-height: 100%;
@@ -6022,6 +6028,7 @@ text-transform: uppercase;
 
 #block-views-arqnetwork_projects-block_1 .views-field-title a,
 .view-arquideas-contest-prizes.view-display-id-block_7 .views-field-title a,
+.view-arquideas-contest-prizes.view-display-id-block_8 .views-field-title a,
 .view-arquideas-contest-prizes.view-display-id-block_9 .views-field-title a {
   color: #fff;
 }
@@ -6037,6 +6044,7 @@ text-transform: uppercase;
 
 #block-views-arqnetwork_projects-block_1 .project-social,
 .view-arquideas-contest-prizes.view-display-id-block_7 .project-social,
+.view-arquideas-contest-prizes.view-display-id-block_8 .project-social,
 .view-arquideas-contest-prizes.view-display-id-block_9 .project-social {
   background-color: #000000;
   color: #FFFFFF;
@@ -6051,11 +6059,18 @@ text-transform: uppercase;
   text-align: center;
 }
 
+.view-arquideas-contest-prizes.view-display-id-block_8 .project-social,
+.view-arquideas-contest-prizes.view-display-id-block_9 .project-social {
+  top: 144px;
+}
+
 #block-views-arqnetwork_projects-block_1 .views-field-rating-value,
 #block-views-arqnetwork_projects-block_1 .views-field-comment-count,
 .view-arquideas-contest-prizes.view-display-id-block_7 .views-field-rating-value,
+.view-arquideas-contest-prizes.view-display-id-block_8 .views-field-rating-value,
 .view-arquideas-contest-prizes.view-display-id-block_9 .views-field-rating-value,
 .view-arquideas-contest-prizes.view-display-id-block_7 .views-field-comment-count,
+.view-arquideas-contest-prizes.view-display-id-block_8 .views-field-comment-count,
 .view-arquideas-contest-prizes.view-display-id-block_9 .views-field-comment-count {
   background: url("../images/social.png") no-repeat scroll 0 4px transparent;
   display: inline-block;
@@ -6067,6 +6082,7 @@ text-transform: uppercase;
 
 #block-views-arqnetwork_projects-block_1 .views-field-comment-count,
 .view-arquideas-contest-prizes.view-display-id-block_7 .views-field-comment-count,
+.view-arquideas-contest-prizes.view-display-id-block_8 .views-field-comment-count,
 .view-arquideas-contest-prizes.view-display-id-block_9 .views-field-comment-count {
   background-position: 0 -27px;
   margin-left: 8px;
@@ -6665,6 +6681,7 @@ body.node-type-contest .node-content-main {
 }
 
 .node-type-contest .contest-winners,
+.view-arquideas-contest-prizes.view-display-id-block_8,
 .view-arquideas-contest-prizes.view-display-id-block_9 {
   border: 1px solid #000;
   padding: 20px;
@@ -6803,6 +6820,7 @@ body.node-type-contest .special-mentions h1 {
 }
 
 .contest-winners .view-arquideas-contest-prizes.view-display-id-block_7 .views-row-inner > div,
+.view-arquideas-contest-prizes.view-display-id-block_8 .views-row-inner > div,
 .view-arquideas-contest-prizes.view-display-id-block_9 .views-row-inner > div {
   float: none;
   width: auto;
@@ -6812,17 +6830,20 @@ body.node-type-contest .special-mentions h1 {
   margin: 0 16px;
 }
 
+.view-arquideas-contest-prizes.view-display-id-block_8 .project-wrapper,
 .view-arquideas-contest-prizes.view-display-id-block_9 .project-wrapper {
   margin: 16px;
 }
 
 .view-arquideas-contest-prizes.view-display-id-block_7 .views-row,
+.view-arquideas-contest-prizes.view-display-id-block_8 .views-row,
 .view-arquideas-contest-prizes.view-display-id-block_9 .views-row {
   width: 266px;
   display: inline-block;
 }
 
 .view-arquideas-contest-prizes.view-display-id-block_7 .views-row-even,
+.view-arquideas-contest-prizes.view-display-id-block_8 .views-row-even,
 .view-arquideas-contest-prizes.view-display-id-block_9 .views-row-even {
   float: right;
 }
@@ -6882,7 +6903,7 @@ body.page-solr-nodetype-multi #content-group {
   width: 690px;
 }
 
-body.page-solr-nodetype-multi #search-form #edit-submit, 
+body.page-solr-nodetype-multi #search-form #edit-submit,
 body.page-solr-nodetype #search-form #edit-submit {
   font-size: 14px;
   height: 31px;
@@ -7254,8 +7275,8 @@ body.node-type-inscription-1 #breadcrumbs {
 }
 
 .two-columns-colaborators .views-row .inner-partner{
-	vertical-align: middle; 
-	height: 134px; 
+	vertical-align: middle;
+	height: 134px;
 	display: table-cell;
 }
 
@@ -8364,7 +8385,7 @@ width: auto; display: inline-block; float: right; display: none;
 .area-social #sidebar-last .block-views a.tagadelic{
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	margin: 0;
-} 
+}
 .area-social #sidebar-last .block-nodeblock img,  .area-social #sidebar-last .block-views img{
 	max-width: 194px;
 	margin-top: 5px!important;
@@ -8663,12 +8684,12 @@ body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sideb
 	font-size: 1.2em;
 	font-family: SoinSans-Bold
 }
-body.page-user #sidebar-last.nested .block .users-total .total, 
+body.page-user #sidebar-last.nested .block .users-total .total,
 body.profile-me #sidebar-last.nested .block .users-total .total{
 	font-size: 42px;
 }
 
-body.page-user #sidebar-last.nested .block .users-total .label, 
+body.page-user #sidebar-last.nested .block .users-total .label,
 body.profile-me #sidebar-last.nested .block .users-total .label{
 	font-size: 18px;
 }
@@ -9468,7 +9489,7 @@ body.book #content-content{
 	margin-top: 20px;
 	color: #666;
 	font-size: 13px;
-	
+
 }
 #mybook .imageholder{
 	position: relative;
@@ -9481,7 +9502,7 @@ body.book #content-content{
 	filter: alpha(opacity=60)!important;
 	-moz-opacity:0.60!important;
 	-khtml-opacity: 0.60!important;
-	opacity: 0.60!important; 
+	opacity: 0.60!important;
     position: absolute!important;
     width: 100%!important;
 	z-index: 1!important;
@@ -9517,7 +9538,7 @@ body.book #content-content{
 }
 #mybook #social-networks{
 	position: relative;
-	
+
 }
 #mybook #social-networks .imagecache-arquideas_book_qr{
 	position: absolute;
@@ -10031,7 +10052,7 @@ float: left;
 #sidebar-last .view-event-past-events li .views-field-title{
 	margin: 8px 0;
 }
-.page-node #sidebar-last #block-apachesolr-mlt-001 .item-list li, 
+.page-node #sidebar-last #block-apachesolr-mlt-001 .item-list li,
 .page-node #sidebar-last #block-blog-0 .item-list li{
 	background-image: url("../images/bullet-sidebar.png") ;
 	background-repeat: no-repeat;
@@ -10039,7 +10060,7 @@ float: left;
 	background-position: 0 5px;
 	padding-bottom: 2px;
 }
-.page-node #sidebar-last #block-apachesolr-mlt-001, 
+.page-node #sidebar-last #block-apachesolr-mlt-001,
 .page-node #sidebar-last #block-blog-0{
 	margin-bottom: 30px;
 	padding-bottom: 10px;
@@ -10139,7 +10160,7 @@ line-height: 20px;
 body.page-groups .sidebar-last .block-views .view-content .item-list ul li .views-field-posts-count-new .marker{
 	float: none;
 	color: #000;
-} 
+}
 body.page-groups .sidebar-last .pager{
 	margin-top: 10px;
 }
@@ -10356,13 +10377,13 @@ body.blog-type #content-group h1.title{
 }
 .blog-type #content-content .field-ds-group-ds-node-date-type-vote .field-fivestar-widget{
 	position: absolute;
-	position: absolute; 
+	position: absolute;
 	right: 0;
 	margin-right:0
 }
 .blog-type #content-content .field-ds-group-ds-node-date-type-vote .field-edit-content-link-widget{
-	position: absolute; 
-	top: 60px; 
+	position: absolute;
+	top: 60px;
 	right: 0;
 	font-family: SoinSans-BoldOblique!important;
     font-size: 1.25em;
@@ -10426,7 +10447,7 @@ body.blog-type #content-group h1.title{
 	background-color: transparent;
 }
 .booklet .b-page-1 .b-wrap-right .b-counter{
-	
+
 }
 .booklet #likebox{
 	background: #FFFFFF;
@@ -10440,7 +10461,7 @@ body.blog-type #content-group h1.title{
     box-shadow: 2px 2px 0 #000000;
     -moz-box-shadow: 2px 2px 0 #000000;
     -webkit-box-shadow: 2px 2px 0 #000000;
-	
+
 }
 .lbtrigger{
 	height: 26px;
@@ -10523,7 +10544,7 @@ font-size: 12px
 }
 .page-node.node-type-group .full-node.node-type-group .group-members-count{
 	font-family: "SoinSans-BoldOblique", Helvetica, Arial, sans-serif;
-	font-size: 1.3em;	
+	font-size: 1.3em;
 }
 
 .page-node.node-type-group .full-node.node-type-group .group-members-count .count{
@@ -10549,5 +10570,5 @@ font-size: 12px
 }
 .page-node.node-type-group #sidebar-last #block-commons_core-group_members .group-members-link a{
 	font-family: "SoinSans-BoldOblique", Helvetica, Arial, sans-serif;
-	font-size: 1.4em;	
+	font-size: 1.4em;
 }
