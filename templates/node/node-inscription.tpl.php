@@ -123,36 +123,38 @@
                 $block = module_invoke('nodeblock', 'block', 'view', 865);
                 print '<div class="block block-nodeblock"><div class="inner clearfix"><h2 class="title block-title">'.$block['subject'].'</h2><div class="content">'.$block['content'].'</div></div></div>';
             ?>
-        </div>
-    </div>
-
-    <!-- Manage members link -->
-    <?php if(node_access('update', $node) && og_is_group_admin($node) && module_exists('og_manage_link') && $node->field_inscription_state[0]['value']!=InscriptionState::SUBMITTED){
-        $cnid = $node->field_contest[0]['nid'];
-        $cnode = node_load($cnid);
-        if(!empty($cnode) && $cnode->field_contest_state[0]['value']==ContestState::OPEN){
-            if($node->field_inscription_state[0]['value']==InscriptionState::INSCRIPTED || $node->field_inscription_state[0]['value']==InscriptionState::SUBMITTED){
-                //Gets order to see if it is individual
-                $order_id = $node->field_inscription_order[0]['value'];
-                if(!empty($order_id)){
-                    $order = uc_order_load($order_id);
-                    $product_attr = $order->products[0]->data['attributes'];
-                    if(empty($product_attr)){
-                        print '<div class="info">'.t('You have made individual payment and can\'t invite other members.').'</div>';
+            
+            <!-- Manage members link -->
+            <?php if(node_access('update', $node) && og_is_group_admin($node) && module_exists('og_manage_link') && $node->field_inscription_state[0]['value']!=InscriptionState::SUBMITTED){
+                $cnid = $node->field_contest[0]['nid'];
+                $cnode = node_load($cnid);
+                if(!empty($cnode) && $cnode->field_contest_state[0]['value']==ContestState::OPEN){
+                    if($node->field_inscription_state[0]['value']==InscriptionState::INSCRIPTED || $node->field_inscription_state[0]['value']==InscriptionState::SUBMITTED){
+                        //Gets order to see if it is individual
+                        $order_id = $node->field_inscription_order[0]['value'];
+                        if(!empty($order_id)){
+                            $order = uc_order_load($order_id);
+                            $product_attr = $order->products[0]->data['attributes'];
+                            if(empty($product_attr)){
+                                print '<div class="info">'.t('You have made individual payment and can\'t invite other members.').'</div>';
+                            } else {
+                                print theme_og_manage_link_default($node);
+                            }
+                        } else {
+                            print theme_og_manage_link_default($node);
+                        }
                     } else {
                         print theme_og_manage_link_default($node);
                     }
                 } else {
-                    print theme_og_manage_link_default($node);
+                    print '<div class="info">'.t('You can not invite members at this stage of the competition').'</div>';
                 }
-            } else {
-                print theme_og_manage_link_default($node);
-            }
-        } else {
-            print '<div class="info">'.t('You can not invite members at this stage of the competition').'</div>';
-        }
-    } ?>
-    <!-- END Manage members link -->
+            } ?>
+            <!-- END Manage members link -->
+        </div>
+    </div>
+
+    
     <?php endif; ?>
     <!-- End Introduction text -->
 
