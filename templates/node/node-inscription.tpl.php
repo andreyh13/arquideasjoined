@@ -213,7 +213,7 @@
         <!-- End Delete link -->
 		</div>
         <!-- DOWNLOAD files -->
-        <?php print show_inscription_downloads($node, $contest); ?>
+        <?php /*print show_inscription_downloads($node, $contest);*/ ?>
         <!-- End DOWNLOAD files -->
     <?php endif; ?>
 
