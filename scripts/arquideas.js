@@ -211,4 +211,7 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
         
         //One more fix for calendar
         $("#pid-content-events-calendar #content-group").addClass("grid16-16").addClass("force-width").css("width","960px");
+        
+        //Change image link for users
+        $(".view-arqnetwork-user-profile .views-field-phpcode-2 a.user-edit-image-link").parents(".views-field-phpcode-2").addClass("user-edit-image").appendTo(".view-arqnetwork-user-profile .views-field-picture");
 });
