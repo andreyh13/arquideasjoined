@@ -10353,6 +10353,15 @@ body.blog-type #content-group h1.title{
 	right: 0;
 	margin-right:0
 }
+.blog-type #content-content .field-ds-group-ds-node-date-type-vote .field-edit-content-link-widget{
+	position: absolute; 
+	top: 60px; 
+	right: 0;
+	border-radius: 5px 5px 5px 5px;
+    display: inline-block;
+    font-family: SoinSans-BoldOblique !important;
+    font-size: 1.1em;
+}
 .blog-type #content-content .field-ds-group-ds-node-date-type-vote .field-fivestar-widget .fivestar-widget{
 	margin-right: 0px;
 }
