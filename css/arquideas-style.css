@@ -10653,6 +10653,7 @@ font-size: 12px
 	height: 35px;
 	display: table-cell;
 	vertical-align: middle;
+	width: 260px;
 }
 .display-project .fivestar-widget .description{
 	min-height: 35px;
@@ -10682,6 +10683,13 @@ font-size: 12px
 	background: #fff;
 }
 .display-project .project-info-public .col01 .box .form-submit{
-	font-size: 13px;
-	display: block;
+	font-size: 13px!important;
+	display: block!important;
+}
+.display-project .project-info-public .col01 .box textarea{
+	height: 58px!important;
+}
+.display-project .project-info-public .col01 .terms ul.links li{
+	margin-bottom: 0;
+	margin-top: 5px;
 }
