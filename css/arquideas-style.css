@@ -4042,12 +4042,12 @@ padding-right: 0;
 body.not-front .sidebar-last .block .view-content .item-list ul li .views-field-title a, body.page-node .sidebar-last .block .view-content .item-list ul li .views-field-title a,
 .sidebar-last .block .view-group-block-wiki-latest-comments .item-list ul li .views-field-subject a,
 .sidebar-last .block .view-group-block-evt-latest-comments .item-list ul li .views-field-subject a,
-.sidebar-last .block .view-wiki-latest-comments .item-list ul li .views-field-subject a
- {
-
-font-size: 1.4em;
-font-family: "SoinSans-Bold",Helvetica,Arial,sans-serif;
-font-weight: normal;
+.sidebar-last .block .view-wiki-latest-comments .item-list ul li .views-field-subject a,
+.sidebar-last .block .view-event-latest-comments .item-list ul li .views-field-subject a
+{
+	font-size: 1.4em;
+	font-family: "SoinSans-Bold",Helvetica,Arial,sans-serif;
+	font-weight: normal;
 }
 body.page-node .sidebar-last .block.block-views {
 	border-bottom: 1px solid #000;
@@ -8295,9 +8295,11 @@ a.add-content-link:hover,
 	color: #000;
 	margin: 0 0 5px 0;
 }
-.node-form .standard input, .node-form .standard textarea, .node-form .standard #tagging-widget-container fieldset{
+.area-social .node-form .standard input, .area-social  .node-form .standard textarea, .area-social  .node-form .standard #tagging-widget-container fieldset, .node-form .form-text{
 	background: #f7f7f7;
 	border: 1px solid #E6E6E6;
+}
+.node-form .standard input, .node-form .standard textarea, .node-form .standard #tagging-widget-container fieldset{
 	border-radius: 5px 5px 5px 5px;
 	-webkit-border-radius: 5px 5px 5px 5px;
 	-moz-border-radius: 5px 5px 5px 5px;
@@ -8710,12 +8712,13 @@ body.page-user #sidebar-last.nested .block .block-title, body.profile-me #sideba
 	background-position: top right;
 	padding-top: 20px;
 }
-body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sidebar-last.nested .block .users-total {
+body.page-user #sidebar-last.nested .block .users-total,  body.profile-me #sidebar-last.nested .block .users-total,  body.area-social #sidebar-last.nested .block .users-total {
 	font-size: 1.2em;
 	font-family: SoinSans-Bold
 }
 body.page-user #sidebar-last.nested .block .users-total .total,
-body.profile-me #sidebar-last.nested .block .users-total .total{
+body.profile-me #sidebar-last.nested .block .users-total .total,
+body.area-social #sidebar-last.nested .block .users-total .total{
 	font-size: 42px;
 }
 
