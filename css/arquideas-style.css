@@ -8368,7 +8368,7 @@ a.add-content-link:hover,
 #arquideas-book-user-settings .edit-delete{
 width: auto; display: inline-block; float: right; display: none;
 }
-#edit-submit, #edit-preview-changes, #edit-submit-1, .views-exposed-form .form-submit, #arquideas-book-user-settings .form-submit,.views-field-phpcode-1 .popups-form-noupdate, .open-contest-button .form-submit{
+#edit-submit, #edit-preview-changes, #edit-submit-1, .views-exposed-form .form-submit, #arquideas-book-user-settings .form-submit,.views-field-phpcode-1 .popups-form-noupdate, .open-contest-button .form-submit, .display-project .links li a.flag-bookmarks {
 	display: inline-block;
 	float: none;
 	border-radius: 5px 5px 5px 5px;
@@ -8383,9 +8383,10 @@ width: auto; display: inline-block; float: right; display: none;
 	line-height: 1;
 	font-family: SoinSans-BoldOblique!important;
 }
- .open-contest-button .form-submit{
+ .open-contest-button .form-submit, .display-project .links li a.flag-bookmarks {
 	background: #3cc!important;
  }
+
 .form-submit,.views-field-phpcode-1 .popups-form-noupdate {
 	padding: 4px 11px 4px 11px;
 	font-size: 1em;
@@ -10610,4 +10611,48 @@ font-size: 12px
 .page-node.node-type-group #sidebar-last #block-commons_core-group_members .group-members-link a{
 	font-family: "SoinSans-BoldOblique", Helvetica, Arial, sans-serif;
 	font-size: 1.4em;
+}
+/*Display de proyecto*/
+
+.display-project .links{
+	display: inline-block;
+	float: right;
+	margin-top: -7px;
+}
+
+.display-project .links li{
+	padding: 0px!important;
+}
+.display-project .go-back{
+    display: inline-block;
+	top: -7px;
+	position: relative;
+	font-family: SoinSans-BoldOblique, Helvetica, Arial, sans-serif;
+}
+.display-project .links li a.flag-bookmarks {
+ 	padding: 5px 10px!important;
+	float: right;
+}
+.display-project .grippie{
+	display: none;
+}
+
+.display-project h3.subtitle{
+	padding-botom: 20px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #999;
+}
+.display-project .project-info-public .col01 .edit-vote-wrapper{
+	position: relative;
+}
+
+.display-project .fivestar-widget label{
+	display: none;
+}
+
+
+.display-project .fivestar-widget .description{
+	min-height: 35px;
+	position: absolute; 
+	top: 1px;
 }

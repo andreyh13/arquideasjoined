@@ -48,20 +48,20 @@
             <?php print $title; ?>
             </h2>
             <!-- End Project TITLE-->
-
-            <!-- Project SUBTITLE -->
-            <h3 class="subtitle">
-                <?php print $field_subtitle_project_rendered; ?>
-            </h3>
-            <!-- End Project SUBTITLE -->
-
-            <!-- FiveStar Widget -->
+			 <!-- FiveStar Widget -->
             <?php
             if (user_access('rate content') && fivestar_validate_target('node', $node->nid)) {
                 print fivestar_widget_form($node);
             }
             ?>
             <!-- END FiveStar Widget -->
+            <!-- Project SUBTITLE -->
+            <h3 class="subtitle">
+                <?php print $field_subtitle_project_rendered; ?>
+            </h3>
+            <!-- End Project SUBTITLE -->
+
+           
 
             <!-- Project Type -->
             <div class="project-type">
