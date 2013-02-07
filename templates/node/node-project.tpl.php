@@ -31,10 +31,16 @@
         'attributes' => array(
             'title' => t('Go Back'),
             'onclick' => 'history.go(-1);return false;',
+            'class' => 'go-back',
         ),
         'fragment' => ' ',
         'external' => TRUE,
     )); ?>
+    <?php if ($links): ?>
+        <div class="links">
+        <?php print $links; ?>
+        </div>
+    <?php endif; ?>
     <div class="project-info-public">
         <div class="col01">
             <!-- Project TITLE-->
@@ -79,11 +85,7 @@
             <?php print $field_documents_project_rendered ?>
             <!-- End DOWNLOAD files -->
 
-            <?php if ($links): ?>
-                <div class="links">
-                <?php print $links; ?>
-                </div>
-            <?php endif; ?>
+            
 
         </div>
         <div class="col02">
