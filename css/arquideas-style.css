@@ -4040,13 +4040,11 @@ padding-left: 0;
 padding-right: 0;
 }
 body.not-front .sidebar-last .block .view-content .item-list ul li .views-field-title a, body.page-node .sidebar-last .block .view-content .item-list ul li .views-field-title a,
-.sidebar-last .block .view-group-block-wiki-latest-comments .item-list ul li .views-field-subject a {
-/*background-image: url("../images/bullet-blue.png");
-background-position: left center;
-background-repeat: no-repeat;
-color: #0099FF;*/
+.sidebar-last .block .view-group-block-wiki-latest-comments .item-list ul li .views-field-subject a,
+.sidebar-last .block .view-group-block-evt-latest-comments .item-list ul li .views-field-subject
+ {
+
 font-size: 1.4em;
-/*padding-left: 10px;*/
 font-family: "SoinSans-Bold",Helvetica,Arial,sans-serif;
 }
 body.page-node .sidebar-last .block.block-views {
