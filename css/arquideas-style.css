@@ -4079,6 +4079,11 @@ body.page-node .sidebar-last .block.block-views {
 .sidebar-last .block .view-event-latest-comments .item-list ul li .views-field-name,
 .sidebar-last .block .view-event-latest-comments .item-list ul li .views-field-group-nid,
 
+.sidebar-last .block .view-group-block-evt-latest-comments .item-list ul li .views-field-subject,
+.sidebar-last .block .view-group-block-evt-latest-comments .item-list ul li .views-field-timestamp,
+.sidebar-last .block .view-group-block-evt-latest-comments .item-list ul li .views-field-name,
+.sidebar-last .block .view-group-block-evt-latest-comments .item-list ul li .views-field-group-nid,
+
 .sidebar-last .block .view-id-group_block_events_past .item-list ul li .views-field-title,
 .sidebar-last .block .view-id-group_block_events_past .item-list ul li .views-field-field-location-value,
 
@@ -4093,7 +4098,9 @@ body.page-node .sidebar-last .block.block-views {
 	margin-bottom: 3px;
 }
 
-/*.sidebar-last .block .view-id-group_block_events_past .item-list ul li .views-field-title,
+
+
+.sidebar-last .block .view-id-group_block_events_past .item-list ul li .views-field-title,
 .sidebar-last .block .view-event-latest-comments .item-list ul li .views-field-subject,
 .sidebar-last .block .view-group-block-wiki-latest-comments .item-list ul li .views-field-subject,
 .sidebar-last .block .view-group-block-wiki-latest .item-list ul li .views-field-title,
@@ -4101,7 +4108,16 @@ body.page-node .sidebar-last .block.block-views {
 {
 	margin-top: 0px;
 	margin-bottom: 3px;
-}*/
+}
+.sidebar-last .block .view-id-group_block_events_past .item-list ul li .dateblock{
+	width: 40px;
+}
+.sidebar-last .block .view-id-group_block_events_past .item-list ul li .dateblock .month{
+	padding: 1px 0;
+}
+.sidebar-last .block .view-id-group_block_events_past .item-list ul li .dateblock .day{
+	padding: 6px 0;
+}
 .sidebar-last .block .view-event-latest-comments .item-list ul li .views-field-subject,
 .sidebar-last .block .view-event-latest-comments .item-list ul li .views-field-timestamp,
 .sidebar-last .block .view-event-latest-comments .item-list ul li .views-field-name,
