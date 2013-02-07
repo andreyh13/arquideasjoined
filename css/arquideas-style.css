@@ -4096,7 +4096,11 @@ body.page-node .sidebar-last .block.block-views {
 	margin-bottom: 3px;
 }
 
-
+.sidebar-last .block .group_block_blog_latest_comments .item-list ul li .views-field-timestamp{
+	font-size: 13px;
+	padding-bottom: 0;
+	margin-bottom: 3px;
+}
 
 .sidebar-last .block .view-id-group_block_events_past .item-list ul li .views-field-title,
 .sidebar-last .block .view-event-latest-comments .item-list ul li .views-field-subject,
