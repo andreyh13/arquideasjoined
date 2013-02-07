@@ -4066,16 +4066,22 @@ body.page-node .sidebar-last .block.block-views {
 .sidebar-last .block .view-group-block-wiki-latest .item-list ul li .views-field-created,
 .sidebar-last .block .view-group-block-wiki-latest .item-list ul li .views-field-name,
 .sidebar-last .block .view-group-block-wiki-latest .item-list ul li .views-field-comment-count,
+
 .sidebar-last .block .view-group-block-wiki-latest-comments .item-list ul li .views-field-title,
 .sidebar-last .block .view-group-block-wiki-latest-comments .item-list ul li .views-field-subject,
 .sidebar-last .block .view-group-block-wiki-latest-comments .item-list ul li .views-field-timestamp,
 .sidebar-last .block .view-group-block-wiki-latest-comments .item-list ul li .views-field-created,
 .sidebar-last .block .view-group-block-wiki-latest-comments .item-list ul li .views-field-name,
 .sidebar-last .block .view-group-block-wiki-latest-comments .item-list ul li .views-field-comment-count,
+
 .sidebar-last .block .view-event-latest-comments .item-list ul li .views-field-subject,
 .sidebar-last .block .view-event-latest-comments .item-list ul li .views-field-timestamp,
 .sidebar-last .block .view-event-latest-comments .item-list ul li .views-field-name,
 .sidebar-last .block .view-event-latest-comments .item-list ul li .views-field-group-nid,
+
+.sidebar-last .block .view-id-group_block_events_past .item-list ul li .views-field-title,
+.sidebar-last .block .view-id-group_block_events_past .item-list ul li .views-field-field-location-value,
+
 .sidebar-last .block .view-wiki-latest-comments .item-list ul li .views-field-subject,
 .sidebar-last .block .view-wiki-latest-comments .item-list ul li .views-field-timestamp,
 .sidebar-last .block .view-wiki-latest-comments .item-list ul li .views-field-name,
@@ -4083,9 +4089,19 @@ body.page-node .sidebar-last .block.block-views {
 {
 	margin-left: 48px!important;
 	display: block;
+	padding-bottom: 0;
+	margin-bottom: 3px;
 }
 
-
+/*.sidebar-last .block .view-id-group_block_events_past .item-list ul li .views-field-title,
+.sidebar-last .block .view-event-latest-comments .item-list ul li .views-field-subject,
+.sidebar-last .block .view-group-block-wiki-latest-comments .item-list ul li .views-field-subject,
+.sidebar-last .block .view-group-block-wiki-latest .item-list ul li .views-field-title,
+.sidebar-last .block .view-wiki-latest-comments .item-list ul li .views-field-subject
+{
+	margin-top: 0px;
+	margin-bottom: 3px;
+}*/
 .sidebar-last .block .view-event-latest-comments .item-list ul li .views-field-subject,
 .sidebar-last .block .view-event-latest-comments .item-list ul li .views-field-timestamp,
 .sidebar-last .block .view-event-latest-comments .item-list ul li .views-field-name,
@@ -5592,6 +5608,7 @@ body.page-home #content-front-right .block {
 .view-arquideas-news-slideshow, 
 .view-arquideas-km-slideshow {
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 .view-arquideas-news-slideshow .views-field-field-image-data, 
 .view-arquideas-km-slideshow .views-field-field-image-data,
@@ -10426,11 +10443,11 @@ body.page-node.node-type-group #sidebar-last{
     margin-left: 170px;
 }
 .page-node.node-type-group .full-node.node-type-group .social-sharing-widget{
-	position: relative;
-	top: 115px;
-float: right;
-margin-bottom: 20px;
-display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 185px;
+	float: right;
+	display: inline-block;
 }
 .page-node.node-type-group .block-quicktabs{
     margin-top: 20px
