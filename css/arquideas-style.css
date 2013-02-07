@@ -10638,10 +10638,9 @@ font-size: 12px
 }
 
 .display-project h3.subtitle{
-	padding-botom: 20px;
-	margin-bottom: 20px!important;
-	border-bottom: 1px solid #999;
+	margin: 15px 0!important;
 }
+
 .display-project .project-info-public .col01 #edit-vote-wrapper{
 	position: relative;
 }
@@ -10652,12 +10651,20 @@ font-size: 12px
 
 .display-project .project-info-public .col01 form.fivestar-widget{
 	height: 35px;
+	display: table-cell;
+	vertical-align: middle;
 }
 .display-project .fivestar-widget .description{
 	min-height: 35px;
 	position: absolute; 
-	top: 0px;
+	top: -8px;
 	left: 95px; 
+}
+
+.display-project .project-info-public .col01 .project-type{
+	border-top: 1px solid #999;
+	padding-top: 15px;
+	margin-top: 15px;
 }
 .display-project .project-info-public .col01 .field-project-type-project{
 	font-family: "SoinSans-Bold",Helvetica,Arial,sans-serif;
@@ -10673,4 +10680,8 @@ font-size: 12px
 .display-project .project-info-public .col01 .box .content{
 	padding: 10px;
 	background: #fff;
+}
+.display-project .project-info-public .col01 .box .form-submit{
+	font-size: 13px;
+	display: block;
 }

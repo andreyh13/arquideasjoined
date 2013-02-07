@@ -58,13 +58,14 @@
             <!-- Project SUBTITLE -->
             <h3 class="subtitle">
                 <?php print $field_subtitle_project_rendered; ?>
+				<?php if ($terms): ?>
+	            <div class="terms">
+	            <?php print $terms; ?>
+	            </div>
+	            <?php endif;?>
             </h3>
             <!-- End Project SUBTITLE -->
-			<?php if ($terms): ?>
-            <div class="terms">
-            <?php print $terms; ?>
-            </div>
-            <?php endif;?>
+			
            
 
             <!-- Project Type -->
