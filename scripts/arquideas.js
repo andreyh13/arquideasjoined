@@ -201,6 +201,8 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
         
         //DOM manipulation for project details
         $("body.page-node.node-type-project #comments .box").appendTo(".full-node.node-type-project .project-info-public .col01");
+        $("body.page-inscription #comments .box").appendTo(".full-node.page-inscription .inscription-info-public .col01");
+        
         //Cambio en el DOM
 		//.page-arquideas-network #content-front #content-front-left, .page-solr-nodetype #content-front #content-front-left, .page-solr-nodetype-multi #content-front #content-front-left 
 		if($('.arquideas-network').length||$('.page-solr-nodetype').length||$('.page-solr-nodetype-multi').length){

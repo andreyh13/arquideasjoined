@@ -95,6 +95,12 @@
                 </div>
             </h3>
             <!-- End ID of Inscription -->
+            
+            <!-- Project Type -->
+            <div class="project-type">
+                <?php print $field_project_type_project_rendered ?>
+            </div>
+            <!-- End Project Type -->
 
             <!-- Description of Inscription-->
             <?php print $inscription_mission; ?>
