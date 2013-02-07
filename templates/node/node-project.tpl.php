@@ -27,6 +27,14 @@
     <div class="clearfix">&nbsp;</div>
 
     <?php if(!$is_edit && $page == 1): ?>
+    <?php print l(t('Go Back'),'',array(
+        'attributes' => array(
+            'title' => t('Go Back'),
+            'onclick' => 'history.go(-1);return false;',
+        ),
+        'fragment' => ' ',
+        'external' => TRUE,
+    )); ?>
     <div class="project-info-public">
         <div class="col01">
             <!-- Project TITLE-->
