@@ -10614,16 +10614,16 @@ font-size: 12px
 }
 /*Display de proyecto*/
 
-.display-project .links.top{
+.display-project .links.top, .display-project .link-special-arquideas-prize{
 	display: inline-block;
 	float: right;
 	margin-top: -7px;
 }
 
-.display-project .links.top li{
+.display-project .links.top li, .display-project .link-special-arquideas-prize li{
 	padding: 0px!important;
 }
-.display-project .links.top li .flag-bookmarks a {
+.display-project .links.top li .flag-bookmarks a, .display-project .link-special-arquideas-prize a{
  	padding: 5px 10px!important;
 	float: right;
 }
