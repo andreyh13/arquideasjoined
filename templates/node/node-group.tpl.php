@@ -62,7 +62,7 @@
     $members = contest_notifications_get_group_members($node);
   ?>
   <?php if($page && !$is_edit): ?>
-  <div class="users-total">
+  <div class="group-members-count">
       <span class="label">
           <?php print t('In this group we are '); ?>
       </span>
