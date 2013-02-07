@@ -8368,7 +8368,7 @@ a.add-content-link:hover,
 #arquideas-book-user-settings .edit-delete{
 width: auto; display: inline-block; float: right; display: none;
 }
-#edit-submit, #edit-preview-changes, #edit-submit-1, .views-exposed-form .form-submit, #arquideas-book-user-settings .form-submit,.views-field-phpcode-1 .popups-form-noupdate, .open-contest-button .form-submit, .display-project .links li a.flag-bookmarks {
+#edit-submit, #edit-preview-changes, #edit-submit-1, .views-exposed-form .form-submit, #arquideas-book-user-settings .form-submit,.views-field-phpcode-1 .popups-form-noupdate, .open-contest-button .form-submit, .display-project .links li .flag-bookmarks a{
 	display: inline-block;
 	float: none;
 	border-radius: 5px 5px 5px 5px;
@@ -8383,7 +8383,7 @@ width: auto; display: inline-block; float: right; display: none;
 	line-height: 1;
 	font-family: SoinSans-BoldOblique!important;
 }
- .open-contest-button .form-submit, .display-project .links li a.flag-bookmarks {
+ .open-contest-button .form-submit, .display-project .links li .flag-bookmarks a{
 	background: #3cc!important;
  }
 
@@ -10629,7 +10629,7 @@ font-size: 12px
 	position: relative;
 	font-family: SoinSans-BoldOblique, Helvetica, Arial, sans-serif;
 }
-.display-project .links li a.flag-bookmarks {
+.display-project .links li .flag-bookmarks a {
  	padding: 5px 10px!important;
 	float: right;
 }
