@@ -10594,7 +10594,7 @@ font-size: 12px
 	font-size: 1.3em;
 }
 
-.page-node.node-type-group .full-node.node-type-group .group-members-count .count{
+.page-node.node-type-group .full-node.node-type-group .group-members-count .total{
 	font-family: "SoinSans-Bold", Helvetica, Arial, sans-serif!important;
 	font-size: 1.7em;
 }
@@ -10630,7 +10630,8 @@ font-size: 12px
 .display-project .links.top li, .display-project .link-special-arquideas-prize li{
 	padding: 0px!important;
 }
-.display-project .links.top li .flag-bookmarks a, .display-project .link-special-arquideas-prize a{
+.display-project .links.top li .flag-bookmarks a, 
+.display-project .link-special-arquideas-prize a{
  	padding: 5px 10px!important;
 	float: right;
 }
@@ -10648,7 +10649,8 @@ font-size: 12px
 	margin: 15px 0!important;
 }
 
-.display-project .project-info-public .col01 #edit-vote-wrapper{
+.display-project .project-info-public .col01 #edit-vote-wrapper,
+.display-project .inscription-info-public .col01 #edit-vote-wrapper{
 	position: relative;
 }
 
@@ -10656,7 +10658,8 @@ font-size: 12px
 	display: none;
 }
 
-.display-project .project-info-public .col01 form.fivestar-widget{
+.display-project .project-info-public .col01 form.fivestar-widget,
+.display-project .inscription-info-public .col01 form.fivestar-widget{
 	height: 35px;
 	display: table-cell;
 	vertical-align: middle;
@@ -10669,34 +10672,42 @@ font-size: 12px
 	left: 95px; 
 }
 
-.display-project .project-info-public .col01 .project-type{
+.display-project .project-info-public .col01 .project-type,
+.display-project .inscription-info-public .col01 .project-type{
 	border-top: 1px solid #999;
 	padding-top: 15px;
 	margin-top: 15px;
 }
-.display-project .project-info-public .col01 .field-project-type-project{
+.display-project .project-info-public .col01 .field-project-type-project,
+.display-project .inscription-info-public .col01 .field-project-type-project{
 	font-family: "SoinSans-Bold",Helvetica,Arial,sans-serif;
 }
-.display-project .project-info-public .col01 .box{
+.display-project .project-info-public .col01 .box,
+.display-project .inscription-info-public .col01 .box{
 	margin-top: 15px;
 	padding-top: 15px;
 	border-top: 1px solid #999;
 }
-.display-project .project-info-public .col01 .box h2{
+.display-project .project-info-public .col01 .box h2,
+.display-project .inscription-info-public .col01 .box h2{
 	font-weight: normal;
 }
-.display-project .project-info-public .col01 .box .content{
+.display-project .project-info-public .col01 .box .content,
+.display-project .inscription-info-public .col01 .box .content{
 	padding: 10px;
 	background: #fff;
 }
-.display-project .project-info-public .col01 .box .form-submit{
+.display-project .project-info-public .col01 .box .form-submit,
+.display-project .inscription-info-public .col01 .box .form-submit{
 	font-size: 13px!important;
 	display: block!important;
 }
-.display-project .project-info-public .col01 .box textarea{
+.display-project .project-info-public .col01 .box textarea,
+.display-project .inscription-info-public .col01 .box textarea{
 	height: 58px!important;
 }
-.display-project .project-info-public .col01 .terms ul.links li{
+.display-project .project-info-public .col01 .terms ul.links li,
+.display-project .inscription-info-public .col01 .terms ul.links li{
 	margin-bottom: 0;
 	margin-top: 5px;
 }
