@@ -10614,14 +10614,18 @@ font-size: 12px
 }
 /*Display de proyecto*/
 
-.display-project .links{
+.display-project .links.top{
 	display: inline-block;
 	float: right;
 	margin-top: -7px;
 }
 
-.display-project .links li{
+.display-project .links.top li{
 	padding: 0px!important;
+}
+.display-project .links.top li .flag-bookmarks a {
+ 	padding: 5px 10px!important;
+	float: right;
 }
 .display-project .go-back{
     display: inline-block;
@@ -10629,20 +10633,16 @@ font-size: 12px
 	position: relative;
 	font-family: SoinSans-BoldOblique, Helvetica, Arial, sans-serif;
 }
-.display-project .links li .flag-bookmarks a {
- 	padding: 5px 10px!important;
-	float: right;
-}
 .display-project .grippie{
 	display: none;
 }
 
 .display-project h3.subtitle{
 	padding-botom: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 20px!important;
 	border-bottom: 1px solid #999;
 }
-.display-project .project-info-public .col01 .edit-vote-wrapper{
+.display-project .project-info-public .col01 #edit-vote-wrapper{
 	position: relative;
 }
 
@@ -10650,9 +10650,27 @@ font-size: 12px
 	display: none;
 }
 
-
+.display-project .project-info-public .col01 form.fivestar-widget{
+	height: 35px;
+}
 .display-project .fivestar-widget .description{
 	min-height: 35px;
 	position: absolute; 
-	top: 1px;
+	top: 0px;
+	left: 95px; 
+}
+.display-project .project-info-public .col01 .field-project-type-project{
+	font-family: "SoinSans-Bold",Helvetica,Arial,sans-serif;
+}
+.display-project .project-info-public .col01 .box{
+	margin-top: 15px;
+	padding-top: 15px;
+	border-top: 1px solid #999;
+}
+.display-project .project-info-public .col01 .box h2{
+	font-weight: normal;
+}
+.display-project .project-info-public .col01 .box .content{
+	padding: 10px;
+	background: #fff;
 }

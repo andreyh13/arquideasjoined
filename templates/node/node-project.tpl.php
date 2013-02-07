@@ -37,7 +37,7 @@
         'external' => TRUE,
     )); ?>
     <?php if ($links): ?>
-        <div class="links">
+        <div class="links top">
         <?php print $links; ?>
         </div>
     <?php endif; ?>
@@ -60,7 +60,11 @@
                 <?php print $field_subtitle_project_rendered; ?>
             </h3>
             <!-- End Project SUBTITLE -->
-
+			<?php if ($terms): ?>
+            <div class="terms">
+            <?php print $terms; ?>
+            </div>
+            <?php endif;?>
            
 
             <!-- Project Type -->
@@ -69,11 +73,7 @@
             </div>
             <!-- End Project Type -->
 
-            <?php if ($terms): ?>
-            <div class="terms">
-            <?php print $terms; ?>
-            </div>
-            <?php endif;?>
+          
 
             <!-- Description of Project -->
             <div class="project-body">
