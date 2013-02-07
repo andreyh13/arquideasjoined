@@ -6002,6 +6002,10 @@ text-transform: uppercase;
   opacity: 0;
 }
 
+.view-arqnetwork-user-projects.view-display-id-page_1 .project-info{
+    width: 210px;
+}
+
 #block-views-arqnetwork_projects-block_1 .project-info:hover,
 .view-arquideas-contest-prizes.view-display-id-block_7 .project-info:hover,
 .view-arquideas-contest-prizes.view-display-id-block_8 .project-info:hover,
@@ -6034,6 +6038,7 @@ text-transform: uppercase;
 
 .view-arqnetwork-user-projects.view-display-id-page_1 .views-field-title {
   bottom: 70%;  
+  width: 210px;
 }
 
 #block-views-arqnetwork_projects-block_1 .views-field-title a,
@@ -6056,13 +6061,14 @@ text-transform: uppercase;
 
 .view-arqnetwork-user-projects.view-display-id-page_1 .views-field-field-project-type-project-value{
     top: 35%;
+    width: 210px;
 }
 
 .view-arqnetwork-user-projects.view-display-id-page_1 .views-field-field-contest{
   position: absolute;
   top: 45%;
   text-align: center;
-  width: 229px;
+  width: 210px;
   color: #fff;
   font-size: 13px;
 }
