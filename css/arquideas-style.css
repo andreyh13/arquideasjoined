@@ -10362,10 +10362,14 @@ body.blog-type #content-group h1.title{
 	position: absolute; 
 	top: 60px; 
 	right: 0;
-	border-radius: 5px 5px 5px 5px;
-    display: inline-block;
-    font-family: SoinSans-BoldOblique !important;
-    font-size: 1.1em;
+	font-family: SoinSans-BoldOblique!important;
+    font-size: 1.25em;
+}
+.blog-type #content-content .field-ds-group-ds-node-date-type-vote .field-edit-content-link-widget a{
+	display: inline-block!important;
+	border-radius: 5px 5px 5px 5px!important;
+	-moz-border-radius: 5px 5px 5px 5px!important;
+	-webkit-border-radius: 5px 5px 5px 5px!important;
 }
 .blog-type #content-content .field-ds-group-ds-node-date-type-vote .field-fivestar-widget .fivestar-widget{
 	margin-right: 0px;
