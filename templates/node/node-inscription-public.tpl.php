@@ -2,7 +2,7 @@
 // $Id: node.tpl.php 7510 2010-06-15 19:09:36Z sheena $
 ?>
 
-<div id="node-<?php print $node->nid; ?>" class="node <?php print $node_classes; ?>">
+<div id="node-<?php print $node->nid; ?>" class="node display-project <?php print $node_classes; ?>">
   <div class="inner">
     <?php print $picture ?>
 
@@ -27,11 +27,11 @@
     <div class="clearfix">&nbsp;</div>
 
     <!-- Mark Special Arquideas Prize -->
-    <?php if($contest->field_contest_state[0]['value']==ContestState::FINISHED && user_access(PERM_ADMIN_CONTESTS)) : ?>
+    <?php /*if($contest->field_contest_state[0]['value']==ContestState::FINISHED && user_access(PERM_ADMIN_CONTESTS)) :*/ ?>
     <div class="link-special-arquideas-prize">
         <?php print flag_create_link('arquideas_prize', $node->nid); ?>
     </div>
-    <?php endif; ?>
+    <?php /*endif;*/ ?>
     <!-- End Mark Special Arquideas Prize -->
 
     <?php if(!$is_edit && $page == 1): ?>
@@ -43,20 +43,14 @@
             </h2>
             <!-- End Inscription TITLE-->
 
-            <!-- ID of Inscription-->
-            <h3 class="subtitle">
-            <?php print $contest->model.' - '.$node->nid; ?>
-            </h3>
-            <!-- End ID of Inscription -->
-
-            <!-- FiveStar Widget -->
+             <!-- FiveStar Widget -->
             <?php
             $flag = flag_get_flag('finalist');
-            if($contest->field_contest_state[0]['value']==ContestState::PUBLIC_CONTEST && $flag->is_flagged($node->nid)){
-                if (user_access('rate content') && fivestar_validate_target('node', $node->nid)) {
+            /*if($contest->field_contest_state[0]['value']==ContestState::PUBLIC_CONTEST && $flag->is_flagged($node->nid)){
+                if (user_access('rate content') && fivestar_validate_target('node', $node->nid)) { */
                     print fivestar_widget_form($node);
-                }
-            }
+                /*}
+            }*/
             if($contest->field_contest_state[0]['value']==ContestState::FINISHED && $flag->is_flagged($node->nid)){
                 if (fivestar_validate_target('node', $node->nid)) {
                     print fivestar_static('node', $node->nid, 'vote', 'inscription');
@@ -65,33 +59,42 @@
             ?>
             <!-- END FiveStar Widget -->
 
-            <!-- University and Country -->
-            <div class="university-country">
-            <?php
-                $univ_country = '';
-                if(!empty($field_inscription_university[0]['view'])){
-                    $univ_country .= $field_inscription_university[0]['view'];
-                }
-                if(!empty($field_inscription_country[0]['view'])){
-                    $univ_country .= ($univ_country!=''?' / ':'').theme('countryicons_icon',  strtolower($field_inscription_country[0]['value'])).' '.$field_inscription_country[0]['view'];
-                }
-                print  $univ_country;
-            ?>
-            </div>
-            <!-- End University and Country -->
-
-            <!-- Number of members -->
-            <div class="number-members">
+            
+            <!-- ID of Inscription-->
+            <h3 class="subtitle">
+            <?php print $contest->model.' - '.$node->nid; ?>
+                <div class="terms">
+                                    <!-- University and Country -->
+                <div class="university-country">
                 <?php
-                    $members = contest_notifications_get_group_members($node);
-                    print count($members).' '.t('members');
+                    $univ_country = '';
+                    if(!empty($field_inscription_university[0]['view'])){
+                        $univ_country .= $field_inscription_university[0]['view'];
+                    }
+                    if(!empty($field_inscription_country[0]['view'])){
+                        $univ_country .= ($univ_country!=''?' / ':'').theme('countryicons_icon',  strtolower($field_inscription_country[0]['value'])).' '.$field_inscription_country[0]['view'];
+                    }
+                    print  $univ_country;
                 ?>
-            </div>
-            <!-- END Number of members -->
+                </div>
+                <!-- End University and Country -->
+
+                <!-- Number of members -->
+                <div class="number-members">
+                    <?php
+                        $members = contest_notifications_get_group_members($node);
+                        print count($members).' '.t('members');
+                    ?>
+                </div>
+                <!-- END Number of members -->
 
             <!-- Team members -->
             <?php print views_embed_view('og_members_faces', 'block_1', $node->nid); ?>
             <!-- END Team members -->
+
+                </div>
+            </h3>
+            <!-- End ID of Inscription -->
 
             <!-- Description of Inscription-->
             <?php print $inscription_mission; ?>
