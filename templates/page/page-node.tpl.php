@@ -37,7 +37,7 @@ la clase "page-node" que ya viene
 incluida, pero no estoy seguro de ello
 -------------------------*/
 
- $body_classes.=(strpos($body_id,'id-blog-')||strpos($body_id,'id-event-')||strpos($body_id,'id-wiki-')||strpos($body_classes,'.node-type-wiki'))?' blog-type ':'';
+ $body_classes.=(strpos($body_id,'id-blog-')||strpos($body_id,'id-event-')||strpos($body_id,'id-wiki-')||strpos($body_classes,'node-type-wiki'))?' blog-type ':'';
  $cambios_ancho=array(
  	'nodos'=>array(
 		'grid16-11 force-width',
