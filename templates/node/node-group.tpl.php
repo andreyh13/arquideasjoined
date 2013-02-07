@@ -62,9 +62,12 @@
     $members = contest_notifications_get_group_members($node);
   ?>
   <?php if($page && !$is_edit): ?>
-  <div class="group-members-count">
-      <span>
-          <?php print t('In this group we are').' <span=class="count">'.count($members).'</span>'; ?>
+  <div class="users-total">
+      <span class="label">
+          <?php print t('In this group we are '); ?>
+      </span>
+      <span class="total">
+          <?php print count($members); ?>
       </span>
   </div>
   <?php endif; ?>
@@ -73,7 +76,7 @@
   <!-- JOIN GROUP OR LEAVE GROUP BUTTON -->
     <?php if($page && !$is_edit): 
         if(og_is_group_member($node,FALSE)): ?>
-                <div class="og-buttons">
+                <div class="og-buttons og-buttons-leave">
                 <?php global $user;
                     if(og_menu_access_unsubscribe($node)){
                         print l('<span>'.t('Leave').'</span>','og/unsubscribe/'.$node->nid.'/'.$user->uid,array(
@@ -89,7 +92,7 @@
                 </div>    
     <?php 
         else: ?>    
-            <div class="og-buttons"> 
+            <div class="og-buttons og-buttons-subscribe"> 
             <?php print og_subscribe_link($node); ?>
             </div>    
     <?php 
