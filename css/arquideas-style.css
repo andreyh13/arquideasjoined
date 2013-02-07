@@ -7330,10 +7330,9 @@ body.node-type-inscription-1 #breadcrumbs {
 
 .view-jury-members .views-field-title,
 .view-jury-partners-co .views-field-title {
-  font-size: 16px;
-  font-family: Helvetica;
+  font-size: 16px!important;
   color: #000;
-  margin: 0 0 5px 0 !important;
+  margin: 0 0 5px 80px !important;
 }
 .view-jury-partners-co .views-field-title .field-content a{
 	  font-family: "SoinSans-Bold", Helvetica, Arial, sans-serif;
@@ -7343,10 +7342,9 @@ body.node-type-inscription-1 #breadcrumbs {
   color: #999;
   font-size: 12px;
 }
-.view-jury-members .views-field-title,
-.view-jury-partners-co .views-field-title,
+
 .view-jury-members .views-field-field-short-description-value,
-.view-jury-partners-co .field-content,
+.view-id-jury_partners_co .views-field-field-short-description-value,
 .view-jury-members .views-field-field-link-col-url,
 .view-jury-partners-co .views-field-field-link-col-url{
 	margin-left: 80px;
@@ -10145,7 +10143,7 @@ float: left;
 /*Grupos*/
 
 body.page-groups #content-group h1.title{
-	padding: 0 0 20px 0;
+	padding: 1px 0 20px 0;
 }
 body.page-groups #content-group{
 	border-radius: 0;
