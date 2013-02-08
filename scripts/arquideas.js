@@ -249,6 +249,7 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
 				marginRight: '60px',
 				marginTop: '-25px'
 			})
+			$('.open-contest-button').css({marginLeft: '0',marginTop:'20px'})
 		}
 		if($('.node-type-inscription.launch-overlay').length){
 			jQuery('<div class="WallOverlay"/>').css({bottom: '0',
@@ -256,6 +257,6 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
    					top:    '0',
 					position: 'absolute',
     				width: '100%'
-				}).html('<div class="alpha"></div><span class="inner clearfix"> Forma un equipo y disfruta de un &#160;rea colaborativa con todos sus miembros </span>').prependTo('#block-quicktabs-arqnetwork_group_quicktabs');
+				}).html('<div class="alpha"></div><span class="inner clearfix"> Forma un equipo y disfruta de un \u00e1rea colaborativa con todos sus miembros </span>').prependTo('#block-quicktabs-arqnetwork_group_quicktabs');
 		}
 });
