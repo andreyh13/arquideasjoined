@@ -10653,6 +10653,11 @@ font-size: 12px
 .display-project h3.subtitle{
 	margin: 15px 0!important;
 }
+.display-project h3.subtitle .terms{
+		border-top: 1px solid #999;
+	padding-top: 15px;
+	margin-top: 15px;
+}
 
 .display-project .project-info-public .col01 #edit-vote-wrapper,
 .display-project .inscription-info-public .col01 #edit-vote-wrapper{
@@ -10689,6 +10694,12 @@ font-size: 12px
 }
 .display-project .project-info-public .col01 .box,
 .display-project .inscription-info-public .col01 .box{
+	margin-top: 15px;
+	padding-top: 15px;
+	border-top: 1px solid #999;
+}
+.display-project .project-info-public .col01 .downloads,
+.display-project .inscription-info-public .col01 .downloads{
 	margin-top: 15px;
 	padding-top: 15px;
 	border-top: 1px solid #999;
