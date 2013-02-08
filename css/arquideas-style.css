@@ -9773,27 +9773,33 @@ body.book #content-content{
 	float: left;
 }
 .view-arqnetwork-account-inscriptions .views-field-phpcode-2{
-	margin-top: 20px;
-	overflow: hidden;
+	margin-left: 80px;
+	float: left;
+	padding-top: 20px;
 }
 .view-arqnetwork-account-inscriptions .views-field-phpcode-3,
 .view-arqnetwork-account-inscriptions .views-field-field-inscription-members-imname-vname{
 	margin-left: 350px;
 }
 .view-arqnetwork-account-inscriptions .views-field-phpcode-3{
-	margin: 0 0 10px 350px;
+	clear: both;
+	float: left;
+	padding-top: 20px;
+	text-align: right;
+}
+.view-arqnetwork-account-inscriptions .views-field-phpcode-3 label{
+	display: block;
+	color: #fff;
+	font-family: "SoinSans-Bold", Helvetica, Arial, sans-serif;
 }
 
 .view-arqnetwork-account-inscriptions .views-field-phpcode-4{
 	margin: 0 0 20px 350px;
 	font-weight: bold;
 }
-.view-arqnetwork-account-inscriptions .views-field-phpcode-4 div.field-registration-limit-date{
-	display: inline;
-}
 .jquery-countdown.hasCountdown{
 	background: transparent;
-	display: inline-block;
+	
 }
 .view-arqnetwork-account-inscriptions .views-field-field-inscription-members-imname-vname .views-field-picture{
 	width: auto!important;
