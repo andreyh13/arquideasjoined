@@ -2,9 +2,15 @@
 // $Id: node.tpl.php 7510 2010-06-15 19:09:36Z sheena $
 ?>
 
-<?php global $user; ?>
+<?php global $user; 
 
-<div id="node-<?php print $node->nid; ?>" class="node <?php print $node_classes; ?>">
+    $class_add = '';
+    if($node->field_inscription_state[0]['value']==InscriptionState::PREINSCRIPTED && $num_members==1){
+        $class_add = 'launch-overlay';
+    }
+?>
+
+<div id="node-<?php print $node->nid; ?>" class="node <?php print $node_classes; ?> <?php print $class_add; ?>">
   <div class="inner">
     <?php print $picture ?>
 
@@ -220,9 +226,11 @@
     <?php if($node->field_inscription_state[0]['value']==InscriptionState::PREINSCRIPTED && $num_members==1): ?>
         <!-- THIS DIV MUST BE POSITIONED OVER THE WALL -->
         <div class="inscription-wall-overlay">
+            <div class="alpha">
             <div class="inner clearfix">
                 <?php print t('Form a team and enjoy an collaborative area with all members'); ?>
             </div>
+            </div>    
         </div>
     <?php endif; ?>
 
