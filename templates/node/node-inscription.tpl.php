@@ -176,7 +176,7 @@
     <!-- INSCRIPTION, PAYMENT OR PRESENTATION LINK -->
     <?php
         if(!$is_edit && isset($contest) && $contest->field_contest_state[0]['value']==ContestState::OPEN && $node->field_inscription_state[0]['value']==InscriptionState::PREINSCRIPTED){
-            print '<div class="open-contest-button">'.openContestButton($contest).'</div>';
+            print '<div class="open-contest-button notadmin-message">'.openContestButton($contest).'</div>';
         }
     ?>
     <!-- END INSCRIPTION, PAYMENT OR PRESENTATION LINK -->
