@@ -223,18 +223,6 @@
         <!-- End DOWNLOAD files -->
     <?php endif; ?>
 
-    <?php if($node->field_inscription_state[0]['value']==InscriptionState::PREINSCRIPTED && $num_members==1): ?>
-        <!-- THIS DIV MUST BE POSITIONED OVER THE WALL -->
-        <div class="inscription-wall-overlay">
-            <div class="alpha">
-            <div class="inner clearfix">
-                <?php print t('Form a team and enjoy an collaborative area with all members'); ?>
-            </div>
-            </div>    
-        </div>
-    <?php endif; ?>
-
-
     <?php if ($node_top && !$teaser): ?>
     <div id="node-top" class="node-top row nested">
       <div id="node-top-inner" class="node-top-inner inner">
