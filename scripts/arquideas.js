@@ -237,4 +237,17 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
 			$('.project-prize').html('<p>'+$('.project-prize').html()+'</p>');
 			jQuery('<div class="alpha"/>').prependTo($('.project-prize'));
 		}
+		//Si estamos en inscripcion y no es inscripción grupal
+		if($('.node-type-inscription').length&&!$('.only-groups').length){
+			$('.node-type-inscription .contest-payment-individual').css({
+				float: 'left',
+				marginLeft: '60px',
+				marginTop: '-30px'
+			})
+			$('.node-type-inscription .contest-payment-group').css({
+				float: 'right',
+				marginRight: '60px',
+				marginTop: '-30px'
+			})
+		}
 });
