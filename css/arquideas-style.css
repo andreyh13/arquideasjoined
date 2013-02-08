@@ -7108,7 +7108,8 @@ body.node-type-inscription-1 #breadcrumbs {
 
 .inscription-info-public h2.title,
 .project-info-public h2.title,
-.project-info-public .project-type {
+.project-info-public .project-type,
+.inscription-info-public .project-type{
   color: #fff;
   font-size: 26px;
   line-height: 100%;
@@ -7338,7 +7339,7 @@ body.node-type-inscription-1 #breadcrumbs {
 	  font-family: "SoinSans-Bold", Helvetica, Arial, sans-serif;
 }
 .view-jury-members .views-field-field-short-description-value,
-.view-jury-partners-co .field-content {
+.view-jury-partners-co .views-field-field-short-description-value {
   color: #999;
   font-size: 12px;
 }
@@ -10538,6 +10539,9 @@ body.page-node.node-type-group #sidebar-last{
 .page-node.node-type-group .full-node.node-type-group .og-image{
 	float: left;
 	display: inline-block;
+	max-widh: 160px;
+	min-height: 150px;
+	background-color:#000;
 }
 .page-node.node-type-group .full-node.node-type-group .og-description,
 .page-node.node-type-group .full-node.node-type-group .terms,
@@ -10710,5 +10714,10 @@ font-size: 12px
 .display-project .inscription-info-public .col01 .terms ul.links li{
 	margin-bottom: 0;
 	margin-top: 5px;
+}
+.display-project .inscription-info-public .view-og-members-faces.view-display-id-block_1{
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border-bottom: none;
 }
 /*cajitas de jurado*/
