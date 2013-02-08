@@ -9766,7 +9766,7 @@ body.book #content-content{
 }
 .view-arqnetwork-account-inscriptions .views-field-title-1 a{
 	color: #000;
-	font-size: 24px;
+	/*font-size: 24px;*/
 }
 .view-arqnetwork-account-inscriptions .views-field-field-contest-image-fid{
 	display: inline-block;
@@ -9781,24 +9781,23 @@ body.book #content-content{
 .view-arqnetwork-account-inscriptions .views-field-field-inscription-members-imname-vname{
 	margin-left: 350px;
 }
-.view-arqnetwork-account-inscriptions .views-field-phpcode-3{
+.view-arqnetwork-account-inscriptions .views-field-phpcode-4{
 	clear: both;
 	float: left;
 	padding-top: 20px;
-	text-align: right;
-}
-.view-arqnetwork-account-inscriptions .views-field-phpcode-3 label{
-	display: block;
-	color: #fff;
+	text-align: right;	
 	font-family: "SoinSans-Bold", Helvetica, Arial, sans-serif;
 }
-
-.view-arqnetwork-account-inscriptions .views-field-phpcode-4{
-	margin: 0 0 20px 350px;
-	font-weight: bold;
+.view-arqnetwork-account-inscriptions .views-field-phpcode-4 label{
+	display: block;
+	color: #fff;
+	font-size: 14px
 }
+
+
 .jquery-countdown.hasCountdown{
 	background: transparent;
+	font-family: "SoinSans-Bold", Helvetica, Arial, sans-serif;
 	
 }
 .view-arqnetwork-account-inscriptions .views-field-field-inscription-members-imname-vname .views-field-picture{
