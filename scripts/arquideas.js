@@ -242,12 +242,12 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
 			$('.node-type-inscription .contest-payment-individual').css({
 				float: 'left',
 				marginLeft: '60px',
-				marginTop: '-30px'
+				marginTop: '-25px'
 			})
 			$('.node-type-inscription .contest-payment-group').css({
 				float: 'right',
 				marginRight: '60px',
-				marginTop: '-30px'
+				marginTop: '-25px'
 			})
 		}
 		if($('.node-type-inscription.launch-overlay').length){
@@ -256,6 +256,6 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
    					top:    '0',
 					position: 'absolute',
     				width: '100%'
-				}).html('<div class="alpha"></div><span class="inner clearfix"> Forma un equipo y disfruta de un área colaborativa con todos sus miembros </span>').prependTo('#block-quicktabs-arqnetwork_group_quicktabs');
+				}).html('<div class="alpha"></div><span class="inner clearfix"> Forma un equipo y disfruta de un &#160;rea colaborativa con todos sus miembros </span>').prependTo('#block-quicktabs-arqnetwork_group_quicktabs');
 		}
 });

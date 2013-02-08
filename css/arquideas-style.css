@@ -7822,7 +7822,7 @@ body.node-type-news h1.title {
     display: none;
 }
 
-.node-type-inscription input.contest-payment-individual {
+.node-type-inscription.only-groups input.contest-payment-individual {
     display: none;
 }
 .node-type-inscription .add-to-cart form > div{
@@ -10760,8 +10760,8 @@ font-size: 12px
 	z-index: 2; position: relative
 }
 .caption .alpha,
-.project-prize alpha,
-.WallOverlay alpha{
+.project-prize .alpha,
+.WallOverlay .alpha{
    bottom: 0!important;
    left: 0!important;
    top: 0!important;
@@ -10784,7 +10784,14 @@ font-size: 12px
 }
 
 #block-quicktabs-arqnetwork_group_quicktabs{POSITION: relative}
-
+.WallOverlay{
+   bottom: 0;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
 .WallOverlay .inner{
 	padding: 5%;
 	color: #fff;
@@ -10796,5 +10803,6 @@ font-size: 12px
 	font-size: 2.7em;
 	line-height: 1.5;
 	height: 55%;
+	display: block;
 	margin: 30px;
 }
