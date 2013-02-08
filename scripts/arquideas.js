@@ -221,9 +221,20 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
 		
 		if($('.page-partners-and-co').length){
 			$('.view-colaborators .view-content').find('.views-row').each(function(){
-				$(this).find('.views-field-phpcode,.views-field-view-node').appendTo(
+				$(this).find('.views-field-phpcode,.views-field-view-node, views-field-field-comment-title-col-value').appendTo(
 					jQuery('<span class="inner-partner"/>').appendTo($(this))
 				)
 			})
+		}
+		
+		if($('.jq-scrollable-inscription .scrollable').length){
+			$('#scrollable').find('.caption').each(function(){
+				$(this).html('<p>'+$(this).html()+'</p>')
+				jQuery('<div class="alpha"/>').prependTo($(this))
+			})
+		}
+		if($('.inscription-info-public .col02 .project-prize').length){
+			$('.project-prize').html('<p>'+$('.project-prize').html()+'</p>');
+			jQuery('<div class="alpha"/>').prependTo($('.project-prize'));
 		}
 });
