@@ -216,4 +216,38 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
         
         //Change image link for users
         $(".view-arqnetwork-user-profile .views-field-phpcode-2 a.user-edit-image-link").parents(".views-field-phpcode-2").addClass("user-edit-image").appendTo(".view-arqnetwork-user-profile .views-field-picture");
+
+		//Centrado vertical textos en partners
+		
+		if($('.page-partners-and-co').length){
+			$('.view-colaborators .view-content').find('.views-row').each(function(){
+				$(this).find('.views-field-phpcode,.views-field-view-node, views-field-field-comment-title-col-value').appendTo(
+					jQuery('<span class="inner-partner"/>').appendTo($(this))
+				)
+			})
+		}
+		
+		if($('.jq-scrollable-inscription .scrollable').length){
+			$('#scrollable').find('.caption').each(function(){
+				$(this).html('<p>'+$(this).html()+'</p>')
+				jQuery('<div class="alpha"/>').prependTo($(this))
+			})
+		}
+		if($('.inscription-info-public .col02 .project-prize').length){
+			$('.project-prize').html('<p>'+$('.project-prize').html()+'</p>');
+			jQuery('<div class="alpha"/>').prependTo($('.project-prize'));
+		}
+		//Si estamos en inscripcion y no es inscripción grupal
+		if($('.node-type-inscription').length&&!$('.only-groups').length){
+			$('.node-type-inscription .contest-payment-individual').css({
+				float: 'left',
+				marginLeft: '60px',
+				marginTop: '-30px'
+			})
+			$('.node-type-inscription .contest-payment-group').css({
+				float: 'right',
+				marginRight: '60px',
+				marginTop: '-30px'
+			})
+		}
 });
