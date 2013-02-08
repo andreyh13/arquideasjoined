@@ -9749,18 +9749,18 @@ body.book #content-content{
 }
 /*Edicion datos concurso*/
 .view-arqnetwork-account-inscriptions .views-row{
-	border-bottom: 1px solid #ccc;
-	padding-bottom: 20px;
+	border: 1px solid #ccc;
+	padding: 20px;
 	margin-top: 20px;
 }
-.view-arqnetwork-account-inscriptions .views-row.views-row-first{
+/*.view-arqnetwork-account-inscriptions .views-row.views-row-first{
 	border-top: 1px solid #ccc;
 	padding-top: 20px;
 }
 .view-arqnetwork-account-inscriptions .views-row.views-row-last{
 	border: 1px solid #ccc;
 	padding: 20px;
-}
+}*/
 .view-arqnetwork-account-inscriptions .views-field-title-1{
 	margin: 15px 0;
 }
@@ -9794,7 +9794,7 @@ body.book #content-content{
 }
 .view-arqnetwork-account-inscriptions .views-field-phpcode-4 label{
 	display: block;
-	color: #fff;
+	color: #000;
 	font-size: 14px
 }
 

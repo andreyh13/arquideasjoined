@@ -259,4 +259,16 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
     				width: '100%'
 				}).html('<div class="alpha"></div><span class="inner clearfix"> Forma un equipo y disfruta de un \u00e1rea colaborativa con todos sus miembros </span>').prependTo('#block-quicktabs-arqnetwork_group_quicktabs');
 		}
+		
+		
+		if($('.view-arqnetwork-account-inscriptions .views-row').length){
+			$('.view-arqnetwork-account-inscriptions .views-row').each(function(){
+				if(!$(this).find('.jquery-countdown').length){
+						$(this).find('.views-field-phpcode-2').css({
+						marginRight: '0',
+						float: 'none'
+						})
+					}
+				})
+			}
 });
