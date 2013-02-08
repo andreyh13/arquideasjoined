@@ -10005,7 +10005,7 @@ overflow: hidden;
 	float: right;
 }
 .node-type-inscription.only-groups .two-columns .column-02 ul{
-	margin-top: 15px;
+	margin-top: 0;
 }
 .node-type-inscription.only-groups .two-columns .column-02 ul li{
 	background-image: url("../images/bullet-check.png");
