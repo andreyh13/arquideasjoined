@@ -62,7 +62,7 @@
         if(!$is_edit && isset($contest) && $contest->field_contest_state[0]['value']==ContestState::OPEN && $node->field_inscription_state[0]['value']!=InscriptionState::PREINSCRIPTED){
             $m_buttons = openContestButton($contest);
             if(!empty($m_buttons)){
-                print '<div class="open-contest-button">'.openContestButton($contest).'</div>';
+                print '<div class="open-contest-button clearfix">'.openContestButton($contest).'</div>';
             }    
         }
     ?>
