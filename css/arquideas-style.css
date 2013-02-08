@@ -9773,9 +9773,13 @@ body.book #content-content{
 	float: left;
 }
 .view-arqnetwork-account-inscriptions .views-field-phpcode-2{
-	margin-left: 80px;
+	margin-left: 15px;
 	float: left;
 	padding-top: 20px;
+}
+.view-arqnetwork-account-inscriptions .views-field-phpcode-2 a{
+	padding: 10px!important;
+	font-size: 15px;
 }
 .view-arqnetwork-account-inscriptions .views-field-phpcode-3,
 .view-arqnetwork-account-inscriptions .views-field-field-inscription-members-imname-vname{
@@ -9995,12 +9999,13 @@ overflow: hidden;
 	margin: 20px 0;
 	border: 1px solid #ccc;
 	overflow: hidden;
+	clear: both;
 }
 .contest-info .two-columns .column-01, .contest-info .two-columns .column-02{
 	float: right;
 }
 .node-type-inscription.only-groups .two-columns .column-02 ul{
-	margin-top: 15px;
+	margin-top: 0;
 }
 .node-type-inscription.only-groups .two-columns .column-02 ul li{
 	background-image: url("../images/bullet-check.png");
@@ -10081,17 +10086,19 @@ float: left;
 .node-type-inscription .contest-info .deadline-date,
 .node-type-inscription .contest-info .payment-end-date,
 .node-type-inscription .contest-info .payment-early,
-.node-type-inscription .contest-info .introduction{
+.node-type-inscription .contest-info .introduction,
+.node-type-inscription .contest-info .open-contest-button {
 	margin-left: 355px;
 }
 .node-type-inscription .contest-info .inscription-state{
 	color: #99CC00;
 	font-size: 22px;
 	font-family: "SoinSans-BoldOblique", Helvetica, Arial, sans-serif;
+	margin-bottom: 10px;
 }
 .node-type-inscription .contest-info .remember-dates{
 	font-weight: bold;
-	padding: 10px 0;
+	padding: 0 0 10px 0;
 	font-size: 15px;
 }
 .node-type-inscription .contest-info .deadline-date,
@@ -10116,7 +10123,17 @@ float: left;
 	color: #000;
 	font-family: "SoinSans-BoldOblique", Helvetica, Arial, sans-serif;
 }
-
+.node-type-inscription .contest-info .open-contest-button .info{
+	font-weight: bold;
+	margin: 10px 0 0 0;
+}
+.node-type-inscription .contest-info .open-contest-button a{
+	float: right;
+}
+.node-type-inscription .contest-info .open-contest-button {
+	margin-left: 355px;
+    overflow: hidden;
+}
 .page-home #block-views-slideshow_content-block_1 .views_slideshow_singleframe_teaser_section,
 .page-home #block-views-slideshow_content-block_1 .views_slideshow_singleframe_slide{
 	height: 556px!important;
@@ -10199,7 +10216,7 @@ body.page-groups #content-group{
 }
 
 body.page-groups .views-field-subscribe a, body.page-groups .views-field-leave-group a, .og-buttons a, .view-arqnetwork-user-account-projects .item-list .views-field-edit-node a,
-.node-type-inscription .edit-delete a, .node-type-inscription .subscribe-og a, .two-columns .og-manage-link, #sidebar-last .more-link a{
+.node-type-inscription .edit-delete a, .node-type-inscription .subscribe-og a, .two-columns .og-manage-link, #sidebar-last .more-link a, .node-type-inscription .contest-info .open-contest-button a{
 	background-color: #000000 !important;
     border-radius: 5px 5px 5px 5px;
     color: #FFFFFF!important;
@@ -10212,6 +10229,7 @@ body.page-groups .views-field-subscribe a, body.page-groups .views-field-leave-g
     padding: 8px 15px;
 	border: none;
 }
+
 .view-arqnetwork-user-account-projects .views-exposed-widgets{
 	 width: 330px!important;
 }
