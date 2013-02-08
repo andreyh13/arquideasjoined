@@ -7825,6 +7825,9 @@ body.node-type-news h1.title {
 .node-type-inscription.only-groups input.contest-payment-individual {
     display: none;
 }
+.node-type-inscription.only-groups .open-contest-button .form-submit{
+	float: right;
+}
 .node-type-inscription .add-to-cart form > div{
 	position: relative;
 	overflow: hidden;
@@ -9982,6 +9985,16 @@ overflow: hidden;
 	float: right;
 }
 
+.node-type-inscription.only-groups .two-columns .column-02 ul li{
+	background-image: url("../images/bullet-check.png");
+    background-position: 0 1px;
+    background-repeat: no-repeat;
+    color: #333333;
+    font-size: 13px;
+    line-height: 14px;
+    padding-top: 8px;
+    padding-left: 20px;
+}
 .contest-info .two-columns .column-01{
 	margin-left: 20px;
 	width: 284px;
