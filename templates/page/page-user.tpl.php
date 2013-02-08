@@ -22,9 +22,9 @@
 </head>
 <?php
 /*-----------------------
-Añadido para el control 
-de las clases en área de 
-edición y de visualización
+Aï¿½adido para el control 
+de las clases en ï¿½rea de 
+ediciï¿½n y de visualizaciï¿½n
 -------------------------*/
  $body_classes.=(strpos($body_id,'-account-edit')||strpos($body_id,'-account-projects')||strpos($body_id,'-account-inscriptions')||strpos($body_id,'-account-arquideasbook'))?' account-edit ':'';
  $cambios_ancho=array(
@@ -45,8 +45,8 @@ edición y de visualización
  $area=(strpos($body_classes,'entrada-ficha')&&($area=='visualizacion'))?'visualizacion-2':$area;
  $body_classes.=($area=='visualizacion-2')?'  ':'';
 /*-------------------------
-HASTA AQUÍ ----------------
-Más cambios en la fila 200,
+HASTA AQUï¿½ ----------------
+Mï¿½s cambios en la fila 200,
  215 y 285 ----------------
 -------------------------*/
 ?>
@@ -187,22 +187,22 @@ Más cambios en la fila 200,
                        </div>
                        <?php endif; ?>
                        <?php
-                           $block = module_invoke('addthis', 'block', 'view', '0');
+                           $block = module_invoke('arquideas_generic', 'block', 'view', '13');
                            print $block['content'];
                        ?>
                        <?php endif; ?>
-					   <div class="clear"></div>
-					    <?php
+			<div class="clear"></div>
+			<?php
                             print theme('grid_block', $tabs, 'content-tabs');
                         ?>
                    </header>
                <?php endif; ?>
-			   <!-- Agregada esta definicion, la que viene del sistema está mal -->
+			   <!-- Agregada esta definicion, la que viene del sistema estï¿½ mal -->
 			 <?php 
 			 /*-----------------------------
 			 Cuando es edicion de datos, esta 
 			 capa es 16-16 Cuando es 
-			 VISUALIZACIÓN de datos es 
+			 VISUALIZACIï¿½N de datos es 
 			 grid16-12, porque lleva a la 
 			 izquierda la columna de datos
 			 ------------------------------*/
@@ -218,7 +218,7 @@ Más cambios en la fila 200,
 					 /*-----------------------------
 					 Cuando es edicion de datos, esta 
 					 capa es 16-12. Cuando es 
-					 VISUALIZACIÓN de datos es también
+					 VISUALIZACIï¿½N de datos es tambiï¿½n
 					 grid16-12, porque lleva a la 
 					 izquierda la columna de datos
 					 ------------------------------*/
@@ -264,7 +264,7 @@ Más cambios en la fila 200,
 
                                 <div id="content-inner" class="content-inner block">
                                     <div id="content-inner-inner" class="content-inner-inner inner">
-                                   <!-- El header lo movemos arriba, en el diseño sale a la derecha de la imagen -->
+                                   <!-- El header lo movemos arriba, en el diseï¿½o sale a la derecha de la imagen -->
 
                                        
 
