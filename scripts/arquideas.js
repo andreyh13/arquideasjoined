@@ -216,4 +216,14 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
         
         //Change image link for users
         $(".view-arqnetwork-user-profile .views-field-phpcode-2 a.user-edit-image-link").parents(".views-field-phpcode-2").addClass("user-edit-image").appendTo(".view-arqnetwork-user-profile .views-field-picture");
+
+		//Centrado vertical textos en partners
+		
+		if($('.page-partners-and-co').length){
+			$('.view-colaborators .view-content').find('.views-row').each(function(){
+				$(this).find('.views-field-phpcode,.views-field-view-node').appendTo(
+					jQuery('<span class="inner-partner"/>').appendTo($(this))
+				)
+			})
+		}
 });
