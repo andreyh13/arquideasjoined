@@ -250,4 +250,12 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
 				marginTop: '-30px'
 			})
 		}
+		if($('.node-type-inscription.launch-overlay').length){
+			jQuery('<div class="WallOverlay"/>').css({bottom: '0',
+  				 	left:   '0',
+   					top:    '0',
+					position: 'absolute',
+    				width: '100%'
+				}).html('<div class="alpha"></div><span class="inner clearfix"> Forma un equipo y disfruta de un área colaborativa con todos sus miembros </span>').prependTo('#block-quicktabs-arqnetwork_group_quicktabs');
+		}
 });
