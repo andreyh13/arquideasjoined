@@ -10539,7 +10539,7 @@ body.page-node.node-type-group #sidebar-last{
 .page-node.node-type-group .full-node.node-type-group .og-image{
 	float: left;
 	display: inline-block;
-	max-widh: 160px;
+	max-width: 160px;
 	min-height: 150px;
 	background-color:#000;
 }
@@ -10720,4 +10720,3 @@ font-size: 12px
 	padding-bottom: 0;
 	border-bottom: none;
 }
-/*cajitas de jurado*/
