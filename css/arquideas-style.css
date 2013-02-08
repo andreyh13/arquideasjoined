@@ -7827,6 +7827,7 @@ body.node-type-news h1.title {
 }
 .node-type-inscription.only-groups .open-contest-button .form-submit{
 	float: right;
+	margin-top: -25px;
 }
 .node-type-inscription .add-to-cart form > div{
 	position: relative;
@@ -9984,10 +9985,12 @@ overflow: hidden;
 .contest-info .two-columns .column-01, .contest-info .two-columns .column-02{
 	float: right;
 }
-
+.node-type-inscription.only-groups .two-columns .column-02 ul{
+	margin-top: 15px;
+}
 .node-type-inscription.only-groups .two-columns .column-02 ul li{
 	background-image: url("../images/bullet-check.png");
-    background-position: 0 1px;
+    background-position: 0 5px;
     background-repeat: no-repeat;
     color: #333333;
     font-size: 13px;
@@ -10032,6 +10035,9 @@ overflow: hidden;
 .contest-info .two-columns.no-border.t_1 .column-01,
 .contest-info .two-columns.no-border.t_1 .column-02{
 	float: right;
+}
+.contest-info .two-columns.no-border.t_1 .column-02{
+	border: none;
 }
 .contest-info .two-columns.no-border .column-01{
 	margin-left: 0px;
