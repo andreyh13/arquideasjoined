@@ -44,19 +44,26 @@
     <!-- END IMAGE -->
 
     <!-- INSCRIPTION LIMIT DATE -->
-    <div class="inscription-dates clearfix">
+    
     <?php
         if(!$is_edit && isset($contest) && $contest->field_contest_state[0]['value']==ContestState::OPEN){
-            print show_contest_dates_in_inscription_detail($contest);
+            $m_content = show_contest_dates_in_inscription_detail($contest);
+            if(!empty($m_content)){
+                print '<div class="inscription-dates clearfix">';
+                print show_contest_dates_in_inscription_detail($contest);
+                print '</div>';
+            }
         }
     ?>
-    </div>    
     <!-- END INSCRIPTION LIMIT DATE -->
     
     <!-- INSCRIPTION, PAYMENT OR PRESENTATION LINK -->
     <?php
         if(!$is_edit && isset($contest) && $contest->field_contest_state[0]['value']==ContestState::OPEN && $node->field_inscription_state[0]['value']!=InscriptionState::PREINSCRIPTED){
-            print '<div class="open-contest-button">'.openContestButton($contest).'</div>';
+            $m_buttons = openContestButton($contest);
+            if(!empty($m_buttons)){
+                print '<div class="open-contest-button clearfix">'.openContestButton($contest).'</div>';
+            }    
         }
     ?>
     <!-- END INSCRIPTION, PAYMENT OR PRESENTATION LINK -->
