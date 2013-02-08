@@ -5653,7 +5653,7 @@ body.page-home #content-front-right .block {
 /* Mini sliders */
 
 .mini-slider-controls .views_slideshow_singleframe_teaser_section {
-  min-height: 205px !important;
+/*  min-height: 205px !important;*/
 }
 
 .view-arquideas-contest-winners.view-display-id-block_1.mini-slider-controls .views_slideshow_singleframe_teaser_section {
@@ -8098,7 +8098,7 @@ table tr td.active{
 	font-family: SoinSans-Bold;
 	line-height: 29px;
 }
-header .addthis_toolbox{
+header .addthis_toolbox, header .widget-header{
 	float: right;
 	margin: 15px 0;
 	display: inline-block;
@@ -8241,7 +8241,7 @@ ul.primary.ui-tabs-nav{
 .grid16-12.force_width{
 	width: 720px!important;
 }
-#quicktabs-arqnetwork_group_quicktabs ul{
+#quicktabs-arqnetwork_group_quicktabs > ul{
 	height: 60px;
 }
 .node-form .ui-tabs-nav li a,
@@ -10016,9 +10016,17 @@ overflow: hidden;
 	float: left;
 	width: 298px;
 }
+.contest-info .two-columns.no-border.t_1 .column-01,
+.contest-info .two-columns.no-border.t_1 .column-02{
+	float: right;
+}
 .contest-info .two-columns.no-border .column-01{
 	margin-left: 0px;
 	margin-right: 20px;
+}
+.contest-info .two-columns.no-border.t_1 .column-01{
+	margin-left: 20px;
+	margin-right: 0px;
 }
 .contest-info .two-columns.no-border .column-01 h2.title,
 .contest-info .two-columns.no-border .column-02 h2.title{

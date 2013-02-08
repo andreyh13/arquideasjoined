@@ -64,7 +64,7 @@
     <!-- Introduction text -->
     <?php if(($node->field_inscription_state[0]['value']==InscriptionState::PREINSCRIPTED && $num_members>1)
             || $node->field_inscription_state[0]['value']!=InscriptionState::PREINSCRIPTED): ?>
-    <div class="two-columns">
+    <div class="two-columns no-border t-1">
         <div class="column-01">
             <h3 class="title"><?php print t('Team members'); ?></h3>
             <!-- Team members -->
