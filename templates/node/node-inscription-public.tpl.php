@@ -64,7 +64,7 @@
             <h3 class="subtitle">
             <?php print $contest->model.' - '.$node->nid; ?>
                 <div class="terms">
-                                    <!-- University and Country -->
+                <!-- University and Country -->
                 <div class="university-country">
                 <?php
                     $univ_country = '';
@@ -122,7 +122,48 @@
             <?php $preset = variable_get('nivaria_contests_base_jpgpreset', 'Featured');
             print getInscriptionImage($node, TRUE, FALSE, $preset); ?>
             <!-- End Inscription IMAGES -->
-
+            
+            <?php
+            $flag_first = flag_get_flag('first_prize');
+            $flag_second = flag_get_flag('second_prize');
+            $flag_third = flag_get_flag('third_prize');
+            $flag_special = flag_get_flag('special_mention');
+            $flag_arquideas = flag_get_flag('arquideas_prize');
+            $flag_preselected = flag_get_flag('preselected');
+            $prize_text = '';
+            if($contest->field_contest_state[0]['value']>=ContestState::PRIZE){
+                if($flag_first->is_flagged($node->nid)){
+                    $prize_text = t('First prize');
+                } elseif($flag_second->is_flagged($node->nid)){
+                    $prize_text = t('Second prize');
+                } elseif($flag_third->is_flagged($node->nid)){
+                    $prize_text = t('Third prize');
+                } elseif($flag_special->is_flagged($node->nid)){
+                    $prize_text = t('Special mention');
+                } elseif($flag->is_flagged($node->nid)){
+                    $prize_text = t('Finalist');
+                } elseif($flag_preselected->is_flagged($node->nid)){
+                    $prize_text = t('Preselected');
+                }
+                if($flag_arquideas->is_flagged($node->nid)){
+                    $prize_text = (!empty($prize_text)?', ':'').t('Special Arquieas Prize');
+                }
+                if(!empty($prize_text)){
+                    $prize_text .= ' '.l($contest_title,'node/'.$contest->nid,array(
+                        'attributes' => array(
+                            'title' => $contest_title,
+                            'target' => '_blank',
+                            'class' => 'contest-link',
+                        ),
+                    ));
+                }
+            }
+            ?>
+            <?php if(!empty($prize_text)): ?>
+            <div class="project-prize">
+                <?php print $prize_text; ?>
+            </div>    
+            <?php endif; ?>
         </div>
         <div class="clearfix">&nbsp;</div>
     </div>
