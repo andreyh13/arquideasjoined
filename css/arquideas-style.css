@@ -7827,7 +7827,7 @@ body.node-type-news h1.title {
 }
 .node-type-inscription.only-groups .open-contest-button .form-submit{
 	float: right;
-	margin-top: -25px;
+	margin-top: -10px;
 }
 .node-type-inscription .add-to-cart form > div{
 	position: relative;
@@ -10129,9 +10129,15 @@ float: left;
 .node-type-inscription .contest-info .open-contest-button a{
 	float: right;
 }
-.node-type-inscription .contest-info .open-contest-button {
-	margin-left: 355px;
+.node-type-inscription .contest-info .open-contest-button.notadmin-message {
     overflow: hidden;
+	margin: 10px 0!important;
+}
+.node-type-inscription .contest-info .open-contest-button.notadmin-message .info{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif!important;
+	font-weight: bold!important;
+	font-size: 15px;
+	color: #000;
 }
 .page-home #block-views-slideshow_content-block_1 .views_slideshow_singleframe_teaser_section,
 .page-home #block-views-slideshow_content-block_1 .views_slideshow_singleframe_slide{
