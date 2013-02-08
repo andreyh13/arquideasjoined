@@ -10704,6 +10704,10 @@ font-size: 12px
 	padding-top: 15px;
 	border-top: 1px solid #999;
 }
+.display-project .project-info-public .col01 .downloads h3,
+.display-project .inscription-info-public .col01 .downloads h3{
+	magin: 0 0 8px 0;
+}
 .display-project .project-info-public .col01 .box h2,
 .display-project .inscription-info-public .col01 .box h2{
 	font-weight: normal;
@@ -10750,7 +10754,7 @@ font-size: 12px
 	z-index: 2; position: relative
 }
 .caption .alpha,
-..project-prize alpha{
+.project-prize alpha{
    bottom: 0!important;
    left: 0!important;
    top: 0!important;
