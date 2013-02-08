@@ -9749,18 +9749,18 @@ body.book #content-content{
 }
 /*Edicion datos concurso*/
 .view-arqnetwork-account-inscriptions .views-row{
-	border-bottom: 1px solid #ccc;
-	padding-bottom: 20px;
+	border: 1px solid #ccc;
+	padding: 20px;
 	margin-top: 20px;
 }
-.view-arqnetwork-account-inscriptions .views-row.views-row-first{
+/*.view-arqnetwork-account-inscriptions .views-row.views-row-first{
 	border-top: 1px solid #ccc;
 	padding-top: 20px;
 }
 .view-arqnetwork-account-inscriptions .views-row.views-row-last{
-	border-bottom: 1px solid #ccc;
-	padding-bottom: 20px;
-}
+	border: 1px solid #ccc;
+	padding: 20px;
+}*/
 .view-arqnetwork-account-inscriptions .views-field-title-1{
 	margin: 15px 0;
 }
@@ -9794,7 +9794,7 @@ body.book #content-content{
 }
 .view-arqnetwork-account-inscriptions .views-field-phpcode-4 label{
 	display: block;
-	color: #fff;
+	color: #000;
 	font-size: 14px
 }
 
@@ -9995,8 +9995,8 @@ overflow: hidden;
 }
 
 .contest-info .two-columns{
-	padding: 15px;
-	margin: 20px 0;
+	padding-top: 20px!important;
+	margin: 0;
 	border: 1px solid #ccc;
 	overflow: hidden;
 	clear: both;
@@ -10079,6 +10079,7 @@ overflow: hidden;
 	margin: 10px 0 0 0;
 }
 .node-type-inscription .contest-info .imagecache-inscriptions_336_162{
+max-width: 328px;
 float: left;
 }
 .node-type-inscription .contest-info .inscription-state,
@@ -10090,7 +10091,9 @@ float: left;
 .node-type-inscription .contest-info .open-contest-button {
 	margin-left: 355px;
 }
-.node-type-inscription .contest-info .inscription-state{
+.node-type-inscription .contest-info .inscription-state,
+.node-type-inscription .contest-info .open-contest-button .info
+{
 	color: #99CC00;
 	font-size: 22px;
 	font-family: "SoinSans-BoldOblique", Helvetica, Arial, sans-serif;
@@ -10122,10 +10125,6 @@ float: left;
 	background-color: transparent;
 	color: #000;
 	font-family: "SoinSans-BoldOblique", Helvetica, Arial, sans-serif;
-}
-.node-type-inscription .contest-info .open-contest-button .info{
-	font-weight: bold;
-	margin: 10px 0 0 0;
 }
 .node-type-inscription .contest-info .open-contest-button a{
 	float: right;
@@ -10857,11 +10856,11 @@ font-size: 12px
 	border: 1px solid #fff;
 	position: relative;
 	z-index: 3;
-	margin: 7%!important;
+	margin: 5%!important;
 	font-family: "SoinSans-Bold", Helvetica, Arial, sans-serif;
 	font-size: 2.7em;
 	line-height: 1.5;
-	height: 55%;
+	height: 50%;
 	display: block;
 	margin: 30px;
 }
