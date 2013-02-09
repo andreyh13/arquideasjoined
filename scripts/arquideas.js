@@ -275,4 +275,20 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
 		function(){
 		    $(this).find('.user-edit-image').fadeOut()
 		})
+		
 });
+
+$(window).load(function(){
+	var max = Math.max.apply(Math, $(".scrollable").children().map(
+      function(){
+        return $(this).height();
+      }
+    ).get());
+    $(".scrollable").height(max); 
+	$('.jq-scrollable-inscription .browse').click(function(){
+   		altura=$('.items div:eq('+$('.scrollable').scrollable().getIndex()+')').height()
+   		$('.scrollable').animate({
+			height: ''+altura+'px'
+		})
+   })
+})
