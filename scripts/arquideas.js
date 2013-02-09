@@ -285,7 +285,7 @@ $(window).load(function(){
       }
     ).get());
     $(".scrollable").height(max); 
-	$(".scrollable").find('.items div').each(function(){
+	$(".scrollable .items").find('div').each(function(){
 		if($(this).attr('class')==""){
 			$(this).addClass('slide')
 		}
