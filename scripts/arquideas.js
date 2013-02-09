@@ -289,6 +289,6 @@ $(window).load(function(){
    		altura=$('.items div:eq('+$('.scrollable').scrollable().getIndex()+')').height()
    		$('.scrollable').animate({
 			height: ''+altura+'px'
-		})
+		},500)
    })
 })
