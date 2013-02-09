@@ -285,8 +285,13 @@ $(window).load(function(){
       }
     ).get());
     $(".scrollable").height(max); 
+	$(".scrollable").find('.items div').each(function(){
+		if($(this).attr('class')==""){
+			$(this).addClass('slide')
+		}
+	})
 	$('.jq-scrollable-inscription .browse').click(function(){
-   		altura=$('.items div:eq('+$('.scrollable').scrollable().getIndex()+')').height()
+   		altura=$('.items div.slide:eq('+$('.scrollable').scrollable().getIndex()+')').height()
    		$('.scrollable').animate({
 			height: ''+altura+'px'
 		},500)
