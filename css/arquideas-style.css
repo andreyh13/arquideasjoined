@@ -5965,12 +5965,13 @@ text-transform: uppercase;
 
 .view-arquideas-contest-prizes.view-display-id-block_7 .views-field-field-images-project-fid,
 .view-arquideas-contest-prizes.view-display-id-block_8 .views-field-field-images-project-fid,
-.view-arquideas-contest-prizes.view-display-id-block_9 .views-field-field-images-project-fid,
-.view-arqnetwork-user-projects.view-display-id-page_1 .views-field-field-images-project-fid{
+.view-arquideas-contest-prizes.view-display-id-block_9 .views-field-field-images-project-fid{
   width: 236px;
   height: 172px;
 }
-
+.view-arqnetwork-user-projects.view-display-id-page_1 .views-field-field-images-project-fid{
+	
+}
 #block-views-arqnetwork_projects-block_1 .views-field-field-images-project-fid img,
 .view-arquideas-contest-prizes.view-display-id-block_7 .views-field-field-images-project-fid img,
 .view-arquideas-contest-prizes.view-display-id-block_8 .views-field-field-images-project-fid img,
@@ -6003,7 +6004,8 @@ text-transform: uppercase;
 }
 
 .view-arqnetwork-user-projects.view-display-id-page_1 .project-info{
-    width: 210px;
+    width: 205px;
+	height: 145px;
 }
 
 #block-views-arqnetwork_projects-block_1 .project-info:hover,
@@ -6061,9 +6063,14 @@ text-transform: uppercase;
 
 .view-arqnetwork-user-projects.view-display-id-page_1 .views-field-field-project-type-project-value{
     top: 35%;
-    width: 210px;
+    width: 204px;
 }
-
+.view-arqnetwork-user-projects.view-display-id-page_1 .views-field-subtitle-project-value{
+	bottom: 25%; 
+	position: absolute; 
+	padding: 0 5px; 
+	text-align: center
+}
 .view-arqnetwork-user-projects.view-display-id-page_1 .views-field-field-contest{
   position: absolute;
   top: 45%;
@@ -6094,7 +6101,9 @@ text-transform: uppercase;
   width: 110px;
   text-align: center;
 }
-
+.view-arqnetwork-user-projects.view-display-id-page_1 .project-social{
+	top: 116px;
+}
 .view-arquideas-contest-prizes.view-display-id-block_8 .project-social,
 .view-arquideas-contest-prizes.view-display-id-block_9 .project-social {
   top: 144px;
@@ -9849,9 +9858,10 @@ body.book #content-content{
 }*/
 .view-arqnetwork-user-projects .view-content .item-list li.views-row .points{
 	background-color: #000;
-	position: absolute;
-	top: 2px;
-        height: 25px;
+	display: block;
+	float: none;
+	margin-top: 3px;
+    height: 25px;
 	overflow: hidden;
 	width: 80px;
 
