@@ -8384,7 +8384,7 @@ a.add-content-link:hover,
 #arquideas-book-user-settings .edit-delete{
 width: auto; display: inline-block; float: right; display: none;
 }
-#edit-submit, #edit-preview-changes, #edit-submit-1, .views-exposed-form .form-submit, #arquideas-book-user-settings .form-submit,.views-field-phpcode-1 .popups-form-noupdate, .open-contest-button .form-submit, .display-project .links li .flag-bookmarks a{
+#edit-submit, #edit-preview-changes, #edit-submit-1, .views-exposed-form .form-submit, #arquideas-book-user-settings .form-submit,.views-field-phpcode-1 .popups-form-noupdate, .open-contest-button .form-submit, .display-project .links li .flag-bookmarks a, .sidebar-first .view-arqnetwork-user-profile .views-field-picture .user-edit-image a{
 	display: inline-block;
 	float: none;
 	border-radius: 5px 5px 5px 5px;
@@ -8600,6 +8600,13 @@ body.page-user #main-inner #sidebar-first #sidebar-first-inner, body.page-user-1
 }
 .sidebar-first .view-arqnetwork-user-profile .views-field-picture{
 	max-height:197px;
+	position: relative;
+}
+.sidebar-first .view-arqnetwork-user-profile .views-field-picture .user-edit-image{
+	text-align: center;
+	margin: -40px auto 0 auto;
+	z-index: 2;
+	display: none;
 }
 .sidebar-first .view-arqnetwork-user-profile .views-field-picture .imagecache-image_220_220{
 	width: 238px;
@@ -9814,6 +9821,10 @@ body.book #content-content{
 	margin-left: 60px;
 	text-align: left;
 }
+.node-type-inscription h2.title{
+	font-size: 25px;
+	line-height: 1;
+}
 .node-type-inscription .inscription-info{
 	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
@@ -10136,8 +10147,8 @@ float: left;
 .node-type-inscription .contest-info .open-contest-button.notadmin-message .info{
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif!important;
 	font-weight: bold!important;
-	font-size: 15px;
-	color: #000;
+	font-size: 15px!important;
+	color: #000!important;
 }
 .page-home #block-views-slideshow_content-block_1 .views_slideshow_singleframe_teaser_section,
 .page-home #block-views-slideshow_content-block_1 .views_slideshow_singleframe_slide{
