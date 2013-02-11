@@ -1277,7 +1277,7 @@ function arquideasjoined_preprocess_comment(&$vars) {
     }
     
     if ($m_picture) { 
-      $picture = theme_imagecache('image_50_50', $m_picture, $vars['comment']->name, $vars['comment']->name);
+      $picture = theme_imagecache('image_40_40', $m_picture, $vars['comment']->name, $vars['comment']->name);
       if (user_access('access user profiles')) {
         $vars['comment']->picture = l($picture, "user/{$vars['comment']->uid}", array('html' => TRUE));
       }
