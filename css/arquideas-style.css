@@ -8287,6 +8287,8 @@ ul.primary.ui-tabs-nav{
 }
 .node-form .ui-tabs-nav li a span,
 a.add-content-link,
+a.tagging-button-container,
+a.grouping-button-container,
 #quicktabs-quicktabs_my_content .quicktabs_tabs li a,
 #quicktabs-arqnetwork_group_quicktabs .quicktabs_tabs li a{
 	border-radius: 5px 5px 5px 5px;
@@ -8310,12 +8312,16 @@ a.add-content-link,
 	padding: 15px 0 15px 0;
 	margin: 15px 0 15px 0;
 }
-a.add-content-link{
+a.add-content-link,
+a.tagging-button-container,
+a.grouping-button-container{
 	display: inline-block;
 }
 .node-form .ui-tabs-nav li a:hover span,
 .node-form .ui-tabs-nav li.ui-tabs-selected a span,
 a.add-content-link:hover,
+a.tagging-button-container:hover,
+a.grouping-button-container:hover,
 #quicktabs-quicktabs_my_content .quicktabs_tabs li.active a,
 #quicktabs-arqnetwork_group_quicktabs .quicktabs_tabs li.active a{
 	background-color: #FF3F3F!Important;
@@ -10454,10 +10460,17 @@ body.page-groups .sidebar-last .block-views .view-content .item-list ul li .view
 
 .tagging-button, .grouping-button {
     display: inline-block;
-    width: 92px;
+    width: 60px;
     height: 19px;
-    background: url('../images/add.png') transparent no-repeat left center;
-    padding-left: 18px;
+    background: none;
+    padding-left: 0;
+    text-align: center;
+    color: #fff;
+}
+
+.tagging-widget-input-wrapper .form-item > .description,
+#edit-og-group-hidden-select-wrapper > .description{
+    display: none;
 }
 
 .language-link.active {
