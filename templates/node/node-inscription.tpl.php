@@ -70,8 +70,25 @@
 
 
     <!-- Introduction text -->
+    <?php 
+        $is_individual = ($num_members==1);
+        if($node->field_inscription_state[0]['value']==InscriptionState::INSCRIPTED || $node->field_inscription_state[0]['value']==InscriptionState::SUBMITTED){
+            //Gets order to see if it is individual
+            $order_id = $node->field_inscription_order[0]['value'];
+            if(!empty($order_id)){
+                $order = uc_order_load($order_id);
+                $product_attr = $order->products[0]->data['attributes'];
+                if(empty($product_attr)){
+                    $is_individual = TRUE;
+                } else {
+                    $is_individual = FALSE;
+                }
+            }
+        }    
+    ?>
     <?php if(($node->field_inscription_state[0]['value']==InscriptionState::PREINSCRIPTED && $num_members>1)
-            || $node->field_inscription_state[0]['value']!=InscriptionState::PREINSCRIPTED): ?>
+            || ($node->field_inscription_state[0]['value']==InscriptionState::INSCRIPTED && !$is_individual)
+            || ($node->field_inscription_state[0]['value']==InscriptionState::SUBMITTED && $num_members>1)): ?>
     <div class="two-columns no-border t-1">
         <div class="column-01">
             <h3 class="title"><?php print t('Team members'); ?></h3>
