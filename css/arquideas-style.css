@@ -10581,6 +10581,9 @@ body.blog-type #content-group h1.title{
 .booklet .b-wrap-right .b-counter{
 	background-image: url(../images/arrow_book_right.png);
 }
+.booklet .last .b-wrap-right .b-counter {
+    background-image: none;
+}
 .booklet .b-wrap-left .b-counter, .booklet .b-wrap-right .b-counter{
 	bottom: 0;
     height: 25px;

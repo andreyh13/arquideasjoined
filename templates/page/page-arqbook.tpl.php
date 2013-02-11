@@ -195,8 +195,10 @@
                                                 <?php print $arqbook_cv; ?>    
                                             </div>
                                         </div>
-                                        <?php foreach($arqbook_images as $imageobj){ ?>
-                                        <div class="imageholder">
+                                        <?php $m_count = 0;
+                                        foreach($arqbook_images as $imageobj){ 
+                                            $m_count++; ?>
+                                        <div class="imageholder <?php print ($m_count==1)?"first":($m_count==count($arqbook_images)?"last":"inner"); ?>">
                                            <!--  <div class="logo">
                                                 <a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
                                             </div> -->
@@ -262,7 +264,7 @@
             pageNumbers: true,
             keyboard: true,
 	    pagePadding: 40
-        });
+        }).find(".b-page:last").addClass("last");
     });
 </script>    
 </html>
