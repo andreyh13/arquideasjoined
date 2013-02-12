@@ -237,15 +237,15 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
 			$('.project-prize').html('<p>'+$('.project-prize').html()+'</p>');
 			jQuery('<div class="alpha"/>').prependTo($('.project-prize'));
 		}
-		//Si estamos en inscripcion y no es inscripción grupal
+		//Si estamos en inscripcion y no es inscripciï¿½n grupal
 		if($('.node-type-inscription').length&&!$('.only-groups').length){
 			$('.node-type-inscription .contest-payment-individual').css({
-				float: 'left',
+				'float': 'left',
 				marginLeft: '60px',
 				marginTop: '-25px'
 			})
 			$('.node-type-inscription .contest-payment-group').css({
-				float: 'right',
+				'float': 'right',
 				marginRight: '60px',
 				marginTop: '-25px'
 			})
@@ -264,17 +264,22 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
 				if(!$(this).find('.jquery-countdown').length){
 						$(this).find('.views-field-phpcode-2').css({
 						marginRight: '0',
-						float: 'none'
+						'float': 'none'
 					})
 				}
 			})
 		}
 		$('.sidebar-first .view-arqnetwork-user-profile .views-field-picture').hover(function(){
 			$(this).find('.user-edit-image').fadeIn()
-		},
-		function(){
-		    $(this).find('.user-edit-image').fadeOut()
-		})
+                    },
+                    function(){
+                        $(this).find('.user-edit-image').fadeOut()
+		});
+                //Hide terms label in compound files
+                $(".field-inscription-files-by-category select").each(function(index){
+                   var m_id = $(this).attr("id");
+                   $("label[for='"+m_id+"']").hide();
+                });
 		
 });
 
@@ -287,13 +292,13 @@ $(window).load(function(){
     $(".scrollable").height(max); 
 	$(".scrollable .items").find('div').each(function(){
 		if($(this).attr('class')==""){
-			$(this).addClass('slide')
+			$(this).addClass('slide');
 		}
-	})
+	});
 	$('.jq-scrollable-inscription .browse').click(function(){
-   		altura=$('.items div.slide:eq('+$('.scrollable').scrollable().getIndex()+')').height()
+   		altura=$('.items div.slide:eq('+$('.scrollable').scrollable().getIndex()+')').height();
    		$('.scrollable').animate({
 			height: ''+altura+'px'
-		},500)
-   })
-})
+		},500);
+   });
+});
