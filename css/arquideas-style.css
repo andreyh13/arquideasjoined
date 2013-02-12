@@ -10908,3 +10908,6 @@ font-size: 12px
 	display: block;
 	margin: 30px;
 }
+.view-sponsors .view-empty{
+    display: none;
+}
