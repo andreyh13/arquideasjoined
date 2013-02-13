@@ -7909,6 +7909,17 @@ background: #FF3F3F;
   display: inline-block;
 }
 
+#view-id-contests-page_2 .add-to-cart-link{
+  font-family: "SoinSans-BoldOblique",Helvetica,Arial,sans-serif;
+  padding: 10px 20px;
+  color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: 1px 1px 2px #000000;
+  text-decoration: none;
+  display: inline-block;
+}
 #comment-form #edit-submit {
   margin: 0 auto;
   float: none;
@@ -7935,7 +7946,8 @@ a.participate-link {
 
 /* Blue Rounded Buttons */
 #view-id-contests-page_2 .register-link-div a,
-a.public-vote-link {
+a.public-vote-link,
+#view-id-contests-page_2 .add-to-cart-link {
 background: #33CCCC;
 margin-right: 10px;
   display: inline-block;
@@ -10910,4 +10922,8 @@ font-size: 12px
 }
 .view-sponsors .view-empty{
     display: none;
+}
+.node-contest-open .odd,
+.view-contests .field-delivery-limit-date .odd{
+	background-color: transparent;
 }
