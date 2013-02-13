@@ -10,11 +10,11 @@
     <?php }?>
         -->
 <?php }?>
-<div id="node-<?php print $node->nid; ?>" class="node <?php print $node_classes; ?>">
+<div id="node-<?php print $node->nid; ?>" class="node <?php print $node_classes; ?>" style="width:580px;">
   <div class="inner">
 
     <?php if ($page == 0): ?>
-    <h2 class="title"><a href="<?php print $node_url ?>" title="<?php print $title ?>"><?php print $title ?></a></h2>
+    <div class="title"><a href="<?php print $node_url ?>" title="<?php print $title ?>"><?php print $title ?></a></div>
     <?php endif; ?>
 
     <?php if ($node_top && !$teaser): ?>
@@ -30,86 +30,137 @@
       <?php print $node->content['body']['#value'] ?>
 
       <?php if($general_newsletter): ?>
-            <!-- Contests block -->
-            <?php if($field_simplenews_last_contests[0]['value']==1): ?>
-                <div class="simplenews-last-contests-block block">
-                    <div class="inner clearfix">
-                        <div style="margin-top:45px;"><img src="<?php print $base_url . '/'. path_to_theme();?>/images/nws-separator.png" alt="Nivaria" /></div>
-                        <h2 class="title block-title" style="font-size: 22px; color: #000000; margin-top: 30px; margin-bottom: 30px; text-align: center; padding-bottom: 30px; border-bottom: 1px solid #000000;">
-                            <?php print t('Upcoming Contests'); ?>
-                        </h2>
-                        <div class="content">
-                            <?php print views_embed_view('arquideas_newsletter_contest_bl', 'default'); ?>
-                        </div>
-                    </div>
+        <!-- Contests block -->
+        <?php if($field_simplenews_last_contests[0]['value']==1): ?>
+          <table border="0" cellpadding="0" cellspacing="0" width="580" class="simplenews-last-contests-block block" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px;">
+            <tr><td height="45px" style="line-height:45px;">&nbsp;</td></tr>
+            <tr><td><img src="<?php print $base_url . '/'. path_to_theme();?>/images/nws-separator.png" /></td></tr>
+            <tr>
+              <td align="center" style="border-bottom: 1px solid #000000; font-weight: bold; text-transform: uppercase; font-size: 21px; color: #000000;">
+                <div style="line-height:20px; height: 20px;">&nbsp;</div>
+                <?php print t('Upcoming Contests'); ?>
+                <div style="line-height:20px; height: 20px;">&nbsp;</div>
+              </td>
+            </tr>
+            <tr><td height="20px" style="line-height:20px;">&nbsp;</td></tr>
+            <tr>
+              <td>
+                <div class="content">
+                  <?php print views_embed_view('arquideas_newsletter_contest_bl', 'default'); ?>
                 </div>
-            <?php endif; ?>
-            <!-- End Contests block -->
+              </td>
+            </tr>
+          </table>
+        <?php endif; ?>
+        <!-- End Contests block -->
 
-            <!-- News block -->
-            <?php if($field_simplenews_news[0]['value']==1): ?>
-                <div class="simplenews-news-block block">
-                    <div class="inner clearfix">
-                        <div style="margin-top:45px;"><img src="<?php print $base_url . '/'. path_to_theme();?>/images/nws-separator.png" alt="Nivaria" /></div>
-                        <h2 class="title block-title" style="font-size: 22px; color: #000000; margin-top: 30px; margin-bottom: 30px; text-align: center; padding-bottom: 30px; border-bottom: 1px solid #000000;">
-                            <?php print t('News'); ?>
-                        </h2>
-                        <div class="content">
-                            <?php print views_embed_view('arquideas_newsletter_news_block', 'default'); ?>
-                        </div>
-                    </div>
+        <!-- News block -->
+        <?php if($field_simplenews_news[0]['value']==1): ?>
+          <table border="0" cellpadding="0" cellspacing="0" width="580" class="simplenews-news-block block" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px;">
+            <tr><td height="45px" style="line-height:45px;">&nbsp;</td></tr>
+            <tr><td><img src="<?php print $base_url . '/'. path_to_theme();?>/images/nws-separator.png" /></td></tr>
+            <tr>
+              <td align="center" style="border-bottom: 1px solid #000000; font-weight: bold; text-transform: uppercase; font-size: 21px; color: #000000;">
+                <div style="line-height:20px; height: 20px;">&nbsp;</div>
+                <?php print t('News'); ?>
+                <div style="line-height:20px; height: 20px;">&nbsp;</div>
+              </td>
+            </tr>
+            <tr><td height="20px" style="line-height:20px;">&nbsp;</td></tr>
+            <tr>
+              <td>
+                <div class="content">
+                  <?php print views_embed_view('arquideas_newsletter_news_block', 'default'); ?>
                 </div>
-            <?php endif; ?>
-            <!-- End News block -->
+              </td>
+            </tr>
+          </table>
+        <?php endif; ?>
+        <!-- End News block -->
 
-            <!-- KM block -->
-            <?php if($field_simplenews_group_content[0]['value']==1): ?>
-                <div class="simplenews-km-block block">
-                    <div class="inner clearfix">
-                        <div style="margin-top:45px;"><img src="<?php print $base_url . '/'. path_to_theme();?>/images/nws-separator.png" alt="Nivaria" /></div>
-                        <h2 class="title block-title" style="font-size: 22px; color: #000000; margin-top: 30px; margin-bottom: 30px; text-align: center; padding-bottom: 30px; border-bottom: 1px solid #000000;">
-                            <?php print t('Arquideas Community'); ?>
-                        </h2>
-                        <div class="content">
-                            <?php print views_embed_view('arquideas_newsletter_km_block', 'default'); ?>
-                        </div>
-                    </div>
+        <!-- KM block -->
+        <?php if($field_simplenews_group_content[0]['value']==1): ?>
+          <table border="0" cellpadding="0" cellspacing="0" width="580" class="simplenews-km-block block" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px;">
+            <tr><td height="45px" style="line-height:45px;">&nbsp;</td></tr>
+            <tr><td><img src="<?php print $base_url . '/'. path_to_theme();?>/images/nws-separator.png" /></td></tr>
+            <tr>
+              <td align="center" style="border-bottom: 1px solid #000000; font-weight: bold; text-transform: uppercase; font-size: 21px; color: #000000;">
+                <div style="line-height:20px; height: 20px;">&nbsp;</div>
+                <?php print t('Arquideas Community'); ?>
+                <div style="line-height:20px; height: 20px;">&nbsp;</div>
+              </td>
+            </tr>
+            <tr><td height="20px" style="line-height:20px;">&nbsp;</td></tr>
+            <tr>
+              <td>
+                <div class="content">
+                  <?php print views_embed_view('arquideas_newsletter_km_block', 'default'); ?>
+                  <div style="line-height:30px; height: 30px;">&nbsp;</div>
+                  <table border="0" cellpadding="0" cellspacing="0">
+                    <tr>
+                      <td width="155">&nbsp;</td>
+                      <td width="280" height="40" align="center" style="width: 280px; height: 40px; background: #FF3F3F;">
+                        <a href="/arquideas-network-link" style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-style: italic; color: #FFFFFF; text-decoration: none; text-shadow: 1px 1px 0 #000000;"><?php print t('Discover Arquideas Community'); ?></a>
+                      </td>
+                      <td width="155">&nbsp;</td>
+                    </tr>
+                  </table>
                 </div>
-            <?php endif; ?>
-            <!-- End KM block -->
+              </td>
+            </tr>
+          </table>
+        <?php endif; ?>
+        <!-- End KM block -->
 
-            <!-- Partners & Co block -->
-            <?php if($field_simplenews_send_partners[0]['value']==1): ?>
-                <div class="simplenews-partners-block block">
-                    <div class="inner clearfix">
-                        <div style="margin-top:45px;"><img src="<?php print $base_url . '/'. path_to_theme();?>/images/nws-separator.png" alt="Nivaria" /></div>
-                        <h2 class="title block-title" style="font-size: 22px; color: #000000; margin-top: 30px; margin-bottom: 30px; text-align: center; padding-bottom: 30px; border-bottom: 1px solid #000000;">
-                            <?php print t('PARTNERS & Co'); ?>
-                        </h2>
-                        <div class="content">
-                            <?php print views_embed_view('arquideas_newsletter_partners_bl', 'default'); ?>
-                        </div>
-                    </div>
+        <!-- Partners & Co block -->
+        <?php if($field_simplenews_send_partners[0]['value']==1): ?>
+          <table border="0" cellpadding="0" cellspacing="0" width="580" class="simplenews-partners-block block" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px;">
+            <tr><td height="45px" style="line-height:45px;">&nbsp;</td></tr>
+            <tr><td><img src="<?php print $base_url . '/'. path_to_theme();?>/images/nws-separator.png" /></td></tr>
+            <tr>
+              <td align="center" style="border-bottom: 1px solid #000000; font-weight: bold; text-transform: uppercase; font-size: 21px; color: #000000;">
+                <div style="line-height:20px; height: 20px;">&nbsp;</div>
+                <?php print t('PARTNERS & Co'); ?>
+                <div style="line-height:20px; height: 20px;">&nbsp;</div>
+              </td>
+            </tr>
+            <tr><td height="20px" style="line-height:20px;">&nbsp;</td></tr>
+            <tr>
+              <td>
+                <div class="content">
+                  <?php print views_embed_view('arquideas_newsletter_partners_bl', 'default'); ?>
                 </div>
-            <?php endif; ?>
-            <!-- End Partners & Co block -->
-      <?php else: ?>
-            <!-- Partners & Co block -->
-            <div class="simplenews-partners-block block">
-                <div class="inner clearfix">
-                        <div style="margin-top:45px;"><img src="<?php print $base_url . '/'. path_to_theme();?>/images/nws-separator.png" alt="Nivaria" /></div>
-                        <h2 class="title block-title" style="font-size: 22px; color: #000000; margin-top: 30px; margin-bottom: 30px; text-align: center; padding-bottom: 30px; border-bottom: 1px solid #000000;">
-                            <?php print t('PARTNERS & Co'); ?>
-                        </h2>
-                        <div class="content">
-                            <?php print views_embed_view('arquideas_newsletter_partners_nl', 'default', $node->nid); ?>
-                        </div>
+              </td>
+            </tr>
+          </table>
+        <?php endif; ?>
+        <!-- End Partners & Co block -->
+
+        <?php else: ?>
+          <!-- Partners & Co block -->
+          <table border="0" cellpadding="0" cellspacing="0" width="580" class="simplenews-partners-block block" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px;">
+            <tr><td height="45px" style="line-height:45px;">&nbsp;</td></tr>
+            <tr><td><img src="<?php print $base_url . '/'. path_to_theme();?>/images/nws-separator.png" /></td></tr>
+            <tr>
+              <td align="center" style="border-bottom: 1px solid #000000; font-weight: bold; text-transform: uppercase; font-size: 21px; color: #000000;">
+                <div style="line-height:20px; height: 20px;">&nbsp;</div>
+                <?php print t('PARTNERS & Co'); ?>
+                <div style="line-height:20px; height: 20px;">&nbsp;</div>
+              </td>
+            </tr>
+            <tr><td height="20px" style="line-height:20px;">&nbsp;</td></tr>
+            <tr>
+              <td>
+                <div class="content">
+                  <?php print views_embed_view('arquideas_newsletter_partners_nl', 'default'); ?>
                 </div>
-            </div>
-            <!-- End Partners & Co block -->
-      <?php endif; ?>
-    </div>
-  </div><!-- /inner -->
+              </td>
+            </tr>
+          </table>
+          <!-- End Partners & Co block -->
+        <?php endif; ?>
+      </div>
+    </div><!-- /inner -->
 
   <?php if ($node_bottom && !$teaser): ?>
   <div id="node-bottom" class="node-bottom row nested">
