@@ -1,17 +1,18 @@
 <?php
 // $Id: node-news.tpl.php 7510 2010-06-15 19:09:36Z sheena $
+  global $base_url;
   $fields = content_types($node->type);
   if (!empty($fields) && !empty($fields['fields'])) {?>
-    <!-- Fields of <?php print $node->type ?>: 
+    <!-- Fields of <?php print $node->type ?>:
     <?php foreach ($fields['fields'] as $field) {
       print $field['field_name'];?>
-    
+
     <?php }?>
         -->
 <?php }?>
 <div id="node-<?php print $node->nid; ?>" class="node <?php print $node_classes; ?>">
   <div class="inner">
-    
+
     <?php if ($page == 0): ?>
     <h2 class="title"><a href="<?php print $node_url ?>" title="<?php print $title ?>"><?php print $title ?></a></h2>
     <?php endif; ?>
@@ -25,15 +26,16 @@
     <?php endif; ?>
 
     <div class="content clearfix">
-      
+
       <?php print $node->content['body']['#value'] ?>
-            
+
       <?php if($general_newsletter): ?>
             <!-- Contests block -->
             <?php if($field_simplenews_last_contests[0]['value']==1): ?>
                 <div class="simplenews-last-contests-block block">
                     <div class="inner clearfix">
-                        <h2 class="title block-title">
+                        <div style="margin-top:45px;"><img src="<?php print $base_url . '/'. path_to_theme();?>/images/nws-separator.png" alt="Nivaria" /></div>
+                        <h2 class="title block-title" style="font-size: 22px; color: #000000; margin-top: 30px; margin-bottom: 30px; text-align: center; padding-bottom: 30px; border-bottom: 1px solid #000000;">
                             <?php print t('Upcoming Contests'); ?>
                         </h2>
                         <div class="content">
@@ -43,12 +45,13 @@
                 </div>
             <?php endif; ?>
             <!-- End Contests block -->
-            
+
             <!-- News block -->
             <?php if($field_simplenews_news[0]['value']==1): ?>
                 <div class="simplenews-news-block block">
                     <div class="inner clearfix">
-                        <h2 class="title block-title">
+                        <div style="margin-top:45px;"><img src="<?php print $base_url . '/'. path_to_theme();?>/images/nws-separator.png" alt="Nivaria" /></div>
+                        <h2 class="title block-title" style="font-size: 22px; color: #000000; margin-top: 30px; margin-bottom: 30px; text-align: center; padding-bottom: 30px; border-bottom: 1px solid #000000;">
                             <?php print t('News'); ?>
                         </h2>
                         <div class="content">
@@ -58,12 +61,13 @@
                 </div>
             <?php endif; ?>
             <!-- End News block -->
-            
+
             <!-- KM block -->
             <?php if($field_simplenews_group_content[0]['value']==1): ?>
                 <div class="simplenews-km-block block">
                     <div class="inner clearfix">
-                        <h2 class="title block-title">
+                        <div style="margin-top:45px;"><img src="<?php print $base_url . '/'. path_to_theme();?>/images/nws-separator.png" alt="Nivaria" /></div>
+                        <h2 class="title block-title" style="font-size: 22px; color: #000000; margin-top: 30px; margin-bottom: 30px; text-align: center; padding-bottom: 30px; border-bottom: 1px solid #000000;">
                             <?php print t('Arquideas Community'); ?>
                         </h2>
                         <div class="content">
@@ -73,12 +77,13 @@
                 </div>
             <?php endif; ?>
             <!-- End KM block -->
-            
+
             <!-- Partners & Co block -->
             <?php if($field_simplenews_send_partners[0]['value']==1): ?>
                 <div class="simplenews-partners-block block">
                     <div class="inner clearfix">
-                        <h2 class="title block-title">
+                        <div style="margin-top:45px;"><img src="<?php print $base_url . '/'. path_to_theme();?>/images/nws-separator.png" alt="Nivaria" /></div>
+                        <h2 class="title block-title" style="font-size: 22px; color: #000000; margin-top: 30px; margin-bottom: 30px; text-align: center; padding-bottom: 30px; border-bottom: 1px solid #000000;">
                             <?php print t('PARTNERS & Co'); ?>
                         </h2>
                         <div class="content">
@@ -92,7 +97,8 @@
             <!-- Partners & Co block -->
             <div class="simplenews-partners-block block">
                 <div class="inner clearfix">
-                        <h2 class="title block-title">
+                        <div style="margin-top:45px;"><img src="<?php print $base_url . '/'. path_to_theme();?>/images/nws-separator.png" alt="Nivaria" /></div>
+                        <h2 class="title block-title" style="font-size: 22px; color: #000000; margin-top: 30px; margin-bottom: 30px; text-align: center; padding-bottom: 30px; border-bottom: 1px solid #000000;">
                             <?php print t('PARTNERS & Co'); ?>
                         </h2>
                         <div class="content">
