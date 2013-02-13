@@ -301,4 +301,19 @@ $(window).load(function(){
 			height: ''+altura+'px'
 		},500);
    });
+   
+   ///Ajustes de las alturas de los slides
+   $(".views_slideshow_main").each(function(){
+			//Calculamos la altura de la capa de controles
+			plusheight=$(this).next().height()
+			//Calculamos la altura de llas imágenes dentro del slideshow una vez que se hayan cargado
+			var max = Math.max.apply(Math, $(this).find('.views-row').map(
+		      function(){
+		        return $(this).height();
+		      }
+		    ).get());
+			//Asignamos la altura a los contenedores de slides
+		    $(this).find(".views_slideshow_singleframe_teaser_section").css({'min-height':max+plusheight+"px", 'min-width':'100%'}); 
+			$(this).find(".views_slideshow_slide").css({'min-height':max+plusheight+"px", 'min-width':'100%'}); 
+	})
 });

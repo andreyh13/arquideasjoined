@@ -51,6 +51,11 @@
             if(!empty($m_content)){
                 print '<div class="inscription-dates clearfix">';
                 print show_contest_dates_in_inscription_detail($contest);
+                if($node->field_inscription_state[0]['value']==InscriptionState::INSCRIPTED){
+                    print '<div class="deadline-date">';
+                    print showOpenContestDate($contest);
+                    print '</div>';
+                } 
                 print '</div>';
             }
         }
