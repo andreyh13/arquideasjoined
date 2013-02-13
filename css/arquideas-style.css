@@ -10157,6 +10157,12 @@ float: left;
 	font-size: 15px;
 	padding-bottom: 8px;
 }
+.node-type-inscription .contest-info .field-registration-limit-date{
+	display: inline-block;
+}
+.node-type-inscription .contest-info .field-registration-limit-date .countdown_amount {
+    font-size: 18px;
+}
 .node-type-inscription .contest-info .payment-early div{
 	display: inline;
 	font-size: .87em;
