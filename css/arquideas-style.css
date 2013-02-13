@@ -6405,6 +6405,7 @@ body.page-finished-contests #content-region h2.block-title {
   text-align: right;
   margin-left: 25px;
   margin-right: 10px;
+  background: transparent;
 }
 
 #block-views-contests-block_3 .views-field-phpcode,
@@ -10923,7 +10924,7 @@ font-size: 12px
 .view-sponsors .view-empty{
     display: none;
 }
-.node-contest-open .odd,
+.view-contests .odd,
 .view-contests .field-delivery-limit-date .odd{
 	background-color: transparent;
 }
