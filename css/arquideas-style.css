@@ -10925,7 +10925,7 @@ font-size: 12px
     display: none;
 }
 .view-contests .odd,
-.view-contests .field-delivery-limit-date .odd,
-.contests-view .field-registration-limit-date .odd{
+.field-delivery-limit-date .odd,
+.field-registration-limit-date .odd{
 	background-color: transparent;
 }
