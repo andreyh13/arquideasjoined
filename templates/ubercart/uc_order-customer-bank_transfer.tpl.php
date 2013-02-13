@@ -11,44 +11,17 @@
   <tr>
     <td>
       <table width="100%" border="0" cellspacing="0" cellpadding="5" align="center" bgcolor="#FFFFFF" style="font-family: verdana, arial, helvetica; font-size: small;">
-        <?php if ($business_header) { ?>
-        <tr valign="top">
-          <td>
-            <table width="100%" style="font-family: verdana, arial, helvetica; font-size: small;">
-              <tr>
-                <td>
-                  <?php echo $site_logo; ?>
-                </td>
-                <td width="98%">
-                  <div style="padding-left: 1em;">
-                  <span style="font-size: large;"><?php echo $store_name; ?></span><br />
-                  <?php echo $site_slogan; ?>
-                  </div>
-                </td>
-                <td nowrap="nowrap">
-                  <?php echo $store_address; ?><br /><?php echo $store_phone; ?>
-                </td>
-              </tr>
-            </table>
-          </td>
-        </tr>
-        <?php } ?>
-
         <tr valign="top">
           <td>
 
             <?php if ($thank_you_message) { ?>
-            <p><b><?php echo t('Thanks for your order, !order_first_name!', array('!order_first_name' => $order_first_name)); ?></b></p>
+            <p><b><?php echo t('Thanks for your order!'); ?></b></p>
 
             <?php if (isset($_SESSION['new_user'])) { ?>
             <p><b><?php echo t('An account has been created for you with the following details:'); ?></b></p>
             <p><b><?php echo t('Username:'); ?></b> <?php echo $new_username; ?><br />
             <b><?php echo t('Password:'); ?></b> <?php echo $new_password; ?></p>
             <?php } ?>
-
-            <p><b><?php echo t('Want to manage your order online?'); ?></b><br />
-            <?php echo t('If you need to check the status of your order, please visit our home page at !store_link and click on "My account" in the menu or login with the following link:', array('!store_link' => $store_link)); ?>
-            <br /><br /><?php echo $site_login; ?></p>
             <?php } ?>
 
             <table cellpadding="4" cellspacing="0" border="0" width="100%" style="font-family: verdana, arial, helvetica; font-size: small;">
@@ -63,32 +36,6 @@
                 </td>
                 <td width="98%">
                   <?php echo $order_email; ?>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-
-                  <table width="100%" cellspacing="0" cellpadding="0" style="font-family: verdana, arial, helvetica; font-size: small;">
-                    <tr>
-                      <td valign="top" width="50%">
-                        <b><?php echo t('Billing Address:'); ?></b><br />
-                        <?php echo $order_billing_address; ?><br />
-                        <br />
-                        <b><?php echo t('Billing Phone:'); ?></b><br />
-                        <?php echo $order_billing_phone; ?><br />
-                      </td>
-                      <?php if (uc_order_is_shippable($order)) { ?>
-                      <td valign="top" width="50%">
-                        <b><?php echo t('Shipping Address:'); ?></b><br />
-                        <?php echo $order_shipping_address; ?><br />
-                        <br />
-                        <b><?php echo t('Shipping Phone:'); ?></b><br />
-                        <?php echo $order_shipping_phone; ?><br />
-                      </td>
-                      <?php } ?>
-                    </tr>
-                  </table>
-
                 </td>
               </tr>
               <tr>
@@ -285,9 +232,6 @@
                   <p><?php echo t('Thanks again for shopping with us.'); ?></p>
                   <?php } ?>
 
-                  <?php if ($store_footer) { ?>
-                  <p><b><?php echo $store_link; ?></b><br /><b><?php echo $site_slogan; ?></b></p>
-                  <?php } ?>
                 </td>
               </tr>
               <?php } ?>
