@@ -23,8 +23,9 @@
  * @see template_preprocess_simplenews_newsletter_body()
  */
 ?>
-
-<h1> <?php print t('Hi');?> [simplenews-receiver-realname]!!!</h1>
+<div style="line-height:40px; height: 40px;">&nbsp;</div>
+<div style="text-align: center; font-weight: normal; font-size: 23px;"> <?php print t('Hi');?> [simplenews-receiver-realname],</div>
+<div style="line-height:20px; height: 20px;">&nbsp;</div>
 <?php
-print theme('node', $node, FALSE, TRUE); 
+print theme('node', $node, FALSE, TRUE);
 ?>

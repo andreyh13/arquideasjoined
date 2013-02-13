@@ -24,17 +24,48 @@
  *
  * @see template_preprocess_simplenews_newsletter_footer()
  */
+ global $base_url;
 ?>
 <?php if ($format == 'html'): ?>
-  <p class="newsletter-footer">
-      <?php print l(t('Privacy policy',array(),$language->language),'node/220'); ?>
-      <a href="[simplenews-unsubscribe-url]"><?php print $unsubscribe_text ?></a>
-      <?php print l(t('Contact',array(),$language->language),'node/282'); ?>
-  </p>
+  <?php if ($key == 'test'): ?>
+  <table border="0" cellpadding="0" cellspacing="0" width="580">
+    <tr>
+      <td style="height: 50px;">&nbsp;</td>
+    </tr>
+  </table>
+  <table  align="center" width="580" cellpadding="10" style="background: #FF3F3F; font-family: Helvetica, Arial, sans-serif; font-size: 16px;">
+    <tr>
+      <td style="color: #fff; font-size: 18px; text-align:center">
+        <?php print $test_message ?>
+      </td>
+    </tr>
+  </table>
+  <table border="0" cellpadding="0" cellspacing="0" width="580">
+    <tr>
+      <td style="height: 50px;">&nbsp;</td>
+    </tr>
+  </table>
+  <?php endif ?>
+  <table border="0" cellpadding="10" cellspacing="0" width="580" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px;" id="newsletter-footer">
+    <tr>
+      <td align="center" valign="middle"  style="border-top: 1px solid #000000;">
+        <a href="http://www.nivaria.com" title="Nivaria"><img src="<?php print $base_url . '/'. path_to_theme();?>/logo-small.png" alt="Nivaria" /></a>
+      </td>
+    </tr>
+    <tr>
+      <td align="center" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; font-size: 12px; font-weight:bold;">
+        <?php print l(t('Privacy policy',array(),$language->language),'node/220'); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="[simplenews-unsubscribe-url]"><?php print $unsubscribe_text ?></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <?php print l(t('Contact',array(),$language->language),'node/282'); ?>
+      </td>
+    </tr>
+  </table>
 <?php else: ?>
--- <?php print $unsubscribe_text ?>: [simplenews-unsubscribe-url]
-<?php endif ?>
+<?php print l(t('Privacy policy',array(),$language->language),'node/220'); ?> | <a href="[simplenews-unsubscribe-url]"><?php print $unsubscribe_text ?></a> | <?php print l(t('Contact',array(),$language->language),'node/282'); ?>
 
 <?php if ($key == 'test'): ?>
-- - - <?php print $test_message ?> - - -
+  <?php print $test_message ?>
+<?php endif ?>
+
+-- <?php print $unsubscribe_text ?>: [simplenews-unsubscribe-url]
 <?php endif ?>

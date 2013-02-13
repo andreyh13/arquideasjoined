@@ -32,19 +32,22 @@ global $base_url;
   body {  -webkit-text-size-adjust: none;}  /* Prevent Webkit platforms from changing default text sizes. */
   /* Reset Styles */
   body {margin: 0;padding: 0;}
-  img {border: 0;height: auto;line-height: 140%;outline: none;text-decoration: none;}
+  img {border: 0; height: auto; outline: none; vertical-align: baseline; }
+  a, a:link, a:visited { color: #FF3F3F; text-decoration: none; }
   table td {border-collapse: collapse;}
+  #partners img { display: block; border: 1px solid #cccccc; }
+  #newsletter-footer a { color: #999999; }
   </style>
 </head>
-<body style="color: #666666;font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 16px;">
+<body style="color: #666666; font-family: Helvetica, Arial, sans-serif; font-size: 16px;">
 <center>
-<table border="0" cellpadding="0" cellspacing="0" width="100%" id="wrapper">
+<table border="0" cellpadding="0" cellspacing="10" width="100%" id="wrapper" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px;">
   <tr>
     <td align="center" valign="top">
-      <table border="0" cellpadding="0" cellspacing="0" width="580" style="background-color: #FFFFFF;">
+      <table border="0" cellpadding="0" cellspacing="0" width="580" style="background-color: #FFFFFF; font-family: Helvetica, Arial, sans-serif; font-size: 16px;">
         <tr>
           <td align="center" valign="top">
-            <table border="0" cellpadding="30" cellspacing="0" width="580" style="border-bottom: 1px solid #000000;">
+            <table border="0" cellpadding="30" cellspacing="0" width="580" style="border-bottom: 1px solid #000000; font-family: Helvetica, Arial, sans-serif; font-size: 16px;">
               <tr>
                 <td class="logo" align="center" valign="top">
                   <?php if ($logo): ?>
@@ -62,7 +65,7 @@ global $base_url;
         </tr>
         <tr>
           <td align="center" valign="top">
-            <table border="0" cellpadding="20" cellspacing="0" width="580" id="content">
+            <table border="0" cellpadding="0" cellspacing="0" width="580" id="content" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px;">
               <?php $username = '';
                     $userlang = $GLOBALS['language']->language;
                     if(is_object($recipient)){
@@ -76,30 +79,33 @@ global $base_url;
               </tr>
               <?php endif; ?>
               <tr>
-                <td align="center" valign="top" style="color: #666666;"><?php print $body; ?></td>
+                <td align="left" valign="top" style="color: #666666; font-size: 16px;"><?php print $body; ?></td>
               </tr>
             </table>
           </td>
         </tr>
         <tr>
           <td align="center" valign="top">
-            <table border="0" cellpadding="0" cellspacing="0" width="580" style="background-color: #ffffff; border-top: 1px solid #000000; color: #999999; font-weight: bold; font-size: 12px;">
+            <table border="0" cellpadding="0" cellspacing="0" width="580" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px; background-color: #ffffff; color: #999999; font-weight: bold; font-size: 12px;">
               <tr>
                 <td>
-                  <div style="height:12px;">&nbsp;</div>
+                  <div style="height:10px;">&nbsp;</div>
                 </td>
               </tr>
               <tr>
-                <td align="left" valign="middle">
-                  <a href="<?php print $base_url; ?>/home" style="color: #FF3F3F;">Arquideas</a> | <a href="<?php print $base_url; ?>/user" style="color: #FF3F3F;"><?php print t('Access my private area',array(),!empty($recipient->language)?$recipient->language:NULL); ?></a> | <a href="<?php print $base_url; ?>/groups" style="color: #FF3F3F;"><?php print t('Community',array(),!empty($recipient->language)?$recipient->language:NULL); ?></a>
+                <td width="193" align="left" valign="middle">
+                  <a href="<?php print $base_url; ?>/home" style="color: #999999;">Copyright Arquideas 2012</a>
                 </td>
-                <td align="right" valign="middle" style="margin-top:12px">
+                <td width="193" align="center" valign="middle">
+                  <a href="<?php print $base_url; ?>/home" style="color: #FF3F3F;">www.arquideas.es</a>
+                </td>
+                <td width="193" align="right" valign="middle">
                   <a href="http://www.nivaria.com" title="Nivaria"><img src="<?php print $base_url . '/'. path_to_theme();?>/images/nws_by_nivaria.png" alt="Nivaria" /></a>
                 </td>
               </tr>
               <tr>
                 <td>
-                  <div style="height:12px;">&nbsp;</div>
+                  <div style="height:60px;">&nbsp;</div>
                 </td>
               </tr>
             </table>

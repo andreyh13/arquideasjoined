@@ -19,11 +19,6 @@
  */
 ?>
 
-<td valign="top">
-  <?php print $fields['field_image_fid']->content; ?>
-</td>
-<td valign="top">
-  <div style="font-family: Helvetica, Arial, sans-serif; font-size:20px;"><a href="<?php print $fields['path']->content; ?>" style="color: #000000; text-decoration: none;"><?php print $fields['title']->content; ?></a></div>
-  <div style="font-family: Helvetica, Arial, sans-serif; color: #999999; font-size:14px; line-height: 30px;"><?php print $fields['field_date_news_value']->content; ?></div>
-  <div style="font-family: Helvetica, Arial, sans-serif; text-align: left; font-size:16px; line-height:22px; color: #666666;"><?php print $fields['teaser']->content; ?></div>
-</td>
+<?php foreach ($fields as $id => $field): ?>
+  <?php print $field->content; ?>
+<?php endforeach; ?>
