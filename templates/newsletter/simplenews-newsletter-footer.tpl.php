@@ -40,6 +40,7 @@
       </td>
     </tr>
   </table>
+  <?php endif ?>
   <table border="0" cellpadding="10" cellspacing="0" width="580">
     <tr>
       <td style="height: 50px;">&nbsp;</td>
@@ -56,7 +57,6 @@
       <td style="height: 50px;">&nbsp;</td>
     </tr>
   </table>
-  <?php endif ?>
   <table border="0" cellpadding="10" cellspacing="0" width="580" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px;" id="newsletter-footer">
     <tr>
       <td align="center" valign="middle"  style="border-top: 1px solid #000000;">
