@@ -43,7 +43,7 @@
   <?php endif ?>
   <table border="0" cellpadding="10" cellspacing="0" width="580" align="center">
     <tr>
-      <td style="height: 50px;">&nbsp;</td>
+      <td style="height: 20px;">&nbsp;</td>
     </tr>
     <tr>
       <td align="center">
@@ -54,7 +54,7 @@
       </td>
     </tr>
     <tr>
-      <td style="height: 50px;">&nbsp;</td>
+      <td style="height: 20px;">&nbsp;</td>
     </tr>
   </table>
   <table border="0" cellpadding="10" cellspacing="0" width="580" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px;" id="newsletter-footer">
