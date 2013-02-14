@@ -41,12 +41,12 @@
     </tr>
   </table>
   <?php endif ?>
-  <table border="0" cellpadding="10" cellspacing="0" width="580">
+  <table border="0" cellpadding="10" cellspacing="0" width="580" align="center">
     <tr>
       <td style="height: 50px;">&nbsp;</td>
     </tr>
     <tr>
-      <td>
+      <td align="center">
         <a href="http://www.facebook.com/pages/arquideas/108110022544971" title="Facebook"><img src="<?php print $base_url . '/'. path_to_theme();?>/images/social/icon-facebook.png" alt="Facebook" /></a>
         <a href="http://twitter.com/arquideasnews" title="Twitter"><img src="<?php print $base_url . '/'. path_to_theme();?>/images/social/icon-twitter.png" alt="Twitter" /></a>
         <a href="http://pinterest.com/arquideas/" title="Pinterest"><img src="<?php print $base_url . '/'. path_to_theme();?>/images/social/icon-pinterest.png" alt="Pinterest" /></a>
