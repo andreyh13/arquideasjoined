@@ -40,7 +40,18 @@
       </td>
     </tr>
   </table>
-  <table border="0" cellpadding="0" cellspacing="0" width="580">
+  <table border="0" cellpadding="10" cellspacing="0" width="580">
+    <tr>
+      <td style="height: 50px;">&nbsp;</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="http://www.facebook.com/pages/arquideas/108110022544971" title="Facebook"><img src="<?php print $base_url . '/'. path_to_theme();?>/images/social/icon-facebook.png" alt="Facebook" /></a>
+        <a href="http://twitter.com/arquideasnews" title="Twitter"><img src="<?php print $base_url . '/'. path_to_theme();?>/images/social/icon-twitter.png" alt="Twitter" /></a>
+        <a href="http://pinterest.com/arquideas/" title="Pinterest"><img src="<?php print $base_url . '/'. path_to_theme();?>/images/social/icon-pinterest.png" alt="Pinterest" /></a>
+        <a href="mailto:example@example.com" title="E-mail"><img src="<?php print $base_url . '/'. path_to_theme();?>/images/social/icon-email.png" alt="E-mail" /></a>
+      </td>
+    </tr>
     <tr>
       <td style="height: 50px;">&nbsp;</td>
     </tr>
