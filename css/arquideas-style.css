@@ -9697,7 +9697,13 @@ padding: 8px 12px;height: 35px;
 .facebook-status-subitem .flag-like-comments .flag-action {
     margin-top: -8px;
 }
-
+.fbss-comments .facebook-status-subitem.fbss-comments-comment{
+	border-bottom: 1px solid #ccc;
+	margin: 0 10px;
+}
+.fbss-comments .facebook-status-subitem.fbss-comments-comment.last{
+	border-bottom: none;
+}
 .fbss-comments-form .button{
 
 }
