@@ -1,4 +1,4 @@
-body {
+	body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 font-size: 87.5%;
 margin: 0;
@@ -7006,7 +7006,7 @@ body.page-solr-nodetype #content-front-inner .block-nodeblock h1.title {
 .nodetype_apachesolr_search-results li .job {
   color: #999;
   margin-bottom: 10px;
-   margin-left: 95px;
+  margin-left: 95px;
 }
 
 .nodetype_apachesolr_search-results li .title {
@@ -10948,4 +10948,17 @@ font-size: 12px
 .field-delivery-limit-date .odd,
 .field-registration-limit-date .odd{
 	background-color: transparent;
+}
+/*Stream de actividad de user*/
+.view-arqnetwork-user-content .item-list .views-field-picture{
+	width: 40px;
+}
+.view-arqnetwork-user-content .item-list .views-field-title{
+	font-size: 14px;
+}
+.view-arqnetwork-user-content .item-list .views-field-title,
+.view-arqnetwork-user-content .item-list .views-field-markup,
+.view-arqnetwork-user-content .item-list .views-field-teaser,
+.view-arqnetwork-user-content .item-list .views-field-comments-link{
+	margin-left: 55px;
 }
