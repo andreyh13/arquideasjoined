@@ -9651,7 +9651,7 @@ body.book #content-content{
 .content .facebook-status-links ul.links.inline li {
 	padding: 0!important;
 }
-.facebook-status-links li a, .facebook-status-links li .flag-wrapper a.flag {
+.facebook-status-links li a, .facebook-status-links li .flag-wrapper a.flag, .fbss-comments-form .button {
 	background: none repeat scroll 0 0 #000000;
     border: medium none;
     border-radius: 3px 3px 3px 3px;
@@ -9664,6 +9664,11 @@ body.book #content-content{
 	height: 19px;
 	line-height: 19px;
 	display: inline-block;
+}
+.fbss-comments-form .button{
+	font-size: 13px;
+	margin-top: 10px;
+padding: 8px 12px;height: 35px;
 }
 .facebook-status-links li a, .facebook-status-links li .flag-wrapper .flag-throbber{
 	margin-bottom: -20px;
@@ -9681,6 +9686,9 @@ body.book #content-content{
 	line-height: 19px;
 	display: inline-block;
 	
+}
+.fbss-comments-form .button{
+
 }
 .facebook-status-comments .fbss-comments-links a .flag-like-comments .flag-throbber{
 	display: none;
