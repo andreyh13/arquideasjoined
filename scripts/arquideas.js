@@ -204,11 +204,8 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
         $("body.page-inscription #comments .box").appendTo(".full-node.page-inscription .inscription-info-public .col01");
         
         //Cambio en el DOM
-		//.page-arquideas-network #content-front #content-front-left, .page-solr-nodetype #content-front #content-front-left, .page-solr-nodetype-multi #content-front #content-front-left 
-		if($('.arquideas-network').length||$('.page-solr-nodetype').length||$('.page-solr-nodetype-multi').length){
-	$('#content-front-left').find('.login-and-register-link-div').css('display','inline-block').clone().removeClass('login-and-register-link-div').addClass('login-and-register-link-div-2').remove().appendTo('.users-total')
-			$('.login-and-register-link-div').remove();
-			//$('.register-link-div').css('display','inline-block')
+	if($('.arquideas-network').length || $('.page-solr-nodetype').length || $('.page-solr-nodetype-multi').length){
+            $('#content-front-left .login-and-register-link-div').css('display','inline-block').removeClass('login-and-register-link-div').addClass('login-and-register-link-div-2').appendTo('#block-arquideas_generic-4 .users-total');
 	}
         
         //One more fix for calendar
@@ -306,7 +303,7 @@ $(window).load(function(){
    $(".views_slideshow_main").each(function(){
 			//Calculamos la altura de la capa de controles
 			plusheight=$(this).next().height()
-			//Calculamos la altura de llas imágenes dentro del slideshow una vez que se hayan cargado
+			//Calculamos la altura de llas imï¿½genes dentro del slideshow una vez que se hayan cargado
 			var max = Math.max.apply(Math, $(this).find('.views-row').map(
 		      function(){
 		        return $(this).height();
