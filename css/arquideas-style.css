@@ -10951,7 +10951,7 @@ font-size: 12px
 }
 /*Stream de actividad de user*/
 .view-arqnetwork-user-content .item-list .views-field-picture{
-	width: 40px;
+	width: 40px!important;
 }
 .view-arqnetwork-user-content .item-list .views-field-title{
 	font-size: 14px;
