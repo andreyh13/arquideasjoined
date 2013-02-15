@@ -9187,7 +9187,7 @@ body.profile-me #sidebar-last.nested .block .users-total .label{
 #sidebar-last .block-views .view-most-active-users td.views-field-picture,
 .page-solr-nodetype-multi #sidebar-first #block-views-d08d7cbb9d90f0fb0401f208b93138fe.block td.views-field-picture,
 .page-solr-nodetype #sidebar-first #block-views-d08d7cbb9d90f0fb0401f208b93138fe.block td.views-field-picture{
-	max-width: 30px;
+	max-width: 40px;
 }
 #sidebar-last .block-views .view-most-active-users td.views-field-name a,
 .page-solr-nodetype-multi #sidebar-first #block-views-d08d7cbb9d90f0fb0401f208b93138fe.block td.views-field-name a,
