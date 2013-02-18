@@ -11041,3 +11041,8 @@ font-size: 12px
 .node-type-page #content-content .inner .links .translation-link{
     display: none;
 }
+
+#pid-page-suscribete-la-newsletter #content-group,
+#pid-page-subscribe-newsletter #content-group {
+    float: left;
+}
