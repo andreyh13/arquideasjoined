@@ -3695,9 +3695,6 @@ body#pid-content-contact #content-group,
 body.page-cart #content-group {
   float: none;
 }
-body.node-type-page #content-group{
-	float: left;
-}
 body.no-sidebars #content-group h1.title {
   border-bottom: 1px solid #000;
   padding: 20px 0 30px;
@@ -10995,13 +10992,8 @@ font-size: 12px
 }
 .view-contests .odd,
 .field-delivery-limit-date .odd,
-.field-registration-limit-date .odd, 
-.field-early-registration .odd{
+.field-registration-limit-date .odd{
 	background-color: transparent;
-}
-.view-contests .field-early-registration{
-	text-align: right;
-	margin-right: 20px;
 }
 /*Stream de actividad de user*/
 .view-arqnetwork-user-content .item-list .views-field-picture{
@@ -11045,20 +11037,3 @@ font-size: 12px
 .view-profile-follower li .userpoints,.view-profile-follower li .profile-job {
     margin-left: 95px;
 }
-
-.contest-state-wrapper .open-contest-button .add-to-cart-link{
-  font-family: "SoinSans-BoldOblique",Helvetica,Arial,sans-serif;
-  padding: 7px 20px;
-  color: #fff;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  border-radius: 5px;
-  text-shadow: 1px 1px 2px #000000;
-  text-decoration: none;
-  display: inline-block;
-  background: #33CCCC;
-  display: inline-block;;
-}
- .contest-state-wrapper .contest-state{
- 	margin-top: 0px;
- }
