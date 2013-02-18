@@ -8421,7 +8421,8 @@ a.grouping-button-container:hover,
 #arquideas-book-user-settings .edit-delete{
 width: auto; display: inline-block; float: right; display: none;
 }
-#edit-submit, #edit-preview-changes, #edit-submit-1, .views-exposed-form .form-submit, #arquideas-book-user-settings .form-submit,.views-field-phpcode-1 .popups-form-noupdate, .open-contest-button .form-submit, .display-project .links li .flag-bookmarks a, .sidebar-first .view-arqnetwork-user-profile .views-field-picture .user-edit-image a,.display-project .link-special-arquideas-prize a {
+#edit-submit, #edit-preview-changes, #edit-submit-1, .views-exposed-form .form-submit, #arquideas-book-user-settings .form-submit,.views-field-phpcode-1 .popups-form-noupdate, .open-contest-button .form-submit, .display-project .links li .flag-bookmarks a, .sidebar-first .view-arqnetwork-user-profile .views-field-picture .user-edit-image a,.display-project .link-special-arquideas-prize a,
+.display-project .link-bookmarks a{
 	display: inline-block;
 	float: none;
 	border-radius: 5px 5px 5px 5px;
@@ -8436,7 +8437,7 @@ width: auto; display: inline-block; float: right; display: none;
 	line-height: 1;
 	font-family: SoinSans-BoldOblique!important;
 }
- .open-contest-button .form-submit, .display-project .links li .flag-bookmarks a,.display-project .link-special-arquideas-prize a {
+ .open-contest-button .form-submit, .display-project .links li .flag-bookmarks a,.display-project .link-special-arquideas-prize a, .display-project .link-bookmarks a {
 	background: #3cc!important;
  }
 
@@ -10796,11 +10797,22 @@ font-size: 12px
 	margin-right: 120px;
 }
 
+.display-project .link-bookmarks {
+    display: inline-block;
+    float: right;
+    margin-top: -50px;
+    margin-right: 120px;
+}
+.display-project .link-special-arquideas-prize{
+    margin-right: 250px;
+}
+
 .display-project .links.top li, .display-project .link-special-arquideas-prize li{
 	padding: 0px!important;
 }
 .display-project .links.top li .flag-bookmarks a, 
-.display-project .link-special-arquideas-prize a{
+.display-project .link-special-arquideas-prize a,
+.display-project .link-bookmarks a{
  	padding: 5px 10px!important;
 	float: right;
 }
