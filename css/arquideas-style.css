@@ -10990,3 +10990,32 @@ font-size: 12px
 .view-arqnetwork-user-content .item-list .views-field-comments-link{
 	margin-left: 55px;
 }
+.view-profile-follower ul li:nth-child(3n+1) {
+    clear: left;
+}
+.view-profile-follower ul li {
+    float: left;
+    margin: 0 10px 20px 0;
+    padding: 0;
+    position: relative;
+    width: 220px;
+	list-style: none;
+    text-indent: 0;
+}
+.view-profile-follower li .user-image {
+    float: left;
+    margin: 0 5px 20px 0;
+    width: 85px;
+	
+}
+.view-profile-follower li .title {
+    margin: 0 0 10px 95px;
+}
+
+.view-profile-follower li .title a {
+    color: #000000;
+}
+
+.view-profile-follower li .userpoints,.view-profile-follower li .profile-job {
+    margin-left: 95px;
+}
