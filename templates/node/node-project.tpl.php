@@ -58,16 +58,42 @@
             <!-- Project SUBTITLE -->
             <h3 class="subtitle">
                 <?php print $field_subtitle_project_rendered; ?>
-				<?php if ($terms): ?>
-	            <div class="terms">
-	            <?php print $terms; ?>
-	            </div>
-	            <?php endif;?>
+                <!-- Taxonomy terms -->
+                <?php if ($terms): ?>
+                    <div class="terms">
+                    <?php print $terms; ?>
+                    </div>
+                <?php endif;?>
+                <!-- End Taxonomy terms -->
             </h3>
             <!-- End Project SUBTITLE -->
-			
-           
-
+            
+            <!-- User Picture -->
+            <div class="userpicture">
+            <?php
+                $account = user_load($node->uid);
+                $userpicture = '';
+                $username = !empty($account->realname)?$account->realname:$account->name;
+                if(!empty($account->picture)){
+                    $userpicture = theme_imagecache('user_picture_meta', $account->picture, $username);
+                } else {
+                    $picture = variable_get('user_picture_default', '');
+                    if(!empty($picture)){
+                       $userpicture = theme_imagecache('user_picture_meta', $picture, $username);
+                    }
+                }
+            ?>
+            <?php if(!empty($userpicture)): ?>
+                <?php print l($userpicture,'user/'.$account->uid,array(
+                    'attributes' => array(
+                        'title' => $username,
+                    ),
+                    'html' => TRUE,
+                )); ?>
+            <?php endif; ?>    
+            </div>
+            <!-- End User Picture -->
+            
             <!-- Project Type -->
             <div class="project-type">
                 <?php print $field_project_type_project_rendered ?>
@@ -85,8 +111,6 @@
             <!-- DOWNLOAD files -->
             <?php print $field_documents_project_rendered ?>
             <!-- End DOWNLOAD files -->
-
-            
 
         </div>
         <div class="col02">
