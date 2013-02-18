@@ -11037,3 +11037,7 @@ font-size: 12px
 .view-profile-follower li .userpoints,.view-profile-follower li .profile-job {
     margin-left: 95px;
 }
+
+.node-type-page #content-content .inner .links .translation-link{
+    display: none;
+}
