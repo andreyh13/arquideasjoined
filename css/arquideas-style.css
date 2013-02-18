@@ -7076,7 +7076,8 @@ body.node-type-inscription-1 #breadcrumbs {
 }
 
 .inscription-info-public,
-.project-info-public {
+.project-info-public,
+#page.page-full-view .view-full-page {
   background-color: #000;
   padding: 20px;
   color: #fff;
@@ -7129,7 +7130,8 @@ body.node-type-inscription-1 #breadcrumbs {
 .inscription-info-public h2.title,
 .project-info-public h2.title,
 .project-info-public .project-type,
-.inscription-info-public .project-type{
+.inscription-info-public .project-type,
+#page.page-full-view .view-full-page .views_slideshow_singleframe_slide .views-field-title a{
   color: #fff;
   font-size: 26px;
   line-height: 100%;
