@@ -10906,6 +10906,12 @@ font-size: 12px
 .display-project .inscription-info-public .col01 .terms ul.links li{
 	margin-bottom: 0;
 	margin-top: 5px;
+	line-height: 12px;
+	padding-right: 5px;
+}
+.display-project .project-info-public .col01 .terms ul.links li.last,
+.display-project .inscription-info-public .col01 .terms ul.links li.last{
+	padding-right: 0;
 }
 .display-project .inscription-info-public .view-og-members-faces.view-display-id-block_1{
 	margin-bottom: 0;
