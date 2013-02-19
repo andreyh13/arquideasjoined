@@ -11117,7 +11117,8 @@ font-size: 12px
 } 
 
 #pid-page-suscribete-la-newsletter #content-group,
-#pid-page-subscribe-newsletter #content-group {
+#pid-page-subscribe-newsletter #content-group,
+.node-type-webform #content-group{
     float: left;
 }
 
@@ -11153,4 +11154,13 @@ font-size: 12px
     height: auto;
     text-transform: none;
     margin-top: 8px;
+}
+
+.display-project .fivestar-widget .fivestar-form-item .description .average-rating,
+.display-project .fivestar-widget .fivestar-form-item .description .total-votes {
+    display: none;
+}
+
+.display-project .fivestar-widget .fivestar-form-item .description .fivestar-summary {
+    margin-top:8px;
 }

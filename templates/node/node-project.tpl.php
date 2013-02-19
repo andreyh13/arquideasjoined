@@ -48,7 +48,7 @@
             <?php print $title; ?>
             </h2>
             <!-- End Project TITLE-->
-			 <!-- FiveStar Widget -->
+	    <!-- FiveStar Widget -->
             <?php
             if (user_access('rate content') && fivestar_validate_target('node', $node->nid)) {
                 print fivestar_widget_form($node);

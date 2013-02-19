@@ -283,6 +283,16 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
                    var m_id = $(this).attr("id");
                    $("label[for='"+m_id+"']").hide();
                 });
+                //Fivestar adjusts
+                $(".fivestar-widget .fivestar-form-item .description .user-rating").each(function(){
+                   var m_check = $(this).find("span").html();
+                   if(m_check=="None"){
+                       $(this).html("Vote!");
+                   }
+                   if(m_check=="Ninguno"){
+                       $(this).html("¡Vota!");
+                   }
+                });
 		
 });
 
