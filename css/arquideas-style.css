@@ -7037,7 +7037,9 @@ body.page-solr-nodetype #content-front-inner .block-nodeblock h1.title {
   font-size: 1.6em;
   font-weight: normal;
 }
-
+.view-profile-follower.view-display-id-default{
+    margin: 2em 0;
+}
 .nodetype_apachesolr_search-results li .image-and-social {
   position: relative;
   height: 170px;
