@@ -3369,6 +3369,9 @@ body.page-home #content-front #content-front-left .odd{
 body.page-home #content-front #content-front-left .views_slideshow_singleframe_pager .odd{
 	background-color: #FFF;
 }
+body.page-home #content-front #content-front-left .views_slideshow_singleframe_pager .odd.activeSlide{
+	background-color: #FF3F3F;
+}
 body.page-home #content-front #content-front-right .content-inner {
   height: 174px;
   overflow: hidden;
