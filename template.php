@@ -1269,8 +1269,8 @@ function arquideasjoined_date_combo($element) {
  * @param type $vars 
  */
 function arquideasjoined_preprocess_search_result(&$vars) {
-    $vars['info'] = t('User');
     if ($vars['result']['node']->type == 'arquideas_content_profile') {
+        $vars['info'] = t('User');
         $vars['url'] = url('user/' . $vars['result']['node']->uid);
     }
 }
