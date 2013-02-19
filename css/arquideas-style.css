@@ -3367,7 +3367,7 @@ body.page-home #content-front #content-front-left .odd{
 	background: transparent;
 }
 body.page-home #content-front #content-front-left .views_slideshow_singleframe_pager .odd{
-	background: #FFF;
+	background-color: #FFF;
 }
 body.page-home #content-front #content-front-right .content-inner {
   height: 174px;
