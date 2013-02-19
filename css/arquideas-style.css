@@ -11213,3 +11213,6 @@ font-size: 12px
     padding: 10px;
     font-size: 18px;
 }
+.block-simplenews .title {
+    display: none;
+}
