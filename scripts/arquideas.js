@@ -230,10 +230,10 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
 				jQuery('<div class="alpha"/>').prependTo($(this))
 			})
 		}
-		if($('.inscription-info-public .col02 .project-prize').length){
+		/*if($('.inscription-info-public .col02 .project-prize').length){
 			$('.project-prize').html('<p>'+$('.project-prize').html()+'</p>');
 			jQuery('<div class="alpha"/>').prependTo($('.project-prize'));
-		}
+		}*/
 		//Si estamos en inscripcion y no es inscripci�n grupal
 		if($('.node-type-inscription').length&&!$('.only-groups').length){
 			$('.node-type-inscription .contest-payment-individual').css({

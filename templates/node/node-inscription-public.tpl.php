@@ -96,22 +96,37 @@
                 </div>
                 <!-- END Number of members -->
 
-            <!-- Team members -->
-            <?php print views_embed_view('og_members_faces', 'block_1', $node->nid); ?>
-            <!-- END Team members -->
+                <!-- Team members -->
+                <?php print views_embed_view('og_members_faces', 'block_1', $node->nid); ?>
+                <!-- END Team members -->
 
                 </div>
+                
+                <!-- Taxonomy terms -->
+                <?php if ($terms): ?>
+                <div class="terms">
+                  <?php print $terms; ?>
+                </div>
+                <?php endif;?>
+                <!-- End Taxonomy terms -->
             </h3>
             <!-- End ID of Inscription -->
             
             <!-- Project Type -->
             <div class="project-type">
-                <?php print $field_project_type_project_rendered ?>
+                <span class="label">
+                    <?php print t('Project type').': '; ?>
+                </span>
+                <span class="value">
+                    <?php print $field_project_type_project_rendered ?>
+                </span>
             </div>
             <!-- End Project Type -->
 
             <!-- Description of Inscription-->
+            <div class="project-body">
             <?php print $inscription_mission; ?>
+            </div>    
             <!-- END Description of Inscription-->
 
             <!-- DOWNLOAD files -->
@@ -119,9 +134,9 @@
             <!-- End DOWNLOAD files -->
 
             <!-- Votation period -->
-            <div class="public-voting-interval clearfix">
-                <?php print show_public_vote_contest_date($contest); ?>
-            </div>
+            <!--div class="public-voting-interval clearfix"-->
+                <?php /* print show_public_vote_contest_date($contest); */ ?>
+            <!--/div-->
             <!-- End Votation period -->
 
         </div>
@@ -139,6 +154,7 @@
             $flag_arquideas = flag_get_flag('arquideas_prize');
             $flag_preselected = flag_get_flag('preselected');
             $prize_text = '';
+            $contest_text = '';
             if($contest->field_contest_state[0]['value']>=ContestState::PRIZE){
                 if($flag_first->is_flagged($node->nid)){
                     $prize_text = t('First prize');
@@ -156,22 +172,28 @@
                 if($flag_arquideas->is_flagged($node->nid)){
                     $prize_text = (!empty($prize_text)?', ':'').t('Special Arquieas Prize');
                 }
-                if(!empty($prize_text)){
-                    $prize_text .= ' '.l($contest_title,'node/'.$contest->nid,array(
-                        'attributes' => array(
-                            'title' => $contest_title,
-                            'target' => '_blank',
-                            'class' => 'contest-link',
-                        ),
-                    ));
-                }
+                $contest_text = ' '.l($contest_title,'node/'.$contest->nid,array(
+                    'attributes' => array(
+                        'title' => $contest_title,
+                        'target' => '_blank',
+                        'class' => 'contest-link',
+                    ),
+                ));
             }
             ?>
-            <?php if(!empty($prize_text)): ?>
             <div class="project-prize">
+                <div class="inner clearfix">
+                <?php if(!empty($prize_text)): ?>
+                <div class="flag">
                 <?php print $prize_text; ?>
+                </div>    
+                <?php endif; ?>
+                <div class="contest">
+                    <?php print $contest_text; ?>
+                </div>
+                </div>    
             </div>    
-            <?php endif; ?>
+            
         </div>
         <div class="clearfix">&nbsp;</div>
     </div>
@@ -191,12 +213,6 @@
       <span class="submitted"><?php print $submitted ?></span>
     </div>
     <?php endif; ?>
-
-    <?php if ($terms): ?>
-    <div class="terms">
-      <?php print $terms; ?>
-    </div>
-    <?php endif;?>
 
         <div class="content clearfix<?php print ($node_right && !$teaser?' node-right':''); ?>">
         <div class="node-content-main">

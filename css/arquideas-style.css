@@ -1403,7 +1403,7 @@ padding: 0;
 }
 div.comment .comment-name a, div.comment h3.title a {
 font-size: 14px;
-font-weight: normal;
+font-weight: bold;
 }
 .comment .comment-info .submitted span.comment-date {
 display: none;
@@ -9457,7 +9457,7 @@ div.comment .content{
 }
 .comment .comment-info span.new{
 	text-align: center;
-	max-width: 50px;
+	max-width: 40px;
 }
 .comment .comment-content .links ul.links{
 	padding-left: 0;
@@ -11163,4 +11163,53 @@ font-size: 12px
 
 .display-project .fivestar-widget .fivestar-form-item .description .fivestar-summary {
     margin-top:8px;
+}
+
+.display-project .terms ul.links li {
+    border-right: 0 none;
+}
+
+.display-project .terms ul.links li:after {
+    content: " ,";
+}
+.display-project .terms ul.links li.last:after {
+    content: "";
+}
+.display-project .project-type .label {
+    font-size: 14px;
+}
+.display-project .project-type .value .field-project-type-project {
+    display: inline-block;
+    font-size: 18px;
+}
+.display-project .project-body {
+    font-size: 16px;
+}
+.display-project .links.top li .flag-wrapper a,
+.display-project .link-bookmarks .flag-wrapper a,
+.display-project .link-special-arquideas-prize .flag-wrapper a{
+    font-size: 14px;
+    text-shadow: 1px 1px 2px #000000;
+}
+
+.display-project .col01 .box {
+    background-color: #FFF;
+}
+
+.display-project .col01 .box h2.title{
+    font-weight: normal;
+    font-size: 16px;
+    color: #000;
+    padding: 0 10px;
+}
+
+.display-project .col01 .box #comment-form #edit-submit {
+    text-transform: none;
+} 
+
+.display-project .project-prize .inner {
+    background-color: #000000;
+    opacity: 0.8 !important;
+    padding: 10px;
+    font-size: 18px;
 }
