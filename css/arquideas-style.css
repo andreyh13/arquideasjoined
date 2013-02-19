@@ -3361,7 +3361,10 @@ margin-left: 0;
 }
 body.page-home #content-front #content-front-left .content-inner {
   height: 170px;
-  overflow: hidden;
+/*  overflow: hidden;*/
+}
+body.page-home #content-front #content-front-left .odd{
+	background: transparent;
 }
 body.page-home #content-front #content-front-right .content-inner {
   height: 174px;
@@ -6522,8 +6525,8 @@ body.page-finished-contests #content-region h2.block-title {
 }
 
 #contest-banner .contest-titles .contest-tagline {
-  color: #f2f2f2;
-  font-size: 13px;
+  color: #ccc;
+  font-size: 16px;
 }
 
 #contest-banner .content-stats {
@@ -6546,6 +6549,10 @@ text-align: center;
   line-height: 30px;
 }
 
+#contest-banner .content-stats .info{
+	font-size: 15px;
+	margin-bottom: 10px;
+}
 #contest-banner .content-stats .contest-twitter-hashtag a {
   background: transparent url(../images/twitter-contest-icon.png) no-repeat left center;
   font-family: Arial,Verdana, sans-serif;
@@ -9858,8 +9865,13 @@ padding: 8px 12px;height: 35px;
 	font-size: 15px;
 }
 .view-arqnetwork-account-inscriptions .views-field-phpcode-3,
+.view-arqnetwork-account-inscriptions .views-field-phpcode-5,
 .view-arqnetwork-account-inscriptions .views-field-field-inscription-members-imname-vname{
 	margin-left: 350px;
+}
+.view-arqnetwork-account-inscriptions .views-field-phpcode-3{
+	margin-bottom: 10px;
+	color: #666;
 }
 .view-arqnetwork-account-inscriptions .views-field-phpcode-4{
 	clear: both;
@@ -9867,6 +9879,9 @@ padding: 8px 12px;height: 35px;
 	padding-top: 20px;
 	text-align: right;	
 	font-family: "SoinSans-Bold", Helvetica, Arial, sans-serif;
+}
+.view-arqnetwork-account-inscriptions .views-field-phpcode-5{
+	font-weight: bold;
 }
 .view-arqnetwork-account-inscriptions .views-field-phpcode-4 label{
 	display: block;
@@ -9887,7 +9902,7 @@ padding: 8px 12px;height: 35px;
 }
 .view-arqnetwork-account-inscriptions .views-field-field-inscription-members-imname-vname .views-field-name{
 	display: block;
-	margin-left: 60px;
+	margin-left: 45px;
 	text-align: left;
 }
 .node-type-inscription h2.title{
@@ -9977,9 +9992,12 @@ color: #fff;
 	background-color: #000;
 	padding: 10px;
 	display: inline-block;
+	color: #fff;
+	font-family: "SoinSans-Bold", Helvetica, Arial, sans-serif;
+	font-size: 15px;
 }
 .view-arqnetwork-user-projects .view-content div.views-row .views-field-markup a{
-	color: #fff;
+	color: #FF3F3F;
 }
 .view-arqnetwork-user-projects .view-content div.views-row .views-field-field-inscription-members-imname-vname{
 	background-color: #000;
@@ -10945,10 +10963,10 @@ font-size: 12px
    left: 0!important;
    top: 0!important;
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"!important;
-	filter: alpha(opacity=60)!important;
-	-moz-opacity:0.60!important;
-	-khtml-opacity: 0.60!important;
-	opacity: 0.60!important;
+	filter: alpha(opacity=80)!important;
+	-moz-opacity:0.80!important;
+	-khtml-opacity: 0.80!important;
+	opacity: 0.80!important;
     position: absolute!important;
     width: 100%!important;
 	z-index: 0;
@@ -10966,6 +10984,15 @@ font-size: 12px
 	position: relative;
 	padding: 10px;
 	z-index: 10;
+	font-family: SoinSans-Bold;
+    font-size: 16px;
+	text-align: right;
+}
+
+.inscription-info-public .col02 .project-prize p a,
+.project-info-public .col02 .project-prize p a{
+	display: block;
+	margin-top: 5px;
 }
 #block-quicktabs-arqnetwork_group_quicktabs{POSITION: relative}
 .WallOverlay{
@@ -11048,7 +11075,7 @@ font-size: 12px
 
 .contest-state-wrapper .open-contest-button .add-to-cart-link{
   font-family: "SoinSans-BoldOblique",Helvetica,Arial,sans-serif;
-  padding: 7px 20px;
+  padding: 5px 20px;
   color: #fff;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
