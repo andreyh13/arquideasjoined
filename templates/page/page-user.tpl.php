@@ -142,7 +142,7 @@ M�s cambios en la fila 200,
 						   // Número de seguidores
                            //  I just need to find out how to correctly user_load the account that is being viewed
                            //  from arg or something like that.  What code should I put in these 2 lines?
-                           $params = array("user" => $account->uid);
+                           $params = array("requestee_id" => $account->uid);
                            $count = user_relationships_load($params, array("count" => TRUE));
                            print '<span class="followers-count">'.$count.'</span>';
                            // Follow

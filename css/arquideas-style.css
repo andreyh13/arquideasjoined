@@ -7007,7 +7007,8 @@ body.page-solr-nodetype #content-front-inner .block-nodeblock h1.title {
   clear: left;
 }
 
-.nodetype_apachesolr_search-results li .user-image {
+.nodetype_apachesolr_search-results li .user-image,
+.view-profile-follower.view-display-id-default .views-field-picture{
   float: left;
   margin: 0 5px 20px 0;
   width: 85px;
@@ -7019,18 +7020,29 @@ body.page-solr-nodetype #content-front-inner .block-nodeblock h1.title {
   margin-left: 95px;
 }
 
-.nodetype_apachesolr_search-results li .title {
+.nodetype_apachesolr_search-results li .title,
+.view-profile-follower.view-display-id-default .views-field-name{
   margin: 0 0 10px 95px;
 }
-.nodetype_apachesolr_search-results li .userpoints {
+
+.nodetype_apachesolr_search-results li .userpoints,
+.view-profile-follower.view-display-id-default .views-field-user-badges-html,
+.view-profile-follower.view-display-id-default .views-field-points{
   margin-left: 95px;
 }
 .nodetype_apachesolr_search-results li .profile-job {
   margin-left: 95px;
 }
 
-.nodetype_apachesolr_search-results li .title a {
+.nodetype_apachesolr_search-results li .title a,
+.view-profile-follower.view-display-id-default .views-field-name a{
   color: #000;
+}
+
+.view-profile-follower.view-display-id-default .views-field-name a{
+  font-family: "SoinSans-Bold", Helvetica, Arial, sans-serif;
+  font-size: 1.6em;
+  font-weight: normal;
 }
 
 .nodetype_apachesolr_search-results li .image-and-social {
