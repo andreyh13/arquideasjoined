@@ -258,7 +258,13 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
 		}
 		if($('.view-arqnetwork-account-inscriptions .views-row').length){
 			$('.view-arqnetwork-account-inscriptions .views-row').each(function(){
-				if(!$(this).find('.jquery-countdown').length){
+				if(
+					!$(this).find('.jquery-countdown').length
+					&&
+					$(this).find('.views-field-phpcode-4').find('.info').text()==""
+					&&
+					$(this).find('.views-field-phpcode-5').find('.info').text()==""
+				){
 						$(this).find('.views-field-phpcode-2').css({
 						marginRight: '0',
 						'float': 'none'
