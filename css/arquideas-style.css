@@ -3361,7 +3361,10 @@ margin-left: 0;
 }
 body.page-home #content-front #content-front-left .content-inner {
   height: 170px;
-  overflow: hidden;
+/*  overflow: hidden;*/
+}
+body.page-home #content-front #content-front-left .odd{
+	background: transparent;
 }
 body.page-home #content-front #content-front-right .content-inner {
   height: 174px;
@@ -3694,6 +3697,9 @@ body.node-type-page #content-group,
 body#pid-content-contact #content-group,
 body.page-cart #content-group {
   float: none;
+}
+body.node-type-page #content-group{
+	float: left;
 }
 body.no-sidebars #content-group h1.title {
   border-bottom: 1px solid #000;
@@ -6366,7 +6372,7 @@ body.page-finished-contests #content-region h2.block-title {
 }
 
 .contests-view .follow-link {
-  top: 25px;
+  top: 55px;
   padding-bottom: 5px;
 }
 
@@ -6519,8 +6525,8 @@ body.page-finished-contests #content-region h2.block-title {
 }
 
 #contest-banner .contest-titles .contest-tagline {
-  color: #f2f2f2;
-  font-size: 13px;
+  color: #ccc;
+  font-size: 16px;
 }
 
 #contest-banner .content-stats {
@@ -6543,6 +6549,10 @@ text-align: center;
   line-height: 30px;
 }
 
+#contest-banner .content-stats .info{
+	font-size: 15px;
+	margin-bottom: 10px;
+}
 #contest-banner .content-stats .contest-twitter-hashtag a {
   background: transparent url(../images/twitter-contest-icon.png) no-repeat left center;
   font-family: Arial,Verdana, sans-serif;
@@ -6997,7 +7007,8 @@ body.page-solr-nodetype #content-front-inner .block-nodeblock h1.title {
   clear: left;
 }
 
-.nodetype_apachesolr_search-results li .user-image {
+.nodetype_apachesolr_search-results li .user-image,
+.view-profile-follower.view-display-id-default .views-field-picture{
   float: left;
   margin: 0 5px 20px 0;
   width: 85px;
@@ -7009,20 +7020,33 @@ body.page-solr-nodetype #content-front-inner .block-nodeblock h1.title {
   margin-left: 95px;
 }
 
-.nodetype_apachesolr_search-results li .title {
+.nodetype_apachesolr_search-results li .title,
+.view-profile-follower.view-display-id-default .views-field-name{
   margin: 0 0 10px 95px;
 }
-.nodetype_apachesolr_search-results li .userpoints {
+
+.nodetype_apachesolr_search-results li .userpoints,
+.view-profile-follower.view-display-id-default .views-field-user-badges-html,
+.view-profile-follower.view-display-id-default .views-field-points{
   margin-left: 95px;
 }
 .nodetype_apachesolr_search-results li .profile-job {
   margin-left: 95px;
 }
 
-.nodetype_apachesolr_search-results li .title a {
+.nodetype_apachesolr_search-results li .title a,
+.view-profile-follower.view-display-id-default .views-field-name a{
   color: #000;
 }
 
+.view-profile-follower.view-display-id-default .views-field-name a{
+  font-family: "SoinSans-Bold", Helvetica, Arial, sans-serif;
+  font-size: 1.6em;
+  font-weight: normal;
+}
+.view-profile-follower.view-display-id-default{
+    margin: 2em 0;
+}
 .nodetype_apachesolr_search-results li .image-and-social {
   position: relative;
   height: 170px;
@@ -7076,8 +7100,7 @@ body.node-type-inscription-1 #breadcrumbs {
 }
 
 .inscription-info-public,
-.project-info-public,
-#page.page-full-view .view-full-page {
+.project-info-public {
   background-color: #000;
   padding: 20px;
   color: #fff;
@@ -7130,8 +7153,7 @@ body.node-type-inscription-1 #breadcrumbs {
 .inscription-info-public h2.title,
 .project-info-public h2.title,
 .project-info-public .project-type,
-.inscription-info-public .project-type,
-#page.page-full-view .view-full-page .views_slideshow_singleframe_slide .views-field-title a{
+.inscription-info-public .project-type{
   color: #fff;
   font-size: 26px;
   line-height: 100%;
@@ -9860,19 +9882,31 @@ padding: 8px 12px;height: 35px;
 .view-arqnetwork-account-inscriptions .views-field-field-inscription-members-imname-vname{
 	margin-left: 350px;
 }
+.view-arqnetwork-account-inscriptions .views-field-field-inscription-members-imname-vname{
+	margin-bottom: 10px;
+}
+.view-arqnetwork-account-inscriptions .views-field-phpcode-3{
+	margin-bottom: 10px;
+	color: #666;
+}
 .view-arqnetwork-account-inscriptions .views-field-phpcode-4{
 	clear: both;
 	float: left;
 	padding-top: 20px;
 	text-align: right;	
 	font-family: "SoinSans-Bold", Helvetica, Arial, sans-serif;
+	
 }
+
 .view-arqnetwork-account-inscriptions .views-field-phpcode-4 label{
 	display: block;
 	color: #000;
 	font-size: 14px
 }
-
+.view-arqnetwork-account-inscriptions .views-field-phpcode-4 .info{
+	  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	  color: #666;
+}
 
 .jquery-countdown.hasCountdown{
 	background: transparent;
@@ -9883,10 +9917,11 @@ padding: 8px 12px;height: 35px;
 	width: auto!important;
 	height: auto!important;
 	margin: 0 auto!important;
+	margin-bottom: 10px;
 }
 .view-arqnetwork-account-inscriptions .views-field-field-inscription-members-imname-vname .views-field-name{
 	display: block;
-	margin-left: 60px;
+	margin-left: 45px;
 	text-align: left;
 }
 .node-type-inscription h2.title{
@@ -9949,7 +9984,7 @@ padding: 5px; color: #fff;
 }
 .view-arqnetwork-user-projects .view-content div.views-row .points{
 	width:  68px;
-	height: 73px;
+	height: 52px;
 	padding: 5px;
 	position: absolute;
 	top: 0px;
@@ -9976,9 +10011,12 @@ color: #fff;
 	background-color: #000;
 	padding: 10px;
 	display: inline-block;
+	color: #fff;
+	font-family: "SoinSans-Bold", Helvetica, Arial, sans-serif;
+	font-size: 15px;
 }
 .view-arqnetwork-user-projects .view-content div.views-row .views-field-markup a{
-	color: #fff;
+	color: #FF3F3F;
 }
 .view-arqnetwork-user-projects .view-content div.views-row .views-field-field-inscription-members-imname-vname{
 	background-color: #000;
@@ -10944,10 +10982,10 @@ font-size: 12px
    left: 0!important;
    top: 0!important;
 	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)"!important;
-	filter: alpha(opacity=60)!important;
-	-moz-opacity:0.60!important;
-	-khtml-opacity: 0.60!important;
-	opacity: 0.60!important;
+	filter: alpha(opacity=80)!important;
+	-moz-opacity:0.80!important;
+	-khtml-opacity: 0.80!important;
+	opacity: 0.80!important;
     position: absolute!important;
     width: 100%!important;
 	z-index: 0;
@@ -10965,6 +11003,15 @@ font-size: 12px
 	position: relative;
 	padding: 10px;
 	z-index: 10;
+	font-family: SoinSans-Bold;
+    font-size: 16px;
+	text-align: right;
+}
+
+.inscription-info-public .col02 .project-prize p a,
+.project-info-public .col02 .project-prize p a{
+	display: block;
+	margin-top: 5px;
 }
 #block-quicktabs-arqnetwork_group_quicktabs{POSITION: relative}
 .WallOverlay{
@@ -10994,8 +11041,13 @@ font-size: 12px
 }
 .view-contests .odd,
 .field-delivery-limit-date .odd,
-.field-registration-limit-date .odd{
+.field-registration-limit-date .odd, 
+.field-early-registration .odd{
 	background-color: transparent;
+}
+.view-contests .field-early-registration{
+	text-align: right;
+	margin-right: 20px;
 }
 /*Stream de actividad de user*/
 .view-arqnetwork-user-content .item-list .views-field-picture{
@@ -11040,11 +11092,19 @@ font-size: 12px
     margin-left: 95px;
 }
 
-.node-type-page #content-content .inner .links .translation-link{
-    display: none;
+.contest-state-wrapper .open-contest-button .add-to-cart-link{
+  font-family: "SoinSans-BoldOblique",Helvetica,Arial,sans-serif;
+  padding: 5px 20px;
+  color: #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  text-shadow: 1px 1px 2px #000000;
+  text-decoration: none;
+  display: inline-block;
+  background: #33CCCC;
+  display: inline-block;;
 }
-
-#pid-page-suscribete-la-newsletter #content-group,
-#pid-page-subscribe-newsletter #content-group {
-    float: left;
-}
+ .contest-state-wrapper .contest-state{
+ 	margin-top: 0px;
+ }

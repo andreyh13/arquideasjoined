@@ -22,8 +22,8 @@
 </head>
 <?php
 /*-----------------------
-Aï¿½adido para el control 
-del layout en ï¿½reas de 
+Añadido para el control 
+del layout en áreas de 
 contenido. Se agrega la clase 
 blog-type al body para adaptar
 el layout.
@@ -31,7 +31,7 @@ las clases force-width se
 agregan para restaurar los 
 valores originales del grid
 que se han modificado en la
-css de presentaciï¿½n
+css de presentación
 Es posible que se pueda usar 
 la clase "page-node" que ya viene 
 incluida, pero no estoy seguro de ello
@@ -45,10 +45,6 @@ incluida, pero no estoy seguro de ello
 	),
  );
 $area=(strpos($body_classes,'blog-type'))?'nodos':'';
-
-if(strpos($body_id,'pid-page-')==0){
-    $body_classes = str_replace('no-sidebars ', '', $body_classes);
-}
 
 ?>
 <body id="<?php print $body_id; ?>" class="<?php print $body_classes; ?>">
