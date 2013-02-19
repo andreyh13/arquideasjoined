@@ -1,5 +1,5 @@
-	body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+body {
+font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 font-size: 87.5%;
 margin: 0;
 padding: 0;
@@ -6372,7 +6372,7 @@ body.page-finished-contests #content-region h2.block-title {
 }
 
 .contests-view .follow-link {
-  top: 55px;
+  top: 25px;
   padding-bottom: 5px;
 }
 
@@ -7100,7 +7100,8 @@ body.node-type-inscription-1 #breadcrumbs {
 }
 
 .inscription-info-public,
-.project-info-public {
+.project-info-public,
+#page.page-full-view .view-full-page{
   background-color: #000;
   padding: 20px;
   color: #fff;
@@ -7153,7 +7154,8 @@ body.node-type-inscription-1 #breadcrumbs {
 .inscription-info-public h2.title,
 .project-info-public h2.title,
 .project-info-public .project-type,
-.inscription-info-public .project-type{
+.inscription-info-public .project-type,
+#page.page-full-view .view-full-page .views_slideshow_singleframe_slide .views-field-title a{
   color: #fff;
   font-size: 26px;
   line-height: 100%;
@@ -11108,3 +11110,12 @@ font-size: 12px
  .contest-state-wrapper .contest-state{
  	margin-top: 0px;
  }
+ 
+.node-type-page #content-content .inner .links .translation-link{
+    display: none;
+} 
+
+#pid-page-suscribete-la-newsletter #content-group,
+#pid-page-subscribe-newsletter #content-group {
+    float: left;
+}
