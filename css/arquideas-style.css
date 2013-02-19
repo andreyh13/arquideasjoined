@@ -1113,7 +1113,7 @@ form .facebook-status-form input.form-submit {
 height: auto;
 }
 form .fbsmp-icon-list input.form-submit {
-color: #1F1F1F;
+color: #FF3F3F;
 }
 .views-exposed-form .views-exposed-widget input.form-submit {
 margin-top: 18px;
@@ -11107,9 +11107,10 @@ font-size: 12px
   background: #33CCCC;
   display: inline-block;;
 }
- .contest-state-wrapper .contest-state{
+
+.contest-state-wrapper .contest-state{
  	margin-top: 0px;
- }
+}
  
 .node-type-page #content-content .inner .links .translation-link{
     display: none;
@@ -11118,4 +11119,38 @@ font-size: 12px
 #pid-page-suscribete-la-newsletter #content-group,
 #pid-page-subscribe-newsletter #content-group {
     float: left;
+}
+
+.facebook-status-update-main{
+   background-color: #DDDDDD;
+   padding: 1%;
+   width: 98%; 
+}
+
+.fbsmp-plugin-icon {
+    color: #FF3F3F;
+}
+
+#edit-photo-icon, #edit-link-icon {
+    text-transform: none;
+    font-weight: bold;
+    background-color: transparent;
+    border: 0 none;
+    margin-top: 8px;
+}
+
+.facebook-status-update .facebook-status-submit{
+    border-top: 0 none;
+    border-right: 0 none;
+    border-left: 0 none;
+    border-bottom: 0 none;
+    border-radius: 8px;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    background-color: #000;
+    background-image: none;
+    filter: none;
+    height: auto;
+    text-transform: none;
+    margin-top: 8px;
 }
