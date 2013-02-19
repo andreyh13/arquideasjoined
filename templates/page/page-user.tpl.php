@@ -266,10 +266,26 @@ M�s cambios en la fila 200,
                                     <div id="content-inner-inner" class="content-inner-inner inner">
                                    <!-- El header lo movemos arriba, en el dise�o sale a la derecha de la imagen -->
 
-                                       
+                                       <?php
+                                            $msg_valid = '';
+                                            if($user->uid==$account->uid && $user->uid!=0){
+                                                if(user_has_role('not-validated user',$account)){
+                                                    $msg_valid = t('Welcome to arquideas!<br/>Your account has been created successfully, but you need validate it.<br/>Please check your e-mail and click validation link.<br/>If you do not validate your account, it will be deleted.'); 
+                                                }
+                                            }
+                                       ?>
 
-                                        <?php if ($content): ?>
+                                        <?php if ($content || $msg_valid): ?>
                                             <div id="content-content" class="content-content">
+                                            <?php if($msg_valid): ?>
+                                                <div class="info block">
+                                                    <div class="inner clearfix">   
+                                                        <div class="content">
+                                                            <?php print $msg_valid; ?>
+                                                        </div>    
+                                                    </div>    
+                                                </div>    
+                                            <?php endif; ?>    
                                             <?php print $content; ?>
                                             <?php print $feed_icons; ?>
                                             </div><!-- /content-content -->
