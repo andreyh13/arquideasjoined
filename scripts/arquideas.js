@@ -312,7 +312,7 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
                 if(Drupal.settings.nivaria_contests_base.language=="es"){
                     m_create_title = "Crea contenido para compartir con tus Grupos";
                 }
-                $("#block-commons_core-group_create_content .inner").prepend("<h2 class='title'>"+m_create_title+"</h2>");
+                $("#block-commons_core-group_create_content .inner").prepend("<h2 class='title block-title'>"+m_create_title+"</h2>");
 });
 
 $(window).load(function(){
