@@ -6413,7 +6413,7 @@ body.page-finished-contests #content-region h2.block-title {
 .contests-view .field-registration-limit-date {
   color: #fff;
   display: block;
-  width: 220px;
+  width: 210px;
   text-align: right;
   margin-left: 25px;
   margin-right: 20px;
@@ -7940,7 +7940,8 @@ a.public-vote-link,
 #view-id-contests-page_2 .views-field-view-node-1 a,
 #block-views-contests-block_5 .views-field-view-node a,
 .register-link-div a,
-.join-us-link-div a {
+.join-us-link-div a,
+.view-contests .field-content .generic-button{
   font-family: "SoinSans-BoldOblique",Helvetica,Arial,sans-serif;
 padding: 10px 20px;
 color: #fff;
@@ -7991,7 +7992,8 @@ a.participate-link {
 /* Blue Rounded Buttons */
 #view-id-contests-page_2 .register-link-div a,
 a.public-vote-link,
-#view-id-contests-page_2 .add-to-cart-link {
+#view-id-contests-page_2 .add-to-cart-link,
+.view-contests .field-content .generic-button{
 background: #33CCCC;
 margin-right: 10px;
   display: inline-block;
@@ -8044,7 +8046,9 @@ a.public-vote-link:hover,
 
 .contest-follow-link:hover,
 
-form input.form-submit:focus, .views-exposed-form .views-exposed-widget input.form-submit:focus, body.node-type-group.page-node form input#edit-submit:focus, #comment-form #edit-submit:focus, #gerencia-generic-faq-reply-form #edit-submit:focus, form input.form-submit:hover, .views-exposed-form .views-exposed-widget input.form-submit:hover, body.node-type-group.page-node form input#edit-submit:hover, #comment-form #edit-submit:hover, #gerencia-generic-faq-reply-form #edit-submit:hover, .og-buttons a:focus, .og-buttons a:hover {
+form input.form-submit:focus, .views-exposed-form .views-exposed-widget input.form-submit:focus, body.node-type-group.page-node form input#edit-submit:focus, #comment-form #edit-submit:focus, #gerencia-generic-faq-reply-form #edit-submit:focus, form input.form-submit:hover, .views-exposed-form .views-exposed-widget input.form-submit:hover, body.node-type-group.page-node form input#edit-submit:hover, #comment-form #edit-submit:hover, #gerencia-generic-faq-reply-form #edit-submit:hover, .og-buttons a:focus, .og-buttons a:hover,
+.view-contests .field-content .generic-button:hover,
+#contest-banner .contest-state-wrapper .open-contest-button .generic-button:hover{
 background-color: #F86C00;
 background-image: none;
 text-decoration: none;
@@ -11103,7 +11107,8 @@ font-size: 12px
     margin-left: 95px;
 }
 
-.contest-state-wrapper .open-contest-button .add-to-cart-link{
+.contest-state-wrapper .open-contest-button .add-to-cart-link, 
+#contest-banner .contest-state-wrapper .open-contest-button .generic-button{
   font-family: "SoinSans-BoldOblique",Helvetica,Arial,sans-serif;
   padding: 5px 20px;
   color: #fff;
@@ -11114,7 +11119,8 @@ font-size: 12px
   text-decoration: none;
   display: inline-block;
   background: #33CCCC;
-  display: inline-block;;
+  display: inline-block;
+  box-shadow:none;
 }
 
 .contest-state-wrapper .contest-state{
