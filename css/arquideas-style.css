@@ -11244,3 +11244,7 @@ font-size: 12px
     margin-right: 0;
     margin-top: 4px;
 }
+
+.node.individual-payment #block-quicktabs-arqnetwork_group_quicktabs {
+    display: none;
+}
