@@ -307,8 +307,12 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
                 if($(".node.individual-payment").length){
                     $("#block-quicktabs-arqnetwork_group_quicktabs").remove();
                 }
-                
-		
+                //Title for create content
+                var m_create_title = "Create content to share with your groups";
+                if(Drupal.settings.nivaria_contests_base.language=="es"){
+                    m_create_title = "Crea contenido para compartir con tus Grupos";
+                }
+                $("#block-commons_core-group_create_content .inner").prepend("<h2 class='title'>"+m_create_title+"</h2>");
 });
 
 $(window).load(function(){
