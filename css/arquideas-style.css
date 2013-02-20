@@ -11234,3 +11234,7 @@ font-size: 12px
 .logged-in #menu-homepage-lorem.menu-homepage-mybook-anonym{
     display: none;
 }
+
+#sidebar-last .block-arquideas_generic .users-total .label {
+    display: block;
+}
