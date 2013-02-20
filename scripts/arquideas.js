@@ -303,6 +303,10 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
                         } 
                     });
                 });
+                //Remove wall for individual payment
+                if($(".node.individual-payment").length){
+                    $("#block-quicktabs-arqnetwork_group_quicktabs").remove();
+                }
                 
 		
 });
