@@ -295,6 +295,15 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
                 });
                 //Home menu
                 $(".logged-in #menu-homepage-lorem.menu-homepage-mybook-anonym").parents("li").remove();
+                //Followers hack
+                $(".view-profile-follower .views-view-grid td").each(function(){
+                    $(".views-field-user-badges-html .user_badges img",this).each(function(index){
+                        if(index>0){
+                            $(this).remove();
+                        } 
+                    });
+                });
+                
 		
 });
 

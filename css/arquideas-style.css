@@ -7019,6 +7019,9 @@ body.page-solr-nodetype #content-front-inner .block-nodeblock h1.title {
   margin: 0 5px 20px 0;
   width: 85px;
 }
+.view-profile-follower.view-display-id-default .views-field-picture{
+    margin: 0 5px 60px 0;
+}
 
 .nodetype_apachesolr_search-results li .job {
   color: #999;
@@ -7051,7 +7054,7 @@ body.page-solr-nodetype #content-front-inner .block-nodeblock h1.title {
   font-weight: normal;
 }
 .view-profile-follower.view-display-id-default{
-    margin: 2em 0;
+    margin: 3em 0;
 }
 .nodetype_apachesolr_search-results li .image-and-social {
   position: relative;
