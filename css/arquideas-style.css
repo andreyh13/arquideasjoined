@@ -11238,3 +11238,9 @@ font-size: 12px
 #sidebar-last .block-arquideas_generic .users-total .label {
     display: block;
 }
+
+.node-type-inscription .jquery-countdown.hasCountdown span.countdown_row {
+    display: inline-block;
+    margin-right: 0;
+    margin-top: 4px;
+}
