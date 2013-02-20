@@ -10360,7 +10360,7 @@ body.page-groups #content-group{
 }
 
 body.page-groups .views-field-subscribe a, body.page-groups .views-field-leave-group a, .og-buttons a, .view-arqnetwork-user-account-projects .item-list .views-field-edit-node a,
-.node-type-inscription .edit-delete a, .node-type-inscription .subscribe-og a, .two-columns .og-manage-link, #sidebar-last .more-link a, .node-type-inscription .contest-info .open-contest-button a{
+.node-type-inscription .edit-delete a.delete-content-link, .node-type-inscription .subscribe-og a, .two-columns .og-manage-link, #sidebar-last .more-link a, .node-type-inscription .contest-info .open-contest-button a{
 	background-color: #000000 !important;
     border-radius: 5px 5px 5px 5px;
     color: #FFFFFF!important;
@@ -11244,7 +11244,10 @@ font-size: 12px
     margin-right: 0;
     margin-top: 4px;
 }
-
 .node.individual-payment #block-quicktabs-arqnetwork_group_quicktabs {
     display: none;
 }
+.node-type-inscription .contest-image {
+    width: 336px;
+}
+
