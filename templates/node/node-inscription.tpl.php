@@ -142,7 +142,7 @@
 
     <?php if($node->field_inscription_state[0]['value']==InscriptionState::PREINSCRIPTED && $num_members==1): ?>
     <div class="introduction">
-        <?php print t('You can participate in this contest as individuals or form your group'); ?>
+        <?php print t('You can participate in this competition individually or as part of a team.'); ?>
     </div>
 
     <div class="clearfix">&nbsp;</div>
@@ -238,7 +238,7 @@
         <?php if(node_access('delete', $node) && $node->field_inscription_state[0]['value']!=InscriptionState::SUBMITTED
                 && isset($contest) && $contest->field_contest_state[0]['value']==ContestState::OPEN){
 
-            print l('<span>'.t('Unsubscribe').'</span>','node/'.$node->nid.'/delete',array(
+            print l('<span>'.t('Unregister').'</span>','node/'.$node->nid.'/delete',array(
                 'attributes' => array(
                     'title' => t('Delete inscription'),
                     'class' => 'delete-content-link',
