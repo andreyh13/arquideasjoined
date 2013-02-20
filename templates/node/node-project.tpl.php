@@ -48,7 +48,7 @@
             <?php print $title; ?>
             </h2>
             <!-- End Project TITLE-->
-			 <!-- FiveStar Widget -->
+	    <!-- FiveStar Widget -->
             <?php
             if (user_access('rate content') && fivestar_validate_target('node', $node->nid)) {
                 print fivestar_widget_form($node);
@@ -96,7 +96,12 @@
             
             <!-- Project Type -->
             <div class="project-type">
-                <?php print $field_project_type_project_rendered ?>
+                <span class="label">
+                    <?php print t('Project type').': '; ?>
+                </span>
+                <span class="value">
+                    <?php print $field_project_type_project_rendered ?>
+                </span>
             </div>
             <!-- End Project Type -->
 

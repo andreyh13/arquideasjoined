@@ -230,10 +230,10 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
 				jQuery('<div class="alpha"/>').prependTo($(this))
 			})
 		}
-		if($('.inscription-info-public .col02 .project-prize').length){
+		/*if($('.inscription-info-public .col02 .project-prize').length){
 			$('.project-prize').html('<p>'+$('.project-prize').html()+'</p>');
 			jQuery('<div class="alpha"/>').prependTo($('.project-prize'));
-		}
+		}*/
 		//Si estamos en inscripcion y no es inscripci�n grupal
 		if($('.node-type-inscription').length&&!$('.only-groups').length){
 			$('.node-type-inscription .contest-payment-individual').css({
@@ -283,6 +283,18 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
                    var m_id = $(this).attr("id");
                    $("label[for='"+m_id+"']").hide();
                 });
+                //Fivestar adjusts
+                $(".fivestar-widget .fivestar-form-item .description .user-rating").each(function(){
+                   var m_check = $(this).find("span").html();
+                   if(m_check=="None"){
+                       $(this).html("Vote!");
+                   }
+                   if(m_check=="Ninguno"){
+                       $(this).html("¡Vota!");
+                   }
+                });
+                //Home menu
+                $(".logged-in #menu-homepage-lorem.menu-homepage-mybook-anonym").parents("li").remove();
 		
 });
 
