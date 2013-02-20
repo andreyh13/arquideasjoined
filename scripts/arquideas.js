@@ -293,6 +293,8 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
                        $(this).html("¡Vota!");
                    }
                 });
+                //Home menu
+                $(".logged-in #menu-homepage-lorem.menu-homepage-mybook-anonym").parents("li").remove();
 		
 });
 
