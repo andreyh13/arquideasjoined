@@ -246,7 +246,8 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
 				marginRight: '60px',
 				marginTop: '-25px'
 			})
-			$('.open-contest-button').css({marginLeft: '0',marginTop:'20px'})
+			$('.open-contest-button').css({marginLeft: '0',marginTop:'20px'});
+                        $('.open-contest-button > .info').css({marginLeft: '345px'});
 		}
 		if($('.node-type-inscription.launch-overlay').length){
 	                var m_wall_text = "Create a team and enjoy of this collaborative area with all its members !!";

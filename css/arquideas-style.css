@@ -7756,6 +7756,7 @@ width: 32%;
   border: 1px solid #000000;
   box-shadow: 4px 4px 0 #000000;
   padding: 15px 20px;
+  text-align: center;
 }
 #TB_window #user-register,
 .login-wrapper, .forgot-wrapper {
@@ -7941,7 +7942,8 @@ a.public-vote-link,
 .register-link-div a,
 .join-us-link-div a,
 .view-contests .field-content .generic-button, 
-.node-type-inscription .contest-info .open-contest-button a{
+.node-type-inscription .contest-info .open-contest-button a,
+a.sign-up-link, a.sign-in-link {
   font-family: "SoinSans-BoldOblique",Helvetica,Arial,sans-serif;
 padding: 10px 20px;
 color: #fff;
@@ -10223,7 +10225,7 @@ float: left;
 .node-type-inscription .contest-info .deadline-date,
 .node-type-inscription .contest-info .payment-end-date,
 .node-type-inscription .contest-info .payment-early,
-.node-type-inscription .contest-info .open-contest-button {
+.node-type-inscription .contest-info .open-contest-button{
 	margin-left: 355px;
 }
 
@@ -10773,7 +10775,7 @@ body.page-node.node-type-group #sidebar-last{
 	display: inline-block;
 	max-width: 160px;
 	min-height: 150px;
-	background-color:#000;
+	background-color:transparent;
 }
 .page-node.node-type-group .full-node.node-type-group .og-description,
 .page-node.node-type-group .full-node.node-type-group .terms,
@@ -11273,7 +11275,7 @@ font-size: 12px
 .page-user #block-quicktabs-arqnetwork_group_quicktabs ul.quicktabs_tabs{
     display: none;
 }
-#block-views-contests-block_1 .state-open {
+#block-views-contests-block_1 .state-open, #block-views-contests-block_1 .state-closed {
     width: 140px;
 }
 #block-views-contests-block_1 .contest-state {
@@ -11282,3 +11284,10 @@ font-size: 12px
 div.texto-legal {
     margin: 16px 0;
 }
+.captcha .description {
+    display: none;
+}
+
+#TB_window a.sign-up-link, #TB_window a.sign-in-link {
+    color: #FFF;
+} 
