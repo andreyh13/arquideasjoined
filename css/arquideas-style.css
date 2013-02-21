@@ -5872,7 +5872,6 @@ text-transform: uppercase;
 /* Front page News block */
 #block-views-news-block_3 {
   position: relative;
-  padding:
 }
 
 #block-views-news-block_3 .views_slideshow_singleframe_pager {
@@ -7941,7 +7940,8 @@ a.public-vote-link,
 #block-views-contests-block_5 .views-field-view-node a,
 .register-link-div a,
 .join-us-link-div a,
-.view-contests .field-content .generic-button{
+.view-contests .field-content .generic-button, 
+.node-type-inscription .contest-info .open-contest-button a{
   font-family: "SoinSans-BoldOblique",Helvetica,Arial,sans-serif;
 padding: 10px 20px;
 color: #fff;
@@ -7993,7 +7993,8 @@ a.participate-link {
 #view-id-contests-page_2 .register-link-div a,
 a.public-vote-link,
 #view-id-contests-page_2 .add-to-cart-link,
-.view-contests .field-content .generic-button{
+.view-contests .field-content .generic-button,
+.node-type-inscription .contest-info .open-contest-button a{
 background: #33CCCC;
 margin-right: 10px;
   display: inline-block;
@@ -8048,7 +8049,8 @@ a.public-vote-link:hover,
 
 form input.form-submit:focus, .views-exposed-form .views-exposed-widget input.form-submit:focus, body.node-type-group.page-node form input#edit-submit:focus, #comment-form #edit-submit:focus, #gerencia-generic-faq-reply-form #edit-submit:focus, form input.form-submit:hover, .views-exposed-form .views-exposed-widget input.form-submit:hover, body.node-type-group.page-node form input#edit-submit:hover, #comment-form #edit-submit:hover, #gerencia-generic-faq-reply-form #edit-submit:hover, .og-buttons a:focus, .og-buttons a:hover,
 .view-contests .field-content .generic-button:hover,
-#contest-banner .contest-state-wrapper .open-contest-button .generic-button:hover{
+#contest-banner .contest-state-wrapper .open-contest-button .generic-button:hover,
+ .node-type-inscription .contest-info .open-contest-button a:hover{
 background-color: #F86C00;
 background-image: none;
 text-decoration: none;
@@ -8461,7 +8463,7 @@ a.grouping-button-container:hover,
 width: auto; display: inline-block; float: right; display: none;
 }
 #edit-submit, #edit-preview-changes, #edit-submit-1, .views-exposed-form .form-submit, #arquideas-book-user-settings .form-submit,.views-field-phpcode-1 .popups-form-noupdate, .open-contest-button .form-submit, .display-project .links li .flag-bookmarks a, .sidebar-first .view-arqnetwork-user-profile .views-field-picture .user-edit-image a,.display-project .link-special-arquideas-prize a,
-.display-project .link-bookmarks a{
+.display-project .link-bookmarks a, #edit-present{
 	display: inline-block;
 	float: none;
 	border-radius: 5px 5px 5px 5px;
@@ -10361,7 +10363,7 @@ body.page-groups #content-group{
 }
 
 body.page-groups .views-field-subscribe a, body.page-groups .views-field-leave-group a, .og-buttons a, .view-arqnetwork-user-account-projects .item-list .views-field-edit-node a,
-.node-type-inscription .edit-delete a.delete-content-link, .node-type-inscription .subscribe-og a, .two-columns .og-manage-link, #sidebar-last .more-link a, .node-type-inscription .contest-info .open-contest-button a{
+.node-type-inscription .edit-delete a.delete-content-link, .node-type-inscription .subscribe-og a, .two-columns .og-manage-link, #sidebar-last .more-link a{
 	background-color: #000000 !important;
     border-radius: 5px 5px 5px 5px;
     color: #FFFFFF!important;
@@ -10606,7 +10608,7 @@ body.blog-type #content-group h1.title{
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 }
-.blog-type #content-content .field-links . field-body{
+.blog-type #content-content .field-links .field-body{
 	border-bottom: 1px solid #000;
 	margin-bottom: 20px;
 	padding-bottom: 20px;
@@ -11267,4 +11269,7 @@ font-size: 12px
 }
 #block-views-contests-block_1 .contest-state {
     width: 138px;
+}
+div.texto-legal {
+    margin: 16px 0;
 }

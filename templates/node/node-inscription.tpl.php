@@ -226,7 +226,7 @@
 	<div class="edit-delete">
     <?php if(!$is_edit && $page == 1): ?>
         <!-- Edit link -->
-        <?php if(node_access('update', $node) && $node->field_inscription_state[0]['value']!=InscriptionState::SUBMITTED
+        <?php if(FALSE && node_access('update', $node) && $node->field_inscription_state[0]['value']!=InscriptionState::SUBMITTED
                 && isset($contest) && $contest->field_contest_state[0]['value']==ContestState::OPEN){
             $uid = $user->uid;
             if(!og_is_group_member($node->nid)){
