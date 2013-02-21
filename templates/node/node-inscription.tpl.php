@@ -147,6 +147,11 @@
         <?php print t('You can participate in this competition individually or as part of a team.'); ?>
     </div>
 
+    <?php if($node->field_inscription_state[0]['value']==InscriptionState::INSCRIPTION_PAYMENT_PENDING): ?>
+    <div class="introduction">
+        <?php print t('Once we receive your payment by transfer we will send you an email confirming your registration in the competition. Thank you!'); ?>
+    </div>
+
     <div class="clearfix">&nbsp;</div>
 
     <div class="two-columns no-border">
