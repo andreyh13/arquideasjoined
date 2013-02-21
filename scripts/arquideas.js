@@ -258,7 +258,7 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
    					top:    '0',
 					position: 'absolute',
     				width: '100%'
-				}).html('<div class="alpha"></div><span class="inner clearfix"> "+m_wall_text+" </span>').prependTo('#block-quicktabs-arqnetwork_group_quicktabs');
+				}).html('<div class="alpha"></div><span class="inner clearfix"> '+m_wall_text+' </span>').prependTo('#block-quicktabs-arqnetwork_group_quicktabs');
 		}
 		if($('.view-arqnetwork-account-inscriptions .views-row').length){
 			$('.view-arqnetwork-account-inscriptions .views-row').each(function(){
