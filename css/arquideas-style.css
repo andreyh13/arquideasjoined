@@ -11250,4 +11250,9 @@ font-size: 12px
 .node-type-inscription .contest-image {
     width: 336px;
 }
-
+#block-views-contests-block_1 .state-open {
+    width: 140px;
+}
+#block-views-contests-block_1 .contest-state {
+    width: 138px;
+}
