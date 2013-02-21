@@ -317,6 +317,15 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
                     m_create_title = "Crea contenido para compartir con tus Grupos";
                 }
                 $("#block-commons_core-group_create_content .inner").prepend("<h2 class='title block-title'>"+m_create_title+"</h2>");
+                //Deadline tab fixes
+                $(".view-contest-blocks.view-display-id-block_3 table tr").each(function(){
+                   $("td",this).each(function(index){
+                      if(index==1){
+                          $(this).css("font-size","14px");
+                      } 
+                   }); 
+                });
+                
 });
 
 $(window).load(function(){

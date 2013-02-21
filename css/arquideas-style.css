@@ -10223,10 +10223,16 @@ float: left;
 .node-type-inscription .contest-info .deadline-date,
 .node-type-inscription .contest-info .payment-end-date,
 .node-type-inscription .contest-info .payment-early,
-.node-type-inscription .contest-info .introduction,
 .node-type-inscription .contest-info .open-contest-button {
 	margin-left: 355px;
 }
+
+.node-type-inscription .contest-info .introduction{
+    margin-left: 0;
+    text-align:center;
+    margin-top: 16px;
+}
+
 .node-type-inscription .contest-info .inscription-state,
 .node-type-inscription .contest-info .open-contest-button .info
 {
@@ -10249,7 +10255,7 @@ float: left;
 	line-height: 16px;
 	padding-left: 20px;
 	color: #333;
-	font-size: 15px;
+	font-size: 14px;
 	padding-bottom: 8px;
 }
 .node-type-inscription .contest-info .field-registration-limit-date{
@@ -10334,6 +10340,9 @@ float: left;
 }
 .page-node #sidebar-last .block-commons_core{
 	border: 1px solid #000;
+}
+.page-node #sidebar-last #block-commons_core-group_create_content{
+    border: 0 none;
 }
 .view-arqnetwork-recent-featured .view .view-content .views-row{
 	margin-bottom: 10px;
@@ -11080,7 +11089,7 @@ font-size: 12px
 	width: 40px!important;
 }
 .view-arqnetwork-user-content .item-list .views-field-title{
-	font-size: 14px;
+	font-size: 16px;
 }
 .view-arqnetwork-user-content .item-list .views-field-title,
 .view-arqnetwork-user-content .item-list .views-field-markup,
