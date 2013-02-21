@@ -197,10 +197,11 @@
     <!-- End Introduction text -->
 
     <!-- Introduction text for payment pending inscriptions -->
-    <?php if($node->field_inscription_state[0]['value']==InscriptionState::INSCRIPTION_PAYMENT_PENDING) ?>
+    <?php if($node->field_inscription_state[0]['value']==InscriptionState::INSCRIPTION_PAYMENT_PENDING) : ?>
     <div class="introduction">
         <?php print t('Once we receive your payment by transfer we will send you an email confirming your registration in the competition. Thank you!'); ?>
     </div>
+    <?php endif; ?>
     <!-- End Introduction text for payment pending inscriptions -->
 
     <!-- INSCRIPTION, PAYMENT OR PRESENTATION LINK -->
