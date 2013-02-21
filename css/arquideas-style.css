@@ -8052,7 +8052,8 @@ a.public-vote-link:hover,
 form input.form-submit:focus, .views-exposed-form .views-exposed-widget input.form-submit:focus, body.node-type-group.page-node form input#edit-submit:focus, #comment-form #edit-submit:focus, #gerencia-generic-faq-reply-form #edit-submit:focus, form input.form-submit:hover, .views-exposed-form .views-exposed-widget input.form-submit:hover, body.node-type-group.page-node form input#edit-submit:hover, #comment-form #edit-submit:hover, #gerencia-generic-faq-reply-form #edit-submit:hover, .og-buttons a:focus, .og-buttons a:hover,
 .view-contests .field-content .generic-button:hover,
 #contest-banner .contest-state-wrapper .open-contest-button .generic-button:hover,
- .node-type-inscription .contest-info .open-contest-button a:hover{
+ .node-type-inscription .contest-info .open-contest-button a:hover,
+ .contest-state-wrapper .register-link-div a:hover{
 background-color: #F86C00;
 background-image: none;
 text-decoration: none;
@@ -11130,7 +11131,8 @@ font-size: 12px
 }
 
 .contest-state-wrapper .open-contest-button .add-to-cart-link, 
-#contest-banner .contest-state-wrapper .open-contest-button .generic-button{
+#contest-banner .contest-state-wrapper .open-contest-button .generic-button,
+.contest-state-wrapper .register-link-div a {
   font-family: "SoinSans-BoldOblique",Helvetica,Arial,sans-serif;
   padding: 5px 20px;
   color: #fff;
