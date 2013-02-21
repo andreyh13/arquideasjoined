@@ -113,14 +113,16 @@
             <!-- End ID of Inscription -->
             
             <!-- Project Type -->
+            <?php if(!empty($field_project_type_project_rendered)): ?>
             <div class="project-type">
                 <span class="label">
                     <?php print t('Project type').': '; ?>
                 </span>
                 <span class="value">
-                    <?php print $field_project_type_project_rendered ?>
+                    <?php print $field_project_type_project_rendered; ?>
                 </span>
             </div>
+            <?php endif; ?>
             <!-- End Project Type -->
 
             <!-- Description of Inscription-->
