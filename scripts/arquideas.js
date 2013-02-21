@@ -249,7 +249,7 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
 			$('.open-contest-button').css({marginLeft: '0',marginTop:'20px'})
 		}
 		if($('.node-type-inscription.launch-overlay').length){
-	                var m_wall_text = "Create a team and enjoy of this collaborative area with all itts members !!";
+	                var m_wall_text = "Create a team and enjoy of this collaborative area with all its members !!";
         	        if(Drupal.settings.nivaria_contests_base.language=="es"){
                 	    m_wall_text = "¡¡ Forma un equipo y disfruta de este área colaborativa con todos sus miembros !!";
                 	}
