@@ -269,12 +269,6 @@
     </div>
     <?php endif; ?>
 
-    <?php if ($terms): ?>
-    <div class="terms">
-      <?php print $terms; ?>
-    </div>
-    <?php endif;?>
-
         <div class="content clearfix<?php print ($node_right && !$teaser?' node-right':''); ?>">
         <div class="node-content-main">
             <?php if ($page == 0){print $content;} ?>
