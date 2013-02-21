@@ -10234,7 +10234,9 @@ float: left;
 .node-type-inscription .contest-info .introduction{
     margin-left: 0;
     text-align:center;
-    margin-top: 16px;
+    font-family: "SoinSans-BoldOblique", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    margin-top: 26px;
 }
 
 .node-type-inscription .contest-info .inscription-state,
