@@ -11231,8 +11231,7 @@ font-size: 12px
     text-transform: none;
 } 
 
-.display-project .project-prize .inner,
-{
+.display-project .project-prize .inner{
     background-color: #000000;
     opacity: 0.8 !important;
     padding: 10px;
