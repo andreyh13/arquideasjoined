@@ -8053,7 +8053,8 @@ form input.form-submit:focus, .views-exposed-form .views-exposed-widget input.fo
 .view-contests .field-content .generic-button:hover,
 #contest-banner .contest-state-wrapper .open-contest-button .generic-button:hover,
  .node-type-inscription .contest-info .open-contest-button a:hover,
- .contest-state-wrapper .register-link-div a:hover{
+ .contest-state-wrapper .register-link-div a:hover,
+ .contest-state-wrapper a.public-votation-link:hover{
 background-color: #F86C00;
 background-image: none;
 text-decoration: none;
@@ -11132,7 +11133,8 @@ font-size: 12px
 
 .contest-state-wrapper .open-contest-button .add-to-cart-link, 
 #contest-banner .contest-state-wrapper .open-contest-button .generic-button,
-.contest-state-wrapper .register-link-div a {
+.contest-state-wrapper .register-link-div a,
+.contest-state-wrapper a.public-votation-link{
   font-family: "SoinSans-BoldOblique",Helvetica,Arial,sans-serif;
   padding: 5px 20px;
   color: #fff;
