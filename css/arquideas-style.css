@@ -76,7 +76,7 @@ padding: 0 0 0 10px;
 text-indent: 0;
 }
 #content-content .node.node-type-page .inner .node-content-main ul li {
-    background: url(../images/bullet-sidebar.png) no-repeat scroll 0 0 transparent;
+    background: url(../images/bullet-sidebar.png) no-repeat scroll 0 6px transparent;
     padding: 0 0 0 12px;
 }
 .node .inner .links ul li > a {
