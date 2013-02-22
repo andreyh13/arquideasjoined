@@ -54,16 +54,16 @@
              <!-- FiveStar Widget -->
             <?php
             $flag = flag_get_flag('finalist');
-            if($contest->field_contest_state[0]['value']==ContestState::PUBLIC_CONTEST && $flag->is_flagged($node->nid)){
+            if($contest->field_contest_state[0]['value']>=ContestState::PUBLIC_CONTEST){
                 if (user_access('rate content') && fivestar_validate_target('node', $node->nid)) { 
                     print fivestar_widget_form($node);
                 }
             }
-            if($contest->field_contest_state[0]['value']==ContestState::FINISHED && $flag->is_flagged($node->nid)){
+            /*if($contest->field_contest_state[0]['value']==ContestState::FINISHED && $flag->is_flagged($node->nid)){
                 if (fivestar_validate_target('node', $node->nid)) {
                     print fivestar_static('node', $node->nid, 'vote', 'inscription');
                 }
-            }
+            }*/
             ?>
             <!-- END FiveStar Widget -->
 
