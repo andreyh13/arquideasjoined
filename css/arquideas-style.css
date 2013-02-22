@@ -8002,6 +8002,10 @@ margin-right: 10px;
   display: inline-block;
 }
 
+.node-type-inscription .contest-info .open-contest-button a{
+    font-size: 18px;
+}
+
 /* Blue Square Buttons */
 form input.form-submit, .views-exposed-form .views-exposed-widget input.form-submit, .og-buttons a, body.node-type-group.page-node form input#edit-submit, #gerencia-generic-faq-reply-form #edit-submit,
 #edit-submit, #edit-publish, #search-form #edit-submit, body.page-node .edit-content-link, body.page-ogdetails .edit-content-link, body.page-node .og-manage-link, body.page-node .generic-button, .flag-wrapper .flag {
