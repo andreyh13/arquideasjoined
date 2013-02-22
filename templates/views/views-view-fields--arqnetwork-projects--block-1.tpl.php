@@ -21,7 +21,14 @@
 
 <div class="project-wrapper">
   <div class="views-field-field-images-project-fid">
-    <div class="field-content"><?php print $fields['field_list_image_project_fid']->content; ?></div>
+    <div class="field-content">
+    <?php 
+      if(isset($fields['field_list_image_project_fid']->content)) { 
+        print $fields['field_list_image_project_fid']->content;
+      } else {
+        print $fields['field_image_inscription_fid']->content;
+      }?>
+    </div>
   </div>
   <div class="project-info">
     <div class="views-field-title">
