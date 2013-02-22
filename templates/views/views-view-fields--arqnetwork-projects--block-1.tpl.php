@@ -26,7 +26,7 @@
       if(isset($fields['field_list_image_project_fid']->content)) { 
         print $fields['field_list_image_project_fid']->content;
       } else {
-        print $fields['field_list_image_inscription_fid']->content;
+        print $fields['field_image_inscription_fid']->content;
       }?>
     </div>
   </div>
