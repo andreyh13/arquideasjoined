@@ -172,7 +172,7 @@
                     $prize_text = t('Preselected');
                 }
                 if($flag_arquideas->is_flagged($node->nid)){
-                    $prize_text = (!empty($prize_text)?', ':'').t('Special Arquieas Prize');
+                    $prize_text .= (!empty($prize_text)?', ':'').t('Arquideas Special Prize');
                 }
                 $contest_text = ' '.l($contest_title,'node/'.$contest->nid,array(
                     'attributes' => array(
