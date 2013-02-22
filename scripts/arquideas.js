@@ -326,6 +326,8 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
                       } 
                    }); 
                 });
+                //Follow site links
+                $("#block-follow-site .follow-links a").attr("target","_blank");
                 
 });
 
