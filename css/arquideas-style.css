@@ -7947,7 +7947,7 @@ a.public-vote-link,
 .join-us-link-div a,
 .view-contests .field-content .generic-button, 
 .node-type-inscription .contest-info .open-contest-button a,
-a.sign-up-link, a.sign-in-link {
+a.sign-up-link, a.sign-in-link, #edit-present {
   font-family: "SoinSans-BoldOblique",Helvetica,Arial,sans-serif;
 padding: 10px 20px;
 color: #fff;
@@ -7958,6 +7958,10 @@ background: #FF3F3F;
   text-shadow: 1px 1px 2px #000000;
   text-decoration: none;
   display: inline-block;
+}
+
+#edit-present{
+    float:left;
 }
 
 #view-id-contests-page_2 .add-to-cart-link{
@@ -8475,7 +8479,7 @@ a.grouping-button-container:hover,
 width: auto; display: inline-block; float: right; display: none;
 }
 #edit-submit, #edit-preview-changes, #edit-submit-1, .views-exposed-form .form-submit, #arquideas-book-user-settings .form-submit,.views-field-phpcode-1 .popups-form-noupdate, .open-contest-button .form-submit, .display-project .links li .flag-bookmarks a, .sidebar-first .view-arqnetwork-user-profile .views-field-picture .user-edit-image a,.display-project .link-special-arquideas-prize a,
-.display-project .link-bookmarks a, #edit-present{
+.display-project .link-bookmarks a{
 	display: inline-block;
 	float: none;
 	border-radius: 5px 5px 5px 5px;
