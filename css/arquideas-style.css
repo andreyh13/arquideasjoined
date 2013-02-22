@@ -75,6 +75,10 @@ margin: 0;
 padding: 0 0 0 10px;
 text-indent: 0;
 }
+#content-content .node.node-type-page .inner .node-content-main ul li {
+    background: url(../images/bullet-sidebar.png) no-repeat scroll 0 6px transparent;
+    padding: 0 0 0 12px;
+}
 .node .inner .links ul li > a {
 color: #FF3F3F;
 }
@@ -5872,7 +5876,6 @@ text-transform: uppercase;
 /* Front page News block */
 #block-views-news-block_3 {
   position: relative;
-  padding:
 }
 
 #block-views-news-block_3 .views_slideshow_singleframe_pager {
@@ -6413,7 +6416,7 @@ body.page-finished-contests #content-region h2.block-title {
 .contests-view .field-registration-limit-date {
   color: #fff;
   display: block;
-  width: 220px;
+  width: 210px;
   text-align: right;
   margin-left: 25px;
   margin-right: 20px;
@@ -7757,6 +7760,7 @@ width: 32%;
   border: 1px solid #000000;
   box-shadow: 4px 4px 0 #000000;
   padding: 15px 20px;
+  text-align: center;
 }
 #TB_window #user-register,
 .login-wrapper, .forgot-wrapper {
@@ -7940,7 +7944,10 @@ a.public-vote-link,
 #view-id-contests-page_2 .views-field-view-node-1 a,
 #block-views-contests-block_5 .views-field-view-node a,
 .register-link-div a,
-.join-us-link-div a {
+.join-us-link-div a,
+.view-contests .field-content .generic-button, 
+.node-type-inscription .contest-info .open-contest-button a,
+a.sign-up-link, a.sign-in-link {
   font-family: "SoinSans-BoldOblique",Helvetica,Arial,sans-serif;
 padding: 10px 20px;
 color: #fff;
@@ -7991,10 +7998,16 @@ a.participate-link {
 /* Blue Rounded Buttons */
 #view-id-contests-page_2 .register-link-div a,
 a.public-vote-link,
-#view-id-contests-page_2 .add-to-cart-link {
+#view-id-contests-page_2 .add-to-cart-link,
+.view-contests .field-content .generic-button,
+.node-type-inscription .contest-info .open-contest-button a{
 background: #33CCCC;
 margin-right: 10px;
   display: inline-block;
+}
+
+.node-type-inscription .contest-info .open-contest-button a{
+    font-size: 18px;
 }
 
 /* Blue Square Buttons */
@@ -8044,7 +8057,12 @@ a.public-vote-link:hover,
 
 .contest-follow-link:hover,
 
-form input.form-submit:focus, .views-exposed-form .views-exposed-widget input.form-submit:focus, body.node-type-group.page-node form input#edit-submit:focus, #comment-form #edit-submit:focus, #gerencia-generic-faq-reply-form #edit-submit:focus, form input.form-submit:hover, .views-exposed-form .views-exposed-widget input.form-submit:hover, body.node-type-group.page-node form input#edit-submit:hover, #comment-form #edit-submit:hover, #gerencia-generic-faq-reply-form #edit-submit:hover, .og-buttons a:focus, .og-buttons a:hover {
+form input.form-submit:focus, .views-exposed-form .views-exposed-widget input.form-submit:focus, body.node-type-group.page-node form input#edit-submit:focus, #comment-form #edit-submit:focus, #gerencia-generic-faq-reply-form #edit-submit:focus, form input.form-submit:hover, .views-exposed-form .views-exposed-widget input.form-submit:hover, body.node-type-group.page-node form input#edit-submit:hover, #comment-form #edit-submit:hover, #gerencia-generic-faq-reply-form #edit-submit:hover, .og-buttons a:focus, .og-buttons a:hover,
+.view-contests .field-content .generic-button:hover,
+#contest-banner .contest-state-wrapper .open-contest-button .generic-button:hover,
+ .node-type-inscription .contest-info .open-contest-button a:hover,
+ .contest-state-wrapper .register-link-div a:hover,
+ .contest-state-wrapper a.public-votation-link:hover{
 background-color: #F86C00;
 background-image: none;
 text-decoration: none;
@@ -8457,7 +8475,7 @@ a.grouping-button-container:hover,
 width: auto; display: inline-block; float: right; display: none;
 }
 #edit-submit, #edit-preview-changes, #edit-submit-1, .views-exposed-form .form-submit, #arquideas-book-user-settings .form-submit,.views-field-phpcode-1 .popups-form-noupdate, .open-contest-button .form-submit, .display-project .links li .flag-bookmarks a, .sidebar-first .view-arqnetwork-user-profile .views-field-picture .user-edit-image a,.display-project .link-special-arquideas-prize a,
-.display-project .link-bookmarks a{
+.display-project .link-bookmarks a, #edit-present{
 	display: inline-block;
 	float: none;
 	border-radius: 5px 5px 5px 5px;
@@ -10025,6 +10043,7 @@ color: #fff;
 	color: #fff;
 	font-family: "SoinSans-Bold", Helvetica, Arial, sans-serif;
 	font-size: 15px;
+        opacity: 0.8 !important;
 }
 .view-arqnetwork-user-projects .view-content div.views-row .views-field-markup a{
 	color: #FF3F3F;
@@ -10216,10 +10235,18 @@ float: left;
 .node-type-inscription .contest-info .deadline-date,
 .node-type-inscription .contest-info .payment-end-date,
 .node-type-inscription .contest-info .payment-early,
-.node-type-inscription .contest-info .introduction,
-.node-type-inscription .contest-info .open-contest-button {
+.node-type-inscription .contest-info .open-contest-button{
 	margin-left: 355px;
 }
+
+.node-type-inscription .contest-info .introduction{
+    margin-left: 0;
+    text-align:center;
+    font-family: "SoinSans-BoldOblique", Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    margin-top: 26px;
+}
+
 .node-type-inscription .contest-info .inscription-state,
 .node-type-inscription .contest-info .open-contest-button .info
 {
@@ -10242,7 +10269,7 @@ float: left;
 	line-height: 16px;
 	padding-left: 20px;
 	color: #333;
-	font-size: 15px;
+	font-size: 14px;
 	padding-bottom: 8px;
 }
 .node-type-inscription .contest-info .field-registration-limit-date{
@@ -10328,6 +10355,9 @@ float: left;
 .page-node #sidebar-last .block-commons_core{
 	border: 1px solid #000;
 }
+.page-node #sidebar-last #block-commons_core-group_create_content{
+    border: 0 none;
+}
 .view-arqnetwork-recent-featured .view .view-content .views-row{
 	margin-bottom: 10px;
 }
@@ -10356,7 +10386,7 @@ body.page-groups #content-group{
 }
 
 body.page-groups .views-field-subscribe a, body.page-groups .views-field-leave-group a, .og-buttons a, .view-arqnetwork-user-account-projects .item-list .views-field-edit-node a,
-.node-type-inscription .edit-delete a, .node-type-inscription .subscribe-og a, .two-columns .og-manage-link, #sidebar-last .more-link a, .node-type-inscription .contest-info .open-contest-button a{
+.node-type-inscription .edit-delete a.delete-content-link, .node-type-inscription .subscribe-og a, .two-columns .og-manage-link, #sidebar-last .more-link a{
 	background-color: #000000 !important;
     border-radius: 5px 5px 5px 5px;
     color: #FFFFFF!important;
@@ -10601,7 +10631,7 @@ body.blog-type #content-group h1.title{
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 }
-.blog-type #content-content .field-links . field-body{
+.blog-type #content-content .field-links .field-body{
 	border-bottom: 1px solid #000;
 	margin-bottom: 20px;
 	padding-bottom: 20px;
@@ -10757,7 +10787,7 @@ body.page-node.node-type-group #sidebar-last{
 	display: inline-block;
 	max-width: 160px;
 	min-height: 150px;
-	background-color:#000;
+	background-color:transparent;
 }
 .page-node.node-type-group .full-node.node-type-group .og-description,
 .page-node.node-type-group .full-node.node-type-group .terms,
@@ -11010,19 +11040,27 @@ font-size: 12px
 	right: 0;
 }
 .inscription-info-public .col02 .project-prize p,
-.project-info-public .col02 .project-prize p{
+.project-info-public .col02 .project-prize p,
+.inscription-info-public .col02 .project-prize .flag,
+.inscription-info-public .col02 .project-prize .contest,
+.view-arqnetwork-user-projects .view-content div.views-row .views-field-markup .prize,
+.view-arqnetwork-user-projects .view-content div.views-row .views-field-markup .contest{
 	position: relative;
-	padding: 10px;
+	padding: 0 0 10px;
 	z-index: 10;
 	font-family: SoinSans-Bold;
-    font-size: 16px;
+        font-size: 16px;
 	text-align: right;
+        display: block;
 }
 
 .inscription-info-public .col02 .project-prize p a,
-.project-info-public .col02 .project-prize p a{
+.project-info-public .col02 .project-prize p a,
+.inscription-info-public .col02 .project-prize .flag a,
+.inscription-info-public .col02 .project-prize .contest a,
+.view-arqnetwork-user-projects .view-content div.views-row .views-field-markup .contest a{
 	display: block;
-	margin-top: 5px;
+	margin-top: 0;
 }
 #block-quicktabs-arqnetwork_group_quicktabs{POSITION: relative}
 .WallOverlay{
@@ -11065,7 +11103,7 @@ font-size: 12px
 	width: 40px!important;
 }
 .view-arqnetwork-user-content .item-list .views-field-title{
-	font-size: 14px;
+	font-size: 16px;
 }
 .view-arqnetwork-user-content .item-list .views-field-title,
 .view-arqnetwork-user-content .item-list .views-field-markup,
@@ -11103,7 +11141,10 @@ font-size: 12px
     margin-left: 95px;
 }
 
-.contest-state-wrapper .open-contest-button .add-to-cart-link{
+.contest-state-wrapper .open-contest-button .add-to-cart-link, 
+#contest-banner .contest-state-wrapper .open-contest-button .generic-button,
+.contest-state-wrapper .register-link-div a,
+.contest-state-wrapper a.public-votation-link{
   font-family: "SoinSans-BoldOblique",Helvetica,Arial,sans-serif;
   padding: 5px 20px;
   color: #fff;
@@ -11114,7 +11155,8 @@ font-size: 12px
   text-decoration: none;
   display: inline-block;
   background: #33CCCC;
-  display: inline-block;;
+  display: inline-block;
+  box-shadow:none;
 }
 
 .contest-state-wrapper .contest-state{
@@ -11216,7 +11258,7 @@ font-size: 12px
     text-transform: none;
 } 
 
-.display-project .project-prize .inner {
+.display-project .project-prize .inner{
     background-color: #000000;
     opacity: 0.8 !important;
     padding: 10px;
@@ -11228,3 +11270,38 @@ font-size: 12px
 .logged-in #menu-homepage-lorem.menu-homepage-mybook-anonym{
     display: none;
 }
+
+#sidebar-last .block-arquideas_generic .users-total .label {
+    display: block;
+}
+
+.node-type-inscription .jquery-countdown.hasCountdown span.countdown_row {
+    display: inline-block;
+    margin-right: 0;
+    margin-top: 4px;
+}
+.node.individual-payment #block-quicktabs-arqnetwork_group_quicktabs {
+    display: none;
+}
+.node-type-inscription .contest-image {
+    width: 336px;
+}
+.page-user #block-quicktabs-arqnetwork_group_quicktabs ul.quicktabs_tabs{
+    display: none;
+}
+#block-views-contests-block_1 .state-open, #block-views-contests-block_1 .state-closed {
+    width: 140px;
+}
+#block-views-contests-block_1 .contest-state {
+    width: 138px;
+}
+div.texto-legal {
+    margin: 16px 0;
+}
+.captcha .description {
+    display: none;
+}
+
+#TB_window a.sign-up-link, #TB_window a.sign-in-link {
+    color: #FFF;
+} 

@@ -4,9 +4,27 @@
 
 <?php global $user; 
 
+        $is_individual = ($num_members==1);
+        if($node->field_inscription_state[0]['value']==InscriptionState::INSCRIPTED || $node->field_inscription_state[0]['value']==InscriptionState::SUBMITTED){
+            //Gets order to see if it is individual
+            $order_id = $node->field_inscription_order[0]['value'];
+            if(!empty($order_id)){
+                $order = uc_order_load($order_id);
+                $product_attr = $order->products[0]->data['attributes'];
+                if(empty($product_attr)){
+                    $is_individual = TRUE;
+                } else {
+                    $is_individual = FALSE;
+                }
+            }
+        }    
+
     $class_add = '';
     if($node->field_inscription_state[0]['value']==InscriptionState::PREINSCRIPTED && $num_members==1){
         $class_add = 'launch-overlay';
+    }
+    if($is_individual && $node->field_inscription_state[0]['value']>InscriptionState::PREINSCRIPTED){
+        $class_add .= 'individual-payment';
     }
 ?>
 
@@ -75,22 +93,6 @@
 
 
     <!-- Introduction text -->
-    <?php 
-        $is_individual = ($num_members==1);
-        if($node->field_inscription_state[0]['value']==InscriptionState::INSCRIPTED || $node->field_inscription_state[0]['value']==InscriptionState::SUBMITTED){
-            //Gets order to see if it is individual
-            $order_id = $node->field_inscription_order[0]['value'];
-            if(!empty($order_id)){
-                $order = uc_order_load($order_id);
-                $product_attr = $order->products[0]->data['attributes'];
-                if(empty($product_attr)){
-                    $is_individual = TRUE;
-                } else {
-                    $is_individual = FALSE;
-                }
-            }
-        }    
-    ?>
     <?php if(($node->field_inscription_state[0]['value']==InscriptionState::PREINSCRIPTED && $num_members>1)
             || ($node->field_inscription_state[0]['value']==InscriptionState::INSCRIPTED && !$is_individual)
             || ($node->field_inscription_state[0]['value']==InscriptionState::SUBMITTED && $num_members>1)): ?>
@@ -190,10 +192,17 @@
         </div>
     </div>
 
-    
+
     <?php endif; ?>
     <!-- End Introduction text -->
 
+    <!-- Introduction text for payment pending inscriptions -->
+    <?php if($node->field_inscription_state[0]['value']==InscriptionState::INSCRIPTION_PAYMENT_PENDING) : ?>
+    <div class="introduction">
+        <?php print t('Once we receive your payment by transfer we will send you an email confirming your registration in the competition. Thank you!'); ?>
+    </div>
+    <?php endif; ?>
+    <!-- End Introduction text for payment pending inscriptions -->
 
     <!-- INSCRIPTION, PAYMENT OR PRESENTATION LINK -->
     <?php
@@ -217,7 +226,7 @@
 	<div class="edit-delete">
     <?php if(!$is_edit && $page == 1): ?>
         <!-- Edit link -->
-        <?php if(node_access('update', $node) && $node->field_inscription_state[0]['value']!=InscriptionState::SUBMITTED
+        <?php if(FALSE && node_access('update', $node) && $node->field_inscription_state[0]['value']!=InscriptionState::SUBMITTED
                 && isset($contest) && $contest->field_contest_state[0]['value']==ContestState::OPEN){
             $uid = $user->uid;
             if(!og_is_group_member($node->nid)){
@@ -266,12 +275,6 @@
       <span class="submitted"><?php print $submitted ?></span>
     </div>
     <?php endif; ?>
-
-    <?php if ($terms): ?>
-    <div class="terms">
-      <?php print $terms; ?>
-    </div>
-    <?php endif;?>
 
         <div class="content clearfix<?php print ($node_right && !$teaser?' node-right':''); ?>">
         <div class="node-content-main">

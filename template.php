@@ -726,7 +726,11 @@ function arquideasjoined_preprocess_block($variables) {
               $obj = menu_get_object('node',1);
           }
           if(!empty($obj) && og_is_group_type($obj->type)){
-            $variables['block']->subject = t('Wall of %s',array('%s'=>$obj->title));
+            if($obj->type=='inscription'){
+                $variables['block']->subject = t('Team wall');
+            } else { 
+                $variables['block']->subject = t('Wall of %s',array('%s'=>$obj->title));
+            }    
           }
       }
   }

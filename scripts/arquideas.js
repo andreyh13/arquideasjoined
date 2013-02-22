@@ -246,15 +246,20 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
 				marginRight: '60px',
 				marginTop: '-25px'
 			})
-			$('.open-contest-button').css({marginLeft: '0',marginTop:'20px'})
+			$('.open-contest-button').css({marginLeft: '0',marginTop:'20px'});
+                        $('.open-contest-button > .info').css({marginLeft: '345px'});
 		}
 		if($('.node-type-inscription.launch-overlay').length){
+	                var m_wall_text = "Create a team and enjoy of this collaborative area with all its members !!";
+        	        if(Drupal.settings.nivaria_contests_base.language=="es"){
+                	    m_wall_text = "¡¡ Forma un equipo y disfruta de este área colaborativa con todos sus miembros !!";
+                	}
 			jQuery('<div class="WallOverlay"/>').css({bottom: '0',
   				 	left:   '0',
    					top:    '0',
 					position: 'absolute',
     				width: '100%'
-				}).html('<div class="alpha"></div><span class="inner clearfix"> Forma un equipo y disfruta de un \u00e1rea colaborativa con todos sus miembros </span>').prependTo('#block-quicktabs-arqnetwork_group_quicktabs');
+				}).html('<div class="alpha"></div><span class="inner clearfix"> '+m_wall_text+' </span>').prependTo('#block-quicktabs-arqnetwork_group_quicktabs');
 		}
 		if($('.view-arqnetwork-account-inscriptions .views-row').length){
 			$('.view-arqnetwork-account-inscriptions .views-row').each(function(){
@@ -303,8 +308,27 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
                         } 
                     });
                 });
+                //Remove wall for individual payment
+                if($(".node.individual-payment").length){
+                    $("#block-quicktabs-arqnetwork_group_quicktabs").remove();
+                }
+                //Title for create content
+                var m_create_title = "Create content to share with your groups";
+                if(Drupal.settings.nivaria_contests_base.language=="es"){
+                    m_create_title = "Crea contenido para compartir con tus Grupos";
+                }
+                $("#block-commons_core-group_create_content .inner").prepend("<h2 class='title block-title'>"+m_create_title+"</h2>");
+                //Deadline tab fixes
+                $(".view-contest-blocks.view-display-id-block_3 table tr").each(function(){
+                   $("td",this).each(function(index){
+                      if(index==1){
+                          $(this).css("font-size","14px");
+                      } 
+                   }); 
+                });
+                //Follow site links
+                $("#block-follow-site .follow-links a").attr("target","_blank");
                 
-		
 });
 
 $(window).load(function(){
