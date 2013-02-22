@@ -23,11 +23,14 @@
   <div class="views-field-field-images-project-fid">
     <div class="field-content">
     <?php 
-      if(isset($fields['field_list_image_project_fid']->content)) { 
+      if(!empty($fields['field_list_image_project_fid']->content)) { 
         print $fields['field_list_image_project_fid']->content;
-      } else {
+      } elseif(!empty($fields['field_image_inscription_fid']->content)) {
         print $fields['field_image_inscription_fid']->content;
-      }?>
+      } elseif(!empty($fields['phpcode']->content)) {
+        print $fields['phpcode']->content;      
+      }
+    ?>
     </div>
   </div>
   <div class="project-info">
