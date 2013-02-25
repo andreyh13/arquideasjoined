@@ -70,7 +70,7 @@
             
             <!-- ID of Inscription-->
             <h3 class="subtitle">
-            <?php print $contest->model.' - '.$node->nid; ?>
+                <?php print $node->field_inscription_code[0]['value']; ?>
                 <div class="terms">
                 <!-- University and Country -->
                 <div class="university-country">
