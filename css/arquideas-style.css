@@ -11309,3 +11309,7 @@ div.texto-legal {
 #TB_window a.sign-up-link, #TB_window a.sign-in-link {
     color: #FFF;
 } 
+
+#block-arquideas_generic-10 .logged-user-link-div .hello-user a {
+    color: #FFF;
+}
