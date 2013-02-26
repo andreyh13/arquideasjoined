@@ -90,6 +90,14 @@
                       </td>
                     </tr>
 
+                    <tr>
+                      <td nowrap="nowrap">
+                        <b><?php echo t('Team code: '); ?></b>
+                      </td>
+                      <td width="98%">
+                        <?php echo $code; ?>
+                      </td>
+                    </tr>
                     <?php if ($shipping_method && uc_order_is_shippable($order)) { ?>
                     <tr>
                       <td nowrap="nowrap">

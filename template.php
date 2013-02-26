@@ -1303,11 +1303,28 @@ function arquideasjoined_preprocess_comment(&$vars) {
   }
 }
 
+/**
+ * Ubercart preprocessing
+ */
+function arquideasjoined_preprocess(&$vars) {
+  $a = 5;
+}
+/**
+ * Ubercart preprocessing
+ */
+function arquideasjoined_preprocess_uc_order(&$vars) {
+  $order = $vars['order'];
+  $inscription = node_load($order->data['inscription_nid']);
+  $vars['code'] = $inscription->field_inscription_code[0]['value'];
+}
+
+
 //Register some texts
 t('Press enter or click !plus between tags.', array('!plus' => '\'+\''));
 t('What\'s on your mind?');
 t('Write something...');
 t('Group inscription');
+
 
 
 
