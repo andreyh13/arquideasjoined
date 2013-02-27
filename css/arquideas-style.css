@@ -11313,3 +11313,7 @@ div.texto-legal {
 #block-arquideas_generic-10 .logged-user-link-div .hello-user a {
     color: #FFF;
 }
+
+label[for='^edit-field-inscription-files-']{
+    display: none;
+}
