@@ -11314,6 +11314,6 @@ div.texto-legal {
     color: #FFF;
 }
 
-label[for='^edit-field-inscription-files-']{
-    display: none;
+#block-quicktabs-arqnetwork_group_quicktabs .subtitle {
+    padding-bottom: 0;
 }

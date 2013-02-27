@@ -729,6 +729,7 @@ function arquideasjoined_preprocess_block($variables) {
           if(!empty($obj) && og_is_group_type($obj->type)){
             if($obj->type=='inscription'){
                 $variables['block']->subject = t('Team wall');
+                $variables['block']->subtitle = t('What you share on this wall will only be visible for your team');
             } else { 
                 $variables['block']->subject = t('Wall of %s',array('%s'=>$obj->title));
             }    
