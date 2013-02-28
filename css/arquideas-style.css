@@ -11317,3 +11317,14 @@ div.texto-legal {
 #block-quicktabs-arqnetwork_group_quicktabs .subtitle {
     padding-bottom: 0;
 }
+
+.node-type-group.full-node #quicktabs-arqnetwork_group_quicktabs ul.quicktabs_tabs li.create-content-block{
+    float: right;
+    width: 350px;
+}
+.node-type-group.full-node #quicktabs-arqnetwork_group_quicktabs ul.quicktabs_tabs li.create-content-block #block-commons_core-group_create_content{
+     width: 350px;
+}
+.node-type-group.full-node #quicktabs-arqnetwork_group_quicktabs ul.quicktabs_tabs li.create-content-block #block-commons_core-group_create_content #edit-node-type-wrapper{
+    width: 260px;
+}

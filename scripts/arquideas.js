@@ -312,12 +312,19 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
                 if($(".node.individual-payment").length){
                     $("#block-quicktabs-arqnetwork_group_quicktabs").remove();
                 }
-                //Title for create content
-                var m_create_title = "Create content to share with your groups";
-                if(Drupal.settings.nivaria_contests_base.language=="es"){
-                    m_create_title = "Crea contenido para compartir con tus Grupos";
+                
+                //Move create content
+                if($(".node-type-group.full-node #sidebar-last #block-commons_core-group_create_content").length){
+                    $(".node-type-group.full-node #quicktabs-arqnetwork_group_quicktabs ul.quicktabs_tabs").append("<li class='create-content-block'></li>");
+                    $(".node-type-group.full-node #sidebar-last #block-commons_core-group_create_content").appendTo(".node-type-group.full-node #quicktabs-arqnetwork_group_quicktabs ul.quicktabs_tabs li.create-content-block");
+                } else {
+                    //Title for create content
+                    var m_create_title = "Create content to share with your groups";
+                    if(Drupal.settings.nivaria_contests_base.language=="es"){
+                        m_create_title = "Crea contenido para compartir con tus Grupos";
+                    }
+                    $("#block-commons_core-group_create_content .inner").prepend("<h2 class='title block-title'>"+m_create_title+"</h2>");
                 }
-                $("#block-commons_core-group_create_content .inner").prepend("<h2 class='title block-title'>"+m_create_title+"</h2>");
                 //Deadline tab fixes
                 $(".view-contest-blocks.view-display-id-block_3 table tr").each(function(){
                    $("td",this).each(function(index){
@@ -328,7 +335,6 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
                 });
                 //Follow site links
                 $("#block-follow-site .follow-links a").attr("target","_blank");
-                
 });
 
 $(window).load(function(){
