@@ -1308,12 +1308,6 @@ function arquideasjoined_preprocess_comment(&$vars) {
 /**
  * Ubercart preprocessing
  */
-function arquideasjoined_preprocess(&$vars) {
-  $a = 5;
-}
-/**
- * Ubercart preprocessing
- */
 function arquideasjoined_preprocess_uc_order(&$vars) {
   $order = $vars['order'];
   $inscription = node_load($order->data['inscription_nid']);
