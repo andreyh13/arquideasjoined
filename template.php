@@ -184,6 +184,7 @@ function arquideasjoined_preprocess_page(&$vars)
       $vars['tabs'] = _contest_construct_administrative_tabs($vars['body_id']);
       $vars['content_top'] = _contest_show_short_info($vars['body_id']);
       $vars['page_classes'] = ' page-full-view';
+      $vars['show_breadcrumb'] = TRUE;
   }
 
   $match = preg_match('/^pid\-user\-\d+\-edit$/', $vars['body_id']);

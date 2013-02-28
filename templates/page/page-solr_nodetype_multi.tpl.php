@@ -91,7 +91,7 @@
   		<?php print theme('grid_row', $preface_top, 'preface-top', 'full-width', $grid_width); ?>
   		<div id="preface-top-wrapper" class="preface-top-wrapper full-width">
       	<div id="preface-top" class="preface-top row <?php print $grid_width; ?> clearfix">
-  				<?php print theme('grid_block', $breadcrumb, 'breadcrumbs'); ?>
+  				<?php /*print theme('grid_block', $breadcrumb, 'breadcrumbs');*/ ?>
         </div>
   		</div>
 

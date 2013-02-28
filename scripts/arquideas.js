@@ -49,7 +49,11 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
     });
     //Comment block Title
     if(Drupal.settings.user && Drupal.settings.user.profile_name){
-        $("#comments .box h2.title").html(Drupal.settings.user.profile_name+", deja tu comentario");
+        if(Drupal.settings.nivaria_contests_base.language=="en"){
+            $("#comments .box h2.title").html(Drupal.settings.user.profile_name+", post your comment");
+        } else {
+            $("#comments .box h2.title").html(Drupal.settings.user.profile_name+", deja tu comentario");
+        }
     }
     //Answer block Title
     if(Drupal.settings.user && Drupal.settings.user.profile_name){
