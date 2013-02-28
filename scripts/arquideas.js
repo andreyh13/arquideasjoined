@@ -339,6 +339,23 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
                 });
                 //Follow site links
                 $("#block-follow-site .follow-links a").attr("target","_blank");
+                //Fix Collaborates and Sponsors in competition details
+                if($("#block-views-sponsors-block_1 .content .view-empty").length){
+                    $("#block-views-sponsors-block_1 h2.title").prependTo("#block-views-sponsors-block_2 .inner");
+                    $("#block-views-sponsors-block_2").addClass("single-line");
+                    $("#block-views-sponsors-block_1").remove();
+                }
+                if($("#block-views-sponsors-block_3 .content .view-empty").length){
+                    $("#block-views-sponsors-block_3 h2.title").prependTo("#block-views-sponsors-block_4 .inner");
+                    $("#block-views-sponsors-block_4").addClass("single-line");
+                    $("#block-views-sponsors-block_3").remove();
+                }
+                if($("#block-views-sponsors-block_2 .content .view-empty").length){
+                    $("#block-views-sponsors-block_2").remove();
+                }
+                if($("#block-views-sponsors-block_4 .content .view-empty").length){
+                    $("#block-views-sponsors-block_4").remove();
+                }
 });
 
 $(window).load(function(){
@@ -370,8 +387,9 @@ $(window).load(function(){
 		        return $(this).height();
 		      }
 		    ).get());
+                        
 			//Asignamos la altura a los contenedores de slides
-		    $(this).find(".views_slideshow_singleframe_teaser_section").css({'min-height':max+plusheight+"px", 'min-width':'100%'}); 
-			$(this).find(".views_slideshow_slide").css({'min-height':max+plusheight+"px", 'min-width':'100%'}); 
+		    $(this).find(".views_slideshow_singleframe_teaser_section").css({'min-height':max+plusheight+2+"px", 'min-width':'100%'}); 
+			$(this).find(".views_slideshow_slide").css({'min-height':max+plusheight+2+"px", 'min-width':'100%'}); 
 	})
 });
