@@ -22,14 +22,14 @@
 </head>
 <?php
 /*-----------------------
-Añadido para el control 
-de las clases en área de 
-edición y de visualización
+Aï¿½adido para el control 
+de las clases en ï¿½rea de 
+ediciï¿½n y de visualizaciï¿½n
 las clases force-width se
 agregan para restaurar los 
 valores originales del grid
 que se han modificado en la
-css de presentación
+css de presentaciï¿½n
 -------------------------*/
  $body_classes.=($body_id=='pid-comunidad-arquideas'||$body_id=='pid-arquideas-network'||$body_id=='pid-usuarios'||$body_id=='pid-users')?' area-comunidad ':'';
  $body_classes.=($body_id=='-account-inscriptions')?' area-social ':'';
@@ -47,8 +47,8 @@ $area=(($body_id=='pid-comunidad-arquideas'||$body_id=='pid-arquideas-network')?
  $body_classes.=(" ".$area." ")
 /*-------------------------
 ||$body_id=='pid-usuarios'
-HASTA AQUÍ ----------------
-Más cambios en la fila 200,
+HASTA AQUï¿½ ----------------
+Mï¿½s cambios en la fila 200,
  215 y 285 ----------------
 -------------------------*/
 ?>
@@ -122,7 +122,11 @@ Más cambios en la fila 200,
   		<?php print theme('grid_row', $preface_top, 'preface-top', 'full-width', $grid_width); ?>
   		<div id="preface-top-wrapper" class="preface-top-wrapper full-width">
       	<div id="preface-top" class="preface-top row <?php print $grid_width; ?> clearfix">
-  				<?php print theme('grid_block', $breadcrumb, 'breadcrumbs'); ?>
+            <?php
+                if($show_breadcrumb){
+                    print theme('grid_block', $breadcrumb, 'breadcrumbs'); 
+                }    
+            ?>
         </div>
   		</div>
 
@@ -171,7 +175,7 @@ Más cambios en la fila 200,
                     <!-- content group: width = grid_width - (sidebar_first_width + sidebar_last_width) -->
 					<?php 
 					 /*-----------------------------
-					 MODIFICACIÓN
+					 MODIFICACIï¿½N
 					 ------------------------------*/
 					$content_group_width=$cambios_ancho[$area][0];?>
                     <div id="content-group" class="content-group row nested <?php print $content_group_width; ?>">
@@ -205,7 +209,7 @@ Más cambios en la fila 200,
                     </div><!-- /content-group -->
 					<?php 
 					 /*-----------------------------
-					 MODIFICACIÓN
+					 MODIFICACIï¿½N
 					 ------------------------------*/
 					$sidebar_last_width=$cambios_ancho[$area][1];?>
                     <?php print theme('grid_row', $sidebar_last, 'sidebar-last', 'nested', $sidebar_last_width); ?>

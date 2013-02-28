@@ -5467,7 +5467,7 @@ div.participate-link {
 #search-block-form-1 .form-item input {
   position: relative;
   border: 0 none;
-  width: 185px;
+  width: 200px;
   background: transparent;
   border: 0;
   margin: 0;
@@ -10258,6 +10258,7 @@ float: left;
 	font-size: 22px;
 	font-family: "SoinSans-BoldOblique", Helvetica, Arial, sans-serif;
 	margin-bottom: 10px;
+        line-height: 1.1em;
 }
 .node-type-inscription .contest-info .remember-dates{
 	font-weight: bold;
@@ -11312,4 +11313,19 @@ div.texto-legal {
 
 #block-arquideas_generic-10 .logged-user-link-div .hello-user a {
     color: #FFF;
+}
+
+#block-quicktabs-arqnetwork_group_quicktabs .subtitle {
+    padding-bottom: 0;
+}
+
+.node-type-group.full-node #quicktabs-arqnetwork_group_quicktabs ul.quicktabs_tabs li.create-content-block{
+    float: right;
+    width: 350px;
+}
+.node-type-group.full-node #quicktabs-arqnetwork_group_quicktabs ul.quicktabs_tabs li.create-content-block #block-commons_core-group_create_content{
+     width: 350px;
+}
+.node-type-group.full-node #quicktabs-arqnetwork_group_quicktabs ul.quicktabs_tabs li.create-content-block #block-commons_core-group_create_content #edit-node-type-wrapper{
+    width: 260px;
 }

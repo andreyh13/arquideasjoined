@@ -184,6 +184,7 @@ function arquideasjoined_preprocess_page(&$vars)
       $vars['tabs'] = _contest_construct_administrative_tabs($vars['body_id']);
       $vars['content_top'] = _contest_show_short_info($vars['body_id']);
       $vars['page_classes'] = ' page-full-view';
+      $vars['show_breadcrumb'] = TRUE;
   }
 
   $match = preg_match('/^pid\-user\-\d+\-edit$/', $vars['body_id']);
@@ -729,6 +730,7 @@ function arquideasjoined_preprocess_block($variables) {
           if(!empty($obj) && og_is_group_type($obj->type)){
             if($obj->type=='inscription'){
                 $variables['block']->subject = t('Team wall');
+                $variables['block']->subtitle = t('What you share on this wall will only be visible for your team');
             } else { 
                 $variables['block']->subject = t('Wall of %s',array('%s'=>$obj->title));
             }    
