@@ -11384,6 +11384,10 @@ div.texto-legal {
     border-bottom: 0 none;
 }
 
+#sidebar-last #block-views-jury_members-block_1 .title.block-title{
+    margin-bottom: 28px;
+}
+
 .page-node #sidebar-last #block-views-jury_members-block_1 .title.block-title,
 .page-node #sidebar-last #block-views-contests-block_2 .title.block-title{
     margin-bottom: 24px;
