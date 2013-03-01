@@ -106,21 +106,7 @@
         <?php if(!$is_edit) print showNumContestFollowers($node); ?>
         <!-- END FOLLOWERS NUMBER -->
 
-        <!-- COMMENTS NUMBER FROM OG_STATISTICS -->
-        <?php $num_comments = 0;
-        if(!$is_edit && !empty($node->field_contest_related_group[0]['nid'])){
-            $stat = og_statistics_load($node->field_contest_related_group[0]['nid']);
-            $num_comments = $stat['comments_count'];
-        }
-        ?>
-        <?php if(!$is_edit): ?>
-            <div class="contest-comments">
-                <span>
-                    <?php print $num_comments; ?>
-                </span>
-            </div>
-        <?php endif; ?>
-        <!-- END COMMENTS NUMBER FROM OG_STATISTICS -->
+        
         <!-- FOLLOW OR LEAVE BUTTON -->
         <?php if(!$is_edit) print showContestSuscribeLink($node); ?>
         <!-- END FOLLOW OR LEAVE BUTTON -->
