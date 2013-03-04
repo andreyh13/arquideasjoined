@@ -97,7 +97,7 @@ global $base_url;
                   <a href="<?php print $base_url; ?>/home" style="color: #999999;">Copyright Arquideas 2012</a>
                 </td>
                 <td width="193" align="center" valign="middle">
-                  <a href="<?php print $base_url; ?>/home" style="color: #FF3F3F;">www.arquideas.es</a>
+                  <a href="<?php print $base_url; ?>/home" style="color: #FF3F3F;">www.arquideas.net</a>
                 </td>
                 <td width="193" align="right" valign="middle">
                   <a href="http://www.nivaria.com" title="Nivaria"><img src="<?php print $base_url . '/'. path_to_theme();?>/images/nws_by_nivaria.png" alt="Nivaria" /></a>
