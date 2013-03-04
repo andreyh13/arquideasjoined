@@ -31,7 +31,7 @@ valores originales del grid
 que se han modificado en la
 css de presentaci�n
 -------------------------*/
- $body_classes.=($body_id=='pid-comunidad-arquideas'||$body_id=='pid-arquideas-network'||$body_id=='pid-usuarios'||$body_id=='pid-users')?' area-comunidad ':'';
+ $body_classes.=($body_id=='pid-comunidad-arquideas'||$body_id=='pid-arquideas-network'||$body_id=='pid-usuarios'||$body_id=='pid-users'||$body_id=='pid-community'||$body_id=='pid-comunidad')?' area-comunidad ':'';
  $body_classes.=($body_id=='-account-inscriptions')?' area-social ':'';
  $cambios_ancho=array(
  	'comunidad'=>array(
@@ -43,7 +43,7 @@ css de presentaci�n
 		'grid16-5 force-width'
 	),
  );
-$area=(($body_id=='pid-comunidad-arquideas'||$body_id=='pid-arquideas-network')?'comunidad':(($body_id=='pid-users'||$body_id=='pid-usuarios')?'usuarios':''));
+$area=(($body_id=='pid-comunidad-arquideas'||$body_id=='pid-arquideas-network'||$body_id=='pid-community'||$body_id=='pid-comunidad')?'comunidad':(($body_id=='pid-users'||$body_id=='pid-usuarios')?'usuarios':''));
  $body_classes.=(" ".$area." ")
 /*-------------------------
 ||$body_id=='pid-usuarios'
