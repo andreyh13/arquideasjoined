@@ -1320,6 +1320,7 @@ t('Press enter or click !plus between tags.', array('!plus' => '\'+\''));
 t('What\'s on your mind?');
 t('Write something...');
 t('Group inscription');
+t('Hi');
 
 
 

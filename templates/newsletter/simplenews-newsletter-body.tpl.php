@@ -24,7 +24,7 @@
  */
 ?>
 <div style="line-height:40px; height: 40px;">&nbsp;</div>
-<div style="text-align: center; font-weight: normal; font-size: 23px;"> <?php print t('Hi');?> [simplenews-receiver-realname],</div>
+<div style="text-align: center; font-weight: normal; font-size: 23px;"> <?php print t('Hi',array(),$language->language);?> [simplenews-receiver-realname],</div>
 <div style="line-height:20px; height: 20px;">&nbsp;</div>
 <?php
 print theme('node', $node, FALSE, TRUE);
