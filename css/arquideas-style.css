@@ -11392,3 +11392,7 @@ div.texto-legal {
 .page-node #sidebar-last #block-views-contests-block_2 .title.block-title{
     margin-bottom: 24px;
 }
+
+body.area-social #sidebar-last.nested #block-views-8b6b3376f984196abba62dfb8dfce55d {
+    width: 100% !important;
+}
