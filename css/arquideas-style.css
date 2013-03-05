@@ -3580,8 +3580,8 @@ color: #333333;
 font-weight: normal;
 font-family: "SoinSans-Bold", Helvetica, Arial, sans-serif;
 }
-.view .view-content .views-field-title a {
-
+.view.view-arqnetwork-group-detail-by-cat .view-content .views-field-title a {
+    font-size: 1.4em;
 }
 .views-field-last-updated a {
 color: #0099FF;
