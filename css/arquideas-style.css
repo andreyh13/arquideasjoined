@@ -11330,13 +11330,22 @@ div.texto-legal {
     float: right;
     width: 320px;
 }
-.node-type-group.full-node #quicktabs-arqnetwork_group_quicktabs ul.quicktabs_tabs li.create-content-block #block-commons_core-group_create_content,
-.page-arquideas-network #block-facebook_status-facebook_status .inner .content #block-commons_core-group_create_content {
-     width: 320px;
+.node-type-group.full-node #quicktabs-arqnetwork_group_quicktabs ul.quicktabs_tabs li.create-content-block #block-commons_core-group_create_content{
+    width: 320px;
 }
-.node-type-group.full-node #quicktabs-arqnetwork_group_quicktabs ul.quicktabs_tabs li.create-content-block #block-commons_core-group_create_content #edit-node-type-wrapper,
-.page-arquideas-network #block-facebook_status-facebook_status .inner .content #block-commons_core-group_create_content #edit-node-type-wrapper{
+.page-arquideas-network #block-facebook_status-facebook_status .inner .content #block-commons_core-group_create_content {
+    width: 440px;
+}
+.node-type-group.full-node #quicktabs-arqnetwork_group_quicktabs ul.quicktabs_tabs li.create-content-block #block-commons_core-group_create_content #edit-node-type-wrapper{
     width: 242px;
+}
+.page-arquideas-network #block-facebook_status-facebook_status .inner .content #block-commons_core-group_create_content #edit-node-type-wrapper{
+    width: 342px;
+    display: inline-block;
+}
+.page-arquideas-network #block-facebook_status-facebook_status .inner .content #block-commons_core-group_create_content #edit-submit{
+    margin-left: 8px;
+    float: right;
 }
 
 #main #sidebar-last #block-views-jury_members-block_1 {
