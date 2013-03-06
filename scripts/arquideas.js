@@ -321,6 +321,8 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
                 if($(".node-type-group.full-node #sidebar-last #block-commons_core-group_create_content").length){
                     $(".node-type-group.full-node #quicktabs-arqnetwork_group_quicktabs ul.quicktabs_tabs").append("<li class='create-content-block'></li>");
                     $(".node-type-group.full-node #sidebar-last #block-commons_core-group_create_content").appendTo(".node-type-group.full-node #quicktabs-arqnetwork_group_quicktabs ul.quicktabs_tabs li.create-content-block");
+                } else if($(".page-arquideas-network #sidebar-last #block-commons_core-group_create_content").length){
+                    $(".page-arquideas-network #sidebar-last #block-commons_core-group_create_content").prependTo("#block-facebook_status-facebook_status .inner .content");
                 } else {
                     //Title for create content
                     var m_create_title = "Create content to share with your groups";
