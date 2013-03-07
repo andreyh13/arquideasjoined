@@ -1041,7 +1041,13 @@ function arquideasjoined_node_form($form) {
 
 function arquideasjoined_preprocess_mimemail_message(&$variables) {
   global $base_url;
-  $variables['logo'] = $base_url . theme_get_setting('logo');
+  $logo = theme_get_setting('logo');
+  if (strpos($logo, 'http') === 0) {
+    $variables['logo'] = $logo;
+  } else {
+    $variables['logo'] = $base_url . $logo;
+  }
+  
   $variables['slogan'] = t('The architecture and design ideas community');
   $variables['front_page'] = url();
 
