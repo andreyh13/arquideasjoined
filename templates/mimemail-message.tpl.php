@@ -75,7 +75,7 @@ global $base_url;
               ?>
               <?php if($username): ?>
               <tr>
-                <td align="center" valign="top" style="color: #000000;"><?php print t('Hello, !user',array('!user'=> $username),$userlang); ?></td>
+                <td align="center" valign="top" style="color: #000000;padding:12px 0 0;"><?php print t('Hello, !user',array('!user'=> $username),$userlang); ?></td>
               </tr>
               <?php endif; ?>
               <tr>
