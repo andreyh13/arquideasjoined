@@ -447,6 +447,7 @@ function arquideasjoined_preprocess_node(&$vars) {
           unset($vars['links']);
       }
       $vars['group_attributes_rendered'] = '';
+      $vars['back_to_contest'] = arquideas_generic_back_to_contest_link($vars['nid']);
   }
 
   //PREPROCESS PROJECT NODE
