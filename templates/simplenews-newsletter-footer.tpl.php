@@ -47,10 +47,9 @@
     </tr>
     <tr>
       <td align="center">
-        <a href="http://www.facebook.com/pages/arquideas/108110022544971" title="Facebook"><img src="<?php print $base_url . '/'. path_to_theme();?>/images/social/icon-facebook.png" alt="Facebook" /></a>
+        <a href="http://www.facebook.com/arquideas.arquideas?fref=ts" title="Facebook"><img src="<?php print $base_url . '/'. path_to_theme();?>/images/social/icon-facebook.png" alt="Facebook" /></a>
         <a href="http://twitter.com/arquideasnews" title="Twitter"><img src="<?php print $base_url . '/'. path_to_theme();?>/images/social/icon-twitter.png" alt="Twitter" /></a>
-        <a href="http://pinterest.com/arquideas/" title="Pinterest"><img src="<?php print $base_url . '/'. path_to_theme();?>/images/social/icon-pinterest.png" alt="Pinterest" /></a>
-        <a href="mailto:example@example.com" title="E-mail"><img src="<?php print $base_url . '/'. path_to_theme();?>/images/social/icon-email.png" alt="E-mail" /></a>
+        <a href="mailto:arquideas@arquideas.net" title="E-mail"><img src="<?php print $base_url . '/'. path_to_theme();?>/images/social/icon-email.png" alt="E-mail" /></a>
       </td>
     </tr>
     <tr>
@@ -60,19 +59,19 @@
   <table border="0" cellpadding="10" cellspacing="0" width="580" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px;" id="newsletter-footer">
     <tr>
       <td align="center" valign="middle"  style="border-top: 1px solid #000000;">
-        <a href="http://www.nivaria.com" title="Nivaria"><img src="<?php print $base_url . '/'. path_to_theme();?>/logo-small.png" alt="Nivaria" /></a>
+        <img src="<?php print $base_url . '/'. path_to_theme();?>/logo-small.png" alt="Arquideas" />
       </td>
     </tr>
     <tr>
       <td align="center" style="border-top: 1px solid #000000; border-bottom: 1px solid #000000; font-size: 12px; font-weight:bold;">
-        <?php print l(t('Privacy policy',array(),$language->language),'node/220'); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <?php print l(t('Privacy policy',array(),$language->language),'node/219'); ?>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="[simplenews-unsubscribe-url]"><?php print $unsubscribe_text ?></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <?php print l(t('Contact',array(),$language->language),'node/282'); ?>
       </td>
     </tr>
   </table>
 <?php else: ?>
-<?php print l(t('Privacy policy',array(),$language->language),'node/220'); ?> | <a href="[simplenews-unsubscribe-url]"><?php print $unsubscribe_text ?></a> | <?php print l(t('Contact',array(),$language->language),'node/282'); ?>
+<?php print l(t('Privacy policy',array(),$language->language),'node/219'); ?> | <a href="[simplenews-unsubscribe-url]"><?php print $unsubscribe_text ?></a> | <?php print l(t('Contact',array(),$language->language),'node/282'); ?>
 
 <?php if ($key == 'test'): ?>
   <?php print $test_message ?>

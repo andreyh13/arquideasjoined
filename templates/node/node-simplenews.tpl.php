@@ -1,5 +1,17 @@
 <?php
 // $Id: node-news.tpl.php 7510 2010-06-15 19:09:36Z sheena $
+  $changedLang = FALSE;
+  $prevLang = NULL;
+  if(isset($language) && is_string($language) && $GLOBALS['language']->language!=$language){
+      $languages = language_list('enabled');
+      $languages = $languages[1];
+      if(!empty($languages[$language])){
+          $prevLang = $GLOBALS['language']; 
+          $GLOBALS['language'] = $languages[$language];
+          $changedLang = TRUE;
+      }
+  }  
+
   global $base_url;
   $fields = content_types($node->type);
   if (!empty($fields) && !empty($fields['fields'])) {?>
@@ -100,7 +112,14 @@
                     <tr>
                       <td width="155">&nbsp;</td>
                       <td width="280" height="40" align="center" style="width: 280px; height: 40px; background: #FF3F3F;">
-                        <a href="/arquideas-network-link" style="font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-style: italic; color: #FFFFFF; text-decoration: none; text-shadow: 1px 1px 0 #000000;"><?php print t('Discover Arquideas Community'); ?></a>
+                          <?php print l(t('Discover Arquideas Community'),'arquideas_network',array(
+                              'attributes' => array(
+                                  'title' => t('Discover Arquideas Community'),
+                                  'style' => 'font-family: Helvetica, Arial, sans-serif; font-weight: bold; font-style: italic; color: #FFFFFF; text-decoration: none; text-shadow: 1px 1px 0 #000000;',
+                                  'target' => '_blank',
+                              ),
+                              )); 
+                          ?>
                       </td>
                       <td width="155">&nbsp;</td>
                     </tr>
@@ -170,4 +189,7 @@
   </div><!-- /node-bottom -->
   <?php endif; ?>
 </div><!-- /node-<?php print $node->nid; ?> -->
-<?
+<?php if($changedLang){
+   $GLOBALS['language'] = $prevLang; 
+}
+?>
