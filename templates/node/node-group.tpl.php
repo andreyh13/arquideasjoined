@@ -100,6 +100,10 @@
     endif; ?>
     <!-- END JOIN GROUP OR LEAVE GROUP BUTTON -->
   
+    <!-- Back to contest link -->
+    <?php print $back_to_contest; ?>
+    <!-- End Back to contest link -->
+    
   <!-- BLOCK ADDTHIS -->
   <?php if($page && !$is_edit){
     $block_addthis = module_invoke('arquideas_generic','block','view','13');

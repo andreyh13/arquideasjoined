@@ -8485,7 +8485,7 @@ a.grouping-button-container:hover,
 width: auto; display: inline-block; float: right; display: none;
 }
 #edit-submit, #edit-preview-changes, #edit-submit-1, .views-exposed-form .form-submit, #arquideas-book-user-settings .form-submit,.views-field-phpcode-1 .popups-form-noupdate, .open-contest-button .form-submit, .display-project .links li .flag-bookmarks a, .sidebar-first .view-arqnetwork-user-profile .views-field-picture .user-edit-image a,.display-project .link-special-arquideas-prize a,
-.display-project .link-bookmarks a{
+.display-project .link-bookmarks a, #block-arquideas_generic-16 .content a, .back-contest a{
 	display: inline-block;
 	float: none;
 	border-radius: 5px 5px 5px 5px;
@@ -11406,4 +11406,16 @@ div.texto-legal {
 
 body.area-social #sidebar-last.nested #block-views-8b6b3376f984196abba62dfb8dfce55d {
     width: 100% !important;
+}
+
+#block-arquideas_generic-16 {
+    margin-top: 4px;
+    display:inline-block;
+    width: 140px;
+}
+
+.full-node.node-type-group .back-contest{
+    position: absolute;
+    top: 180px;
+    left: 0;
 }
