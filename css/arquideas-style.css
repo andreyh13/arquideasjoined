@@ -11475,3 +11475,7 @@ div.ok, tr.ok {
     padding: 2px 6px;
 }
 /*End messages*/
+
+#user-relationships-ui-remove #edit-submit {
+    margin-right: 16px;
+}
