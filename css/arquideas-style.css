@@ -11479,3 +11479,7 @@ div.ok, tr.ok {
 #user-relationships-ui-remove #edit-submit {
     margin-right: 16px;
 }
+
+.maxlength-counter {
+    margin: -15px 0 16px 0;
+}
