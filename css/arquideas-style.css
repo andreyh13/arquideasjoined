@@ -11419,3 +11419,22 @@ body.area-social #sidebar-last.nested #block-views-8b6b3376f984196abba62dfb8dfce
     top: 180px;
     left: 0;
 }
+
+/*Activity stream on home page*/
+.front #block-views-activity_log_stream-block_2 .view-activity-log-stream tr td.col-1,
+.front #block-views-activity_log_stream-block_2 .view-activity-log-stream tr td.col-2,
+.front #block-views-activity_log_stream-block_2 .view-activity-log-stream tr td.col-3,
+.front #block-views-activity_log_stream-block_2 .view-activity-log-stream tr td.col-4,
+.front #block-views-activity_log_stream-block_2 .view-activity-log-stream tr td div.views-field-message{
+    width: 235px;
+}
+
+.front #block-views-activity_log_stream-block_2 .view-activity-log-stream tr td .views-field-message .facebook-status-item .content{
+    margin-top:0;
+}
+
+.front #block-views-activity_log_stream-block_2 .view-activity-log-stream tr td .views-field-message .facebook-status-item .content .facebook-status-comments,
+.front #block-views-activity_log_stream-block_2 .view-activity-log-stream tr td .views-field-message .facebook-status-item .content .fbsmp {
+    display: none;
+}
+/*End activity stream on home page*/
