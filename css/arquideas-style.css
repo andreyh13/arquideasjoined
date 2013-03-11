@@ -11434,7 +11434,8 @@ body.area-social #sidebar-last.nested #block-views-8b6b3376f984196abba62dfb8dfce
 }
 
 .front #block-views-activity_log_stream-block_2 .view-activity-log-stream tr td .views-field-message .facebook-status-item .content .facebook-status-comments,
-.front #block-views-activity_log_stream-block_2 .view-activity-log-stream tr td .views-field-message .facebook-status-item .content .fbsmp {
+.front #block-views-activity_log_stream-block_2 .view-activity-log-stream tr td .views-field-message .facebook-status-item .content .fbsmp,
+.front #block-views-activity_log_stream-block_2 .view-activity-log-stream tr td .views-field-message .facebook-status-item .content .facebook-status-details .facebook-status-links{
     display: none;
 }
 /*End activity stream on home page*/
