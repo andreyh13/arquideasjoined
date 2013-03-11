@@ -11439,3 +11439,39 @@ body.area-social #sidebar-last.nested #block-views-8b6b3376f984196abba62dfb8dfce
     display: none;
 }
 /*End activity stream on home page*/
+
+/*Messages*/
+.error {
+    color: #FF3F3F;
+}
+div.error {
+    border: 1px solid #FF3F3F;
+}
+div.error, tr.error {
+    background: none repeat scroll 0 0 #FF8D8A;
+    color: #220000;
+    padding: 2px 6px;
+}
+.warning {
+    color: #846E01;
+}
+div.warning {
+    border: 1px solid #F9CE00;
+}
+div.warning, tr.warning {
+    background: none repeat scroll 0 0 #FCE357;
+    color: #846E01;
+    padding: 2px 6px;
+}
+.ok {
+    color: #99CC00;
+}
+div.ok {
+    border: 1px solid #99CC00;
+}
+div.ok, tr.ok {
+    background: none repeat scroll 0 0 #E6F5BA;
+    color: #99CC00;
+    padding: 2px 6px;
+}
+/*End messages*/
