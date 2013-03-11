@@ -11483,3 +11483,7 @@ div.ok, tr.ok {
 .maxlength-counter {
     margin: -15px 0 16px 0;
 }
+
+.user-area-description-message {
+    margin: 0 0 16px;
+}
