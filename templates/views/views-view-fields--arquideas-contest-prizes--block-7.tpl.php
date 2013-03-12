@@ -36,4 +36,10 @@
       <?php print $fields['comment_count']->content; ?>
     </span>
   </div>
+  <div class="project-owner">
+      <span class="views-field-name">
+          <label class="views-label-name"><?php print t('by'); ?></label>
+          <?php print $fields['field_inscription_members_list_vname']->content; ?>
+      </span>
+  </div>  
 </div>

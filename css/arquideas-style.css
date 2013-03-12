@@ -11487,3 +11487,11 @@ div.ok, tr.ok {
 .user-area-description-message {
     margin: 0 0 16px;
 }
+
+.view-arquideas-contest-prizes.view-display-id-block_7 .project-owner .view-og-members-faces{
+    display: inline-block;
+}
+
+.view-arquideas-contest-prizes.view-display-id-block_7 .project-owner .views-field-name a {
+    font-size: 12px;
+}
