@@ -5974,7 +5974,8 @@ text-transform: uppercase;
 .view-arquideas-contest-prizes.view-display-id-block_7 .project-wrapper,
 .view-arquideas-contest-prizes.view-display-id-block_8 .project-wrapper,
 .view-arquideas-contest-prizes.view-display-id-block_9 .project-wrapper,
-.view-arqnetwork-user-projects.view-display-id-page_1 .project-wrapper {
+.view-arqnetwork-user-projects.view-display-id-page_1 .project-wrapper,
+.view-arqnetwork-user-content.view-display-id-block_3 .project-wrapper{
   position: relative;
 }
 
@@ -5986,7 +5987,8 @@ text-transform: uppercase;
 
 .view-arquideas-contest-prizes.view-display-id-block_7 .views-field-field-images-project-fid,
 .view-arquideas-contest-prizes.view-display-id-block_8 .views-field-field-images-project-fid,
-.view-arquideas-contest-prizes.view-display-id-block_9 .views-field-field-images-project-fid{
+.view-arquideas-contest-prizes.view-display-id-block_9 .views-field-field-images-project-fid,
+.view-arqnetwork-user-content.view-display-id-block_3 .views-field-field-images-project-fid{
   width: 236px;
   height: 172px;
 }
@@ -5997,7 +5999,8 @@ text-transform: uppercase;
 .view-arquideas-contest-prizes.view-display-id-block_7 .views-field-field-images-project-fid img,
 .view-arquideas-contest-prizes.view-display-id-block_8 .views-field-field-images-project-fid img,
 .view-arquideas-contest-prizes.view-display-id-block_9 .views-field-field-images-project-fid img,
-.view-arqnetwork-user-projects.view-display-id-page_1 .views-field-field-images-project-fid img{
+.view-arqnetwork-user-projects.view-display-id-page_1 .views-field-field-images-project-fid img,
+.view-arqnetwork-user-content.view-display-id-block_3 .views-field-field-images-project-fid img{
   vertical-align: middle;
   margin: 0;
   padding: 0;
@@ -6015,7 +6018,8 @@ text-transform: uppercase;
 .view-arquideas-contest-prizes.view-display-id-block_7 .project-info,
 .view-arquideas-contest-prizes.view-display-id-block_8 .project-info,
 .view-arquideas-contest-prizes.view-display-id-block_9 .project-info,
-.view-arqnetwork-user-projects.view-display-id-page_1 .project-info{
+.view-arqnetwork-user-projects.view-display-id-page_1 .project-info,
+.view-arqnetwork-user-content.view-display-id-block_3 .project-info{
   width: 236px;
   height: 172px;
   position: absolute;
@@ -6033,7 +6037,8 @@ text-transform: uppercase;
 .view-arquideas-contest-prizes.view-display-id-block_7 .project-info:hover,
 .view-arquideas-contest-prizes.view-display-id-block_8 .project-info:hover,
 .view-arquideas-contest-prizes.view-display-id-block_9 .project-info:hover,
-.view-arqnetwork-user-projects.view-display-id-page_1 .project-info:hover{
+.view-arqnetwork-user-projects.view-display-id-page_1 .project-info:hover,
+.view-arqnetwork-user-content.view-display-id-block_3 .project-info:hover{
   background: transparent url(../images/transparent-spacer.png) repeat;
   opacity: 1;
 }
@@ -6050,7 +6055,8 @@ text-transform: uppercase;
 .view-arquideas-contest-prizes.view-display-id-block_7 .views-field-title,
 .view-arquideas-contest-prizes.view-display-id-block_8 .views-field-title,
 .view-arquideas-contest-prizes.view-display-id-block_9 .views-field-title,
-.view-arqnetwork-user-projects.view-display-id-page_1 .views-field-title {
+.view-arqnetwork-user-projects.view-display-id-page_1 .views-field-title,
+.view-arqnetwork-user-content.view-display-id-block_3 .views-field-title{
   font-size: 20px;
   line-height: 100%;
   position: absolute;
@@ -6068,12 +6074,14 @@ text-transform: uppercase;
 .view-arquideas-contest-prizes.view-display-id-block_7 .views-field-title a,
 .view-arquideas-contest-prizes.view-display-id-block_8 .views-field-title a,
 .view-arquideas-contest-prizes.view-display-id-block_9 .views-field-title a, 
-.view-arqnetwork-user-projects.view-display-id-page_1 .views-field-title a{
+.view-arqnetwork-user-projects.view-display-id-page_1 .views-field-title a,
+.view-arqnetwork-user-content.view-display-id-block_3 .views-field-title a{
   color: #fff;
 }
 
 #block-views-arqnetwork_projects-block_1 .views-field-field-project-type-project-value,
-.view-arqnetwork-user-projects.view-display-id-page_1 .views-field-field-project-type-project-value{
+.view-arqnetwork-user-projects.view-display-id-page_1 .views-field-field-project-type-project-value,
+.view-arqnetwork-user-content.view-display-id-block_3 .views-field-field-project-type-project-value{
   position: absolute;
   top: 55%;
   text-align: center;
@@ -6110,7 +6118,8 @@ text-transform: uppercase;
 .view-arquideas-contest-prizes.view-display-id-block_7 .project-social,
 .view-arquideas-contest-prizes.view-display-id-block_8 .project-social,
 .view-arquideas-contest-prizes.view-display-id-block_9 .project-social,
-.view-arqnetwork-user-projects.view-display-id-page_1 .project-social{
+.view-arqnetwork-user-projects.view-display-id-page_1 .project-social,
+.view-arqnetwork-user-content.view-display-id-block_3 .project-social{
   background-color: #000000;
   color: #FFFFFF;
   height: 28px;
@@ -6138,7 +6147,9 @@ text-transform: uppercase;
 .view-arquideas-contest-prizes.view-display-id-block_9 .views-field-rating-value,
 .view-arquideas-contest-prizes.view-display-id-block_7 .views-field-comment-count,
 .view-arquideas-contest-prizes.view-display-id-block_8 .views-field-comment-count,
-.view-arquideas-contest-prizes.view-display-id-block_9 .views-field-comment-count {
+.view-arquideas-contest-prizes.view-display-id-block_9 .views-field-comment-count,
+.view-arqnetwork-user-content.view-display-id-block_3 .views-field-rating-value,
+.view-arqnetwork-user-content.view-display-id-block_3 .views-field-comment-count{
   background: url("../images/social.png") no-repeat scroll 0 4px transparent;
   display: inline-block;
   float: none;
@@ -6150,7 +6161,8 @@ text-transform: uppercase;
 #block-views-arqnetwork_projects-block_1 .views-field-comment-count,
 .view-arquideas-contest-prizes.view-display-id-block_7 .views-field-comment-count,
 .view-arquideas-contest-prizes.view-display-id-block_8 .views-field-comment-count,
-.view-arquideas-contest-prizes.view-display-id-block_9 .views-field-comment-count {
+.view-arquideas-contest-prizes.view-display-id-block_9 .views-field-comment-count,
+.view-arqnetwork-user-content.view-display-id-block_3 .views-field-comment-count{
   background-position: 0 -27px;
   margin-left: 8px;
 }
