@@ -6167,6 +6167,10 @@ text-transform: uppercase;
   margin-left: 8px;
 }
 
+.view-arqnetwork-user-content.view-display-id-block_3 .project-owner {
+    margin: 8px 0 16px 6px;
+}
+
 .view .contest-followers span,
 .view .views-field-rating-value span,
 .view .views-field-comment-count span,
