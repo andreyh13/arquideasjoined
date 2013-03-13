@@ -144,7 +144,13 @@ M�s cambios en la fila 200,
                            //  from arg or something like that.  What code should I put in these 2 lines?
                            $params = array("requestee_id" => $account->uid);
                            $count = user_relationships_load($params, array("count" => TRUE));
-                           print '<span class="followers-count">'.$count.'</span>';
+                           print l('<span class="followers-count">'.$count.'</span>','user/'.$account->uid.'/content',array(
+                               'attributes' => array(
+                                   'title' => t('Followers'),
+                               ),
+                               'html' => TRUE,
+                               'query' => 'quicktabs_quicktabs_my_content=3',
+                           ));
                            // Follow
                            // Provide relationship links/messages
                            if (user_access('maintain own relationships')) {
