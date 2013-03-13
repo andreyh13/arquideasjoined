@@ -6325,7 +6325,15 @@ background-image: url(../images/social/icon-twitter.png);
 .social-sharing-widget .widget-header .icon-linkedin {
 background-image: url(../images/social/icon-linkedin.png);
 }
-
+.social-sharing-widget .widget-header .icon-facebook:hover {
+background-image: url(../images/social/icon-facebook-over.png);
+}
+.social-sharing-widget .widget-header .icon-twitter:hover {
+background-image: url(../images/social/icon-twitter-over.png);
+}
+.social-sharing-widget .widget-header .icon-linkedin:hover {
+background-image: url(../images/social/icon-linkedin-over.png);
+}
 
 /* Contests Common */
 
@@ -7952,6 +7960,12 @@ background-image: url(../images/social/icon-flickr.png);
 }
 a.follow-link-pinterest {
 background-image: url(../images/social/icon-pinterest.png);
+}
+a.follow-link-facebook:hover {
+background-image: url(../images/social/icon-facebook-over.png);
+}
+a.follow-link-twitter:hover {
+background-image: url(../images/social/icon-twitter-over.png);
 }
 
 /* Red Buttons */
