@@ -8052,7 +8052,7 @@ margin-right: 10px;
 
 /* Blue Square Buttons */
 form input.form-submit, .views-exposed-form .views-exposed-widget input.form-submit, .og-buttons a, body.node-type-group.page-node form input#edit-submit, #gerencia-generic-faq-reply-form #edit-submit,
-#edit-submit, #edit-publish, #search-form #edit-submit, body.page-node .edit-content-link, body.page-ogdetails .edit-content-link, body.page-node .og-manage-link, body.page-node .generic-button, .flag-wrapper .flag {
+#edit-submit, #edit-publish, #search-form #edit-submit, body.page-node .edit-content-link, body.page-ogdetails .edit-content-link, body.page-node .og-manage-link, body.page-node .generic-button, .flag-wrapper .flag, a.user-unsubscribe-link {
 background-color: #36c9d3;
 background-image: none;
 border: 0 none;
@@ -8506,6 +8506,8 @@ a.grouping-button-container:hover,
  a.user-unsubscribe-link {
  	display: block;
 	margin-bottom: 20px;
+        color: #FFF;
+        text-transform: uppercase;
  }
 #edit-submit{
 	margin-left: 200px;
