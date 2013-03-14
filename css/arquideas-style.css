@@ -8148,12 +8148,14 @@ body.area-social #main, body.area-social.page-one-column.page-node.node-type-gro
 }
 body.area-social  h1.title, body.page-node.area-social  h1.title {
     padding: 0;
-	color: #000;
-	margin: 0;
-	float: left;
-	font-weight: normal;
-	font-family: SoinSans-Bold;
-	font-size: 30px;
+    color: #000;
+    margin: 0;
+    float: left;
+    font-weight: normal;
+    font-family: SoinSans-Bold;
+    font-size: 28px;
+    max-width:508px;
+    width:508px;
 }
 body.area-social td{
 	padding: 0!important
@@ -8166,23 +8168,24 @@ table tr td.active{
 	/*margin-left: -24px;*/
 	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
-	margin-bottom: 20px;
+	margin-bottom: 8px;
 
 }
 .name-holder .follow-box{
-	margin: -10px 0 -10px 462px;
-	min-width: 240px;
+	margin: -10px 0 -10px 520px;
+	min-width: 150px;
+        width: 180px;
 	background: #000;
-	height: 56px;
+	height: 92px;
 }
 .follow-box-inner{
-	padding: 19px;
+	padding: 36px 12px;
 	color: #fff;
 	font-size: 1.5em;
 }
 .follow-box .ur_action{
 	display: inline-block;
-	padding: 0px 20px;
+	padding: 0px 8px;
 	background: #999999;
 	font-family: SoinSans-BoldOblique;
 	border-radius: 4px 4px 4px 4px;
@@ -8218,11 +8221,10 @@ table tr td.active{
 	font-family: SoinSans-Bold
 }
 .user-job{
-	margin: 15px 0;
+	margin: 4px 0 0 20px;
 	color: #000;
 	font-size: 16px;
 	float: left;
-	margin-left: 20px;
 	display: inline-block;
 	font-family: SoinSans-Bold;
 	line-height: 29px;
@@ -11547,3 +11549,12 @@ div.ok, tr.ok {
     margin-left: 264px;
 }
 
+.area-social .header .social-sharing-widget {
+    display: inline-block;
+    float: right;
+    margin-bottom: 15px;
+}
+
+.area-social header .addthis_toolbox, .area-social header .widget-header{
+    margin: -10px 0 0;
+}
