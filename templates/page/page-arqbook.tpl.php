@@ -47,10 +47,23 @@
       	<div id="preface-top" class="preface-top row <?php print $grid_width; ?> clearfix">
   			<?php print theme('grid_block', $breadcrumb, 'breadcrumbs'); ?>
 			<div class="logo">
-                                <a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
+                            <?php print l('<img src="'.$logo.'" alt="'.t('Home').'" />','<front>',array(
+                                'attributes' => array(
+                                    'title' => t('Home'), 
+                                    'target' => '_blank',
+                                ),
+                                'html' => TRUE,
+                                'absolute' => TRUE,
+                            )); ?>
 		        </div>
             <div class="profile-link">
-                <?php print l(t('View profile in arquideas'),'user/'.$arqbook_uid,array('attributes'=>array('title' => t('View profile in arquideas')))); ?>
+                <?php print l(t('View profile in arquideas'),'user/'.$arqbook_uid,array(
+                    'attributes'=>array(
+                        'title' => t('View profile in arquideas'),
+                        'target' => '_blank',
+                    ),
+                    'absolute' => TRUE,
+                )); ?>
             </div>
         </div>
       </div>
@@ -105,7 +118,7 @@
                                             <div class="buttons">
 						<ul>
 						<li class="lbtrigger">
-							<a href="#" class="likeboxtg">Recomendar CV</a>
+							<a href="#" class="likeboxtg"><?php print t('Recommend CV'); ?></a>
 							<div id="likebox" class="share-in clearfix"><!-- 
                                 <h3><?php print t('Share'); ?></h3> -->
                                 <span class='st_email_large' displayText='Email'></span>
@@ -126,11 +139,13 @@
 								})
 							})
 						</script>
-						<li><?php print l(t('Ver perfil en Arquideas'),'user/'.$arqbook_uid,array(
+						<li><?php print l(t('View profile in Arquideas'),'user/'.$arqbook_uid,array(
                                                             'attributes' => array(
                                                                 'title' => t('Ver perfil en Arquideas'),
                                                                 'class' => 'view-profile',
+                                                                'target' => '_blank',
                                                             ),
+                                                            'absolute' => TRUE,
                                                     )); ?></li>
 						</ul>
                                             </div>
@@ -156,7 +171,9 @@
                                                             'attributes' => array(
                                                                 'title' => t('View profile'),
                                                                 'class' => 'view-profile',
+                                                                'target' => '_blank',
                                                             ),
+                                                            'absolute' => TRUE,
                                                         )); ?>
                                                     </div>
                                                 </div> -->
@@ -199,9 +216,6 @@
                                         foreach($arqbook_images as $imageobj){ 
                                             $m_count++; ?>
                                         <div class="imageholder <?php print ($m_count==1)?"first":($m_count==count($arqbook_images)?"last":"inner"); ?>">
-                                           <!--  <div class="logo">
-                                                <a href="<?php print check_url($front_page); ?>" title="<?php print t('Home'); ?>"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
-                                            </div> -->
                                             <a href="<?php print $imageobj['fullimage_path']; ?>" rel="lightbox[arqbook]" title="<?php print $imageobj['title']; ?>">
                                                 <?php print $imageobj['image']; ?>
                                             </a>
