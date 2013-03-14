@@ -8134,7 +8134,7 @@ body.area-social #main, body.area-social.page-one-column.page-node.node-type-gro
 	margin: 20px 0 10px 0;
 }
 .breadcrumb{
-	padding-bottom: 0;
+	padding-bottom: 8px;
 }
 .breadcrumbs a, .breadcrumbs a:link, .breadcrumbs a:visited{
 	color: #999;
@@ -11546,3 +11546,4 @@ div.ok, tr.ok {
 .popups-box .popups-body #edit-submit {
     margin-left: 264px;
 }
+
