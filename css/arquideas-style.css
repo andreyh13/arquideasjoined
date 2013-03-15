@@ -8624,12 +8624,7 @@ width: auto; display: inline-block; float: right; display: none;
 	border-right: 1px solid #ccc;
 	margin-right: -1px;
 }
-/*
-	border-left: 1px solid #ccc;.view-arqnetwork-user-profile .views-field-field-facebook-acp-url,
-.view-arqnetwork-user-profile .views-field-field-google-acp-url,
-.view-arqnetwork-user-profile .views-field-field-linkedin-acp-url,
-.view-arqnetwork-user-profile .views-field-field-pinterest-acp-url,
-.view-arqnetwork-user-profile .views-field-field-twitter-acp-url*/
+
 .views-field-field-facebook-acp-url label,
 .views-field-field-google-acp-url label,
 .views-field-field-linkedin-acp-url label,
@@ -8646,8 +8641,8 @@ width: auto; display: inline-block; float: right; display: none;
 	display: block;
 	float: left;
 	margin-left: 10px;
-	width: 24px;
-	height: 24px;
+	/*width: 24px;
+	height: 24px;*/
 }
 /*
 .views-field-field-facebook-acp-url .field-content,
@@ -8668,25 +8663,40 @@ width: auto; display: inline-block; float: right; display: none;
 	display: block;
 	width: 24px;
 	height: 24px;
-	background-image: url(../images/icos_redes.png);
+	/*background-image: url(../images/icos_redes.png);*/
 	background-repeat: no-repeat;
 	text-indent: -999px;
 
 }
 .views-field-field-facebook-acp-url .field-content a, #mybook #social-networks .facebook a{
-	background-position: -31px 0;
+	background-image: url(../images/social/icon-facebook.png);
+}
+.views-field-field-facebook-acp-url .field-content a:hover, #mybook #social-networks .facebook a:hover{
+	background-image: url(../images/social/icon-facebook-over.png);
 }
 .views-field-field-google-acp-url .field-content a, #mybook #social-networks .google a{
-	background-position: -31px 0;
+	background-image: url(../images/social/icon-google-plus.png);
+}
+.views-field-field-google-acp-url .field-content a:hover, #mybook #social-networks .google a:hover{
+	background-image: url(../images/social/icon-google-plus-over.png);
 }
 .views-field-field-linkedin-acp-url .field-content a, #mybook #social-networks .linkedin a{
-	background-position: -62px 0;
+	background-image: url(../images/social/icon-linkedin.png);
+}
+.views-field-field-linkedin-acp-url .field-content a:hover, #mybook #social-networks .linkedin a:hover{
+	background-image: url(../images/social/icon-linkedin-over.png);
 }
 .views-field-field-pinterest-acp-url .field-content a, #mybook #social-networks .pinterest a{
-	background-position: -93px 0;
+	background-image: url(../images/social/icon-pinterest.png);
+}
+.views-field-field-pinterest-acp-url .field-content a:hover, #mybook #social-networks .pinterest a:hover{
+	background-image: url(../images/social/icon-pinterest-over.png);
 }
 .views-field-field-twitter-acp-url .field-content a, #mybook #social-networks .twitter a{
-	background-position: 0 0;
+	background-image: url(../images/social/icon-twitter.png);
+}
+.views-field-field-twitter-acp-url .field-content a:hover, #mybook #social-networks .twitter a:hover{
+	background-image: url(../images/social/icon-twitter-over.png);
 }
 .view-arqnetwork-user-profile .field-content{
 	max-width: 200px;
