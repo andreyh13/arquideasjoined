@@ -4752,27 +4752,61 @@ padding-bottom: 8px;
 padding-left: 4px;
 padding-top: 8px;
 position: relative;
-width: 97%;
+width: 98%;
+border-bottom: 1px solid #999;
+}
+body.not-front .page-full-view #main-content .view-content .views-slideshow-controls-top .views_slideshow_pagerNumbered .pager-item.even{
+background-color: #FFF;    
+}
+body.not-front .page-full-view #main-content .view-content .views-slideshow-controls-top .views_slideshow_pagerNumbered .pager-item.odd{
+background-color: #EBEBEB;    
+}
+body.not-front .page-full-view #main-content .view-content .views-slideshow-controls-top .views_slideshow_pagerNumbered .pager-item.activeSlide{
+background-color: #666666;    
 }
 body.not-front .page-full-view #main-content .view-content .views-slideshow-controls-top .views_slideshow_pagerNumbered .pager-item a {
 display: inline-block;
 margin-left: 4px;
 vertical-align: top;
 width: 148px;
+color: #1A1A1A;
+font-weight: bold;
+font-family: "SoinSans-Bold", Helvetica, Arial, sans-serif;
+font-size: 12px;
 }
 body.not-front .page-full-view #main-content .view-content .views-slideshow-controls-top .views_slideshow_pagerNumbered .pager-item.activeSlide a {
 font-weight: bold;
+color:#FFF;
 }
 body.not-front .page-full-view #main-content .view-content .views-slideshow-controls-top .views_slideshow_pagerNumbered .pager-item .members-count {
 display: inline-block;
 float: right;
 padding-left: 0;
-text-align: left;
+text-align: center;
 width: 24px;
+color: #808184;
+}
+body.not-front .page-full-view #main-content .view-content .views-slideshow-controls-top .views_slideshow_pagerNumbered .pager-item.activeSlide .members-count {
+color: #FFF;    
 }
 body.not-front .page-full-view #main-content .view-content .views-slideshow-controls-top .item-list {
 float: left;
-width: 99%;
+width: 225px;
+background-color: #FFF;
+}
+body.not-front .page-full-view #main-content .view-content .views-slideshow-controls-top .item-list .pager .pager-previous.disabled,
+body.not-front .page-full-view #main-content .view-content .views-slideshow-controls-top .item-list .pager .pager-next.disabled{
+    display: none;
+}
+body.not-front .page-full-view #main-content .view-content .views-slideshow-controls-top .item-list .pager .pager-element{
+    font-weight: bold;
+}
+body.not-front .page-full-view #main-content .view-content .views-slideshow-controls-top .item-list .pager .pager-element a{
+    color: #27A8D9;
+    font-weight: bold;
+}
+body.not-front .page-full-view #main-content .view-content .views-slideshow-controls-top .item-list .pager .pager-element.pager-current a{
+    color: #000;
 }
 .views_slideshow_singleframe_pager div.views-field-count, .views_slideshow_singleframe_pager div.views-field-count-1, .views_slideshow_singleframe_pager div.views-field-count-2, .views_slideshow_singleframe_pager div.views-field-value, .views_slideshow_singleframe_pager div.views-field-value div, .views_slideshow_singleframe_pager div.jury-flags, .views_slideshow_singleframe_pager div.jury-flags div, .views_slideshow_singleframe_pager div.winners-flags, .views_slideshow_singleframe_pager div.winners-flags div, .views_slideshow_singleframe_pager div.fivestar-widget, .views_slideshow_singleframe_pager div.fivestar-widget div {
 display: block;
@@ -4910,6 +4944,7 @@ z-index: 100;
 }
 .page-full-view .inner.content .views-slideshow-controls-top .view-filters .fieldset-wrapper {
 width: 220px;
+background-color: #EBEBEB;
 }
 .page-full-view .inner.content .view-filters .fieldset-wrapper .views-exposed-submit {
 float: right;
@@ -4928,6 +4963,7 @@ height: 28px;
 margin: 4px 0;
 overflow: visible;
 padding: 0;
+width:223px;
 }
 .members-count-top {
 float: right;
@@ -7983,7 +8019,9 @@ a.public-vote-link,
 .join-us-link-div a,
 .view-contests .field-content .generic-button, 
 .node-type-inscription .contest-info .open-contest-button a,
-a.sign-up-link, a.sign-in-link, #edit-present, a.user-unsubscribe-link {
+a.sign-up-link, a.sign-in-link, #edit-present, a.user-unsubscribe-link,
+.prev-project a, .next-project a,
+.page-full-view .views_slideshow_singleframe_slide .flag-wrapper .flag {
   font-family: "SoinSans-BoldOblique",Helvetica,Arial,sans-serif;
 padding: 10px 20px;
 color: #fff;
@@ -8040,7 +8078,9 @@ a.participate-link {
 a.public-vote-link,
 #view-id-contests-page_2 .add-to-cart-link,
 .view-contests .field-content .generic-button,
-.node-type-inscription .contest-info .open-contest-button a{
+.node-type-inscription .contest-info .open-contest-button a,
+.prev-project a, .next-project a, 
+.page-full-view .views_slideshow_singleframe_slide .flag-wrapper .flag.unflag-action{
 background: #33CCCC;
 margin-right: 10px;
   display: inline-block;
@@ -8102,7 +8142,8 @@ form input.form-submit:focus, .views-exposed-form .views-exposed-widget input.fo
 #contest-banner .contest-state-wrapper .open-contest-button .generic-button:hover,
  .node-type-inscription .contest-info .open-contest-button a:hover,
  .contest-state-wrapper .register-link-div a:hover,
- .contest-state-wrapper a.public-votation-link:hover{
+ .contest-state-wrapper a.public-votation-link:hover,
+ .page-full-view .views_slideshow_singleframe_slide .flag-wrapper .flag:hover{
 background-color: #F86C00;
 background-image: none;
 text-decoration: none;
@@ -11350,10 +11391,10 @@ font-size: 12px
     display: none;
 }
 #block-views-contests-block_1 .state-open, #block-views-contests-block_1 .state-closed {
-    width: 140px;
+    width: 154px;
 }
 #block-views-contests-block_1 .contest-state {
-    width: 138px;
+    width: 152px;
 }
 div.texto-legal {
     margin: 16px 0;
@@ -11572,4 +11613,197 @@ div.ok, tr.ok {
 
 .area-social header .addthis_toolbox, .area-social header .widget-header{
     margin: -10px 0 0;
+}
+
+/* White Rounded Buttons */
+.prev-project a, .next-project a{
+  background: #FFF;
+  margin-right: 0;
+  display: inline-block;
+  color: #27A8D9;
+  text-shadow: none;
+  padding: 6px 10px;
+  background-repeat: no-repeat;
+}
+
+.prev-project a {
+    background-image: url('../images/arrow_book_left.png');
+    background-position: 3% 40%;
+    padding: 6px 10px 6px 20px;
+}
+
+.next-project a {
+    background-image: url('../images/arrow_book_right.png');
+    background-position: 97% 40%;
+    padding: 6px 20px 6px 10px;
+}
+
+.page-full-view .projects-navigation{
+    height: 32px;
+}
+
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-files-fid {
+    display: inline-block;
+    width: 99%;
+    margin:16px 0;
+}
+
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-files-fid .field-content{
+    border: 1px solid #FFF;
+    padding: 12px;
+}
+
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-files-fid table th,
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-files-fid table td{
+    color: #FFF;
+}
+
+.page-full-view .views_slideshow_singleframe_slide .views-field-ops,
+#views_slideshow_singleframe_main_contest_inscriptions_winnersel-page_1 .views-field-phpcode{
+    height: 38px;
+    padding: 0 8px 0 0;
+    margin: 8px 0;
+}
+
+.page-full-view .views_slideshow_singleframe_slide .projects-navigation {
+    margin: 16px 0;
+}
+
+#page.page-full-view .view-full-page {
+    padding: 20px 0 20px 20px;
+}
+
+.page-full-view .views_slideshow_singleframe_pager .pager-item .views-field-picture{
+    float: right;
+    padding-right: 4px;
+}
+
+#page.page-full-view .view-full-page .views-exposed-form .fieldset-wrapper label {
+    color: #1A1A1A;
+}
+#page.page-full-view .view-full-page .views-exposed-form .fieldset-wrapper .views-exposed-widgets select{
+    width: 205px;
+    max-width: 205px;
+}
+#page.page-full-view .view-full-page .views-exposed-form .fieldset-wrapper .views-exposed-widgets input {
+    width: 194px;
+    border: 1px solid #999;
+    padding: 4px 5px;
+}
+#page.page-full-view .view-full-page .views-exposed-form .fieldset-wrapper .views-exposed-widget .form-item .description {
+    color: #1A1A1A;
+}
+#page.page-full-view .view-full-page .views-exposed-form .fieldset-wrapper .views-exposed-widget .form-submit {
+    width: 80px;
+}
+
+.page-full-view .views_slideshow_singleframe_slide .flag-wrapper .flag,
+.page-full-view .views_slideshow_singleframe_slide .flag-wrapper .flag.unflag-action{
+    margin: 0 4px;
+    font-size: 16px;
+}
+
+#view-id-contest_inscriptions_juryvotes-page_1 .views-field-phpcode-4,
+#view-id-contest_inscriptions_juryvotes-page_1 .views-field-phpcode,
+#view-id-contest_inscriptions_myvotes-page_1 .views-field-phpcode-2,
+#view-id-contest_inscriptions_myvotes-page_1 .views-field-phpcode,
+#views_slideshow_singleframe_main_contest_inscriptions_publicvote-page_1 .views-field-phpcode-2{
+    margin-bottom: 16px;
+    float: left;
+    width: 100%;
+}
+
+.personal_notes > .title{
+    font-size: 18px;
+    font-family: "SoinSans-Roman",Helvetica,Arial,sans-serif;
+}
+.personal_notes > .note{
+    color: #FFF;
+    font-family: "SoinSans-Roman",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+
+.ui-dialog-content .personal_notes > .note{
+    color: #1A1A1A;
+}
+
+.page-full-view .views_slideshow_singleframe_slide h3 {
+    color: #FFF;
+}
+
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-flagcount-vname {
+    margin-bottom: 8px;
+}
+
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-flagcount-vname h3{
+    margin-bottom: 4px;
+}
+
+.page-full-view .views_slideshow_singleframe_pager .pager-item .views-field-count,
+.page-full-view .views_slideshow_singleframe_pager .pager-item .views-field-count-1,
+.page-full-view .views_slideshow_singleframe_pager .pager-item .views-field-count-2{
+    color: #1A1A1A;
+}
+
+.page-full-view .views_slideshow_singleframe_pager .pager-item.activeSlide .views-field-count,
+.page-full-view .views_slideshow_singleframe_pager .pager-item.activeSlide .views-field-count-1,
+.page-full-view .views_slideshow_singleframe_pager .pager-item.activeSlide .views-field-count-2{
+    color: #FFF;
+}
+
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-favorit-detail-vname .view .views-table th,
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-select-detail-vname .view .views-table th,
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-reject-detail-vname .view .views-table th,
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-fivestar-det-vname .view .views-table th,
+.view-contest-inscriptions-votingres .views-table th{
+    color: #999999;
+    padding: 10px 0.2em 6px;
+}
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-favorit-detail-vname .view .views-table td,
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-select-detail-vname .view .views-table td,
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-reject-detail-vname .view .views-table td,
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-fivestar-det-vname .view .views-table td,
+.view-contest-inscriptions-votingres .views-table td{
+    color: #FFF;
+}
+.view-contest-inscriptions-votingres .views-table .views-field-title a{
+    color: #F3F3F3;
+}
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-favorit-detail-vname h3,
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-select-detail-vname h3,
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-reject-detail-vname h3,
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-fivestar-det-vname h3{
+    margin-bottom: 0;
+}
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-favorit-detail-vname > .field-content > .view,
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-select-detail-vname > .field-content > .view,
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-reject-detail-vname > .field-content > .view,
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-fivestar-det-vname > .field-content > .view{
+    border: 1px solid #fff;
+    padding: 8px;
+    margin-bottom: 12px;
+}
+
+#page.page-full-view .view-full-page .view-header .viewsdisplaytabs-wrapper {
+    float: right;
+}
+#page.page-full-view .view-full-page .view-header .viewsdisplaytabs-wrapper .viewsdisplaytabs-tab-group {
+    border-bottom: 0 none;
+}
+#page.page-full-view .view-full-page .view-header .viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li.last a {
+    width: 26px;
+    background-position: 0 0;
+}
+#page.page-full-view .view-full-page .view-header .viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li.last a.viewsdisplaytabs-active {
+    background-position: 0 -30px;
+}
+#page.page-full-view .view-full-page .view-header .viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li.first a{
+    width: 13px;
+    background-position: -30px 0;
+}
+#page.page-full-view .view-full-page .view-header .viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li.first a.viewsdisplaytabs-active{
+    background-position: -30px -30px;
+}
+.view-contest-inscriptions-votingres.view-display-id-block_1 .pager .pager-item a, .view-contest-inscriptions-votingres.view-display-id-block_1 .pager li a {
+    color: #FFF;
 }

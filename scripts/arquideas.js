@@ -359,6 +359,12 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
                 if($("#block-views-sponsors-block_4 .content .view-empty").length){
                     $("#block-views-sponsors-block_4").remove();
                 }
+                //Some fixes for internal admin pages
+                if($("#page.page-full-view .view-full-page .views_slideshow_singleframe_slide").length){
+                    $("#page.page-full-view .view-full-page .views_slideshow_singleframe_slide .views-field-title a").attr("target","_blank");
+                    $("#page.page-full-view .view-full-page .views_slideshow_singleframe_slide #scrollable .items a").attr("target","_blank");
+                    $("#page.page-full-view .view-full-page .views_slideshow_singleframe_slide .views-field-field-inscription-members-list-vname a").attr("target","_blank");
+                }
 });
 
 $(window).load(function(){
