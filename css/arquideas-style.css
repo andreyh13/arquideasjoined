@@ -6244,6 +6244,9 @@ text-transform: uppercase;
 .contest-winners .view-arquideas-contest-prizes.view-id-arquideas_contest_prizes .views-row-inner > div.views-field-value span {
   background-position: 0 -54px;
 }
+.contest-winners .view-arquideas-contest-prizes.view-id-arquideas_contest_prizes .views-row-inner > div.views-field-value span {
+  background-position: 0 4px;
+}
 
 .view-display-id-page_1 .views-field-comment-count span,
 .view-display-id-page_1 .views-field-value span,
