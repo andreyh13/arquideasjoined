@@ -23,7 +23,9 @@
   <div class="views-field-field-images-project-fid">
     <div class="field-content">
     <?php 
-      if(!empty($fields['field_list_image_project_fid']->content)) { 
+      if(!empty($fields['field_images_project_fid']->content)) { 
+        print $fields['field_images_project_fid']->content;
+      } elseif(!empty($fields['field_list_image_project_fid']->content)) { 
         print $fields['field_list_image_project_fid']->content;
       } elseif(!empty($fields['field_image_inscription_fid']->content)) {
         print $fields['field_image_inscription_fid']->content;
