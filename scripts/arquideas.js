@@ -365,6 +365,10 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
                     $("#page.page-full-view .view-full-page .views_slideshow_singleframe_slide #scrollable .items a").attr("target","_blank");
                     $("#page.page-full-view .view-full-page .views_slideshow_singleframe_slide .views-field-field-inscription-members-list-vname a").attr("target","_blank");
                 }
+                //Links inside facebook status content must have target _blank attribute
+                if($(".facebook-status-item .content a").length){
+                    $(".facebook-status-item .content a").attr("target","_blank");
+                }
 });
 
 $(window).load(function(){
