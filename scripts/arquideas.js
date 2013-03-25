@@ -372,9 +372,9 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
                 //Large texts inside activity stream on front page must be cutted to 70 symbols.
                 if($(".front .facebook-status-item .content .facebook-status-content").length){
                     $(".front .facebook-status-item .content .facebook-status-content").each(function(){
-                        var m_text = $(this).html();
+                        var m_text = $(this).text();
                         if(m_text.length>70){
-                            $(this).html(m_text.substr(0,67)+"...");
+                            $(this).html(m_text.substr(0,70)+"...");
                         }
                     });
                 }
