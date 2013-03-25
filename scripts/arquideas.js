@@ -369,6 +369,15 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
                 if($(".facebook-status-item .content a").length){
                     $(".facebook-status-item .content a").attr("target","_blank");
                 }
+                //Large texts inside activity stream on front page must be cutted to 70 symbols.
+                if($(".front .facebook-status-item .content .facebook-status-content").length){
+                    $(".front .facebook-status-item .content .facebook-status-content").each(function(){
+                        var m_text = $(this).html();
+                        if(m_text.length>70){
+                            $(this).html(m_text.substr(0,67)+"...");
+                        }
+                    });
+                }
 });
 
 $(window).load(function(){
