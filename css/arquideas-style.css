@@ -11810,3 +11810,21 @@ div.ok, tr.ok {
 .view-contest-inscriptions-votingres.view-display-id-block_1 .pager .pager-item a, .view-contest-inscriptions-votingres.view-display-id-block_1 .pager li a {
     color: #FFF;
 }
+.account-edit .node-form #tabset-tab-5 .advanced_link-field-subrow {
+    min-height: 135px;
+}
+.account.area-social .view-arqnetwork-user-profile .views-field-phpcode {
+    padding: 20px 8px 0 8px;
+    display: inline-block;
+    border-right: 0 none;
+    float: left;
+}
+.account.area-social .views-field-field-facebook-acp-url, 
+.account.area-social .views-field-field-google-acp-url, 
+.account.area-social .views-field-field-linkedin-acp-url,
+.account.area-social .views-field-field-pinterest-acp-url,
+.account.area-social .views-field-field-twitter-acp-url{
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 6px;
+}
