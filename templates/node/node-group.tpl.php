@@ -24,6 +24,12 @@
     </div>
     <!-- End Short Group Description -->
     
+    <!--Body of group -->
+    <div class="og-mission-wrapper">
+    <?php print $body; ?> 
+    </div>    
+    <!-- End Body of group -->
+    
       <?php if ($terms): ?>
         <div class="terms">
     	  <h4>Tags:</h4>
@@ -99,18 +105,6 @@
         endif;
     endif; ?>
     <!-- END JOIN GROUP OR LEAVE GROUP BUTTON -->
-  
-    <!-- Back to contest link -->
-    <?php print $back_to_contest; ?>
-    <!-- End Back to contest link -->
-    
-  <!-- BLOCK ADDTHIS -->
-  <?php if($page && !$is_edit){
-    $block_addthis = module_invoke('arquideas_generic','block','view','13');
-    print $block_addthis['content'];
-  }
-  ?>
-  <!-- END BLOCK ADDTHIS -->
   
     <div class="content clearfix">
       <?php /*if($page && !$is_edit){print $content;}*/ ?>
@@ -203,3 +197,16 @@
   </div><!-- /node-bottom -->
   <?php endif; ?>
 </div>
+<div class="node-widgets-area">
+    <!-- Back to contest link -->
+    <?php print $back_to_contest; ?>
+    <!-- End Back to contest link -->
+    
+  <!-- BLOCK ADDTHIS -->
+  <?php if($page && !$is_edit){
+    $block_addthis = module_invoke('arquideas_generic','block','view','13');
+    print $block_addthis['content'];
+  }
+  ?>
+  <!-- END BLOCK ADDTHIS -->
+</div>  

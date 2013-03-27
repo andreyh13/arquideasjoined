@@ -10893,10 +10893,18 @@ body.page-node.node-type-group #sidebar-last{
 	min-height: 150px;
 	background-color:transparent;
 }
+.page-node.node-type-group .full-node.node-type-group .inner {
+    min-height: 150px;
+    height: auto;
+}
 .page-node.node-type-group .full-node.node-type-group .og-description,
+.page-node.node-type-group .full-node.node-type-group .og-mission,
 .page-node.node-type-group .full-node.node-type-group .terms,
 .page-node.node-type-group .full-node.node-type-group .group-members-count{
     margin-left: 170px;
+}
+.page-node.node-type-group .full-node.node-type-group .og-mission-wrapper{
+    min-height: 64px;
 }
 .page-node.node-type-group .full-node.node-type-group .social-sharing-widget{
 	position: absolute;
@@ -10906,26 +10914,18 @@ body.page-node.node-type-group #sidebar-last{
 	display: inline-block;
 }
 .page-node.node-type-group .block-quicktabs{
-    margin-top: 20px
+    margin-top: 0;
 }
 .page-node.node-type-group .full-node.node-type-group .group-members-count{
     height: 24px;
+    margin-top: 12px;
 }
 .page-node.node-type-group .full-node.node-type-group .group-members-count, .page-node.node-type-group .full-node.node-type-group .og-buttons{
-    position: absolute; bottom: 5px
+    /*position: absolute; bottom: 5px*/
+    display: inline-block;
 }
  .page-node.node-type-group .full-node.node-type-group .og-buttons{
-    right: 0;
-}
-
-.page-node.node-type-group .full-node.node-type-group .group-members-count{
-    height: 24px;
-}
-.page-node.node-type-group .full-node.node-type-group .group-members-count, .page-node.node-type-group .full-node.node-type-group .og-buttons{
-    position: absolute; bottom: 5px
-}
- .page-node.node-type-group .full-node.node-type-group .og-buttons{
-    right: 0;
+    float: right;
 }
 .page-node.node-type-group .full-node.node-type-group .og-buttons a{
  	border: none;
@@ -11827,4 +11827,16 @@ div.ok, tr.ok {
     display: inline-block;
     margin-top: 15px;
     margin-left: 6px;
+}
+
+.page-node.node-type-group #content-content .node-widgets-area{
+    position: relative;
+}
+
+.page-node.node-type-group #content-content .node-widgets-area .social-sharing-widget {
+    float: right;
+    margin-bottom: 0;
+}
+.full-node.node-type-group .node-widgets-area .back-contest{
+    top: -6px;
 }
