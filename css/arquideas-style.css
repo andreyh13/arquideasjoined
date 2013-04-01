@@ -11227,6 +11227,9 @@ font-size: 12px
 	list-style: none;
     text-indent: 0;
 }
+.view-profile-follower ul.pager li {
+    width: auto;
+}
 .view-profile-follower li .user-image {
     float: left;
     margin: 0 5px 20px 0;
