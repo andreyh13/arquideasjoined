@@ -158,6 +158,17 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
         //Scripts to apply after AJAX reloads in pages
         Drupal.behaviors.arquideasTheme = function(context) {
             addLast('#view-id-arqnetwork_user_projects-page_1 .item-list ul li.views-row', 3);
+            
+            //Followers hack
+            if($(".view-profile-follower .views-view-grid td").length){
+                $(".view-profile-follower .views-view-grid td").each(function(){
+                    $(".views-field-user-badges-html .user_badges img",this).each(function(index){
+                        if(index>0){
+                            $(this).remove();
+                        } 
+                    });
+                });
+            }
         }
         
         //Join group for anonymous should open login form
@@ -413,5 +424,11 @@ $(window).load(function(){
 			//Asignamos la altura a los contenedores de slides
 		    $(this).find(".views_slideshow_singleframe_teaser_section").css({'min-height':max+plusheight+2+"px", 'min-width':'100%'}); 
 			$(this).find(".views_slideshow_slide").css({'min-height':max+plusheight+2+"px", 'min-width':'100%'}); 
-	})
+	});
+        
+    //Links inside facebook status content must have target _blank attribute
+    if($(".facebook-status-item .content a").length){
+        $(".facebook-status-item .content a").attr("target","_blank");
+    }
+    
 });
