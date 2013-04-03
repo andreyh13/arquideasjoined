@@ -169,6 +169,11 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
                     });
                 });
             }
+            
+            //Links inside facebook status content must have target _blank attribute
+            if($(".facebook-status-item .content a").length){
+                $(".facebook-status-item .content a").attr("target","_blank");
+            }
         }
         
         //Join group for anonymous should open login form
@@ -425,10 +430,4 @@ $(window).load(function(){
 		    $(this).find(".views_slideshow_singleframe_teaser_section").css({'min-height':max+plusheight+2+"px", 'min-width':'100%'}); 
 			$(this).find(".views_slideshow_slide").css({'min-height':max+plusheight+2+"px", 'min-width':'100%'}); 
 	});
-        
-    //Links inside facebook status content must have target _blank attribute
-    if($(".facebook-status-item .content a").length){
-        $(".facebook-status-item .content a").attr("target","_blank");
-    }
-    
 });
