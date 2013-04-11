@@ -10597,10 +10597,29 @@ body.page-groups .sidebar-last .block-views .view-content .item-list ul li .view
 {
 	float: none;
 }
-.arquideas-network #content-front-inner .content-front-left .block .addthis_default_style .addthis_button_facebook_like{
+.arquideas-network #content-front-inner .content-front-left .block .addthis_default_style .addthis_button_facebook_like,
+#block-arquideas_generic-13 .addthis_default_style .addthis_button_facebook_like{
 	position: relative;
 	top: 5px;
 }
+.node-type-group #block-arquideas_generic-13 .addthis_default_style .addthis_button_facebook_like,
+.full-node .social-widgets #block-arquideas_generic-13 .addthis_default_style .addthis_button_facebook_like{
+    top:0;
+}
+.node-type-group #block-arquideas_generic-13.full-width-block .addthis_default_style .addthis_button_facebook_like {
+    top:5px;
+}
+
+#block-arquideas_generic-13.full-width-block .social-sharing-widget {
+    width: 100%;
+}
+#block-arquideas_generic-13.full-width-block .social-sharing-widget .addthis_toolbox{
+    text-align: center;
+}
+#block-arquideas_generic-13.full-width-block .social-sharing-widget .addthis_toolbox .addthis_toolbox_item{
+    float: none;
+}
+
 .arquideas-network #content-front-inner .content-front-left div.node,
 .page-solr-nodetype-multi #content-front-inner .content-front-left div.node,
 .page-solr-nodetype #content-front-inner .content-front-left div.node{
@@ -11855,4 +11874,6 @@ div.ok, tr.ok {
     margin-right: 100px;
     margin-top: 12px;
 }
-
+#fb-root{
+    display:none;
+}

@@ -430,4 +430,12 @@ $(window).load(function(){
 		    $(this).find(".views_slideshow_singleframe_teaser_section").css({'min-height':max+plusheight+2+"px", 'min-width':'100%'}); 
 			$(this).find(".views_slideshow_slide").css({'min-height':max+plusheight+2+"px", 'min-width':'100%'}); 
 	});
+    //Addthis block adjustment
+    if($("#block-arquideas_generic-13").length){
+      var w = "100px";
+      if($("body").hasClass("node-type-contest")){
+          w = "300px";
+      }
+      $("#block-arquideas_generic-13 .widget-body .addthis_toolbox .addthis_toolbox_item > iframe").css("width",w);  
+    }    
 });

@@ -97,7 +97,7 @@
       <!-- SHARE SOCIAL BLOCK -->
       <?php
         $block = module_invoke('arquideas_generic', 'block', 'view', '13');
-        print $block['content'];
+        print '<div id="block-arquideas_generic-13">'.$block['content'].'</div>';
       ?>
       <!-- END SHARE SOCIAL BLOCK -->
     </div>
