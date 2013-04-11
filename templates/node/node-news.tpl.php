@@ -96,8 +96,10 @@
 
       <!-- SHARE SOCIAL BLOCK -->
       <?php
-        $block = module_invoke('arquideas_generic', 'block', 'view', '13');
-        print '<div id="block-arquideas_generic-13">'.$block['content'].'</div>';
+        if(!isset($node->og_public) || (isset($node->og_public) && $node->og_public==1)){
+          $block = module_invoke('arquideas_generic', 'block', 'view', '13');
+          print '<div id="block-arquideas_generic-13">'.$block['content'].'</div>';
+        }
       ?>
       <!-- END SHARE SOCIAL BLOCK -->
     </div>

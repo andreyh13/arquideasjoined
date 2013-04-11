@@ -10616,7 +10616,11 @@ body.page-groups .sidebar-last .block-views .view-content .item-list ul li .view
 #block-arquideas_generic-13.full-width-block .social-sharing-widget .addthis_toolbox{
     text-align: center;
 }
-#block-arquideas_generic-13.full-width-block .social-sharing-widget .addthis_toolbox .addthis_toolbox_item{
+.field-ds-social-widgets-block #block-arquideas_generic-13 .social-sharing-widget .addthis_toolbox{
+    text-align: right;
+}
+#block-arquideas_generic-13.full-width-block .social-sharing-widget .addthis_toolbox .addthis_toolbox_item,
+.field-ds-social-widgets-block #block-arquideas_generic-13 .social-sharing-widget .addthis_toolbox .addthis_toolbox_item{
     float: none;
 }
 
