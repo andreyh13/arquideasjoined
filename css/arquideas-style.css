@@ -11843,3 +11843,16 @@ div.ok, tr.ok {
 .full-node.node-type-group .node-widgets-area .back-contest{
     top: -6px;
 }
+
+#node-delete-confirm {
+   color: #656565; 
+}
+#node-delete-confirm .form-radios{
+    margin:0;
+}
+#node-delete-confirm #edit-submit{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 12px;
+}
+
