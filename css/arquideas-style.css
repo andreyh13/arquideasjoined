@@ -8024,7 +8024,8 @@ a.public-vote-link,
 .node-type-inscription .contest-info .open-contest-button a,
 a.sign-up-link, a.sign-in-link, #edit-present, a.user-unsubscribe-link,
 .prev-project a, .next-project a,
-.page-full-view .views_slideshow_singleframe_slide .flag-wrapper .flag {
+.page-full-view .views_slideshow_singleframe_slide .flag-wrapper .flag,
+#sidebar-last #block-commons_core-create_group .content #edit-create{
   font-family: "SoinSans-BoldOblique",Helvetica,Arial,sans-serif;
 padding: 10px 20px;
 color: #fff;
@@ -8273,6 +8274,7 @@ table tr td.active{
 	font-family: SoinSans-Bold;
 	line-height: 29px;
 }
+
 header .addthis_toolbox, header .widget-header{
 	float: right;
 	margin: 15px 0;
@@ -10624,6 +10626,53 @@ body.page-groups .sidebar-last .block-views .view-content .item-list ul li .view
     float: none;
 }
 
+#block-arquideas_generic-13 .social-sharing-widget .addthis_toolbox .fb-send {
+   float: none;
+   text-align: center;
+   width: 100px;
+   margin-top: 0px; 
+}
+body.node-type-contest #block-arquideas_generic-13 .social-sharing-widget .addthis_toolbox .fb-send {
+   width: 300px;
+   text-align: left;
+}
+#block-arquideas_generic-13 .social-sharing-widget .addthis_toolbox .fb-send > span {
+   margin: 0 auto;
+   vertical-align: baseline; 
+}
+body.node-type-contest #block-arquideas_generic-13 .social-sharing-widget .addthis_toolbox .fb-send > span {
+   margin:0; 
+}
+
+.display-project #block-arquideas_generic-13 {
+   margin: 16px 0 0; 
+}
+.display-project #block-arquideas_generic-13 .social-sharing-widget{
+  margin-bottom: 0;  
+}
+.area-social .header .userpoints {
+    width: 300px;
+    float: left;
+    display: inline-block;  
+}
+.area-social .header .userpoints .user-job{
+    margin: 4px 0 0 0;
+    float: left;
+}
+
+.area-social .header #block-arquideas_generic-13 {
+    display: inline-block;
+    margin-bottom: 0;
+    width: 400px;
+    float: right;
+}
+
+.area-social .header #block-arquideas_generic-13 .addthis_toolbox .addthis_toolbox_item,
+.page-node.full-node #content-group #block-arquideas_generic-13 .addthis_toolbox .addthis_toolbox_item,
+.display-project #block-arquideas_generic-13 .addthis_toolbox .addthis_toolbox_item{
+    float: none;
+}
+
 .arquideas-network #content-front-inner .content-front-left div.node,
 .page-solr-nodetype-multi #content-front-inner .content-front-left div.node,
 .page-solr-nodetype #content-front-inner .content-front-left div.node{
@@ -11001,18 +11050,18 @@ font-size: 12px
 .display-project .links.top, .display-project .link-special-arquideas-prize{
 	display: inline-block;
 	float: right;
-	margin-top: -50px;
-	margin-right: 120px;
+	margin-top: 0;
+	margin-right: 0;
 }
 
 .display-project .link-bookmarks {
     display: inline-block;
     float: right;
-    margin-top: -50px;
-    margin-right: 120px;
+    margin-top: 0;
+    margin-right: 0;
 }
 .display-project .link-special-arquideas-prize{
-    margin-right: 250px;
+    margin-right: 12px;
 }
 
 .display-project .links.top li, .display-project .link-special-arquideas-prize li{
@@ -11637,7 +11686,8 @@ div.ok, tr.ok {
 .area-social .header .social-sharing-widget {
     display: inline-block;
     float: right;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
+    margin-top: 22px;
 }
 
 .area-social header .addthis_toolbox, .area-social header .widget-header{
@@ -11880,4 +11930,22 @@ div.ok, tr.ok {
 }
 #fb-root{
     display:none;
+}
+
+#sidebar-last #block-commons_core-create_group .inner .content #edit-create{
+    width: 100%;
+}
+#sidebar-last #block-commons_core-create_group .inner {
+    border: 0 none;
+}
+#sidebar-last #block-commons_core-create_group .inner .content{
+    padding: 0;
+}
+#sidebar-last #block-commons_core-create_group .inner .content fieldset.collapsible{
+    display: none;
+}
+
+.view-activity-log-stream .view-empty {
+    text-align: center;
+    font-weight: bold;
 }

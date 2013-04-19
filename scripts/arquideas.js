@@ -431,11 +431,13 @@ $(window).load(function(){
 			$(this).find(".views_slideshow_slide").css({'min-height':max+plusheight+2+"px", 'min-width':'100%'}); 
 	});
     //Addthis block adjustment
+    $("#block-arquideas_generic-13 .widget-body .fb-send").prependTo("#block-arquideas_generic-13 .widget-body .addthis_toolbox").addClass("addthis_toolbox_item");
     if($("#block-arquideas_generic-13").length){
       var w = "100px";
       if($("body").hasClass("node-type-contest")){
           w = "300px";
       }
-      $("#block-arquideas_generic-13 .widget-body .addthis_toolbox .addthis_toolbox_item > iframe").css("width",w);  
+      $("#block-arquideas_generic-13 .widget-body .addthis_toolbox .addthis_toolbox_item > iframe").css("width",w);
+      $("#block-arquideas_generic-13 .widget-body .addthis_toolbox > .fb_send").css("width",w);
     }    
 });
