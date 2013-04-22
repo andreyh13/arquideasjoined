@@ -8675,7 +8675,8 @@ width: auto; display: inline-block; float: right; display: none;
 .views-field-field-google-acp-url label,
 .views-field-field-linkedin-acp-url label,
 .views-field-field-pinterest-acp-url label,
-.views-field-field-twitter-acp-url label{
+.views-field-field-twitter-acp-url label,
+.views-field-field-web-acp-url label{
 	display: none;
 }
 .views-field-field-facebook-acp-url,
@@ -8683,6 +8684,7 @@ width: auto; display: inline-block; float: right; display: none;
 .views-field-field-linkedin-acp-url,
 .views-field-field-pinterest-acp-url,
 .views-field-field-twitter-acp-url,
+.views-label-field-web-acp-url,
 #mybook #social-networks ul li{
 	display: block;
 	float: left;
@@ -8705,6 +8707,7 @@ width: auto; display: inline-block; float: right; display: none;
 .views-field-field-linkedin-acp-url .field-content a,
 .views-field-field-pinterest-acp-url .field-content a,
 .views-field-field-twitter-acp-url .field-content a,
+.views-field-field-web-acp-url .field-content a,
 #mybook #social-networks li a{
 	display: block;
 	width: 24px;
@@ -8712,6 +8715,7 @@ width: auto; display: inline-block; float: right; display: none;
 	/*background-image: url(../images/icos_redes.png);*/
 	background-repeat: no-repeat;
 	text-indent: -999px;
+        margin-left: 2px;
 
 }
 .views-field-field-facebook-acp-url .field-content a, #mybook #social-networks .facebook a{
@@ -8743,6 +8747,12 @@ width: auto; display: inline-block; float: right; display: none;
 }
 .views-field-field-twitter-acp-url .field-content a:hover, #mybook #social-networks .twitter a:hover{
 	background-image: url(../images/social/icon-twitter-over.png);
+}
+.views-field-field-web-acp-url .field-content a, #mybook #social-networks .web a{
+	background-image: url(../images/social/icon-web.png);
+}
+.views-field-field-web-acp-url .field-content a:hover, #mybook #social-networks .web a:hover{
+	background-image: url(../images/social/icon-web-over.png);
 }
 .view-arqnetwork-user-profile .field-content{
 	max-width: 200px;
@@ -11899,10 +11909,11 @@ div.ok, tr.ok {
 .account.area-social .views-field-field-google-acp-url, 
 .account.area-social .views-field-field-linkedin-acp-url,
 .account.area-social .views-field-field-pinterest-acp-url,
-.account.area-social .views-field-field-twitter-acp-url{
+.account.area-social .views-field-field-twitter-acp-url,
+.account.area-social .views-field-field-web-acp-url{
     display: inline-block;
     margin-top: 15px;
-    margin-left: 6px;
+    margin-left: 0;
 }
 
 .page-node.node-type-group #content-content .node-widgets-area{
