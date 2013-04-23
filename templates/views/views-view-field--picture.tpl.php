@@ -41,7 +41,7 @@
     
     
     $preset = $field->options['imagecache_preset'];  
-    print commons_roots_thumb_user_picture($picture, $preset, $name, $uid);
+    print commons_roots_thumb_user_picture($picture, $preset, $name, $uid, !variable_get('arquideas_solution_mode', FALSE));
   }
 ?>
 
