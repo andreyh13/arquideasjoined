@@ -148,7 +148,7 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
 	Explanation #3:
 	If we are'nt in the main page of the user profile the sidebar-first ONLY contains the image, but not the rest of the fields, as theres's a #sidebar-last in this areas
 	*/
-     $('.view-arqnetwork-user-profile .views-field-field-address-acp-value, .view-arqnetwork-user-profile .views-field-field-company-acp-value, .view-arqnetwork-user-profile .views-field-phpcode-1, .view-arqnetwork-user-profile .views-field-field-small-description-acp-value, .view-arqnetwork-user-profile .views-field-phpcode, .view-arqnetwork-user-profile .views-field-field-facebook-acp-url, .view-arqnetwork-user-profile .views-field-field-google-acp-url, .view-arqnetwork-user-profile .views-field-field-linkedin-acp-url, .view-arqnetwork-user-profile .views-field-field-pinterest-acp-url, .view-arqnetwork-user-profile .views-field-field-twitter-acp-url').remove();
+            $('.view-arqnetwork-user-profile .views-field-field-address-acp-value, .view-arqnetwork-user-profile .views-field-field-company-acp-value, .view-arqnetwork-user-profile .views-field-phpcode-1, .view-arqnetwork-user-profile .views-field-field-small-description-acp-value, .view-arqnetwork-user-profile .views-field-phpcode, .view-arqnetwork-user-profile .views-field-field-facebook-acp-url, .view-arqnetwork-user-profile .views-field-field-google-acp-url, .view-arqnetwork-user-profile .views-field-field-linkedin-acp-url, .view-arqnetwork-user-profile .views-field-field-pinterest-acp-url, .view-arqnetwork-user-profile .views-field-field-twitter-acp-url, .view-arqnetwork-user-profile .views-field-field-web-acp-url').remove();
 	}
 	$('.inscription-dates').find('div').each(function(){
 		if($(this).text()==""){$(this).hide()}
@@ -431,15 +431,18 @@ $(window).load(function(){
 			$(this).find(".views_slideshow_slide").css({'min-height':max+plusheight+2+"px", 'min-width':'100%'}); 
 	});
     //Addthis block adjustment
-    $("#block-arquideas_generic-13 .widget-body .fb-send").prependTo("#block-arquideas_generic-13 .widget-body .addthis_toolbox").addClass("addthis_toolbox_item");
-    if($("#block-arquideas_generic-13").length){
-      var w = "100px";
-      if($("body").hasClass("node-type-contest")){
-          w = "300px";
-      }
-      $("#block-arquideas_generic-13 .widget-body .addthis_toolbox .addthis_toolbox_item > iframe").css("width",w);
-      $("#block-arquideas_generic-13 .widget-body .addthis_toolbox > .fb_send").css("width",w);
-      $("#block-arquideas_generic-13 .widget-body .addthis_toolbox .addthis_toolbox_item > .fb-like").css("width",w);
-      $("#block-arquideas_generic-13 .widget-body .addthis_toolbox .addthis_toolbox_item > iframe").css("height","20px");
-    }    
+    //$("#block-arquideas_generic-13 .widget-body .fb-send").prependTo("#block-arquideas_generic-13 .widget-body .addthis_toolbox").addClass("addthis_toolbox_item");
+    /*if($("#block-arquideas_generic-13").length){
+      var w = 0;
+      window.setTimeout(function(){
+         $("#block-arquideas_generic-13 .addthis_toolbox .addthis_toolbox_item").each(function(){
+            if($(this).width()>w){
+                w = $(this).width();
+            } 
+         });
+         if(w){
+            $("#block-arquideas_generic-13 .addthis_toolbox .addthis_toolbox_item").css("width",w);
+         }
+      }, 1000);
+    }*/    
 });

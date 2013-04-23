@@ -205,7 +205,7 @@
   <!-- BLOCK ADDTHIS -->
   <?php if($page && !$is_edit){
     $block_addthis = module_invoke('arquideas_generic','block','view','13');
-    print '<div id="block-arquideas_generic-13"'.(empty($back_to_contest)?' class="full-width-block"':'').'>' . $block_addthis['content'] . '</div>';
+    print '<div id="block-arquideas_generic-13"'.(empty($back_to_contest)?' class="full-width-block"':' class="half-width-block"').'>' . $block_addthis['content'] . '</div>';
   }
   ?>
   <!-- END BLOCK ADDTHIS -->
