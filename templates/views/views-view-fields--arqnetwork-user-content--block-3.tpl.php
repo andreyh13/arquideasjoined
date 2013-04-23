@@ -23,16 +23,36 @@
   <div class="views-field-field-images-project-fid">
     <div class="field-content">
     <?php 
-      if(!empty($fields['field_images_project_fid']->content)) { 
-        print $fields['field_images_project_fid']->content;
-      } elseif(!empty($fields['field_list_image_project_fid']->content)) { 
+      if(!empty($fields['field_list_image_project_fid']->content)) { 
         print $fields['field_list_image_project_fid']->content;
       } elseif(!empty($fields['field_image_inscription_fid']->content)) {
         print $fields['field_image_inscription_fid']->content;
-      } elseif(!empty($fields['phpcode']->content)) {
-        print $fields['phpcode']->content;      
-      }
+      } 
     ?>
     </div>
+  </div>
+  <div class="project-info">
+    <div class="views-field-title">
+      <?php print $fields['title']->content; ?>
+    </div>
+    <div class="views-field-field-project-type-project-value">
+      <?php print $fields['field_project_type_project_value']->content; ?>
+    </div>
+  </div>
+  <div class="project-social">
+    <span class="views-field-rating-value">
+      <?php print $fields['value']->content; ?>
+    </span>
+    <span class="views-field-comment-count">
+      <?php print $fields['comment_count']->content; ?>
+    </span>
+  </div>
+  <div class="project-owner">
+    <span class="views-field-field-image-acp-fid">
+      <?php print $fields['picture']->content; ?>
+    </span>
+    <span class="views-field-name">
+      <label class="views-label-name"><?php print $fields['name']->label; ?></label> <?php print $fields['name']->content; ?>
+    </span>
   </div>
 </div>

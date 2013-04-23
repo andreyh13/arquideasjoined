@@ -53,6 +53,15 @@ M�s cambios en la fila 200,
 -------------------------*/
 ?>
 <body id="<?php print $body_id; ?>" class="<?php print $body_classes; ?>">
+  <div id="fb-root"></div>
+  <script type="text/javascript">(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/<?php print $language->language=='es'?'es_ES':'en_US'?>/all.js#xfbml=1&appId=<?php print variable_get('arquideas_network_facebook_appId', '145135515632256'); ?>";
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  </script>  
   <div id="page" class="page<?php print isset($page_classes)?$page_classes:''; ?>">
     <div id="page-inner" class="page-inner">
       <div id="skip">

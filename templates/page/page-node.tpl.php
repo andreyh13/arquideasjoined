@@ -52,6 +52,15 @@ if(strpos($body_id,'pid-page-')==0){
 
 ?>
 <body id="<?php print $body_id; ?>" class="<?php print $body_classes; ?>">
+  <div id="fb-root"></div>
+  <script type="text/javascript">(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/<?php print $language->language=='es'?'es_ES':'en_US'?>/all.js#xfbml=1&appId=<?php print variable_get('arquideas_network_facebook_appId', '145135515632256'); ?>";
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  </script>  
   <div id="page" class="page">
     <div id="page-inner" class="page-inner">
       <div id="skip">
@@ -121,7 +130,9 @@ if(strpos($body_id,'pid-page-')==0){
   		<?php print theme('grid_row', $preface_top, 'preface-top', 'full-width', $grid_width); ?>
   		<div id="preface-top-wrapper" class="preface-top-wrapper full-width">
       	<div id="preface-top" class="preface-top row <?php print $grid_width; ?> clearfix">
-  				<?php /*print theme('grid_block', $breadcrumb, 'breadcrumbs');*/ ?>
+  				<?php if($show_breadcrumb){
+                                   print theme('grid_block', $breadcrumb, 'breadcrumbs'); 
+                                } ?>
         </div>
   		</div>
 

@@ -117,6 +117,25 @@
         <?php endif; ?>
     </div>
     
+    <div class="social-widgets">
+      <!-- FiveStar Widget -->
+      <?php
+        if (user_access('rate content') && fivestar_validate_target('node', $node->nid)) {
+            print fivestar_widget_form($node);
+        }
+      ?>
+      <!-- END FiveStar Widget -->
+
+      <!-- SHARE SOCIAL BLOCK -->
+      <?php
+        if(!isset($node->og_public) || (isset($node->og_public) && $node->og_public==1)){
+          $block = module_invoke('arquideas_generic', 'block', 'view', '13');
+          print '<div id="block-arquideas_generic-13">'.$block['content'].'</div>';
+        }
+      ?>
+      <!-- END SHARE SOCIAL BLOCK -->
+    </div>
+    
     <!-- Edit link -->
     <?php if(isset($node->content['nivaria_edit_content_link']) && !empty($node->content['nivaria_edit_content_link']['#value'])): ?>
     <div class="node-edit-link">

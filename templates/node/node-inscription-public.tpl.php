@@ -17,22 +17,6 @@
     <!-- NAVIGATION -->
     <?php print arquideas_generic_get_inscription_detail_navigation($node); ?>
     <!-- END NAVIGATION -->
-
-    <!-- ADDTHIS widget -->
-    <?php
-        $block = module_invoke('arquideas_generic', 'block', 'view', '13');
-        print $block['content'];
-    ?>
-    <!-- END ADDTHIS widget -->
-    <div class="clearfix">&nbsp;</div>
-
-    <!-- Mark Special Arquideas Prize -->
-    <?php if($contest->field_contest_state[0]['value']==ContestState::FINISHED && user_access(PERM_ADMIN_CONTESTS)) : ?>
-    <div class="link-special-arquideas-prize">
-        <?php print flag_create_link('arquideas_prize', $node->nid); ?>
-    </div>
-    <?php endif; ?>
-    <!-- End Mark Special Arquideas Prize -->
     
     <!-- Add to Bookmarks -->
     <?php if($contest->field_contest_state[0]['value']>=ContestState::PRIZE) : ?>
@@ -41,6 +25,25 @@
     </div>
     <?php endif; ?>
     <!-- End Add to Bookmarks -->
+    
+    <!-- Mark Special Arquideas Prize -->
+    <?php if($contest->field_contest_state[0]['value']==ContestState::FINISHED && user_access(PERM_ADMIN_CONTESTS)) : ?>
+    <div class="link-special-arquideas-prize">
+        <?php print flag_create_link('arquideas_prize', $node->nid); ?>
+    </div>
+    <?php endif; ?>
+    <!-- End Mark Special Arquideas Prize -->
+    <div class="clearfix">&nbsp;</div>
+    
+    <!-- ADDTHIS widget -->
+    <?php
+        $block = module_invoke('arquideas_generic', 'block', 'view', '13');
+        print '<div id="block-arquideas_generic-13" class="block block-arquideas_generic"><div class="inner"><div class="content">';
+        print $block['content'];
+        print '</div></div></div>';
+    ?>
+    <!-- END ADDTHIS widget -->
+    <div class="clearfix">&nbsp;</div>
 
     <?php if(!$is_edit && $page == 1): ?>
     <div class="inscription-info-public">

@@ -244,7 +244,7 @@
         <!-- End Edit link -->
 
         <!-- Delete link -->
-        <?php if(node_access('delete', $node) && $node->field_inscription_state[0]['value']!=InscriptionState::SUBMITTED
+        <?php if(node_access('delete', $node) && $node->field_inscription_state[0]['value']==InscriptionState::PREINSCRIPTED
                 && isset($contest) && $contest->field_contest_state[0]['value']==ContestState::OPEN){
 
             print l('<span>'.t('Unregister').'</span>','node/'.$node->nid.'/delete',array(

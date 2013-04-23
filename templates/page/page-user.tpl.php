@@ -51,6 +51,15 @@ M�s cambios en la fila 200,
 -------------------------*/
 ?>
 <body id="<?php print $body_id; ?>" class="<?php print $body_classes; ?> area-social">
+  <div id="fb-root"></div>
+  <script type="text/javascript">(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/<?php print $language->language=='es'?'es_ES':'en_US'?>/all.js#xfbml=1&appId=<?php print variable_get('arquideas_network_facebook_appId', '145135515632256'); ?>";
+  fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+  </script>  
   <div id="page" class="page">
     <div id="page-inner" class="page-inner">
       <div id="skip">
@@ -120,7 +129,9 @@ M�s cambios en la fila 200,
   		<?php print theme('grid_row', $preface_top, 'preface-top', 'full-width', $grid_width); ?>
   		<div id="preface-top-wrapper" class="preface-top-wrapper full-width">
       	<div id="preface-top" class="preface-top row <?php print $grid_width; ?> clearfix">
-  				<?php /*print theme('grid_block', $breadcrumb, 'breadcrumbs');*/ ?>
+  		<?php if($show_breadcrumb){
+                    print theme('grid_block', $breadcrumb, 'breadcrumbs'); 
+                } ?>
         </div>
   		</div>
 
@@ -144,7 +155,13 @@ M�s cambios en la fila 200,
                            //  from arg or something like that.  What code should I put in these 2 lines?
                            $params = array("requestee_id" => $account->uid);
                            $count = user_relationships_load($params, array("count" => TRUE));
-                           print '<span class="followers-count">'.$count.'</span>';
+                           print l('<span class="followers-count">'.$count.'</span>','user/'.$account->uid.'/content',array(
+                               'attributes' => array(
+                                   'title' => t('Followers'),
+                               ),
+                               'html' => TRUE,
+                               'query' => 'quicktabs_quicktabs_my_content=3',
+                           ));
                            // Follow
                            // Provide relationship links/messages
                            if (user_access('maintain own relationships')) {
@@ -179,8 +196,9 @@ M�s cambios en la fila 200,
                            <span class="user-points">
                                <?php print isset($account)?userpoints_get_current_points($account->uid).' '.t('points'):''; ?>
                            </span>
+                           <div class="user-job"><?php print isset($account)?$account->profile_job:''; ?></div>
                        </div>
-					   <div class="user-job"><?php print isset($account)?$account->profile_job:''; ?></div>
+					   
                        <?php if(FALSE && isset($account) && user_has_role(ROL_CONTEST_JURY, $account)): ?>
                        <div class="jury-member">
                            <?php print t('Jury of Arquideas'); ?>
@@ -188,7 +206,9 @@ M�s cambios en la fila 200,
                        <?php endif; ?>
                        <?php
                            $block = module_invoke('arquideas_generic', 'block', 'view', '13');
+                           print '<div id="block-arquideas_generic-13" class="block block-arquideas_generic"><div class="inner"><div class="content">';
                            print $block['content'];
+                           print '</div></div></div>';
                        ?>
                        <?php endif; ?>
 			<div class="clear"></div>

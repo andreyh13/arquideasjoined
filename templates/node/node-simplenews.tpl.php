@@ -131,31 +131,8 @@
         <?php endif; ?>
         <!-- End KM block -->
 
-        <!-- Partners & Co block -->
-        <?php if($field_simplenews_send_partners[0]['value']==1): ?>
-          <table border="0" cellpadding="0" cellspacing="0" width="580" class="simplenews-partners-block block" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px;">
-            <tr><td height="45px" style="line-height:45px;">&nbsp;</td></tr>
-            <tr><td><img src="<?php print $base_url . '/'. path_to_theme();?>/images/nws-separator.png" /></td></tr>
-            <tr>
-              <td align="center" style="border-bottom: 1px solid #000000; font-weight: bold; text-transform: uppercase; font-size: 21px; color: #000000;">
-                <div style="line-height:20px; height: 20px;">&nbsp;</div>
-                <?php print t('PARTNERS & Co'); ?>
-                <div style="line-height:20px; height: 20px;">&nbsp;</div>
-              </td>
-            </tr>
-            <tr><td height="20px" style="line-height:20px;">&nbsp;</td></tr>
-            <tr>
-              <td>
-                <div class="content">
-                  <?php print views_embed_view('arquideas_newsletter_partners_bl', 'default'); ?>
-                </div>
-              </td>
-            </tr>
-          </table>
         <?php endif; ?>
-        <!-- End Partners & Co block -->
-
-        <?php else: ?>
+        
           <!-- Partners & Co block -->
           <table border="0" cellpadding="0" cellspacing="0" width="580" class="simplenews-partners-block block" style="font-family: Helvetica, Arial, sans-serif; font-size: 16px;">
             <tr><td height="45px" style="line-height:45px;">&nbsp;</td></tr>
@@ -171,13 +148,13 @@
             <tr>
               <td>
                 <div class="content">
-                  <?php print views_embed_view('arquideas_newsletter_partners_nl', 'default'); ?>
+                  <?php print views_embed_view('arquideas_newsletter_partners_nl', 'default', $node->nid); ?>
                 </div>
               </td>
             </tr>
           </table>
           <!-- End Partners & Co block -->
-        <?php endif; ?>
+        
       </div>
     </div><!-- /inner -->
 

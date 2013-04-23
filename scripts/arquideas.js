@@ -158,6 +158,22 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
         //Scripts to apply after AJAX reloads in pages
         Drupal.behaviors.arquideasTheme = function(context) {
             addLast('#view-id-arqnetwork_user_projects-page_1 .item-list ul li.views-row', 3);
+            
+            //Followers hack
+            if($(".view-profile-follower .views-view-grid td").length){
+                $(".view-profile-follower .views-view-grid td").each(function(){
+                    $(".views-field-user-badges-html .user_badges img",this).each(function(index){
+                        if(index>0){
+                            $(this).remove();
+                        } 
+                    });
+                });
+            }
+            
+            //Links inside facebook status content must have target _blank attribute
+            if($(".facebook-status-item .content a").length){
+                $(".facebook-status-item .content a").attr("target","_blank");
+            }
         }
         
         //Join group for anonymous should open login form
@@ -359,6 +375,25 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
                 if($("#block-views-sponsors-block_4 .content .view-empty").length){
                     $("#block-views-sponsors-block_4").remove();
                 }
+                //Some fixes for internal admin pages
+                if($("#page.page-full-view .view-full-page .views_slideshow_singleframe_slide").length){
+                    $("#page.page-full-view .view-full-page .views_slideshow_singleframe_slide .views-field-title a").attr("target","_blank");
+                    $("#page.page-full-view .view-full-page .views_slideshow_singleframe_slide #scrollable .items a").attr("target","_blank");
+                    $("#page.page-full-view .view-full-page .views_slideshow_singleframe_slide .views-field-field-inscription-members-list-vname a").attr("target","_blank");
+                }
+                //Links inside facebook status content must have target _blank attribute
+                if($(".facebook-status-item .content a").length){
+                    $(".facebook-status-item .content a").attr("target","_blank");
+                }
+                //Large texts inside activity stream on front page must be cutted to 70 symbols.
+                if($(".front .facebook-status-item .content .facebook-status-content").length){
+                    $(".front .facebook-status-item .content .facebook-status-content").each(function(){
+                        var m_text = $(this).text();
+                        if(m_text.length>70){
+                            $(this).html(m_text.substr(0,70)+"...");
+                        }
+                    });
+                }
 });
 
 $(window).load(function(){
@@ -394,5 +429,17 @@ $(window).load(function(){
 			//Asignamos la altura a los contenedores de slides
 		    $(this).find(".views_slideshow_singleframe_teaser_section").css({'min-height':max+plusheight+2+"px", 'min-width':'100%'}); 
 			$(this).find(".views_slideshow_slide").css({'min-height':max+plusheight+2+"px", 'min-width':'100%'}); 
-	})
+	});
+    //Addthis block adjustment
+    $("#block-arquideas_generic-13 .widget-body .fb-send").prependTo("#block-arquideas_generic-13 .widget-body .addthis_toolbox").addClass("addthis_toolbox_item");
+    if($("#block-arquideas_generic-13").length){
+      var w = "100px";
+      if($("body").hasClass("node-type-contest")){
+          w = "300px";
+      }
+      $("#block-arquideas_generic-13 .widget-body .addthis_toolbox .addthis_toolbox_item > iframe").css("width",w);
+      $("#block-arquideas_generic-13 .widget-body .addthis_toolbox > .fb_send").css("width",w);
+      $("#block-arquideas_generic-13 .widget-body .addthis_toolbox .addthis_toolbox_item > .fb-like").css("width",w);
+      $("#block-arquideas_generic-13 .widget-body .addthis_toolbox .addthis_toolbox_item > iframe").css("height","20px");
+    }    
 });

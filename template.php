@@ -184,7 +184,6 @@ function arquideasjoined_preprocess_page(&$vars)
       $vars['tabs'] = _contest_construct_administrative_tabs($vars['body_id']);
       $vars['content_top'] = _contest_show_short_info($vars['body_id']);
       $vars['page_classes'] = ' page-full-view';
-      $vars['show_breadcrumb'] = TRUE;
   }
 
   $match = preg_match('/^pid\-user\-\d+\-edit$/', $vars['body_id']);
@@ -353,6 +352,21 @@ function arquideasjoined_preprocess_page(&$vars)
   }
   if(preg_match('/^users$/', $_GET['q'])==1){
       $vars['body_classes'] .= '  area-comunidad usuarios';
+  }
+  
+  $vars['show_breadcrumb'] = TRUE;
+  //Hide breadcrumbs for some specified pages
+  if($_GET['q']=='opened-contests'){
+      $vars['show_breadcrumb'] = FALSE;
+  }
+  if($_GET['q']=='arquideas_network'){
+      $vars['show_breadcrumb'] = FALSE;
+  }
+  if (preg_match('/^solr_nodetype\//',$_GET['q']) == 1) {
+      $vars['show_breadcrumb'] = FALSE;
+  }
+  if (preg_match('/^solr_nodetype_multi\//',$_GET['q']) == 1) {
+      $vars['show_breadcrumb'] = FALSE;
   }
 }
 

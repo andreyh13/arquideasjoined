@@ -4752,27 +4752,61 @@ padding-bottom: 8px;
 padding-left: 4px;
 padding-top: 8px;
 position: relative;
-width: 97%;
+width: 98%;
+border-bottom: 1px solid #999;
+}
+body.not-front .page-full-view #main-content .view-content .views-slideshow-controls-top .views_slideshow_pagerNumbered .pager-item.even{
+background-color: #FFF;    
+}
+body.not-front .page-full-view #main-content .view-content .views-slideshow-controls-top .views_slideshow_pagerNumbered .pager-item.odd{
+background-color: #EBEBEB;    
+}
+body.not-front .page-full-view #main-content .view-content .views-slideshow-controls-top .views_slideshow_pagerNumbered .pager-item.activeSlide{
+background-color: #666666;    
 }
 body.not-front .page-full-view #main-content .view-content .views-slideshow-controls-top .views_slideshow_pagerNumbered .pager-item a {
 display: inline-block;
 margin-left: 4px;
 vertical-align: top;
 width: 148px;
+color: #1A1A1A;
+font-weight: bold;
+font-family: "SoinSans-Bold", Helvetica, Arial, sans-serif;
+font-size: 12px;
 }
 body.not-front .page-full-view #main-content .view-content .views-slideshow-controls-top .views_slideshow_pagerNumbered .pager-item.activeSlide a {
 font-weight: bold;
+color:#FFF;
 }
 body.not-front .page-full-view #main-content .view-content .views-slideshow-controls-top .views_slideshow_pagerNumbered .pager-item .members-count {
 display: inline-block;
 float: right;
 padding-left: 0;
-text-align: left;
+text-align: center;
 width: 24px;
+color: #808184;
+}
+body.not-front .page-full-view #main-content .view-content .views-slideshow-controls-top .views_slideshow_pagerNumbered .pager-item.activeSlide .members-count {
+color: #FFF;    
 }
 body.not-front .page-full-view #main-content .view-content .views-slideshow-controls-top .item-list {
 float: left;
-width: 99%;
+width: 225px;
+background-color: #FFF;
+}
+body.not-front .page-full-view #main-content .view-content .views-slideshow-controls-top .item-list .pager .pager-previous.disabled,
+body.not-front .page-full-view #main-content .view-content .views-slideshow-controls-top .item-list .pager .pager-next.disabled{
+    display: none;
+}
+body.not-front .page-full-view #main-content .view-content .views-slideshow-controls-top .item-list .pager .pager-element{
+    font-weight: bold;
+}
+body.not-front .page-full-view #main-content .view-content .views-slideshow-controls-top .item-list .pager .pager-element a{
+    color: #27A8D9;
+    font-weight: bold;
+}
+body.not-front .page-full-view #main-content .view-content .views-slideshow-controls-top .item-list .pager .pager-element.pager-current a{
+    color: #000;
 }
 .views_slideshow_singleframe_pager div.views-field-count, .views_slideshow_singleframe_pager div.views-field-count-1, .views_slideshow_singleframe_pager div.views-field-count-2, .views_slideshow_singleframe_pager div.views-field-value, .views_slideshow_singleframe_pager div.views-field-value div, .views_slideshow_singleframe_pager div.jury-flags, .views_slideshow_singleframe_pager div.jury-flags div, .views_slideshow_singleframe_pager div.winners-flags, .views_slideshow_singleframe_pager div.winners-flags div, .views_slideshow_singleframe_pager div.fivestar-widget, .views_slideshow_singleframe_pager div.fivestar-widget div {
 display: block;
@@ -4910,6 +4944,7 @@ z-index: 100;
 }
 .page-full-view .inner.content .views-slideshow-controls-top .view-filters .fieldset-wrapper {
 width: 220px;
+background-color: #EBEBEB;
 }
 .page-full-view .inner.content .view-filters .fieldset-wrapper .views-exposed-submit {
 float: right;
@@ -4928,6 +4963,7 @@ height: 28px;
 margin: 4px 0;
 overflow: visible;
 padding: 0;
+width:223px;
 }
 .members-count-top {
 float: right;
@@ -5974,7 +6010,8 @@ text-transform: uppercase;
 .view-arquideas-contest-prizes.view-display-id-block_7 .project-wrapper,
 .view-arquideas-contest-prizes.view-display-id-block_8 .project-wrapper,
 .view-arquideas-contest-prizes.view-display-id-block_9 .project-wrapper,
-.view-arqnetwork-user-projects.view-display-id-page_1 .project-wrapper {
+.view-arqnetwork-user-projects.view-display-id-page_1 .project-wrapper,
+.view-arqnetwork-user-content.view-display-id-block_3 .project-wrapper{
   position: relative;
 }
 
@@ -5986,7 +6023,8 @@ text-transform: uppercase;
 
 .view-arquideas-contest-prizes.view-display-id-block_7 .views-field-field-images-project-fid,
 .view-arquideas-contest-prizes.view-display-id-block_8 .views-field-field-images-project-fid,
-.view-arquideas-contest-prizes.view-display-id-block_9 .views-field-field-images-project-fid{
+.view-arquideas-contest-prizes.view-display-id-block_9 .views-field-field-images-project-fid,
+.view-arqnetwork-user-content.view-display-id-block_3 .views-field-field-images-project-fid{
   width: 236px;
   height: 172px;
 }
@@ -5997,7 +6035,8 @@ text-transform: uppercase;
 .view-arquideas-contest-prizes.view-display-id-block_7 .views-field-field-images-project-fid img,
 .view-arquideas-contest-prizes.view-display-id-block_8 .views-field-field-images-project-fid img,
 .view-arquideas-contest-prizes.view-display-id-block_9 .views-field-field-images-project-fid img,
-.view-arqnetwork-user-projects.view-display-id-page_1 .views-field-field-images-project-fid img{
+.view-arqnetwork-user-projects.view-display-id-page_1 .views-field-field-images-project-fid img,
+.view-arqnetwork-user-content.view-display-id-block_3 .views-field-field-images-project-fid img{
   vertical-align: middle;
   margin: 0;
   padding: 0;
@@ -6015,7 +6054,8 @@ text-transform: uppercase;
 .view-arquideas-contest-prizes.view-display-id-block_7 .project-info,
 .view-arquideas-contest-prizes.view-display-id-block_8 .project-info,
 .view-arquideas-contest-prizes.view-display-id-block_9 .project-info,
-.view-arqnetwork-user-projects.view-display-id-page_1 .project-info{
+.view-arqnetwork-user-projects.view-display-id-page_1 .project-info,
+.view-arqnetwork-user-content.view-display-id-block_3 .project-info{
   width: 236px;
   height: 172px;
   position: absolute;
@@ -6033,7 +6073,8 @@ text-transform: uppercase;
 .view-arquideas-contest-prizes.view-display-id-block_7 .project-info:hover,
 .view-arquideas-contest-prizes.view-display-id-block_8 .project-info:hover,
 .view-arquideas-contest-prizes.view-display-id-block_9 .project-info:hover,
-.view-arqnetwork-user-projects.view-display-id-page_1 .project-info:hover{
+.view-arqnetwork-user-projects.view-display-id-page_1 .project-info:hover,
+.view-arqnetwork-user-content.view-display-id-block_3 .project-info:hover{
   background: transparent url(../images/transparent-spacer.png) repeat;
   opacity: 1;
 }
@@ -6050,7 +6091,8 @@ text-transform: uppercase;
 .view-arquideas-contest-prizes.view-display-id-block_7 .views-field-title,
 .view-arquideas-contest-prizes.view-display-id-block_8 .views-field-title,
 .view-arquideas-contest-prizes.view-display-id-block_9 .views-field-title,
-.view-arqnetwork-user-projects.view-display-id-page_1 .views-field-title {
+.view-arqnetwork-user-projects.view-display-id-page_1 .views-field-title,
+.view-arqnetwork-user-content.view-display-id-block_3 .views-field-title{
   font-size: 20px;
   line-height: 100%;
   position: absolute;
@@ -6068,12 +6110,14 @@ text-transform: uppercase;
 .view-arquideas-contest-prizes.view-display-id-block_7 .views-field-title a,
 .view-arquideas-contest-prizes.view-display-id-block_8 .views-field-title a,
 .view-arquideas-contest-prizes.view-display-id-block_9 .views-field-title a, 
-.view-arqnetwork-user-projects.view-display-id-page_1 .views-field-title a{
+.view-arqnetwork-user-projects.view-display-id-page_1 .views-field-title a,
+.view-arqnetwork-user-content.view-display-id-block_3 .views-field-title a{
   color: #fff;
 }
 
 #block-views-arqnetwork_projects-block_1 .views-field-field-project-type-project-value,
-.view-arqnetwork-user-projects.view-display-id-page_1 .views-field-field-project-type-project-value{
+.view-arqnetwork-user-projects.view-display-id-page_1 .views-field-field-project-type-project-value,
+.view-arqnetwork-user-content.view-display-id-block_3 .views-field-field-project-type-project-value{
   position: absolute;
   top: 55%;
   text-align: center;
@@ -6110,7 +6154,8 @@ text-transform: uppercase;
 .view-arquideas-contest-prizes.view-display-id-block_7 .project-social,
 .view-arquideas-contest-prizes.view-display-id-block_8 .project-social,
 .view-arquideas-contest-prizes.view-display-id-block_9 .project-social,
-.view-arqnetwork-user-projects.view-display-id-page_1 .project-social{
+.view-arqnetwork-user-projects.view-display-id-page_1 .project-social,
+.view-arqnetwork-user-content.view-display-id-block_3 .project-social{
   background-color: #000000;
   color: #FFFFFF;
   height: 28px;
@@ -6138,7 +6183,9 @@ text-transform: uppercase;
 .view-arquideas-contest-prizes.view-display-id-block_9 .views-field-rating-value,
 .view-arquideas-contest-prizes.view-display-id-block_7 .views-field-comment-count,
 .view-arquideas-contest-prizes.view-display-id-block_8 .views-field-comment-count,
-.view-arquideas-contest-prizes.view-display-id-block_9 .views-field-comment-count {
+.view-arquideas-contest-prizes.view-display-id-block_9 .views-field-comment-count,
+.view-arqnetwork-user-content.view-display-id-block_3 .views-field-rating-value,
+.view-arqnetwork-user-content.view-display-id-block_3 .views-field-comment-count{
   background: url("../images/social.png") no-repeat scroll 0 4px transparent;
   display: inline-block;
   float: none;
@@ -6150,9 +6197,14 @@ text-transform: uppercase;
 #block-views-arqnetwork_projects-block_1 .views-field-comment-count,
 .view-arquideas-contest-prizes.view-display-id-block_7 .views-field-comment-count,
 .view-arquideas-contest-prizes.view-display-id-block_8 .views-field-comment-count,
-.view-arquideas-contest-prizes.view-display-id-block_9 .views-field-comment-count {
+.view-arquideas-contest-prizes.view-display-id-block_9 .views-field-comment-count,
+.view-arqnetwork-user-content.view-display-id-block_3 .views-field-comment-count{
   background-position: 0 -27px;
   margin-left: 8px;
+}
+
+.view-arqnetwork-user-content.view-display-id-block_3 .project-owner {
+    margin: 8px 0 16px 6px;
 }
 
 .view .contest-followers span,
@@ -6191,6 +6243,9 @@ text-transform: uppercase;
 .view .votes-count,
 .contest-winners .view-arquideas-contest-prizes.view-id-arquideas_contest_prizes .views-row-inner > div.views-field-value span {
   background-position: 0 -54px;
+}
+.contest-winners .view-arquideas-contest-prizes.view-id-arquideas_contest_prizes .views-row-inner > div.views-field-value span {
+  background-position: 0 4px;
 }
 
 .view-display-id-page_1 .views-field-comment-count span,
@@ -6309,7 +6364,15 @@ background-image: url(../images/social/icon-twitter.png);
 .social-sharing-widget .widget-header .icon-linkedin {
 background-image: url(../images/social/icon-linkedin.png);
 }
-
+.social-sharing-widget .widget-header .icon-facebook:hover {
+background-image: url(../images/social/icon-facebook-over.png);
+}
+.social-sharing-widget .widget-header .icon-twitter:hover {
+background-image: url(../images/social/icon-twitter-over.png);
+}
+.social-sharing-widget .widget-header .icon-linkedin:hover {
+background-image: url(../images/social/icon-linkedin-over.png);
+}
 
 /* Contests Common */
 
@@ -7937,6 +8000,12 @@ background-image: url(../images/social/icon-flickr.png);
 a.follow-link-pinterest {
 background-image: url(../images/social/icon-pinterest.png);
 }
+a.follow-link-facebook:hover {
+background-image: url(../images/social/icon-facebook-over.png);
+}
+a.follow-link-twitter:hover {
+background-image: url(../images/social/icon-twitter-over.png);
+}
 
 /* Red Buttons */
 a.participate-link,
@@ -7953,7 +8022,10 @@ a.public-vote-link,
 .join-us-link-div a,
 .view-contests .field-content .generic-button, 
 .node-type-inscription .contest-info .open-contest-button a,
-a.sign-up-link, a.sign-in-link, #edit-present {
+a.sign-up-link, a.sign-in-link, #edit-present, a.user-unsubscribe-link,
+.prev-project a, .next-project a,
+.page-full-view .views_slideshow_singleframe_slide .flag-wrapper .flag,
+#sidebar-last #block-commons_core-create_group .content #edit-create{
   font-family: "SoinSans-BoldOblique",Helvetica,Arial,sans-serif;
 padding: 10px 20px;
 color: #fff;
@@ -8010,7 +8082,9 @@ a.participate-link {
 a.public-vote-link,
 #view-id-contests-page_2 .add-to-cart-link,
 .view-contests .field-content .generic-button,
-.node-type-inscription .contest-info .open-contest-button a{
+.node-type-inscription .contest-info .open-contest-button a,
+.prev-project a, .next-project a, 
+.page-full-view .views_slideshow_singleframe_slide .flag-wrapper .flag.unflag-action{
 background: #33CCCC;
 margin-right: 10px;
   display: inline-block;
@@ -8072,7 +8146,8 @@ form input.form-submit:focus, .views-exposed-form .views-exposed-widget input.fo
 #contest-banner .contest-state-wrapper .open-contest-button .generic-button:hover,
  .node-type-inscription .contest-info .open-contest-button a:hover,
  .contest-state-wrapper .register-link-div a:hover,
- .contest-state-wrapper a.public-votation-link:hover{
+ .contest-state-wrapper a.public-votation-link:hover,
+ .page-full-view .views_slideshow_singleframe_slide .flag-wrapper .flag:hover{
 background-color: #F86C00;
 background-image: none;
 text-decoration: none;
@@ -8104,7 +8179,7 @@ body.area-social #main, body.area-social.page-one-column.page-node.node-type-gro
 	margin: 20px 0 10px 0;
 }
 .breadcrumb{
-	padding-bottom: 0;
+	padding-bottom: 8px;
 }
 .breadcrumbs a, .breadcrumbs a:link, .breadcrumbs a:visited{
 	color: #999;
@@ -8118,12 +8193,14 @@ body.area-social #main, body.area-social.page-one-column.page-node.node-type-gro
 }
 body.area-social  h1.title, body.page-node.area-social  h1.title {
     padding: 0;
-	color: #000;
-	margin: 0;
-	float: left;
-	font-weight: normal;
-	font-family: SoinSans-Bold;
-	font-size: 30px;
+    color: #000;
+    margin: 0;
+    float: left;
+    font-weight: normal;
+    font-family: SoinSans-Bold;
+    font-size: 28px;
+    max-width:508px;
+    width:508px;
 }
 body.area-social td{
 	padding: 0!important
@@ -8136,23 +8213,24 @@ table tr td.active{
 	/*margin-left: -24px;*/
 	border-top: 1px solid #ccc;
 	border-bottom: 1px solid #ccc;
-	margin-bottom: 20px;
+	margin-bottom: 8px;
 
 }
 .name-holder .follow-box{
-	margin: -10px 0 -10px 462px;
-	min-width: 240px;
+	margin: -10px 0 -10px 520px;
+	min-width: 150px;
+        width: 180px;
 	background: #000;
-	height: 56px;
+	height: 92px;
 }
 .follow-box-inner{
-	padding: 19px;
+	padding: 36px 12px;
 	color: #fff;
 	font-size: 1.5em;
 }
 .follow-box .ur_action{
 	display: inline-block;
-	padding: 0px 20px;
+	padding: 0px 8px;
 	background: #999999;
 	font-family: SoinSans-BoldOblique;
 	border-radius: 4px 4px 4px 4px;
@@ -8175,6 +8253,7 @@ table tr td.active{
 	background-position: 0 3px;
 	padding-left: 25px;
 	display: inline-block;
+        color: #FFF;
 }
 .userpoints{
 	margin-left: 20px;
@@ -8187,15 +8266,15 @@ table tr td.active{
 	font-family: SoinSans-Bold
 }
 .user-job{
-	margin: 15px 0;
+	margin: 4px 0 0 20px;
 	color: #000;
 	font-size: 16px;
 	float: left;
-	margin-left: 20px;
 	display: inline-block;
 	font-family: SoinSans-Bold;
 	line-height: 29px;
 }
+
 header .addthis_toolbox, header .widget-header{
 	float: right;
 	margin: 15px 0;
@@ -8473,6 +8552,11 @@ a.grouping-button-container:hover,
  a.user-unsubscribe-link {
  	display: block;
 	margin-bottom: 20px;
+        color: #FFF;
+        text-transform: uppercase;
+        width:100px;
+        float: right;
+        text-align: center;
  }
 #edit-submit{
 	margin-left: 200px;
@@ -8485,7 +8569,7 @@ a.grouping-button-container:hover,
 width: auto; display: inline-block; float: right; display: none;
 }
 #edit-submit, #edit-preview-changes, #edit-submit-1, .views-exposed-form .form-submit, #arquideas-book-user-settings .form-submit,.views-field-phpcode-1 .popups-form-noupdate, .open-contest-button .form-submit, .display-project .links li .flag-bookmarks a, .sidebar-first .view-arqnetwork-user-profile .views-field-picture .user-edit-image a,.display-project .link-special-arquideas-prize a,
-.display-project .link-bookmarks a{
+.display-project .link-bookmarks a, #block-arquideas_generic-16 .content a, .back-contest a{
 	display: inline-block;
 	float: none;
 	border-radius: 5px 5px 5px 5px;
@@ -8586,17 +8670,13 @@ width: auto; display: inline-block; float: right; display: none;
 	border-right: 1px solid #ccc;
 	margin-right: -1px;
 }
-/*
-	border-left: 1px solid #ccc;.view-arqnetwork-user-profile .views-field-field-facebook-acp-url,
-.view-arqnetwork-user-profile .views-field-field-google-acp-url,
-.view-arqnetwork-user-profile .views-field-field-linkedin-acp-url,
-.view-arqnetwork-user-profile .views-field-field-pinterest-acp-url,
-.view-arqnetwork-user-profile .views-field-field-twitter-acp-url*/
+
 .views-field-field-facebook-acp-url label,
 .views-field-field-google-acp-url label,
 .views-field-field-linkedin-acp-url label,
 .views-field-field-pinterest-acp-url label,
-.views-field-field-twitter-acp-url label{
+.views-field-field-twitter-acp-url label,
+.views-field-field-web-acp-url label{
 	display: none;
 }
 .views-field-field-facebook-acp-url,
@@ -8604,12 +8684,13 @@ width: auto; display: inline-block; float: right; display: none;
 .views-field-field-linkedin-acp-url,
 .views-field-field-pinterest-acp-url,
 .views-field-field-twitter-acp-url,
+.views-label-field-web-acp-url,
 #mybook #social-networks ul li{
 	display: block;
 	float: left;
 	margin-left: 10px;
-	width: 24px;
-	height: 24px;
+	/*width: 24px;
+	height: 24px;*/
 }
 /*
 .views-field-field-facebook-acp-url .field-content,
@@ -8626,29 +8707,52 @@ width: auto; display: inline-block; float: right; display: none;
 .views-field-field-linkedin-acp-url .field-content a,
 .views-field-field-pinterest-acp-url .field-content a,
 .views-field-field-twitter-acp-url .field-content a,
+.views-field-field-web-acp-url .field-content a,
 #mybook #social-networks li a{
 	display: block;
 	width: 24px;
 	height: 24px;
-	background-image: url(../images/icos_redes.png);
+	/*background-image: url(../images/icos_redes.png);*/
 	background-repeat: no-repeat;
 	text-indent: -999px;
+        margin-left: 2px;
 
 }
 .views-field-field-facebook-acp-url .field-content a, #mybook #social-networks .facebook a{
-	background-position: -31px 0;
+	background-image: url(../images/social/icon-facebook.png);
+}
+.views-field-field-facebook-acp-url .field-content a:hover, #mybook #social-networks .facebook a:hover{
+	background-image: url(../images/social/icon-facebook-over.png);
 }
 .views-field-field-google-acp-url .field-content a, #mybook #social-networks .google a{
-	background-position: -31px 0;
+	background-image: url(../images/social/icon-google-plus.png);
+}
+.views-field-field-google-acp-url .field-content a:hover, #mybook #social-networks .google a:hover{
+	background-image: url(../images/social/icon-google-plus-over.png);
 }
 .views-field-field-linkedin-acp-url .field-content a, #mybook #social-networks .linkedin a{
-	background-position: -62px 0;
+	background-image: url(../images/social/icon-linkedin.png);
+}
+.views-field-field-linkedin-acp-url .field-content a:hover, #mybook #social-networks .linkedin a:hover{
+	background-image: url(../images/social/icon-linkedin-over.png);
 }
 .views-field-field-pinterest-acp-url .field-content a, #mybook #social-networks .pinterest a{
-	background-position: -93px 0;
+	background-image: url(../images/social/icon-pinterest.png);
+}
+.views-field-field-pinterest-acp-url .field-content a:hover, #mybook #social-networks .pinterest a:hover{
+	background-image: url(../images/social/icon-pinterest-over.png);
 }
 .views-field-field-twitter-acp-url .field-content a, #mybook #social-networks .twitter a{
-	background-position: 0 0;
+	background-image: url(../images/social/icon-twitter.png);
+}
+.views-field-field-twitter-acp-url .field-content a:hover, #mybook #social-networks .twitter a:hover{
+	background-image: url(../images/social/icon-twitter-over.png);
+}
+.views-field-field-web-acp-url .field-content a, #mybook #social-networks .web a{
+	background-image: url(../images/social/icon-web.png);
+}
+.views-field-field-web-acp-url .field-content a:hover, #mybook #social-networks .web a:hover{
+	background-image: url(../images/social/icon-web-over.png);
 }
 .view-arqnetwork-user-profile .field-content{
 	max-width: 200px;
@@ -10507,8 +10611,96 @@ body.page-groups .sidebar-last .block-views .view-content .item-list ul li .view
 }
 .arquideas-network #content-front-inner .content-front-left .block .addthis_default_style .addthis_button_facebook_like{
 	position: relative;
-	top: 5px;
+	top: 0;
 }
+
+#block-arquideas_generic-13 .inner .content {
+    padding-top:8px;
+}
+
+#block-arquideas_generic-13 .addthis_default_style .addthis_button_facebook_like{
+    margin-top: 0;
+    top:0;
+}
+.node-type-group #block-arquideas_generic-13 .addthis_default_style .addthis_button_facebook_like,
+.full-node .social-widgets #block-arquideas_generic-13 .addthis_default_style .addthis_button_facebook_like{
+    top:0;
+}
+.node-type-group #block-arquideas_generic-13.full-width-block .addthis_default_style .addthis_button_facebook_like {
+    top:5px;
+}
+
+#block-arquideas_generic-13.full-width-block .social-sharing-widget {
+    width: 100%;
+}
+#block-arquideas_generic-13.full-width-block .social-sharing-widget .addthis_toolbox{
+    text-align: center;
+}
+.field-ds-social-widgets-block #block-arquideas_generic-13 .social-sharing-widget .addthis_toolbox{
+    text-align: right;
+}
+#block-arquideas_generic-13.full-width-block .social-sharing-widget .addthis_toolbox .addthis_toolbox_item,
+.field-ds-social-widgets-block #block-arquideas_generic-13 .social-sharing-widget .addthis_toolbox .addthis_toolbox_item{
+    float: none;
+}
+
+#block-arquideas_generic-13 .social-sharing-widget .addthis_toolbox .fb-send {
+   float: none;
+   text-align: center;
+   width: 100px;
+   margin-top: 0px; 
+}
+body.node-type-contest #block-arquideas_generic-13 .social-sharing-widget .addthis_toolbox .fb-send {
+   width: 300px;
+   text-align: left;
+}
+#block-arquideas_generic-13 .social-sharing-widget .addthis_toolbox .fb-send > span {
+   margin: 0 auto;
+   vertical-align: baseline; 
+}
+body.node-type-contest #block-arquideas_generic-13 .social-sharing-widget .addthis_toolbox .fb-send > span {
+   margin:0; 
+}
+
+.display-project #block-arquideas_generic-13 {
+   margin: 16px 0 0; 
+}
+.display-project #block-arquideas_generic-13 .social-sharing-widget{
+  margin-bottom: 0;  
+}
+.area-social .header .userpoints {
+    width: 300px;
+    float: left;
+    display: inline-block;  
+}
+.area-social .header .userpoints .user-job{
+    margin: 4px 0 0 0;
+    float: left;
+}
+
+.area-social .header #block-arquideas_generic-13 {
+    display: inline-block;
+    margin-bottom: 0;
+    width: 400px;
+    float: right;
+}
+
+.area-social .header #block-arquideas_generic-13 .addthis_toolbox .addthis_toolbox_item,
+.page-node.full-node #content-group #block-arquideas_generic-13 .addthis_toolbox .addthis_toolbox_item,
+.display-project #block-arquideas_generic-13 .addthis_toolbox .addthis_toolbox_item{
+    float: none;
+}
+
+#block-arquideas_generic-13 .widget-body .addthis_button_email{
+    display:inline-block;
+    margin-left:16px;
+    vertical-align: top;
+}
+
+#block-arquideas_generic-13 .widget-body .addthis_button_email, #block-arquideas_generic-13 .widget-body .addthis_button_email > span.at300bs {
+    float: none;
+}
+
 .arquideas-network #content-front-inner .content-front-left div.node,
 .page-solr-nodetype-multi #content-front-inner .content-front-left div.node,
 .page-solr-nodetype #content-front-inner .content-front-left div.node{
@@ -10801,10 +10993,18 @@ body.page-node.node-type-group #sidebar-last{
 	min-height: 150px;
 	background-color:transparent;
 }
+.page-node.node-type-group .full-node.node-type-group .inner {
+    min-height: 150px;
+    height: auto;
+}
 .page-node.node-type-group .full-node.node-type-group .og-description,
+.page-node.node-type-group .full-node.node-type-group .og-mission,
 .page-node.node-type-group .full-node.node-type-group .terms,
 .page-node.node-type-group .full-node.node-type-group .group-members-count{
     margin-left: 170px;
+}
+.page-node.node-type-group .full-node.node-type-group .og-mission-wrapper{
+    min-height: 64px;
 }
 .page-node.node-type-group .full-node.node-type-group .social-sharing-widget{
 	position: absolute;
@@ -10814,26 +11014,18 @@ body.page-node.node-type-group #sidebar-last{
 	display: inline-block;
 }
 .page-node.node-type-group .block-quicktabs{
-    margin-top: 20px
+    margin-top: 0;
 }
 .page-node.node-type-group .full-node.node-type-group .group-members-count{
     height: 24px;
+    margin-top: 12px;
 }
 .page-node.node-type-group .full-node.node-type-group .group-members-count, .page-node.node-type-group .full-node.node-type-group .og-buttons{
-    position: absolute; bottom: 5px
+    /*position: absolute; bottom: 5px*/
+    display: inline-block;
 }
  .page-node.node-type-group .full-node.node-type-group .og-buttons{
-    right: 0;
-}
-
-.page-node.node-type-group .full-node.node-type-group .group-members-count{
-    height: 24px;
-}
-.page-node.node-type-group .full-node.node-type-group .group-members-count, .page-node.node-type-group .full-node.node-type-group .og-buttons{
-    position: absolute; bottom: 5px
-}
- .page-node.node-type-group .full-node.node-type-group .og-buttons{
-    right: 0;
+    float: right;
 }
 .page-node.node-type-group .full-node.node-type-group .og-buttons a{
  	border: none;
@@ -10886,18 +11078,18 @@ font-size: 12px
 .display-project .links.top, .display-project .link-special-arquideas-prize{
 	display: inline-block;
 	float: right;
-	margin-top: -50px;
-	margin-right: 120px;
+	margin-top: 0;
+	margin-right: 0;
 }
 
 .display-project .link-bookmarks {
     display: inline-block;
     float: right;
-    margin-top: -50px;
-    margin-right: 120px;
+    margin-top: 0;
+    margin-right: 0;
 }
 .display-project .link-special-arquideas-prize{
-    margin-right: 250px;
+    margin-right: 12px;
 }
 
 .display-project .links.top li, .display-project .link-special-arquideas-prize li{
@@ -11135,6 +11327,9 @@ font-size: 12px
 	list-style: none;
     text-indent: 0;
 }
+.view-profile-follower ul.pager li {
+    width: auto;
+}
 .view-profile-follower li .user-image {
     float: left;
     margin: 0 5px 20px 0;
@@ -11302,10 +11497,10 @@ font-size: 12px
     display: none;
 }
 #block-views-contests-block_1 .state-open, #block-views-contests-block_1 .state-closed {
-    width: 140px;
+    width: 154px;
 }
 #block-views-contests-block_1 .contest-state {
-    width: 138px;
+    width: 152px;
 }
 div.texto-legal {
     margin: 16px 0;
@@ -11406,4 +11601,380 @@ div.texto-legal {
 
 body.area-social #sidebar-last.nested #block-views-8b6b3376f984196abba62dfb8dfce55d {
     width: 100% !important;
+}
+
+#block-arquideas_generic-16 {
+    margin-top: 4px;
+    display:inline-block;
+    width: 140px;
+}
+
+.full-node.node-type-group .back-contest{
+    position: absolute;
+    top: 180px;
+    left: 0;
+}
+
+/*Activity stream on home page*/
+.front #block-views-activity_log_stream-block_2 .view-activity-log-stream tr td.col-1,
+.front #block-views-activity_log_stream-block_2 .view-activity-log-stream tr td.col-2,
+.front #block-views-activity_log_stream-block_2 .view-activity-log-stream tr td.col-3,
+.front #block-views-activity_log_stream-block_2 .view-activity-log-stream tr td.col-4,
+.front #block-views-activity_log_stream-block_2 .view-activity-log-stream tr td div.views-field-message{
+    width: 235px;
+}
+
+.front #block-views-activity_log_stream-block_2 .view-activity-log-stream tr td .views-field-message .facebook-status-item .content{
+    margin-top:0;
+}
+
+.front #block-views-activity_log_stream-block_2 .view-activity-log-stream tr td .views-field-message .facebook-status-item .content .facebook-status-comments,
+.front #block-views-activity_log_stream-block_2 .view-activity-log-stream tr td .views-field-message .facebook-status-item .content .fbsmp,
+.front #block-views-activity_log_stream-block_2 .view-activity-log-stream tr td .views-field-message .facebook-status-item .content .facebook-status-details .facebook-status-links{
+    display: none;
+}
+/*End activity stream on home page*/
+
+/*Messages*/
+.error {
+    color: #FF3F3F;
+}
+div.error {
+    border: 1px solid #FF3F3F;
+}
+div.error, tr.error {
+    background: none repeat scroll 0 0 #FF8D8A;
+    color: #220000;
+    padding: 2px 6px;
+}
+.warning {
+    color: #846E01;
+}
+div.warning {
+    border: 1px solid #F9CE00;
+}
+div.warning, tr.warning {
+    background: none repeat scroll 0 0 #FCE357;
+    color: #846E01;
+    padding: 2px 6px;
+}
+.ok {
+    color: #99CC00;
+}
+div.ok {
+    border: 1px solid #99CC00;
+}
+div.ok, tr.ok {
+    background: none repeat scroll 0 0 #E6F5BA;
+    color: #99CC00;
+    padding: 2px 6px;
+}
+/*End messages*/
+
+#user-relationships-ui-remove #edit-submit {
+    margin-right: 16px;
+}
+
+.maxlength-counter {
+    margin: -15px 0 16px 0;
+}
+
+.user-area-description-message {
+    margin: 0 0 16px;
+}
+
+.view-arquideas-contest-prizes.view-display-id-block_7 .project-owner .view-og-members-faces{
+    display: inline-block;
+}
+
+.view-arquideas-contest-prizes.view-display-id-block_7 .project-owner .views-field-name a {
+    font-size: 12px;
+}
+
+.popups-box {
+    position: fixed;
+    z-index:1000;
+    top: 150px !important;
+}
+
+.popups-box .popups-body .contact-phone,
+.popups-box .popups-body .contact-linkedin,
+.popups-box .popups-body .contact-skype{
+    display: none;
+}
+
+.popups-box .popups-body h2 {
+    margin: 16px 0 4px; 
+}
+
+.popups-box .popups-body #edit-submit {
+    margin-left: 264px;
+}
+
+.area-social .header .social-sharing-widget {
+    display: inline-block;
+    float: right;
+    margin-bottom: 10px;
+    margin-top: 22px;
+}
+
+.area-social header .addthis_toolbox, .area-social header .widget-header{
+    margin: -10px 0 0;
+}
+
+/* White Rounded Buttons */
+.prev-project a, .next-project a{
+  background: #FFF;
+  margin-right: 0;
+  display: inline-block;
+  color: #27A8D9;
+  text-shadow: none;
+  padding: 6px 10px;
+  background-repeat: no-repeat;
+}
+
+.prev-project a {
+    background-image: url('../images/arrow_book_left.png');
+    background-position: 3% 40%;
+    padding: 6px 10px 6px 20px;
+}
+
+.next-project a {
+    background-image: url('../images/arrow_book_right.png');
+    background-position: 97% 40%;
+    padding: 6px 20px 6px 10px;
+}
+
+.page-full-view .projects-navigation{
+    height: 32px;
+}
+
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-files-fid {
+    display: inline-block;
+    width: 99%;
+    margin:16px 0;
+}
+
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-files-fid .field-content{
+    border: 1px solid #FFF;
+    padding: 12px;
+}
+
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-files-fid table th,
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-files-fid table td{
+    color: #FFF;
+}
+
+.page-full-view .views_slideshow_singleframe_slide .views-field-ops,
+#views_slideshow_singleframe_main_contest_inscriptions_winnersel-page_1 .views-field-phpcode{
+    height: 38px;
+    padding: 0 8px 0 0;
+    margin: 8px 0;
+}
+
+.page-full-view .views_slideshow_singleframe_slide .projects-navigation {
+    margin: 16px 0;
+}
+
+#page.page-full-view .view-full-page {
+    padding: 20px 0 20px 20px;
+}
+
+.page-full-view .views_slideshow_singleframe_pager .pager-item .views-field-picture{
+    float: right;
+    padding-right: 4px;
+}
+
+#page.page-full-view .view-full-page .views-exposed-form .fieldset-wrapper label {
+    color: #1A1A1A;
+}
+#page.page-full-view .view-full-page .views-exposed-form .fieldset-wrapper .views-exposed-widgets select{
+    width: 205px;
+    max-width: 205px;
+}
+#page.page-full-view .view-full-page .views-exposed-form .fieldset-wrapper .views-exposed-widgets input {
+    width: 194px;
+    border: 1px solid #999;
+    padding: 4px 5px;
+}
+#page.page-full-view .view-full-page .views-exposed-form .fieldset-wrapper .views-exposed-widget .form-item .description {
+    color: #1A1A1A;
+}
+#page.page-full-view .view-full-page .views-exposed-form .fieldset-wrapper .views-exposed-widget .form-submit {
+    width: 80px;
+}
+
+.page-full-view .views_slideshow_singleframe_slide .flag-wrapper .flag,
+.page-full-view .views_slideshow_singleframe_slide .flag-wrapper .flag.unflag-action{
+    margin: 0 4px;
+    font-size: 16px;
+}
+
+#view-id-contest_inscriptions_juryvotes-page_1 .views-field-phpcode-4,
+#view-id-contest_inscriptions_juryvotes-page_1 .views-field-phpcode,
+#view-id-contest_inscriptions_myvotes-page_1 .views-field-phpcode-2,
+#view-id-contest_inscriptions_myvotes-page_1 .views-field-phpcode,
+#views_slideshow_singleframe_main_contest_inscriptions_publicvote-page_1 .views-field-phpcode-2{
+    margin-bottom: 16px;
+    float: left;
+    width: 100%;
+}
+
+.personal_notes > .title{
+    font-size: 18px;
+    font-family: "SoinSans-Roman",Helvetica,Arial,sans-serif;
+}
+.personal_notes > .note{
+    color: #FFF;
+    font-family: "SoinSans-Roman",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+}
+
+.ui-dialog-content .personal_notes > .note{
+    color: #1A1A1A;
+}
+
+.page-full-view .views_slideshow_singleframe_slide h3 {
+    color: #FFF;
+}
+
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-flagcount-vname {
+    margin-bottom: 8px;
+}
+
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-flagcount-vname h3{
+    margin-bottom: 4px;
+}
+
+.page-full-view .views_slideshow_singleframe_pager .pager-item .views-field-count,
+.page-full-view .views_slideshow_singleframe_pager .pager-item .views-field-count-1,
+.page-full-view .views_slideshow_singleframe_pager .pager-item .views-field-count-2{
+    color: #1A1A1A;
+}
+
+.page-full-view .views_slideshow_singleframe_pager .pager-item.activeSlide .views-field-count,
+.page-full-view .views_slideshow_singleframe_pager .pager-item.activeSlide .views-field-count-1,
+.page-full-view .views_slideshow_singleframe_pager .pager-item.activeSlide .views-field-count-2{
+    color: #FFF;
+}
+
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-favorit-detail-vname .view .views-table th,
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-select-detail-vname .view .views-table th,
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-reject-detail-vname .view .views-table th,
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-fivestar-det-vname .view .views-table th,
+.view-contest-inscriptions-votingres .views-table th{
+    color: #999999;
+    padding: 10px 0.2em 6px;
+}
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-favorit-detail-vname .view .views-table td,
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-select-detail-vname .view .views-table td,
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-reject-detail-vname .view .views-table td,
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-fivestar-det-vname .view .views-table td,
+.view-contest-inscriptions-votingres .views-table td{
+    color: #FFF;
+}
+.view-contest-inscriptions-votingres .views-table .views-field-title a{
+    color: #F3F3F3;
+}
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-favorit-detail-vname h3,
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-select-detail-vname h3,
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-reject-detail-vname h3,
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-fivestar-det-vname h3{
+    margin-bottom: 0;
+}
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-favorit-detail-vname > .field-content > .view,
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-select-detail-vname > .field-content > .view,
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-reject-detail-vname > .field-content > .view,
+.page-full-view .views_slideshow_singleframe_slide .views-field-field-inscription-fivestar-det-vname > .field-content > .view{
+    border: 1px solid #fff;
+    padding: 8px;
+    margin-bottom: 12px;
+}
+
+#page.page-full-view .view-full-page .view-header .viewsdisplaytabs-wrapper {
+    float: right;
+}
+#page.page-full-view .view-full-page .view-header .viewsdisplaytabs-wrapper .viewsdisplaytabs-tab-group {
+    border-bottom: 0 none;
+}
+#page.page-full-view .view-full-page .view-header .viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li.last a {
+    width: 26px;
+    background-position: 0 0;
+}
+#page.page-full-view .view-full-page .view-header .viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li.last a.viewsdisplaytabs-active {
+    background-position: 0 -30px;
+}
+#page.page-full-view .view-full-page .view-header .viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li.first a{
+    width: 13px;
+    background-position: -30px 0;
+}
+#page.page-full-view .view-full-page .view-header .viewsdisplaytabs-wrapper .viewsdisplaytabs-group-wrapper ul li.first a.viewsdisplaytabs-active{
+    background-position: -30px -30px;
+}
+.view-contest-inscriptions-votingres.view-display-id-block_1 .pager .pager-item a, .view-contest-inscriptions-votingres.view-display-id-block_1 .pager li a {
+    color: #FFF;
+}
+.account-edit .node-form #tabset-tab-5 .advanced_link-field-subrow {
+    min-height: 135px;
+}
+.account.area-social .view-arqnetwork-user-profile .views-field-phpcode {
+    padding: 20px 8px 0 8px;
+    display: inline-block;
+    border-right: 0 none;
+    float: left;
+}
+.account.area-social .views-field-field-facebook-acp-url, 
+.account.area-social .views-field-field-google-acp-url, 
+.account.area-social .views-field-field-linkedin-acp-url,
+.account.area-social .views-field-field-pinterest-acp-url,
+.account.area-social .views-field-field-twitter-acp-url,
+.account.area-social .views-field-field-web-acp-url{
+    display: inline-block;
+    margin-top: 15px;
+    margin-left: 0;
+}
+
+.page-node.node-type-group #content-content .node-widgets-area{
+    position: relative;
+}
+
+.page-node.node-type-group #content-content .node-widgets-area .social-sharing-widget {
+    float: right;
+    margin-bottom: 0;
+}
+.full-node.node-type-group .node-widgets-area .back-contest{
+    top: -6px;
+}
+
+#node-delete-confirm {
+   color: #656565; 
+}
+#node-delete-confirm .form-radios{
+    margin:0;
+}
+#node-delete-confirm #edit-submit{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 12px;
+}
+#fb-root{
+    display:none;
+}
+
+#sidebar-last #block-commons_core-create_group .inner .content #edit-create{
+    width: 100%;
+}
+#sidebar-last #block-commons_core-create_group .inner {
+    border: 0 none;
+}
+#sidebar-last #block-commons_core-create_group .inner .content{
+    padding: 0;
+}
+#sidebar-last #block-commons_core-create_group .inner .content fieldset.collapsible{
+    display: none;
+}
+
+.view-activity-log-stream .view-empty {
+    text-align: center;
+    font-weight: bold;
 }

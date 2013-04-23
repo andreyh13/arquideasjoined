@@ -64,6 +64,14 @@
                 )); ?>
             </div>
             <div class="views-field-field-project-type-project-value">
+                <?php $prj = node_load($result['node']->nid);
+                      if(!empty($prj->field_project_type_project[0]['value'])){
+                          $term = taxonomy_get_term($prj->field_project_type_project[0]['value']);
+                          if(!empty($term)){
+                              print $term->name;
+                          }
+                      }
+                ?>
             </div>
         </div>
         <div class="project-social">
