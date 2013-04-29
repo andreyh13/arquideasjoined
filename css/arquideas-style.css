@@ -11955,3 +11955,11 @@ div.ok, tr.ok {
     text-align: center;
     font-weight: bold;
 }
+
+body.page-statuses #main-content {
+    width: 600px;
+}
+
+#pid-statuses-share .content-content {
+    min-height: 64px; 
+}
