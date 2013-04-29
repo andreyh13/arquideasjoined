@@ -9834,9 +9834,9 @@ body.book #content-content{
 	display: inline-block;
 }
 .fbss-comments-form .button{
-	font-size: 13px;
+	/*font-size: 13px;*/
 	margin-top: 10px;
-padding: 8px 12px;height: 35px;
+/*padding: 8px 12px;height: 35px;*/
 }
 .facebook-status-item .fbss-comments-show-comment-form-link {
 	float: right;
