@@ -11963,3 +11963,7 @@ body.page-statuses #main-content {
 #pid-statuses-share .content-content {
     min-height: 64px; 
 }
+
+#recaptcha_area, #recaptcha_table {
+    float: left;
+}
