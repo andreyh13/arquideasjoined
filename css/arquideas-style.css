@@ -11967,3 +11967,10 @@ body.page-statuses #main-content {
 #recaptcha_area, #recaptcha_table {
     float: left;
 }
+
+.field-registration-interval-free .field-label{
+  display: none;  
+}
+.field-registration-interval-free .odd{
+  background-color: transparent;
+}
