@@ -11974,3 +11974,12 @@ body.page-statuses #main-content {
 .field-registration-interval-free .odd{
   background-color: transparent;
 }
+.contests-view .field-registration-interval-free {
+  color: #fff;
+  display: block;
+  width: 210px;
+  text-align: right;
+  margin-left: 25px;
+  margin-right: 20px;
+  background: transparent;
+}
