@@ -4028,6 +4028,10 @@ body.node-type-simplenews #content-tabs {
 display: block;
 }
 
+body.node-type-simplenews .node .content img {
+  padding: 0;  
+}
+
 body.page-node .node-edit #content-tabs {
 display: block;
 }
