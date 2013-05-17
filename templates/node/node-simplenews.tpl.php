@@ -50,7 +50,7 @@
             <tr>
               <td align="center" style="border-bottom: 1px solid #000000; font-weight: bold; text-transform: uppercase; font-size: 21px; color: #000000;">
                 <div style="line-height:20px; height: 20px;">&nbsp;</div>
-                <?php print t('Upcoming Contests'); ?>
+                <?php print t('Contests'); ?>
                 <div style="line-height:20px; height: 20px;">&nbsp;</div>
               </td>
             </tr>
