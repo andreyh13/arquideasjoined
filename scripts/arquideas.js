@@ -395,6 +395,10 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
                         }
                     });
                 }
+                //Remove Jurado destacado in lateral for access denied page
+                if($(".not-logged-in.page-user").length){
+                    $(".not-logged-in.page-user #sidebar-last #block-views-jury_members-block_1").remove();  
+                }
 });
 
 $(window).load(function(){
