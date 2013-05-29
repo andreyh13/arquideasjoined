@@ -6496,6 +6496,11 @@ body.page-finished-contests #content-region h2.block-title {
   background: transparent;
 }
 
+#view-id-contests-page_2 .views-field-phpcode-3 label {
+   height: 33px;
+   line-height: 15px;
+}
+
 #block-views-contests-block_3 .views-field-phpcode,
 #block-views-contests-block_3 .views-field-phpcode-2,
 #block-views-contests-block_5 .views-field-phpcode,
@@ -12002,4 +12007,8 @@ body.page-statuses #main-content {
 
 .arquideas-managed-logo {
   float: left;  
+}
+
+.not-logged-in.page-user #sidebar-last #block-views-jury_members-block_1 {
+    display:none;
 }
