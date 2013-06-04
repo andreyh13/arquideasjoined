@@ -12020,3 +12020,8 @@ body.page-statuses #main-content {
 .not-logged-in.page-user #sidebar-last #block-views-jury_members-block_1 {
     display:none;
 }
+
+#edit-field-inscription-files-62-0-data-value-wrapper label,
+#edit-field-inscription-files-61-0-data-value-wrapper label {
+    display: none;
+}
