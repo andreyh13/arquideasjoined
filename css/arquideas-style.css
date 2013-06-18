@@ -8146,7 +8146,7 @@ a.sign-up-link, a.sign-in-link, #edit-present, a.user-unsubscribe-link,
 .prev-project a, .next-project a,
 .page-full-view .views_slideshow_singleframe_slide .flag-wrapper .flag,
 #sidebar-last #block-commons_core-create_group .content #edit-create,
-.views_slideshow_singleframe_slide .flag-wrapper.flag-rejected .flag.unflag-action{
+.page-full-view .views_slideshow_singleframe_slide .flag-wrapper.flag-rejected .flag.unflag-action{
   font-family: "SoinSans-BoldOblique",Helvetica,Arial,sans-serif;
 padding: 10px 20px;
 color: #fff;
@@ -11942,8 +11942,10 @@ div.ok, tr.ok {
 }
 
 #view-id-contest_inscriptions_juryvotes-page_1 .views-field-phpcode-4,
+#view-id-contest_inscriptions_juryvotes-page_1 .views-field-field-image-inscription-fid,
 #view-id-contest_inscriptions_juryvotes-page_1 .views-field-phpcode,
 #view-id-contest_inscriptions_myvotes-page_1 .views-field-phpcode-2,
+#view-id-contest_inscriptions_myvotes-page_1 .views-field-field-image-inscription-fid,
 #view-id-contest_inscriptions_myvotes-page_1 .views-field-phpcode,
 #views_slideshow_singleframe_main_contest_inscriptions_publicvote-page_1 .views-field-phpcode-2{
     margin-bottom: 16px;
@@ -12183,24 +12185,38 @@ body.page-statuses #main-content {
 }
 
 #view-id-contest_inscriptions_juryvotes-page_1 .views-field-phpcode-4,
-#view-id-contest_inscriptions_myvotes-page_1 .views-field-phpcode-2{
+#view-id-contest_inscriptions_myvotes-page_1 .views-field-phpcode-2,
+#view-id-contest_inscriptions_juryvotes-page_1 .views-field-field-image-inscription-fid,
+#view-id-contest_inscriptions_myvotes-page_1 .views-field-field-image-inscription-fid{
     background-color: white;
 }
 #view-id-contest_inscriptions_juryvotes-page_1 .views-field-phpcode-4 .jq-scrollable-inscription,
-#view-id-contest_inscriptions_myvotes-page_1 .views-field-phpcode-2 .jq-scrollable-inscription{
+#view-id-contest_inscriptions_myvotes-page_1 .views-field-phpcode-2 .jq-scrollable-inscription,
+#view-id-contest_inscriptions_juryvotes-page_1 .views-field-field-image-inscription-fid .jq-scrollable-inscription,
+#view-id-contest_inscriptions_myvotes-page_1 .views-field-field-image-inscription-fid .jq-scrollable-inscription{
    width: 690px; 
    margin: 0 auto;
    padding:8px 0;
 }
 #view-id-contest_inscriptions_juryvotes-page_1 .views-field-phpcode-4 .jq-scrollable-inscription .scrollable,
-#view-id-contest_inscriptions_myvotes-page_1 .views-field-phpcode-2 .jq-scrollable-inscription .scrollable{
+#view-id-contest_inscriptions_myvotes-page_1 .views-field-phpcode-2 .jq-scrollable-inscription .scrollable,
+#view-id-contest_inscriptions_juryvotes-page_1 .views-field-field-image-inscription-fid .jq-scrollable-inscription .scrollable,
+#view-id-contest_inscriptions_myvotes-page_1 .views-field-field-image-inscription-fid .jq-scrollable-inscription .scrollable{
    width: 690px; 
 }
 #view-id-contest_inscriptions_juryvotes-page_1 .views-field-phpcode-4 .jq-scrollable-inscription .scrollable .items div,
-#view-id-contest_inscriptions_myvotes-page_1 .views-field-phpcode-2 .jq-scrollable-inscription .scrollable .items div{
+#view-id-contest_inscriptions_myvotes-page_1 .views-field-phpcode-2 .jq-scrollable-inscription .scrollable .items div,
+#view-id-contest_inscriptions_juryvotes-page_1 .views-field-field-image-inscription-fid .jq-scrollable-inscription .scrollable .items div,
+#view-id-contest_inscriptions_myvotes-page_1 .views-field-field-image-inscription-fid .jq-scrollable-inscription .scrollable .items div{
    width: 690px; 
 }
 #view-id-contest_inscriptions_juryvotes-page_1 .views-field-phpcode-4 .jq-scrollable-inscription .scrollable img,
-#view-id-contest_inscriptions_myvotes-page_1 .views-field-phpcode-2 .jq-scrollable-inscription .scrollable img{
+#view-id-contest_inscriptions_myvotes-page_1 .views-field-phpcode-2 .jq-scrollable-inscription .scrollable img,
+#view-id-contest_inscriptions_juryvotes-page_1 .views-field-field-image-inscription-fid .jq-scrollable-inscription .scrollable img,
+#view-id-contest_inscriptions_myvotes-page_1 .views-field-field-image-inscription-fid .jq-scrollable-inscription .scrollable img{
    width: 690px; 
+}
+#view-id-contest_inscriptions_juryvotes-page_1 .views-field-field-image-inscription-fid .field-content img,
+#view-id-contest_inscriptions_myvotes-page_1 .views-field-field-image-inscription-fid .field-content img{
+   width: 712px; 
 }
