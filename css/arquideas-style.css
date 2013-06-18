@@ -4955,13 +4955,13 @@ a.disabled {
 visibility: hidden !important;
 }
 .jury-flags .jury-flag-favorit {
-color: green;
+color: #FEBB08;
 }
 .jury-flags .jury-flag-selected {
-color: orange;
+color: #24BCBE;
 }
 .jury-flags .jury-flag-rejected {
-color: red;
+color: #A3A3A3;
 }
 .winners-flags .winner-flag-first {
 color: brown;
