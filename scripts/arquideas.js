@@ -399,6 +399,17 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
                 if($(".not-logged-in.page-user").length){
                     $(".not-logged-in.page-user #sidebar-last #block-views-jury_members-block_1").remove();  
                 }
+                //Blocks in inscription details
+                if($("body.area-social .contest-info .two-columns").length){
+                    var m_h = 0;
+                    $("body.area-social .contest-info .two-columns > div").each(function(){
+                       var m_h1 = $(this).height();
+                       if(m_h1>m_h){
+                           m_h = m_h1;
+                       }
+                    });
+                    $("body.area-social .contest-info .two-columns > div").height(m_h);
+                }
 });
 
 $(window).load(function(){
