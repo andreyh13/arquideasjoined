@@ -413,7 +413,7 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
 });
 
 $(window).load(function(){
-	var max = Math.max.apply(Math, $(".scrollable").children().map(
+   var max = Math.max.apply(Math, $(".scrollable").children().map(
       function(){
         return $(this).height();
       }
@@ -425,7 +425,8 @@ $(window).load(function(){
 		}
 	});
 	$('.jq-scrollable-inscription .browse').click(function(){
-   		altura=$('.items div.slide:eq('+$('.scrollable').scrollable().getIndex()+')').height();
+                var dir = $(this).hasClass("next")?1:-1;
+   		altura=$('.items div.slide:eq('+($('.scrollable').scrollable().getIndex()+dir)+')').height();
    		$('.scrollable').animate({
 			height: ''+altura+'px'
 		},500);
