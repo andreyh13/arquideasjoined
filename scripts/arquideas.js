@@ -399,10 +399,21 @@ jqRel.appendTo(jqNodeForm.find("div.node-form-cols")).css("width","25%").css("fl
                 if($(".not-logged-in.page-user").length){
                     $(".not-logged-in.page-user #sidebar-last #block-views-jury_members-block_1").remove();  
                 }
+                //Blocks in inscription details
+                if($("body.area-social .contest-info .two-columns").length){
+                    var m_h = 0;
+                    $("body.area-social .contest-info .two-columns > div").each(function(){
+                       var m_h1 = $(this).height();
+                       if(m_h1>m_h){
+                           m_h = m_h1;
+                       }
+                    });
+                    $("body.area-social .contest-info .two-columns > div").height(m_h);
+                }
 });
 
 $(window).load(function(){
-	var max = Math.max.apply(Math, $(".scrollable").children().map(
+   var max = Math.max.apply(Math, $(".scrollable").children().map(
       function(){
         return $(this).height();
       }
@@ -414,7 +425,8 @@ $(window).load(function(){
 		}
 	});
 	$('.jq-scrollable-inscription .browse').click(function(){
-   		altura=$('.items div.slide:eq('+$('.scrollable').scrollable().getIndex()+')').height();
+                var dir = $(this).hasClass("next")?1:-1;
+   		altura=$('.items div.slide:eq('+($('.scrollable').scrollable().getIndex()+dir)+')').height();
    		$('.scrollable').animate({
 			height: ''+altura+'px'
 		},500);
