@@ -12220,3 +12220,20 @@ body.page-statuses #main-content {
 #view-id-contest_inscriptions_myvotes-page_1 .views-field-field-image-inscription-fid .field-content img{
    width: 712px; 
 }
+
+.contest-winners .view-arquideas-contest-prizes.view-id-arquideas_contest_prizes .views-row-inner > div.views-field-markup,
+.contest-winners .view-arquideas-contest-prizes.view-id-arquideas_contest_prizes .views-row-inner > div.views-field-markup-1{
+    width: 100%;
+}
+
+.contest-winners .view-arquideas-contest-prizes.view-id-arquideas_contest_prizes .views-row-inner > div.views-field-markup:after,
+.contest-winners .view-arquideas-contest-prizes.view-id-arquideas_contest_prizes .views-row-inner > div.views-field-markup-1:after {
+  clear: both;
+  content: ".";
+  display: block;
+  font-size: 0;
+  height: 0;
+  line-height: 0;
+  overflow: auto;
+  visibility: hidden;
+}
