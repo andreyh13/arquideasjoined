@@ -4811,9 +4811,12 @@ body.not-front .page-full-view #main-content .view-content .views-slideshow-cont
 display: inline-block;
 float: right;
 padding-left: 0;
-text-align: center;
-width: 24px;
+padding-top: 4px;
+text-align: left;
+width: 30px;
 color: #808184;
+margin-right: 4px;
+background: transparent url('../images/icons/group-node.png') no-repeat right top;
 }
 body.not-front .page-full-view #main-content .view-content .views-slideshow-controls-top .views_slideshow_pagerNumbered .pager-item.activeSlide .members-count {
 color: #FFF;    
@@ -12238,10 +12241,22 @@ body.page-statuses #main-content {
   visibility: hidden;
 }
 
+.view.view-contest-inscriptions-publicvote .views-field-value{
+    height:20px;
+}
+
 .view.view-contest-inscriptions-publicvote .views-field-value label {
-   display: inline; 
+   display: block;
+   float:left;
+   margin-right: 8px;
 }
 
 .view-contest-inscriptions-publicvote.view-display-id-page_1 .views-field-value span {
   padding-left:0;  
+}
+.project-info-public, #page.page-full-view .view-full-page .views-slideshow-controls-top .pager-item .public-vote{
+  color: #666666;  
+}
+.project-info-public, #page.page-full-view .view-full-page .views-slideshow-controls-top .pager-item.activeSlide .public-vote{
+  color: #ffffff;  
 }
