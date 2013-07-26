@@ -12237,3 +12237,11 @@ body.page-statuses #main-content {
   overflow: auto;
   visibility: hidden;
 }
+
+.view.view-contest-inscriptions-publicvote .views-field-value label {
+   display: inline; 
+}
+
+.view-contest-inscriptions-publicvote.view-display-id-page_1 .views-field-value span {
+  padding-left:0;  
+}
